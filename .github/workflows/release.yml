@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing annotated release tag (for example v0.1.1)
+        description: Existing annotated release tag (for example v0.1.2)
         required: true
         type: string
       publish:
@@ -101,6 +101,9 @@ jobs:
           fetch-depth: 0
           lfs: true
           persist-credentials: false
+      - name: Materialize the fetched LFS objects
+        if: inputs.payload_source == 'local'
+        run: bash ci/materialize-lfs.sh
       - name: Verify payload, attach release evidence and publish
         env:
           GH_TOKEN: ${{ github.token }}

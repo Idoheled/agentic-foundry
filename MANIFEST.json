@@ -687,10 +687,10 @@
     }
   },
   "r5NetworkPolicy": "Private runtime sources only; no public install-time downloader. Existing private module settings preserved; unset Go settings default offline.",
-  "foundryVersion": "0.1.1",
+  "foundryVersion": "0.1.2",
   "sourceRepository": "https://github.com/Idoheled/agentic-foundry",
   "sourceDistribution": "Versioned source controls plus Git LFS content-addressed offline payload objects",
   "originalR5Archive": "agentic-offline-linux-amd64-2026-11-20-r5.tar.gz",
   "originalR5ManagedFileCount": 2948,
-  "standaloneExport": "build-tools/export-release.py creates agentic-foundry-0.1.1-linux-amd64.tar.gz from the qualified tagged source and hydrated payload"
+  "standaloneExport": "build-tools/export-release.py creates agentic-foundry-0.1.2-linux-amd64.tar.gz from the qualified tagged source and hydrated payload"
 }

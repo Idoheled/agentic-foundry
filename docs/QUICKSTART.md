@@ -49,14 +49,14 @@ After completing the private site file, inspect the plan:
 
 ```bash
 ./deploy.sh plan --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.2"
 ```
 
 Then perform the selected setup with one command:
 
 ```bash
 ./deploy.sh --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.2"
 ```
 
 This compiles or validates the explicit installation stages, selects the qualified sources, applies requested native/host/core/profile work, verifies preservation where applicable, installs selected productivity capabilities, and performs configured project/agent enrollment.
@@ -69,7 +69,7 @@ Start from the existing working Claude environment:
 
 ```bash
 ./deploy.sh agent --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.2"
 ```
 
 The agent can begin discovery without a site file by omitting `--config`; it must establish the factual private configuration before applying the corresponding setup stages.
@@ -93,7 +93,7 @@ If a selected input changes, inspect it and use a new setup transaction while re
 ```bash
 ./deploy.sh apply --only productivity \
   --config /private/setup.json \
-  --state "$HOME/.local/state/agentic-foundry/productivity-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/productivity-v0.1.2"
 ```
 
 The referenced file must be the actual completed site/setup configuration, not an unedited example. This scope reports productivity completion only and does not replace the OMP runtime.

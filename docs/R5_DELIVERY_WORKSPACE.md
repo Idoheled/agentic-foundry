@@ -87,7 +87,7 @@ The Trivy general database snapshot is dated 2026-11-20. Continue using the orga
 
 ## Git deployment contract
 
-Agentic Foundry v0.1.1 versions the setup code, plans/schemas, docs, tests, package identities and payload lock. Content-addressed objects under `offline/` use Git LFS, with reconstruction recorded in `offline/manifest.json`. `deploy.sh` hydrates those local objects before setup; see [Offline payloads](PAYLOADS.md). A source checkout can also hydrate from a local private mirror or a verified tar:
+Agentic Foundry v0.1.2 versions the setup code, plans/schemas, docs, tests, package identities and payload lock. Content-addressed objects under `offline/` use Git LFS, with reconstruction recorded in `offline/manifest.json`. `deploy.sh` hydrates those local objects before setup; see [Offline payloads](PAYLOADS.md). A source checkout can also hydrate from a local private mirror or a verified tar:
 
 ```bash
 python3 scripts/payload.py hydrate --from-dir /mnt/private/extracted-release

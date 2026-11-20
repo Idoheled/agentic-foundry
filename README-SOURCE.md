@@ -17,16 +17,19 @@ The controller test suite does not require the full payload, production credenti
 ```bash
 git lfs install --local
 git lfs pull
+git lfs checkout
 python3 scripts/offline_payload.py verify
 ```
 
 `offline/manifest.json` maps pinned payload files to content-addressed objects under `offline/objects/sha256/`. The payload verifier checks actual bytes; an LFS pointer is not an archive. `deploy.sh` hydrates the local objects into the ignored `payload/` tree before invoking the selected setup operation. No public download is part of that deployment path.
 
+The explicit `git lfs checkout` materializes objects already in the local LFS cache, including after another checkout of the same commit leaves pointer files in the working tree. Version `v0.1.2` applies this step in the local release workflow before independent byte verification. The cache and the working tree are separate states; a successful fetch alone is not deployment readiness.
+
 The complete offline tar already contains hydrated artifacts and uses `setup.sh` directly. A checkout can also hydrate from a qualified private extracted release or a verified full tar with the existing `scripts/payload.py` interface. See [Offline payloads](docs/PAYLOADS.md) for exact commands, disk considerations, and transport details.
 
 ## Source release archives
 
-The published source asset contains committed setup files and Git LFS pointers; it does not duplicate the runtime payload. Version `v0.1.1` corrects archive creation so Git's working-tree LFS filters cannot expand those pointers while preparing this source-only asset. Source-archive checks enforce that boundary before publication.
+The published source asset contains committed setup files and Git LFS pointers; it does not duplicate the runtime payload. The archive correction introduced in `v0.1.1` and retained in `v0.1.2` prevents Git's working-tree LFS filters from expanding those pointers while preparing this source-only asset. Source-archive checks enforce that boundary before publication.
 
 The `v0.1.0` tag remains an immutable repository baseline. Its publication attempt verified the remote payload but failed when an expanded source archive exceeded 2 GiB. The patch changes release packaging, not the pinned r5 runtime bytes or receiving-host acceptance requirements. See [the changelog](CHANGELOG.md).
 

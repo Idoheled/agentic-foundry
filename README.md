@@ -35,11 +35,12 @@ The [software inventory](docs/SOFTWARE_INVENTORY.md), [r5 delivery profile](docs
 ### 1. Obtain the source and offline payload
 
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone --branch v0.1.1 --single-branch \
+GIT_LFS_SKIP_SMUDGE=1 git clone --branch v0.1.2 --single-branch \
   https://github.com/Idoheled/agentic-foundry.git
 cd agentic-foundry
 git lfs install --local
 git lfs pull
+git lfs checkout
 ```
 
 Git LFS retrieves the pinned content-addressed payload chunks. `deploy.sh` hydrates those local bytes before setup; it does not download from public sources. Follow [Offline payloads](docs/PAYLOADS.md) for verification, transfer, and release assembly. A source-only checkout or GitHub-generated source ZIP does not establish that the offline payload is present. Fetch and verify the complete release before moving into a disconnected environment.
@@ -60,14 +61,14 @@ Discovery reports the platform, commands, and candidate profile locations withou
 
 ```bash
 ./deploy.sh --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.2"
 ```
 
 **Existing workspace**, starting in the current working Claude environment:
 
 ```bash
 ./deploy.sh agent --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.2"
 ```
 
 The existing-machine flow deliberately stops after OMP qualification. Start the OMP continuation using the exact command in the generated handoff. OMP then completes the rest of the stack without replacing the runtime executing that continuation.
@@ -84,7 +85,7 @@ No new telemetry, monitoring, backup platform, or replacement memory service is 
 
 ## Supported targets and qualification
 
-| Target | v0.1.1 coverage |
+| Target | v0.1.2 coverage |
 | --- | --- |
 | Debian 13, x86-64, glibc | Included native fallback and the supplied evaluation/browser profile. |
 | Other Debian/Ubuntu x86-64 systems | Explicit approved internal APT plans and compatible tool profiles; Debian 13 packages are not used as a foreign-distro fallback. |

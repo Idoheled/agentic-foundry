@@ -2,6 +2,22 @@
 
 Notable changes to Agentic Foundry are recorded here. Repository releases use semantic version tags. The underlying offline payload retains its own revision and immutable artifact identities.
 
+## [0.1.2] - 2026-11-20
+
+Corrects local release-workflow materialization while retaining the same pinned `2026-11-20-r5` runtime payload and deployment behavior.
+
+### Fixed
+
+- Explicitly run `git lfs checkout` after fetching local-mode release objects and selecting the verified commit, so cached objects are materialized into the working tree before payload verification.
+- Retain full object and reconstructed-file hash verification after materialization; fetching or checking out objects alone does not pass the integrity gate.
+- Retain the raw committed-blob source archive correction from `0.1.1` and update recommended versioned checkout, deployment-state, tag, and standalone-export examples to `v0.1.2`.
+
+### Publication history
+
+The `v0.1.1` local-mode publication attempt fetched all LFS data into the cache, but a second checkout of the same commit left pointer files in the working tree. Payload verification blocked before release creation. The original `v0.1.0` and `v0.1.1` tags and their historical notes remain unchanged; the workflow correction uses a new patch version.
+
+The change affects connected release preparation only. Locked runtime bytes, native setup behavior, private supply preference, configuration preservation, and the Claude → OMP phase boundary remain unchanged. It adds no native-host, browser, private-model, or project-task qualification claim.
+
 ## [0.1.1] - 2026-11-20
 
 Corrects source-release packaging while retaining the same pinned `2026-11-20-r5` runtime payload and deployment behavior.

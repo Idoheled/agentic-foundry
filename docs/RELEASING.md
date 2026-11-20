@@ -4,7 +4,7 @@
 
 `VERSION` contains the repository version without `v`. An immutable annotated tag named `v<version>` identifies the corresponding committed source. The committed notes live at `releases/v<version>.md`.
 
-The repository version and payload lineage are separate. Agentic Foundry `v0.1.1` corrects source-release packaging while retaining the same pinned `2026-11-20-r5` payload introduced by the `v0.1.0` repository baseline. The payload lock and offline manifest record that identity; changing a repository document does not silently rename an upstream binary. The original tag and historical evidence remain unchanged.
+The repository version and payload lineage are separate. Agentic Foundry `v0.1.2` corrects local release-workflow materialization and retains the source-archive correction from `v0.1.1`. The same pinned `2026-11-20-r5` payload introduced by the `v0.1.0` repository baseline remains in use. The payload lock and offline manifest record that identity; changing a repository document does not silently rename an upstream binary. Earlier tags and historical evidence remain unchanged.
 
 Before 1.0, compatibility changes may occur between minor versions and must be called out in the notes. Use a patch version for compatible fixes. Published tags and assets are not moved or replaced; corrections get a new version.
 
@@ -27,9 +27,9 @@ The official checkout action is pinned to its full verified commit. `ci/action-p
 Example after the release commit is complete:
 
 ```bash
-git tag -a v0.1.1 -m "Agentic Foundry v0.1.1"
+git tag -a v0.1.2 -m "Agentic Foundry v0.1.2"
 git push origin main
-git push origin v0.1.1
+git push origin v0.1.2
 ```
 
 Use the next unused version for later releases. Do not force-push a published tag. Keep release mutations sequential so a failed LFS upload cannot be mistaken for a complete publication.
@@ -40,12 +40,14 @@ In Actions, run **Release** with the existing tag and `publish: true`. Choose `p
 
 Choose `payload_source: local` to verify an LFS checkout, or `payload_source: remote` to stream the same bytes from the repository without retaining a full checkout. Both modes verify every declared object and reconstructed payload-file hash; neither treats an upload receipt as proof of the file contents.
 
+Local object acquisition and working-tree materialization are separate. Fetching all objects into the LFS cache does not guarantee that a repeated checkout of the same commit replaced pointer text. The local workflow invokes `bash ci/materialize-lfs.sh` after selecting the verified commit; this runs `git lfs checkout` using cached content without fetching or downloading. The independent payload-byte checks run afterward, and missing or differing data still blocks publication.
+
 Local mode needs Python 3.12, Bash, Git, Git LFS and sufficient disk. Before downloading LFS content the workflow checks for approximately **twice the distinct object bytes plus 2 GiB**: the LFS cache, checked-out objects and working margin. For the initial payload this is more than a small hosted runner's free-space budget may permit. Select remote streaming mode or an approved larger runner label when the capacity check blocks. The workflow does not delete unrelated runner files to manufacture space.
 
 Publication then:
 
 1. Checks out the exact source commit accepted by the validation job.
-2. Obtains the complete LFS object set through the chosen local checkout or remote streaming mode.
+2. Obtains the complete LFS object set through the chosen mode. Local mode explicitly runs `git lfs checkout` to materialize cached objects in the working tree before verification.
 3. Streams and verifies all objects and reconstructed payload-file hashes without materializing another `payload/` tree.
 4. Checks that the remote tag still identifies the validated commit and that no release already exists for that tag.
 5. Creates a draft and attaches the source archive, offline manifest, payload lock, integrity evidence and asset checksums.
@@ -59,7 +61,7 @@ The standalone publisher supports the same mode after the source commit, annotat
 
 ```bash
 python3 ci/release.py publish \
-  --tag v0.1.1 \
+  --tag v0.1.2 \
   --expected-sha EXACT_COMMIT_SHA \
   --repository Idoheled/agentic-foundry \
   --payload-source remote \
@@ -78,9 +80,13 @@ A failure after draft creation leaves the draft and any uploaded assets for insp
 
 The `v0.1.0` attempt verified all remote payload files before source packaging failed. Its `git archive` path expanded LFS data into the intended source-only archive, which exceeded 2 GiB. The publication did not complete. The correction is versioned as `v0.1.1`; the original `v0.1.0` tag and historical notes are retained rather than overwritten. This is a release-packaging change with the same pinned runtime payload, not new receiving-host qualification.
 
+### v0.1.1 publication history
+
+The `v0.1.1` local-mode attempt fetched all LFS objects into the cache, but a second checkout of the same commit left pointer files in the working tree. Verification blocked before release creation. Version `v0.1.2` adds the explicit local materialization step and retains the raw-blob source archive fix. Both earlier tags and their historical notes remain unchanged; the runtime payload and receiving-host acceptance scope are unchanged.
+
 ## Release downloads and offline deployment
 
-The source release archive and GitHub's generated ZIP/tar source downloads are not substitutes for verified LFS payload bytes. The explicit source asset contains LFS pointers. Obtain the full payload by cloning the exact tag with Git LFS, or use an approved private mirror of the same manifest and objects. Follow [payload management](PAYLOADS.md) to verify and assemble the offline deployment bundle. From a hydrated, clean checkout at the exact release tag, `build-tools/export-release.py --ref v0.1.1 --output ABSOLUTE_OUTPUT_PATH` creates a standalone tar with source and one payload copy, excluding Git metadata and duplicate LFS object storage. It verifies every archived member. Keep generated archives outside the tracked source tree. The earlier r5 `build-tools/release.py` is retained for historical builder provenance and is not the Git-checkout export path.
+The source release archive and GitHub's generated ZIP/tar source downloads are not substitutes for verified LFS payload bytes. The explicit source asset contains LFS pointers. Obtain the full payload by cloning the exact tag with Git LFS, or use an approved private mirror of the same manifest and objects. Follow [payload management](PAYLOADS.md) to verify and assemble the offline deployment bundle. From a hydrated, clean checkout at the exact release tag, `build-tools/export-release.py --ref v0.1.2 --output ABSOLUTE_OUTPUT_PATH` creates a standalone tar with source and one payload copy, excluding Git metadata and duplicate LFS object storage. It verifies every archived member. Keep generated archives outside the tracked source tree. The earlier r5 `build-tools/release.py` is retained for historical builder provenance and is not the Git-checkout export path.
 
 Release integrity verifies the supplied files; it does not install them. Native package installation, private model routing, real worker probes, configuration preservation and browser interaction remain target-machine acceptance checks. Never describe a source-only CI pass as a completed machine upgrade.
 

@@ -57,6 +57,6 @@ The [rebuild guide](REBUILD.md), [offline coverage](OFFLINE_COVERAGE.md), and [b
 
 ## Version and precedence
 
-The current documentation targets `v0.1.1`, the source-release packaging correction for the initial `v0.1.0` repository baseline. Both versions retain the same pinned `2026-11-20-r5` offline runtime payload; the original tag and its evidence remain unchanged. Names such as `r3`, `r4`, and `r5` in existing files identify the kit revisions and their evidence; they are not separate current setup entry points.
+The current documentation targets `v0.1.2`, which explicitly materializes cached LFS data before local release verification and retains the source-archive correction from `v0.1.1`. The initial `v0.1.0` baseline and both patches use the same pinned `2026-11-20-r5` offline runtime payload; the earlier tags and their evidence remain unchanged. Names such as `r3`, `r4`, and `r5` in existing files identify the kit revisions and their evidence; they are not separate current setup entry points.
 
 For a deployment, use the selected release's actual scripts, catalogs, manifests, and current lifecycle guide. Earlier revision notes explain history and do not override the current Claude-to-OMP boundary, private-source policy, or target-platform checks. Site-specific instructions and the operator's authorized scope remain authoritative.

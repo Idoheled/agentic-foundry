@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.2",
+  "command": "./ci/check.sh",
+  "passed": true,
+  "tests": 271,
+  "seconds": 22.699,
+  "sourceOnly": true,
+  "payloadHydrated": false,
+  "scope": "Controller, payload, source/export and release fixtures, including real local Git LFS cache materialization; no installation on a user machine",
+  "actualInternalModelsQualified": false,
+  "actualDockerDeploymentQualified": false,
+  "actualBrowserUIQualified": false,
+  "additionalChecks": [
+    "Python and Bash syntax",
+    "49 first-party Markdown files: local paths and heading anchors",
+    "3 real cached-object Git LFS regressions, included in the full suite",
+    "Unchanged raw committed-source archive and complete payload verification gates",
+    "Unchanged pinned runtime payload and historical tag notes"
+  ],
+  "materializationRegression": {
+    "git": "2.56.1",
+    "gitLfs": "3.6.1",
+    "sameCommitPointerStateReproduced": true,
+    "cachedBytesAndSha256Verified": true,
+    "committedPointerPreserved": true,
+    "missingCacheNotDownloaded": true,
+    "modifiedWorktreePreserved": true,
+    "transferTrapInvocations": 0
+  },
+  "previousPublication": {
+    "run": "https://github.com/Idoheled/agentic-foundry/actions/runs/44813096286",
+    "capacityPassed": true,
+    "lfsFetchSucceeded": true,
+    "failedStage": "Working-tree payload verification: repeated checkout retained pointer files",
+    "published": false
+  },
+  "payloadLockSha256": "2234876454c86a0a862a882d30776b40a928ff267889f96d98abf5c1a856e7ec"
+}
