@@ -1,0 +1,70 @@
+{
+  "revision": "r4",
+  "date": "2026-11-20",
+  "passedBuilderChecks": true,
+  "tests": {
+    "kitControllerAndInstallerTests": 150,
+    "existingSuiteRetained": 59,
+    "phaseWorkflow": 42,
+    "profilePreservation": 35,
+    "finalCleanup": 14,
+    "additiveUpdateRecovery": 18
+  },
+  "actualCLI": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "begin",
+        "exitCode": 0,
+        "expectedExitCode": 0
+      },
+      {
+        "name": "manual-boundary-before-completion",
+        "exitCode": 2,
+        "expectedExitCode": 2
+      },
+      {
+        "name": "actual-proof",
+        "exitCode": 0,
+        "expectedExitCode": 0
+      },
+      {
+        "name": "changed-brain-blocked",
+        "exitCode": 2,
+        "expectedExitCode": 2
+      },
+      {
+        "name": "status",
+        "exitCode": 0,
+        "expectedExitCode": 0
+      }
+    ],
+    "realSubprocessCLI": true,
+    "mutatedHost": false,
+    "calledInternalModel": false,
+    "scope": "Actual begin/proof/preservation/manual-boundary CLI mechanisms using owned fixture files; full host/model workflow remains onsite."
+  },
+  "unchangedRuntimePayload": "All r3 payload files are retained without byte or mode changes; r4 adds custom phase/preservation/cleanup code and source. Runtime versions and original validation scopes remain as documented in r3.",
+  "targetQualificationPerformed": false,
+  "realInternalModelsTested": false,
+  "actualSystemModeUpgradeTested": false,
+  "coverage": [
+    "Phase1 only OMP, rehearsal before live probes, exact selected artifact binding",
+    "Manual switch after completed phase1; preserved cwd/profile args; stable full OMP runtime",
+    "Fresh nonce-bearing command proofs, failed rerun invalidation, bound configuration identity",
+    "Private immutable baseline, active routes/auth/brain/hooks/skills checks, external symlink targets",
+    "Exact additive changes and source-bound equivalent native configuration migrations",
+    "Explicit scalar lifecycle metadata without exempting actual configuration",
+    "Exact coordinator result/receipt/plan/catalog binding and canonical PATH selection",
+    "Full remaining catalog/core/native profiles required before completion",
+    "Exact quarantine deletion, verified recovery archives, interrupted cleanup recovery and active-consumer refusal",
+    "Timeout kills dedicated probe group, including a child that ignores SIGTERM"
+  ],
+  "limitations": [
+    "Actual private endpoints, profiles, system package ownership/sudo and service consumers remain onsite gates.",
+    "Snapshots certify only explicitly discovered/configured roots; external stores and coherent live DB backups require their native procedures.",
+    "Evidence structure and hashes do not replace honestly implemented tests and inspection of their observations.",
+    "Paperclip/PostgreSQL remain containerized; CLIs/toolchains use native host installation.",
+    "Old unmanaged active files are retired, and exact quarantine objects are archived/deleted after acceptance; no recursive purge of unknown or old managed runtime trees."
+  ]
+}

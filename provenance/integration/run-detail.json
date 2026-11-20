@@ -1,0 +1,507 @@
+{
+  "id": "a36496aa-3803-4d22-aed3-ea1e97fb2e24",
+  "companyId": "0f5c9846-6c66-46ba-a4c0-8a65eb61f136",
+  "agentId": "62285346-69a4-4844-a7c7-8f068c8e0919",
+  "scopeKind": "company",
+  "issueId": null,
+  "invocationSource": "on_demand",
+  "triggerDetail": "manual",
+  "status": "succeeded",
+  "responsibleUserId": "local-board",
+  "activeIdentityContextId": "48434776-ab8f-4f18-ad90-edf460a57377",
+  "startedAt": "2026-11-20T10:13:51.641Z",
+  "finishedAt": "2026-11-20T10:14:00.232Z",
+  "executionControlDeadlineAt": null,
+  "executionStatusDeliveryId": null,
+  "error": null,
+  "wakeupRequestId": "5ee2b3b9-297e-44e5-825d-00f8b5e232fd",
+  "exitCode": 0,
+  "signal": null,
+  "costAccountingPending": false,
+  "costAccountedAt": "2026-11-20T10:14:00.523Z",
+  "accountingProjectionVersion": "v2",
+  "accountingLastAttemptAt": "2026-11-20T10:14:00.523Z",
+  "accountingLastError": null,
+  "accountingAttemptCount": 0,
+  "usageJson": {
+    "model": "internal/smoke",
+    "biller": "internal",
+    "costUsd": 0,
+    "provider": "internal",
+    "costStatus": "reported",
+    "billingType": "unknown",
+    "inputTokens": 20,
+    "ledgerScope": {
+      "issueId": null,
+      "projectId": null,
+      "billingCode": null
+    },
+    "usageSource": "per_run",
+    "costUsdExact": null,
+    "freshSession": true,
+    "outputTokens": 8,
+    "usageByModel": null,
+    "sessionReused": false,
+    "budgetDispatch": {
+      "admittedAt": "2026-11-20T10:13:54.506Z",
+      "handedOffAt": "2026-11-20T10:13:54.520Z",
+      "reservationId": "2cdf049e-8d0f-4d7f-bd42-3c08a032821c",
+      "recoveryLeaseOwner": null
+    },
+    "budgetExposure": {
+      "sequence": 4,
+      "sourceId": "6e571861-a0ee-4bdd-a767-8e5ea09fcbf5",
+      "costCents": "0.0000000"
+    },
+    "rawInputTokens": 20,
+    "sessionRotated": false,
+    "configFreshness": {
+      "session": {
+        "reset": false,
+        "categories": [
+          "adapter",
+          "adapterConfig",
+          "agentRuntimeConfig",
+          "instructions",
+          "issueOverrides",
+          "workspaceConfig",
+          "environment",
+          "envBindings",
+          "secrets",
+          "runtimeSkills"
+        ],
+        "resetReasons": [],
+        "nextFingerprint": "v1:sha256:b08e9217ad42109e7d899c3c57bac8973a3be611b2f6a89d1f028e896192fea6",
+        "changedCategories": [],
+        "taskSessionReused": false,
+        "fingerprintVersion": 1,
+        "taskSessionAvailable": false,
+        "storedFingerprintPresent": false
+      },
+      "version": 1,
+      "workspace": {
+        "action": "create",
+        "reasons": [],
+        "categories": [
+          "mode",
+          "projectWorkspace",
+          "strategy",
+          "repo",
+          "lifecycleCommands",
+          "runtimeServices",
+          "environment",
+          "realization"
+        ],
+        "reuseRequested": false,
+        "nextFingerprint": "v1:sha256:c1b516f49981fff92e129832b3704cd20f4c61494ebe79bda3a068badc648bdf",
+        "workspaceReused": false,
+        "activeWorkspaceId": null,
+        "changedCategories": [],
+        "storedFingerprint": null,
+        "fingerprintVersion": 1,
+        "inferredFingerprint": null,
+        "previousWorkspaceId": null,
+        "configSnapshotRefreshed": false,
+        "storedFingerprintPresent": false
+      }
+    },
+    "rawOutputTokens": 8,
+    "cachedInputTokens": 0,
+    "pricingProvenance": {
+      "source": "provider_reported",
+      "version": "accounting-receipt/v1"
+    },
+    "providerRequestId": null,
+    "taskSessionReused": false,
+    "persistedSessionId": "ses_e078d2dd5ffeiqKZhcoTtdhfHQ",
+    "accountingReceiptId": "265c56c7-91b6-408f-8e24-377f4d3b7f16",
+    "cacheAdjustedCostUsd": 0,
+    "rawCachedInputTokens": 0,
+    "sessionRotationReason": null,
+    "accountingReceiptReady": true,
+    "rawInputIncludesCached": false,
+    "accountingReceiptSequence": 4,
+    "accountingReceiptSourceId": "6e571861-a0ee-4bdd-a767-8e5ea09fcbf5",
+    "accountingReceiptReceivedAt": "2026-11-20T10:14:00.143Z",
+    "accountingReceiptSourceFences": {}
+  },
+  "resultJson": {
+    "stderr": "",
+    "stdout": "{\"type\":\"step_start\",\"timestamp\":1795169638941,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872d9fd001oWryMbcQ9uLTU2\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-start\"}}\n{\"type\":\"tool_use\",\"timestamp\":1795169639943,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call-offline-smoke\",\"state\":{\"status\":\"completed\",\"input\":{\"command\":\"printf offline-integrated-tool-ok > /workspaces/smoke/tool-proof.txt\",\"description\":\"Write isolated synthetic integration proof\"},\"output\":\"(no output)\",\"metadata\":{\"output\":\"(no output)\",\"exit\":0,\"truncated\":false},\"title\":\"printf offline-integrated-tool-ok > /workspaces/smoke/tool-proof.txt\",\"time\":{\"start\":1795169638928,\"end\":1795169639909}},\"id\":\"prt_1f872da03001OrivgWU5r5n0je\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\"}}\n{\"type\":\"step_finish\",\"timestamp\":1795169639943,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872dded001Pmmf5gVdIa7nud\",\"reason\":\"tool-calls\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-finish\",\"tokens\":{\"total\":14,\"input\":10,\"output\":4,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":0}},\"cost\":0}}\n{\"type\":\"step_start\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de480014bg5QzmZ2gv9jJ\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-start\"}}\n{\"type\":\"text\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de4f00192IENK6OYs7EQu\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"text\",\"text\":\"hello offline-integrated-model-ok\",\"time\":{\"start\":1795169640015,\"end\":1795169640019}}}\n{\"type\":\"step_finish\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de57001DQwitIG1aFRPfa\",\"reason\":\"stop\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-finish\",\"tokens\":{\"total\":14,\"input\":10,\"output\":4,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":0}},\"cost\":0}}\n",
+    "summary": "hello offline-integrated-model-ok",
+    "stopReason": "completed",
+    "timeoutFired": false,
+    "timeoutSource": "configured",
+    "configFreshness": {
+      "session": {
+        "reset": false,
+        "categories": [
+          "adapter",
+          "adapterConfig",
+          "agentRuntimeConfig",
+          "instructions",
+          "issueOverrides",
+          "workspaceConfig",
+          "environment",
+          "envBindings",
+          "secrets",
+          "runtimeSkills"
+        ],
+        "resetReasons": [],
+        "nextFingerprint": "v1:sha256:b08e9217ad42109e7d899c3c57bac8973a3be611b2f6a89d1f028e896192fea6",
+        "changedCategories": [],
+        "taskSessionReused": false,
+        "fingerprintVersion": 1,
+        "taskSessionAvailable": false,
+        "storedFingerprintPresent": false
+      },
+      "version": 1,
+      "workspace": {
+        "action": "create",
+        "reasons": [],
+        "categories": [
+          "mode",
+          "projectWorkspace",
+          "strategy",
+          "repo",
+          "lifecycleCommands",
+          "runtimeServices",
+          "environment",
+          "realization"
+        ],
+        "reuseRequested": false,
+        "nextFingerprint": "v1:sha256:c1b516f49981fff92e129832b3704cd20f4c61494ebe79bda3a068badc648bdf",
+        "workspaceReused": false,
+        "activeWorkspaceId": null,
+        "changedCategories": [],
+        "storedFingerprint": null,
+        "fingerprintVersion": 1,
+        "inferredFingerprint": null,
+        "previousWorkspaceId": null,
+        "configSnapshotRefreshed": false,
+        "storedFingerprintPresent": false
+      }
+    },
+    "timeoutConfigured": true,
+    "effectiveTimeoutSec": 1800,
+    "presentationDecision": {
+      "schema": "paperclip.run_presentation_decision.v1",
+      "commentId": null,
+      "reasonCodes": [
+        "legacy_adapter_summary_compatibility",
+        "run_has_no_issue"
+      ],
+      "chosenSource": "adapter_final_response",
+      "commentAction": "none",
+      "sourceEventId": null,
+      "resolverVersion": "2",
+      "activityDisposition": "collapse"
+    },
+    "adapterExecutionTimeout": {
+      "source": "configured",
+      "timeoutSec": 1800
+    }
+  },
+  "runtimeMode": "legacy",
+  "runtimeModeResolverVersion": "phase6-v1",
+  "runtimeModeReason": "direct_adapter",
+  "runtimeModeResolvedAt": "2026-11-20T10:13:54.431Z",
+  "runnerProfileJson": {
+    "adapterDispatch": {
+      "adapterType": "opencode_local"
+    }
+  },
+  "runnerInstanceId": null,
+  "nativeSessionId": null,
+  "nativeIssueId": null,
+  "driverKind": null,
+  "driverVersion": null,
+  "completionContractId": null,
+  "completionContractSha256": null,
+  "nextEventSeq": 8,
+  "nativePhase": null,
+  "nativePhaseUpdatedAt": null,
+  "sessionIdBefore": null,
+  "sessionIdAfter": "ses_e078d2dd5ffeiqKZhcoTtdhfHQ",
+  "logStore": "local_file",
+  "logRef": "0f5c9846-6c66-46ba-a4c0-8a65eb61f136/62285346-69a4-4844-a7c7-8f068c8e0919/a36496aa-3803-4d22-aed3-ea1e97fb2e24.ndjson",
+  "logBytes": 4060,
+  "logSha256": "a49abaf832ec80e20fac9d5525d090e53fde798da073e9a19e12db7ecb3c37c1",
+  "logCompressed": false,
+  "stdoutExcerpt": "[paperclip] No project or prior session workspace was available. Using fallback workspace \"/workspaces\" for this run.\n{\"type\":\"step_start\",\"timestamp\":1795169638941,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872d9fd001oWryMbcQ9uLTU2\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-start\"}}\n{\"type\":\"tool_use\",\"timestamp\":1795169639943,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call-offline-smoke\",\"state\":{\"status\":\"completed\",\"input\":{\"command\":\"printf offline-integrated-tool-ok > /workspaces/smoke/tool-proof.txt\",\"description\":\"Write isolated synthetic integration proof\"},\"output\":\"(no output)\",\"metadata\":{\"output\":\"(no output)\",\"exit\":0,\"truncated\":false},\"title\":\"printf offline-integrated-tool-ok > /workspaces/smoke/tool-proof.txt\",\"time\":{\"start\":1795169638928,\"end\":1795169639909}},\"id\":\"prt_1f872da03001OrivgWU5r5n0je\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\"}}\n{\"type\":\"step_finish\",\"timestamp\":1795169639943,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872dded001Pmmf5gVdIa7nud\",\"reason\":\"tool-calls\",\"messageID\":\"msg_1f872d879001YJH3RTdelMrS3E\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-finish\",\"tokens\":{\"total\":14,\"input\":10,\"output\":4,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":0}},\"cost\":0}}\n{\"type\":\"step_start\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de480014bg5QzmZ2gv9jJ\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-start\"}}\n{\"type\":\"text\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de4f00192IENK6OYs7EQu\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"text\",\"text\":\"hello offline-integrated-model-ok\",\"time\":{\"start\":1795169640015,\"end\":1795169640019}}}\n{\"type\":\"step_finish\",\"timestamp\":1795169640039,\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"part\":{\"id\":\"prt_1f872de57001DQwitIG1aFRPfa\",\"reason\":\"stop\",\"messageID\":\"msg_1f872ddfd001q55I9fcLc5xc73\",\"sessionID\":\"ses_e078d2dd5ffeiqKZhcoTtdhfHQ\",\"type\":\"step-finish\",\"tokens\":{\"total\":14,\"input\":10,\"output\":4,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":0}},\"cost\":0}}\n",
+  "stderrExcerpt": "[paperclip] Injected OpenCode skill \"paperclipai/paperclip/complain\" into /paperclip/.claude/skills\n[paperclip] Injected OpenCode skill \"paperclipai/paperclip/paperclip\" into /paperclip/.claude/skills\n[paperclip] Injected OpenCode skill \"paperclipai/paperclip/suggestion-box\" into /paperclip/.claude/skills\n",
+  "errorCode": null,
+  "externalRunId": null,
+  "controllerBootId": "6e819375-fab3-4661-835b-205e943e76fa",
+  "controllerLeaseExpiresAt": null,
+  "controllerProcess": {
+    "pid": 33,
+    "bootId": "6e819375-fab3-4661-835b-205e943e76fa",
+    "hostHash": "2ae18f3ad013770ee0940e163fbf9aae",
+    "processStartedAt": "2026-11-20T10:13:28.900Z"
+  },
+  "executionStage": "dispatching",
+  "processPid": 265,
+  "processGroupId": 265,
+  "processStartedAt": "2026-11-20T10:13:54.030Z",
+  "processHostHash": "2ae18f3ad013770ee0940e163fbf9aae",
+  "lastOutputAt": "2026-11-20T10:14:00.054Z",
+  "lastOutputSeq": 9,
+  "lastOutputStream": "stdout",
+  "lastOutputBytes": 4060,
+  "retryOfRunId": null,
+  "processLossRetryCount": 0,
+  "scheduledRetryAt": null,
+  "scheduledRetryAttempt": 0,
+  "scheduledRetryReason": null,
+  "issueCommentStatus": "not_applicable",
+  "issueCommentSatisfiedByCommentId": null,
+  "issueCommentRetryQueuedAt": null,
+  "livenessState": "advanced",
+  "livenessReason": "Run produced concrete action evidence: 1 workspace operation(s), 1 activity event(s), 1 tool/action event(s)",
+  "continuationAttempt": 0,
+  "lastUsefulActionAt": "2026-11-20T10:14:00.176Z",
+  "nextAction": null,
+  "contextSnapshot": {
+    "actorId": "local-board",
+    "wakeSource": "on_demand",
+    "triggeredBy": "board",
+    "paperclipWake": {
+      "connectionInstructions": null,
+      "connectorSkillInstructions": ""
+    },
+    "skillVersions": {
+      "paperclipai/paperclip/complain": "f4ccea05-6e8f-4d5e-b0dc-ce9300f8bd42",
+      "paperclipai/paperclip/paperclip": "a61c3782-0220-446e-9e33-991dd825f2c5",
+      "paperclipai/paperclip/suggestion-box": "8ecaac1c-bd93-4b10-8e49-3e0dd2ddaadd"
+    },
+    "paperclipScratch": {
+      "dir": "/tmp/paperclip-run-unassigned-a36496aa-380-OQ8hZ2",
+      "type": "heartbeat_run",
+      "marker": ".paperclip-run-scratch.json",
+      "cleanupPolicy": "terminal_run",
+      "tempKeysApplied": [
+        "TMPDIR",
+        "TEMP",
+        "TMP"
+      ]
+    },
+    "responsibleUserId": "local-board",
+    "wakeTriggerDetail": "manual",
+    "paperclipWorkspace": {
+      "cwd": "/workspaces",
+      "mode": "shared_workspace",
+      "source": "task_session",
+      "repoRef": null,
+      "repoUrl": null,
+      "strategy": "project_primary",
+      "agentHome": "/paperclip/instances/default/workspaces/62285346-69a4-4844-a7c7-8f068c8e0919",
+      "projectId": null,
+      "branchName": null,
+      "realization": {
+        "mode": "copy",
+        "local": {
+          "path": "/workspaces",
+          "source": "task_session",
+          "repoRef": null,
+          "repoUrl": null,
+          "strategy": "project_primary",
+          "projectId": null,
+          "branchName": null,
+          "worktreePath": null,
+          "projectWorkspaceId": null
+        },
+        "remote": {
+          "path": null
+        },
+        "leaseId": "9d5b6962-3bce-4e8a-b419-8bdce82dcbbc",
+        "rebuild": {
+          "mode": "shared_workspace",
+          "repoRef": null,
+          "repoUrl": null,
+          "metadata": {
+            "source": {
+              "kind": "task_session",
+              "repoRef": null,
+              "repoUrl": null,
+              "strategy": "project_primary",
+              "localPath": "/workspaces",
+              "projectId": null,
+              "branchName": null,
+              "worktreePath": null,
+              "projectWorkspaceId": null
+            },
+            "provider": "local",
+            "runtimeOverlay": {
+              "cleanupCommand": null,
+              "teardownCommand": null,
+              "provisionCommand": null,
+              "workspaceRuntime": null,
+              "runtimeProvisionCommand": null
+            },
+            "providerMetadata": {},
+            "environmentDriver": "local"
+          },
+          "localPath": "/workspaces",
+          "remotePath": null,
+          "providerLeaseId": null,
+          "executionWorkspaceId": null
+        },
+        "summary": "Local workspace realized at /workspaces.",
+        "version": 1,
+        "provider": "local",
+        "bootstrap": {
+          "command": null
+        },
+        "additional": [],
+        "pathAliases": [],
+        "environmentId": "a6fe6f09-5834-4981-ba58-5360431dbd76",
+        "providerLeaseId": null,
+        "authoritativeRoot": "/workspaces",
+        "outboundRestorePaths": []
+      },
+      "workspaceId": null,
+      "worktreePath": null
+    },
+    "paperclipWorkspaces": [],
+    "paperclipEnvironment": {
+      "id": "a6fe6f09-5834-4981-ba58-5360431dbd76",
+      "name": "Local",
+      "driver": "local",
+      "leaseId": "9d5b6962-3bce-4e8a-b419-8bdce82dcbbc",
+      "workspaceRealization": {
+        "mode": "copy",
+        "local": {
+          "path": "/workspaces",
+          "source": "task_session",
+          "repoRef": null,
+          "repoUrl": null,
+          "strategy": "project_primary",
+          "projectId": null,
+          "branchName": null,
+          "worktreePath": null,
+          "projectWorkspaceId": null
+        },
+        "remote": {
+          "path": null
+        },
+        "leaseId": "9d5b6962-3bce-4e8a-b419-8bdce82dcbbc",
+        "rebuild": {
+          "mode": "shared_workspace",
+          "repoRef": null,
+          "repoUrl": null,
+          "metadata": {
+            "source": {
+              "kind": "task_session",
+              "repoRef": null,
+              "repoUrl": null,
+              "strategy": "project_primary",
+              "localPath": "/workspaces",
+              "projectId": null,
+              "branchName": null,
+              "worktreePath": null,
+              "projectWorkspaceId": null
+            },
+            "provider": "local",
+            "runtimeOverlay": {
+              "cleanupCommand": null,
+              "teardownCommand": null,
+              "provisionCommand": null,
+              "workspaceRuntime": null,
+              "runtimeProvisionCommand": null
+            },
+            "providerMetadata": {},
+            "environmentDriver": "local"
+          },
+          "localPath": "/workspaces",
+          "remotePath": null,
+          "providerLeaseId": null,
+          "executionWorkspaceId": null
+        },
+        "summary": "Local workspace realized at /workspaces.",
+        "version": 1,
+        "provider": "local",
+        "bootstrap": {
+          "command": null
+        },
+        "additional": [],
+        "pathAliases": [],
+        "environmentId": "a6fe6f09-5834-4981-ba58-5360431dbd76",
+        "providerLeaseId": null,
+        "authoritativeRoot": "/workspaces",
+        "outboundRestorePaths": []
+      },
+      "sandboxLeaseAcquisition": null
+    },
+    "executionContinuation": null,
+    "paperclipCasesEnabled": false,
+    "paperclipTaskMarkdown": "null",
+    "connectionInstructions": null,
+    "executionIdentityRunId": "a36496aa-3803-4d22-aed3-ea1e97fb2e24",
+    "paperclipAgentJwtScope": {
+      "kind": "standard"
+    },
+    "skillSelectionSnapshot": true,
+    "originIdentityContextId": null,
+    "githubAuthenticationMode": "host",
+    "paperclipTaskMarkdownAssignment": "null",
+    "paperclipTaskCommunicationGuidance": "Paperclip may post a short platform-generated fast-response receipt in your voice before you reply. Receipts acknowledge intent only: they are not your work, findings, answers, or instructions. Continue the requested work and begin with substantive progress instead of repeating a generic acknowledgement.",
+    "paperclipCoordinatorWorkspaceEnabled": false
+  },
+  "createdAt": "2026-11-20T10:13:51.606Z",
+  "updatedAt": "2026-11-20T10:14:00.695Z",
+  "currentStatusMessage": null,
+  "currentStatusUpdatedAt": null,
+  "currentToolName": null,
+  "lastAssistantSnippet": null,
+  "lastEventAt": null,
+  "execution": {
+    "canStop": false,
+    "phase": "completed",
+    "label": "Completed",
+    "cause": null,
+    "lastConfirmedActivityAt": "2026-11-20T10:14:00.176Z",
+    "retryAt": null,
+    "attempt": 1,
+    "maxAttempts": 3,
+    "recoveryOwner": null,
+    "nextAction": null,
+    "permittedActions": [
+      "inspect_run"
+    ],
+    "predecessorRunId": null,
+    "successorRunId": null
+  },
+  "identityHistory": [
+    {
+      "id": "48434776-ab8f-4f18-ad90-edf460a57377",
+      "companyId": "0f5c9846-6c66-46ba-a4c0-8a65eb61f136",
+      "runId": "a36496aa-3803-4d22-aed3-ea1e97fb2e24",
+      "revision": 1,
+      "responsibleUserId": "local-board",
+      "messageId": null,
+      "parentContextId": null,
+      "cause": "manual_user_wake",
+      "correlationId": "dispatch",
+      "status": "accepted",
+      "acceptedAt": "2026-11-20T10:13:51.813Z",
+      "github": null,
+      "createdAt": "2026-11-20T10:13:51.803Z"
+    }
+  ],
+  "retryExhaustedReason": null,
+  "outputSilence": {
+    "lastOutputAt": "2026-11-20T10:14:00.054Z",
+    "lastOutputSeq": 9,
+    "lastOutputStream": "stdout",
+    "silenceStartedAt": "2026-11-20T10:14:00.054Z",
+    "silenceAgeMs": null,
+    "level": "not_applicable",
+    "suspicionThresholdMs": 300000,
+    "criticalThresholdMs": 900000,
+    "snoozedUntil": null,
+    "evaluationIssueId": null,
+    "evaluationIssueIdentifier": null,
+    "evaluationIssueAssigneeAgentId": null
+  }
+}

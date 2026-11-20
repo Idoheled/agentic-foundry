@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-11-20T11:34:27.347978+00:00",
+  "passed": true,
+  "testCount": 10,
+  "durationSeconds": 0.028,
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s kit-r3/tests -p test_native_packages.py -v",
+  "scope": "Independent native-helper contract tests using temporary fixtures, synthetic OS facts, tiny checksum fixture and mocked subprocess package operations. No real apt apply/update/download, no public networking, and no scan of the 275-package closure.",
+  "checks": [
+    "Strict declared OS and architecture; unsupported kit/internal profiles rejected",
+    "Source search/evidence/fallback policy and package argv injection rejection",
+    "Internal HTTPS allowlist and raw source-line injection rejection",
+    "Scoped APT sources/lists/cache and disabled redirects",
+    "Nonplaceholder recovery evidence required before apply",
+    "Mocked no-remove apply with installed-status postcheck and private receipt",
+    "Resolved download URI escape rejected before transaction",
+    "Raw state symlinks, unrelated state and output-link preservation",
+    "Tiny local package checksum mismatch blocks all APT calls"
+  ],
+  "implementationSha256": "d05fc99d88f20602b6e81418ed0b9777b916dc9eb5d6a6e32efd0480abb21c0a",
+  "testSha256": "7664380dbfe8b74257b6dce7191477a87955cb488fb8cfb847ca13c52e9b2a16",
+  "log": "research/r3-native-helper-validation.log",
+  "remainingContractFailures": []
+}

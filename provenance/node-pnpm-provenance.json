@@ -1,0 +1,37 @@
+{
+  "name": "node-pnpm-runtime",
+  "version": "24.22.3-pnpm9.15.4",
+  "purpose": "Complete relocatable Node, npm, npx and pnpm tree using original verified upstream archives",
+  "inputs": [
+    "payload/packages/node-v24.22.3-linux-x64.tar.xz",
+    "payload/packages/pnpm-9.15.4.tgz"
+  ],
+  "sha256": "68f4365fe444115ae6bcf937f5353d0dddc83467a133ca175d2429f071e738ff",
+  "bytes": 62795566,
+  "checks": [
+    {
+      "command": "node",
+      "passed": true,
+      "stdout": "v24.22.3",
+      "stderr": ""
+    },
+    {
+      "command": "npm",
+      "passed": true,
+      "stdout": "11.19.1",
+      "stderr": ""
+    },
+    {
+      "command": "npx",
+      "passed": true,
+      "stdout": "11.19.1",
+      "stderr": ""
+    },
+    {
+      "command": "pnpm",
+      "passed": true,
+      "stdout": "9.15.4",
+      "stderr": ""
+    }
+  ]
+}

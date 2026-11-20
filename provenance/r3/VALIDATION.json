@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "2026-11-20-r3",
+  "time": "2026-11-20T12:02:21.961478+00:00",
+  "passedBuilderChecks": true,
+  "scope": "Builder-only verification of delivered code and real artifacts in isolated user-owned workspace paths. No installation on the user machine or production model qualification occurred.",
+  "tests": {
+    "kitControllerAndInstallerTests": 59,
+    "nativeProfilePythonTests": 11,
+    "updateSyntheticRecoveryTests": 18,
+    "ompNativeExtensionModuleTest": true,
+    "coordinatorUnitTestsAreMocked": true
+  },
+  "hostPayload": {
+    "catalogTools": 19,
+    "managedCommands": 32,
+    "completeRuntimeTreesInstalled": true,
+    "allDeclaredChecksPassed": true,
+    "independentCanaryChecks": 9,
+    "finalIdentitiesVerifiedAfterCanariesAndProfiles": true,
+    "mode": "isolated user mode; no real host-global sudo/package mutation"
+  },
+  "nativeProfiles": {
+    "clients": [
+      "claude",
+      "codex",
+      "omp"
+    ],
+    "kitSkillCopiesInstalled": 24,
+    "nativeFilesChanged": 27,
+    "reviewedCodexHooksTrusted": 4,
+    "existingClaudeFixtureModelAndEnvironmentPreserved": true,
+    "installationUsedHostReceiptRuntimePaths": true,
+    "actualFullModelTurnCodex": false,
+    "actualClaudeAndOmpTurns": "deterministic loopback fixtures, not the customer internal model"
+  },
+  "clientStaging": {
+    "completeTrees": 4,
+    "containerPathsReported": true,
+    "containerExecutionQualified": false
+  },
+  "nativePackages": {
+    "packageFiles": 275,
+    "actualAptSimulationRequestedPackages": 21,
+    "actualKitRepositoryResolutionPassed": true,
+    "globalSourcesModified": false,
+    "actualNativePackageTransaction": false
+  },
+  "codexSource": {
+    "registryCratesVerified": 1305,
+    "gitSnapshots": 10,
+    "gitPackages": 14,
+    "offlineLockedGraphPackages": 1493,
+    "rustRelocatedCompileAndRun": true,
+    "fullCodexCompilation": false
+  },
+  "targetGates": [
+    "Actual Docker/Compose deployment and service identity",
+    "Actual internal model protocol/tool/streaming compatibility",
+    "Codex full sandboxed model/tool/hook turn",
+    "Paperclip effective native worker homes, hooks and adapter execution",
+    "OMP durable save/resume and orchestration",
+    "Multi-project coding task, independent review, cancellation, restart and backup restore",
+    "Actual privileged OS package changes and site-specific tool consumer migrations"
+  ],
+  "knownBuildConstraints": [
+    "Codex model-turn probe blocked by builder bwrap NETLINK_ROUTE before provider request; no sandbox bypass",
+    "No usable builder Docker daemon; earlier bounded Paperclip integration remains separately recorded",
+    "Full proprietary Claude runtime source is unpublished",
+    "Optional Herdr translate-c source rebuild gap remains documented"
+  ],
+  "evidenceDirectory": "provenance/r3"
+}

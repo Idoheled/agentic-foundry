@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "schemaKind": "minimal",
+  "bootstrapMode": "fresh",
+  "evidence": "REPLACE_WITH_TARGET_INSPECTION_AND_REQUESTED_CAPABILITIES",
+  "mode": "system",
+  "stateRoot": "/home/REPLACE_OPERATOR/.local/state/agentic-workspace",
+  "privateSupply": {
+    "roots": ["/mnt/REPLACE_PRIVATE_MIRROR"],
+    "inspectionEvidence": "REPLACE_WITH_ACTUAL_PRIVATE_BINARY_PACKAGE_LIBRARY_AND_IMAGE_SEARCH_FINDINGS",
+    "imageRepositoryFinding": "REPLACE_WITH_ACTUAL_FINDING_THAT_NO_SUITABLE_PRIVATE_PAPERCLIP_POSTGRES_IMAGES_EXIST_OR_SUPPLY_INDEX",
+    "allowKitFallback": true
+  },
+  "nativePackages": {
+    "enabled": true,
+    "privateRepositoryFinding": "REPLACE_WITH_ACTUAL_PRIVATE_NATIVE_PACKAGE_SEARCH_RESULT_OR_USE_NATIVE_PLAN",
+    "recoveryEvidence": "REPLACE_WITH_REFERENCE_TO_EXISTING_HOST_PACKAGE_RECOVERY_PROCEDURE"
+  },
+  "model": {
+    "api": "openai-completions",
+    "providerId": "internal",
+    "baseUrl": "http://REPLACE_INTERNAL_GATEWAY/v1",
+    "id": "REPLACE_INTERNAL_MODEL_ID",
+    "smallModelId": "REPLACE_INTERNAL_SMALL_MODEL_ID",
+    "apiKeyEnv": "INTERNAL_MODEL_API_KEY",
+    "contextWindow": 65536,
+    "maxTokens": 8192
+  },
+  "company": "Internal Agent Operations",
+  "projects": [],
+  "canonicalCommands": "when-missing",
+  "reuseExisting": true,
+  "profiles": {
+    "enabled": true,
+    "activateReviewedCodexHooks": false
+  },
+  "productivity": {
+    "enabled": true,
+    "exposePortableToolsToWorkers": true
+  },
+  "enrollProjects": true
+}

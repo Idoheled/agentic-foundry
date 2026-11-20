@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "revision": "r5",
+  "date": "2026-11-20",
+  "scope": "Builder qualification of actual delivered files in isolated temporary prefixes and local test repositories; no user-machine installation or internal model access",
+  "passedBuilderChecks": true,
+  "controllerTests": 197,
+  "controllerEvidence": "provenance/r5/kit-tests-final.log",
+  "productivityInstallation": {
+    "tools": 8,
+    "commands": 27,
+    "verificationChecks": 89,
+    "installedTreeIdentities": 8,
+    "passed": true,
+    "evidence": "provenance/r5/productivity-installation.json"
+  },
+  "nativeFallback": {
+    "debFiles": 426,
+    "freshRequestedPackages": 26,
+    "freshSelectedPackages": 353,
+    "emptyStatusResolution": true,
+    "localDownloadOnlyAcquisition": true,
+    "actualNativeInstall": false,
+    "evidence": "provenance/r5/merged-apt-resolution.json"
+  },
+  "functional": {
+    "worktrunkGitWorktree": true,
+    "rtkFailureExitPropagation": true,
+    "zoektIndexSymbolsAndHttp": true,
+    "languageServersProtocolFlows": 7,
+    "npmOfflineReplayPackages": 81,
+    "inspectScoringTokenizersAndSandboxTools": true,
+    "nativeBenchmarkSubprocessTests": 6,
+    "trivyOfflineVulnerabilityAndConfigScan": true
+  },
+  "targetOnly": {
+    "realPrivateModelRoutes": false,
+    "actualDockerDeployment": false,
+    "actualContainerToolProbe": false,
+    "realBrowserUI": false,
+    "realMachineUpgrade": false
+  },
+  "browser": {
+    "bytesIncluded": true,
+    "versionAndLibraryResolution": true,
+    "relocationAndImmutableRuntime": true,
+    "realUiAcceptance": "blocked by managed executor Unix socket policy; mandatory target gate",
+    "distribution": "signed Debian Chromium156, not the Playwright-managed Chromium build"
+  },
+  "regressionFixtureScope": "Docker, internal model and privileged package calls in controller unit tests use explicit fixtures; they are not real target acceptance",
+  "excludedNewServices": [
+    "telemetry",
+    "monitoring",
+    "backup platform"
+  ],
+  "sourceCoverage": "Pinned primary source snapshots, docs, licensing and per-component declared runtime/vendor closures; not every transitive source-build graph, optional index or arbitrary project dependency",
+  "sourceOnlyCI": {
+    "passed": true,
+    "tests": 197,
+    "noPayloadDirectory": true,
+    "evidence": "provenance/r5/git-source-ci.log"
+  }
+}

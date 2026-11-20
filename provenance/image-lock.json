@@ -1,0 +1,16 @@
+{
+  "paperclip": {
+    "upstream": "ghcr.io/paperclipai/paperclip:2026.1117.0",
+    "manifestDigest": "sha256:b2784df63b428a3de231039f03c2a78f582dcf5e35e840685685c8cef28814e2",
+    "configDigest": "sha256:957f78c8df5e07c4d122a750b24e2e30c6e26f393e3dc4db3c6c0f799242fa18",
+    "platform": "linux/amd64",
+    "compressedLayerBytes": 4911059547
+  },
+  "postgres": {
+    "upstream": "docker.io/library/postgres:17-alpine",
+    "manifestDigest": "sha256:e80acae3f1109e8e4533618b594918936f2858c63afc7204c4773148a673add8",
+    "configDigest": "sha256:fa7e2700e906190f900a3c9d47e87f9032cfa38b60d9ac25129a357f85c2da8c",
+    "platform": "linux/amd64",
+    "compressedLayerBytes": 117363495
+  }
+}

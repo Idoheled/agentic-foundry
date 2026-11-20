@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "pytest with coverage",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pytest",
+        "-p",
+        "pytest_cov.plugin",
+        "--cov=sample",
+        "-q",
+        "test_sample.py"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 1.31,
+      "stdout": ".                                                                        [100%]\n================================ tests coverage ================================\n_______________ coverage: platform linux, python 3.12.16-final-0 _______________\n\nName        Stmts   Miss  Cover\n-------------------------------\nsample.py       2      0   100%\n-------------------------------\nTOTAL           2      0   100%\n1 passed in 0.03s\n",
+      "stderr": ""
+    },
+    {
+      "name": "mypy installed runtime",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-mypy",
+        "sample.py"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 1.41,
+      "stdout": "Success: no issues found in 1 source file\n",
+      "stderr": ""
+    },
+    {
+      "name": "ruff installed binary",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-ruff",
+        "check",
+        "sample.py",
+        "test_sample.py"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.02,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "name": "Node builtins",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-node",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/node-canary.js"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.14,
+      "stdout": "JS_RUNTIME_OK\n",
+      "stderr": ""
+    },
+    {
+      "name": "Bun builtins",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-bun",
+        "run",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/node-canary.js"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.1,
+      "stdout": "JS_RUNTIME_OK\n",
+      "stderr": ""
+    },
+    {
+      "name": "Rust compile after host installation",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustc",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello.rs",
+        "-o",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello-rust"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.28,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "Rust executable",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello-rust"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.0,
+      "stdout": "RUST_RELOCATED_OK\n",
+      "stderr": ""
+    },
+    {
+      "name": "Zig C compiler and bundled musl",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-zig",
+        "cc",
+        "-target",
+        "x86_64-linux-musl",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello.c",
+        "-o",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello-zig"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 29.6,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "Zig C executable",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/canaries/hello-zig"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 0.0,
+      "stdout": "ZIG_NATIVE_TREE_OK\n",
+      "stderr": ""
+    }
+  ]
+}

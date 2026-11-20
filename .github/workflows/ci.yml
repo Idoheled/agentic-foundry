@@ -1,0 +1,35 @@
+name: Source checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: source-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source:
+    name: Source and repository contract
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      GIT_LFS_SKIP_SMUDGE: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out source without offline binaries
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: Validate the offline payload manifest
+        run: python3 -B scripts/offline_payload.py validate
+      - name: Validate deployment checksums
+        run: python3 -B scripts/refresh-checksums.py --check
+      - name: Test source and syntax
+        run: bash ci/check.sh

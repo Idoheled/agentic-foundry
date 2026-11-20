@@ -1,0 +1,33 @@
+test_archive_traversal_and_escaping_symlinks_are_rejected (test_hostctl.HostProvisionerTests.test_archive_traversal_and_escaping_symlinks_are_rejected) ... ok
+test_asset_tree_installs_and_verifies_without_command_shims (test_hostctl.HostProvisionerTests.test_asset_tree_installs_and_verifies_without_command_shims) ... ok
+test_changed_or_package_owned_canonical_command_is_preserved (test_hostctl.HostProvisionerTests.test_changed_or_package_owned_canonical_command_is_preserved) ... ok
+test_changed_promoted_command_blocks_rollback_without_overwriting_it (test_hostctl.HostProvisionerTests.test_changed_promoted_command_blocks_rollback_without_overwriting_it) ... ok
+test_existing_adequate_reuse_does_not_copy_and_cannot_retire_its_dependency (test_hostctl.HostProvisionerTests.test_existing_adequate_reuse_does_not_copy_and_cannot_retire_its_dependency) ... ok
+test_existing_file_can_be_normalized_and_retired_after_verification (test_hostctl.HostProvisionerTests.test_existing_file_can_be_normalized_and_retired_after_verification) ... ok
+test_literal_catalog_environment_reaches_checks_and_launcher (test_hostctl.HostProvisionerTests.test_literal_catalog_environment_reaches_checks_and_launcher) ... ok
+test_missing_private_search_or_fallback_reason_rejects_before_mutation (test_hostctl.HostProvisionerTests.test_missing_private_search_or_fallback_reason_rejects_before_mutation) ... ok
+test_retirement_without_reference_evidence_leaves_explicit_blocker (test_hostctl.HostProvisionerTests.test_retirement_without_reference_evidence_leaves_explicit_blocker) ... ok
+test_second_apply_and_rollback_restore_prior_managed_entry_points (test_hostctl.HostProvisionerTests.test_second_apply_and_rollback_restore_prior_managed_entry_points) ... ok
+test_state_symlink_is_rejected_before_privilege_reexecution (test_hostctl.HostProvisionerTests.test_state_symlink_is_rejected_before_privilege_reexecution) ... ok
+test_unrelated_state_directory_is_preserved (test_hostctl.HostProvisionerTests.test_unrelated_state_directory_is_preserved) ... ok
+test_whole_tree_relative_symlinks_and_dependency_layout_are_preserved (test_hostctl.HostProvisionerTests.test_whole_tree_relative_symlinks_and_dependency_layout_are_preserved) ... ok
+test_wrong_path_migration_verification_retirement_and_rollback (test_hostctl.HostProvisionerTests.test_wrong_path_migration_verification_retirement_and_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.416s
+
+OK
+
+CLI inventory exit 0
+
+CLI validate exit 0
+
+CLI plan exit 0
+
+CLI apply exit 0
+
+CLI verify exit 0
+
+CLI retire exit 0
+
+CLI rollback exit 0

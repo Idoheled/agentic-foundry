@@ -1,0 +1,60 @@
+[
+  {
+    "worker": "omp",
+    "exit_code": 0,
+    "seconds": 1.95,
+    "stdout": "{\"type\":\"session\",\"version\":3,\"id\":\"01a1f871-d57a-74e0-a93e-a862a5bb62a9\",\"timestamp\":\"2026-11-20T10:12:52.218Z\",\"cwd\":\"/workspace/scratch/e174c70ed48b/agentic-offline-build/research/worker-patched-smoke/omp/workspace\"}\n{\"type\":\"agent_start\"}\n{\"type\":\"turn_start\"}\n{\"type\":\"message_start\",\"message\":{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"text\":\"Return offline-model-ok; do not invoke tools.\"}],\"attribution\":\"user\",\"timestamp\":1795169572692}}\n{\"type\":\"message_end\",\"message\":{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"text\":\"Return offline-model-ok; do not invoke tools.\"}],\"attribution\":\"user\",\"timestamp\":1795169572692}}\n{\"type\":\"message_start\",\"message\":{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"offline-model-ok\"}],\"api\":\"openai-completions\",\"provider\":\"internal\",\"model\":\"smoke\",\"usage\":{\"input\":10,\"output\":3,\"cacheRead\":0,\"cacheWrite\":0,\"totalTokens\":13,\"cost\":{\"input\":0,\"output\":0,\"cacheRead\":0,\"cacheWrite\":0,\"total\":0}},\"stopReason\":\"stop\",\"timestamp\":1795169572760,\"responseId\":\"chatcmpl-offline-smoke\"}}\n{\"type\":\"message_update\",\"assistantMessageEvent\":{\"type\":\"text_start\",\"contentIndex\":0}}\n{\"type\":\"message_update\",\"assistantMessageEvent\":{\"type\":\"text_delta\",\"contentIndex\":0,\"delta\":\"offline-model-ok\"}}\n{\"type\":\"message_update\",\"assistantMessageEvent\":{\"type\":\"text_end\",\"contentIndex\":0,\"content\":\"offline-model-ok\"}}\n{\"type\":\"message_end\",\"message\":{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"offline-model-ok\"}],\"api\":\"openai-completions\",\"provider\":\"internal\",\"model\":\"smoke\",\"usage\":{\"input\":10,\"output\":3,\"cacheRead\":0,\"cacheWrite\":0,\"totalTokens\":13,\"cost\":{\"input\":0,\"output\":0,\"cacheRead\":0,\"cacheWrite\":0,\"total\":0}},\"stopReason\":\"stop\",\"timestamp\":1795169572760,\"responseId\":\"chatcmpl-offline-smoke\",\"duration\":9.506873999999925,\"ttft\":9.140135999999984,\"completedAt\":1795169572770}}\n{\"type\":\"turn_end\",\"message\":{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"offline-model-ok\"}],\"api\":\"openai-completions\",\"provider\":\"internal\",\"model\":\"smoke\",\"usage\":{\"input\":10,\"output\":3,\"cacheRead\":0,\"cacheWrite\":0,\"totalTokens\":13,\"cost\":{\"input\":0,\"output\":0,\"cacheRead\":0,\"cacheWrite\":0,\"total\":0}},\"stopReason\":\"stop\",\"timestamp\":1795169572760,\"responseId\":\"chatcmpl-offline-smoke\",\"duration\":9.506873999999925,\"ttft\":9.140135999999984},\"toolResults\":[]}\n{\"type\":\"agent_end\",\"messages\":[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"text\":\"Return offline-model-ok; do not invoke tools.\"}],\"attribution\":\"user\",\"timestamp\":1795169572692},{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"offline-model-ok\"}],\"api\":\"openai-completions\",\"provider\":\"internal\",\"model\":\"smoke\",\"usage\":{\"input\":10,\"output\":3,\"cacheRead\":0,\"cacheWrite\":0,\"totalTokens\":13,\"cost\":{\"input\":0,\"output\":0,\"cacheRead\":0,\"cacheWrite\":0,\"total\":0}},\"stopReason\":\"stop\",\"timestamp\":1795169572760,\"responseId\":\"chatcmpl-offline-smoke\",\"duration\":9.506873999999925,\"ttft\":9.140135999999984}],\"isTerminal\":true,\"yielded\":true}\n",
+    "stderr": "",
+    "local_requests": [
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 1
+      },
+      {
+        "path": "/v1/chat/completions",
+        "model": "smoke",
+        "stream": true,
+        "messages": 2
+      }
+    ],
+    "trace": "research/worker-patched-smoke/omp/network.trace"
+  }
+]

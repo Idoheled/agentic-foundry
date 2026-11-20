@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "evidence": "REPLACE_WITH_COMPLETED_OMP_ONLY_INSPECTION",
+  "coordinatorState": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/phase1-installation",
+  "host": {
+    "mode": "system",
+    "state": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/hostctl",
+    "plan": "/private/REPLACE_PHASE1_HOST_PLAN.json"
+  },
+  "native": {
+    "enabled": false
+  },
+  "core": {
+    "enabled": false
+  },
+  "clients": {
+    "enabled": false
+  },
+  "profiles": {
+    "enabled": false
+  },
+  "retireOldTools": false,
+  "modelSmoke": false
+}

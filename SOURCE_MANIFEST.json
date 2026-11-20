@@ -1,0 +1,1282 @@
+{
+  "files": {
+    ".editorconfig": {
+      "bytes": 285,
+      "mode": 420,
+      "sha256": "ba8786ee0209ffceaf3d7bf789a237456828e2e7ce790f1830a406f7d127e249"
+    },
+    ".gitattributes": {
+      "bytes": 103,
+      "mode": 420,
+      "sha256": "d9e86aabd38975337eac69855bb5d86618aa54995447d560f772cffdffdfb866"
+    },
+    ".github/CODEOWNERS": {
+      "bytes": 98,
+      "mode": 420,
+      "sha256": "87e2184156097f351c8e30936a2ced28af3edfa12002c42b48985076f7ee7191"
+    },
+    ".github/ISSUE_TEMPLATE/bug.yml": {
+      "bytes": 1570,
+      "mode": 420,
+      "sha256": "d1eb063ecf0aa1a99230b28adb24329499e94415d180c8dd6cde1810f7ec25a3"
+    },
+    ".github/ISSUE_TEMPLATE/capability.yml": {
+      "bytes": 1246,
+      "mode": 420,
+      "sha256": "31612ef419a1f891fecb7de51c8fa0be9bf3df015217f855945926f05f0c2135"
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "bytes": 246,
+      "mode": 420,
+      "sha256": "536be29a7326b415399aa2be8edabe3b7c8a57264f60e914c5df514d3e51a6d8"
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "bytes": 928,
+      "mode": 420,
+      "sha256": "4e4ceff2fcd506e6f569fbad264664dfc7d15f9c48717c9689434a14018a00ad"
+    },
+    ".github/workflows/ci.yml": {
+      "bytes": 914,
+      "mode": 420,
+      "sha256": "8fc385e42e6295c75a5efb22e4a4b46a36f8f542c2ab3784d9a3de632dc03158"
+    },
+    ".github/workflows/release.yml": {
+      "bytes": 3873,
+      "mode": 420,
+      "sha256": "d099ab61c4bb588ba84701c19e6f27a17c300c97d66e7e3bb28deda2393565e5"
+    },
+    ".gitignore": {
+      "bytes": 347,
+      "mode": 420,
+      "sha256": "2aa315c934c097ea533332310d04e74a2612080907e0f0e3ad9df1fdca92c766"
+    },
+    "AGENTS.md": {
+      "bytes": 3790,
+      "mode": 420,
+      "sha256": "605b779b0d37dfc32f1d77ad35517f97a027ede9eadac57ed3329a49a2811d87"
+    },
+    "CHANGELOG.md": {
+      "bytes": 3826,
+      "mode": 420,
+      "sha256": "e62d5b671813003d258f8b39b410898740257cd4f75c7c671189620cad88099f"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 4897,
+      "mode": 420,
+      "sha256": "4edad45acec05a14611fad1ddacb734c83b1685380643dcfd080dc197a420c45"
+    },
+    "HANDOFF.md": {
+      "bytes": 47743,
+      "mode": 420,
+      "sha256": "6ca20f972c0c7da049b7f597cb5107f24ec38721ea9c20d8e4ea3d954350f321"
+    },
+    "LICENSE": {
+      "bytes": 1371,
+      "mode": 420,
+      "sha256": "63f7485d1178632f7a946875621c288d5476c1e21690c428fabe6ae02ddc9785"
+    },
+    "MANIFEST.json": {
+      "bytes": 29312,
+      "mode": 420,
+      "sha256": "0838c072a3e65890c785015937ff777bbc4f8410d96fdef1d0e16326333f557c"
+    },
+    "README-SOURCE.md": {
+      "bytes": 3634,
+      "mode": 420,
+      "sha256": "074ba76752cac449b85ef54ecfbc11f53e5ea9faba192e508e11db6255bb517b"
+    },
+    "README.md": {
+      "bytes": 8584,
+      "mode": 420,
+      "sha256": "44452d4fe0651c1208bd16064c4a9edbba21d8152de67cbe617250472d663394"
+    },
+    "SECURITY.md": {
+      "bytes": 2516,
+      "mode": 420,
+      "sha256": "2cc5e57e57caca1f1a8a4fdf10219a98af802892c259f8b635efc354fd260cf9"
+    },
+    "START_HERE.md": {
+      "bytes": 10157,
+      "mode": 420,
+      "sha256": "c6d1ded49eb0dbcc5befe9379ce85594fcc0af6ba18982063153b82c793b2157"
+    },
+    "VERSION": {
+      "bytes": 6,
+      "mode": 420,
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+    },
+    "build-tools/export-release.py": {
+      "bytes": 5943,
+      "mode": 493,
+      "sha256": "6445523fef8708a026a454bdc300862632fcbcdc067a43297199b447d27a95d4"
+    },
+    "build-tools/release.py": {
+      "bytes": 6969,
+      "mode": 493,
+      "sha256": "900c48b14b3d1baa4b63d8e5f41ae8cd2e834f6848443203eaa90feafea51662"
+    },
+    "build-tools/tool-identities.py": {
+      "bytes": 3175,
+      "mode": 420,
+      "sha256": "85b5ac5b385e27cc21e8b967e543a19d7d606bd410053355d97a27a99eedd882"
+    },
+    "ci/action-pins.json": {
+      "bytes": 325,
+      "mode": 420,
+      "sha256": "b48ec561abc96a986a0a13a0b50e49b516b5a77e4cb79f56fe179dfb8b8c18c0"
+    },
+    "ci/check.sh": {
+      "bytes": 601,
+      "mode": 493,
+      "sha256": "c6bc4c9347df19d5658f1e7c85b7f617dfef36d1707e706eb60d62b26924387a"
+    },
+    "ci/release.py": {
+      "bytes": 16654,
+      "mode": 420,
+      "sha256": "7d53ba940be4967f0fdd037d90f2d592d583d94c2801925b543f8abdcbd4b5f2"
+    },
+    "ci/remote_lfs.py": {
+      "bytes": 11597,
+      "mode": 420,
+      "sha256": "4774e034607cffba691448be4500293cd8907f6579d9454d98439e5bdd6f40d9"
+    },
+    "config/acceptance-omp.example.json": {
+      "bytes": 1089,
+      "mode": 420,
+      "sha256": "aa7911139a68ebff45174210bfd877cc1e5cf25344d3b47ee2efd7a3a2ddccf6"
+    },
+    "config/acceptance-stack.example.json": {
+      "bytes": 1209,
+      "mode": 420,
+      "sha256": "f63702b8a6c94438f1e665af45ccecb757abf68e5bc7fb47ff4ac63b0b80ccdd"
+    },
+    "config/artifact-plan.example.json": {
+      "bytes": 2905,
+      "mode": 420,
+      "sha256": "19039358f42e1e5861b3f35e66ca7bc8980d54fd6e6a6aa264a98f06114f21f6"
+    },
+    "config/host-capabilities.example.json": {
+      "bytes": 4537,
+      "mode": 420,
+      "sha256": "56263df083cab2160ad8e3bf7ee6574cd54fff61291bbc56dc80371be5718f85"
+    },
+    "config/host-catalog.json": {
+      "bytes": 15587,
+      "mode": 420,
+      "sha256": "211605425bae4ac89c5b78d6ec22b43589c031e700dc98255afc894233bcff15"
+    },
+    "config/host-plan.example.json": {
+      "bytes": 4050,
+      "mode": 420,
+      "sha256": "02a6414d493bce9d981ec390d8f823be0e376cbefb5c60ffa2bf312e67f66e1d"
+    },
+    "config/host-tool-qualification.example.json": {
+      "bytes": 516,
+      "mode": 420,
+      "sha256": "8a3f6ec29c2a972f649123f982bcebb24e20c1a6c599ab7dfbbed178b4d0c3c4"
+    },
+    "config/installation.example.json": {
+      "bytes": 1099,
+      "mode": 420,
+      "sha256": "e97a36ecd183379086298a1bf02503ec6f00902c96be7bdda280b4189d923764"
+    },
+    "config/native-claude-agent.example.json": {
+      "bytes": 1441,
+      "mode": 420,
+      "sha256": "88d4263fa7e0cc02d281cbcf411315a117b92b2897209a4909a1a5d64e13b73f"
+    },
+    "config/native-codex-agent.example.json": {
+      "bytes": 1277,
+      "mode": 420,
+      "sha256": "17ffc0a41375fe8685c9be277e954a50d9076691595964cb4017e28b7756d604"
+    },
+    "config/native-packages.example.json": {
+      "bytes": 1077,
+      "mode": 420,
+      "sha256": "3f2e59fb4e15f2bcffdf40f96c3173c67c7354f256f3398346be1e4f47af08c2"
+    },
+    "config/native-profile.example.json": {
+      "bytes": 1004,
+      "mode": 420,
+      "sha256": "92fb388f3595eea7b2d7ad9639bfa6e9e2361d2c06c437752c8a33122af568b1"
+    },
+    "config/phase1-host-plan.example.json": {
+      "bytes": 623,
+      "mode": 420,
+      "sha256": "838a70ea5c3598581eda7c63d6e787a73f04e094847d530f73ce3d94bbc0c03c"
+    },
+    "config/phase1-installation.example.json": {
+      "bytes": 557,
+      "mode": 420,
+      "sha256": "dc86e99d630c688e1c96347216c39963feb13b3abcb2fce0936d2f25aa009d86"
+    },
+    "config/phase2-host-plan.example.json": {
+      "bytes": 12580,
+      "mode": 420,
+      "sha256": "d9d2999a003c0421ffb9047ec9e713081dee67826b360ed15a49b01bfe20e390"
+    },
+    "config/phase2-installation.example.json": {
+      "bytes": 1123,
+      "mode": 420,
+      "sha256": "051d4e5b3656bdd07422f0dcc981fae12e798cedab908d20ad90d4a3843a0dfc"
+    },
+    "config/playbooks/coordinator.md": {
+      "bytes": 1772,
+      "mode": 420,
+      "sha256": "3fb325de80cc3d977f10232d5e68ec227962112203b2ce84d55c18c5c46f024f"
+    },
+    "config/playbooks/implementer.md": {
+      "bytes": 1297,
+      "mode": 420,
+      "sha256": "f50846ca4ae53228053a10a94aee0222784941e70bdecf1d94576a1f763dda70"
+    },
+    "config/playbooks/reviewer.md": {
+      "bytes": 928,
+      "mode": 420,
+      "sha256": "7d622d34a9f313b6743990a89cca3394d2488e36176c5ab199dd3ae2b1065bf5"
+    },
+    "config/playbooks/verifier.md": {
+      "bytes": 974,
+      "mode": 420,
+      "sha256": "c0661ab0d8cf3c7b8729d1b973fd4d046f7259629928c4aa0c71c1cc8f077f1d"
+    },
+    "config/private-supply-index.example.json": {
+      "bytes": 485,
+      "mode": 420,
+      "sha256": "d55d50929280ca43affa1f23989eb100ddaa252b30c0db39a6157daa28a0f449"
+    },
+    "config/productivity-catalog.json": {
+      "bytes": 12604,
+      "mode": 420,
+      "sha256": "5bea671c5fdc61299b2dd2ef92ef7d5065449b00da8c265b3ba275390c7ad469"
+    },
+    "config/setup.example.json": {
+      "bytes": 854,
+      "mode": 420,
+      "sha256": "fbb5f01e9b9c009a34718fd7b5b607666bce92ad5bc2d35f94b9d250dc958bb4"
+    },
+    "config/site-minimal.example.json": {
+      "bytes": 1480,
+      "mode": 420,
+      "sha256": "4e59e80f7dc44cff7d49950e50e5b6217b021caae3965377d7a2e50fbd856aca"
+    },
+    "config/site.example.json": {
+      "bytes": 1139,
+      "mode": 420,
+      "sha256": "dc16e1fb79282c8fc0ed1a6ad0d3ee4624cb838ea9b2d0cbb122759c7cf6c96e"
+    },
+    "config/upgrade-check.example.json": {
+      "bytes": 306,
+      "mode": 420,
+      "sha256": "b96bbab87fed8274bc01d040c4b2a2c67aec10549e1d374fc85f19463c1bc610"
+    },
+    "config/upgrade-flow.example.json": {
+      "bytes": 579,
+      "mode": 420,
+      "sha256": "23804ef75c3de1fa9ee63aedbaaadc4904a9c22d62e68604c2b4f0e7aa5becf7"
+    },
+    "deploy.sh": {
+      "bytes": 4025,
+      "mode": 493,
+      "sha256": "a65a7b39f5585d455dce0c5b2ff73f5704d8edbb558b5a78698a27e558421519"
+    },
+    "docs/AGENT_PLAYBOOKS.md": {
+      "bytes": 5788,
+      "mode": 420,
+      "sha256": "dcbcd6f3ee8cc180de0e8ff9f74b11bce57ab3caf5e49813b614c312f8dff66c"
+    },
+    "docs/AIRGAP_ACCEPTANCE.md": {
+      "bytes": 13859,
+      "mode": 420,
+      "sha256": "88872d597fe1ae95c3962f3cb2fb49a3b81cd05b1875396b2ac1870ebdecde02"
+    },
+    "docs/ARCHITECTURE.md": {
+      "bytes": 8163,
+      "mode": 420,
+      "sha256": "b8f9e6957e8c3a651c09a9c212b2c04a4c2eb808542fa301ec255a8ffe9b6ef2"
+    },
+    "docs/ARTIFACT_PLAN_FORMAT.md": {
+      "bytes": 9474,
+      "mode": 420,
+      "sha256": "26203e2c4ef792896eef78395c24e28e0da25f2874c9ec48bde756d99becbc05"
+    },
+    "docs/BOOTSTRAP_AND_LIFECYCLE.md": {
+      "bytes": 17451,
+      "mode": 420,
+      "sha256": "6588ded69428d42466ff3f5eb9082ef5bae17d16b928e648300646d8d8d70711"
+    },
+    "docs/BUILDER_VALIDATION.md": {
+      "bytes": 9187,
+      "mode": 420,
+      "sha256": "f94457017e5ff733491b332e301f825d2efdf9723811c26a4dc40ea578622022"
+    },
+    "docs/CLAUDE_CODEX_OMP_NATIVE.md": {
+      "bytes": 10764,
+      "mode": 420,
+      "sha256": "42930f303d4d90d680cf8d9d17c20c4c7ba6d882d18731669a284efaaf2e1b71"
+    },
+    "docs/CODEX_PAPERCLIP_INTEGRATION.md": {
+      "bytes": 15497,
+      "mode": 420,
+      "sha256": "16aec294caf1c330a356cf20b587af3b89a72d1197867d75d9502eec96ad5858"
+    },
+    "docs/FINAL_CLEANUP.md": {
+      "bytes": 6691,
+      "mode": 420,
+      "sha256": "3fde731c69a77904620fc019fc53d2ebc017984b3d869b442b05af0d46393118"
+    },
+    "docs/HOST_LAYOUT_AND_MIGRATION.md": {
+      "bytes": 10660,
+      "mode": 420,
+      "sha256": "1450adc0866ac0db454c6519b5b637a867fecd160ffbb6f7a38ed4cbe4373a67"
+    },
+    "docs/HOST_PROVISIONER.md": {
+      "bytes": 14820,
+      "mode": 420,
+      "sha256": "c25889c6a3f49a9375f8d461d3b52392ea46aa78de3fc03b656fa9616e280400"
+    },
+    "docs/INSTALLATION_SEQUENCE.md": {
+      "bytes": 8675,
+      "mode": 420,
+      "sha256": "0b53eb380170d5c615fc3b2ac9edc80bb643a86ca61f477d59b19b1547a4314b"
+    },
+    "docs/NATIVE-DELIVERY-TOOLS.md": {
+      "bytes": 11856,
+      "mode": 420,
+      "sha256": "429c0de3fc5d0b92fcfbc34579cd6eb1ea2962e820e56f1eeacfbe3bcb8720a8"
+    },
+    "docs/NATIVE_OFFLINE_SETTINGS.md": {
+      "bytes": 14918,
+      "mode": 420,
+      "sha256": "d9e43c6ca26784e4e01596ff93e6712649cdd40272a32448653152162d1c20d8"
+    },
+    "docs/OFFLINE-EVALUATION-AND-BROWSER.md": {
+      "bytes": 15574,
+      "mode": 420,
+      "sha256": "eb975238cfda92e1df405427c26c8c9ec3b7fc8a7417ec95eca61f94b5840917"
+    },
+    "docs/OFFLINE_COVERAGE.md": {
+      "bytes": 8470,
+      "mode": 420,
+      "sha256": "f43a04fb3ea94c5f4ca2e6739c35032a77750d2b566b3859aea3a7c665e849a2"
+    },
+    "docs/OPERATIONS.md": {
+      "bytes": 11946,
+      "mode": 420,
+      "sha256": "296381eb0e2899cc44bde3688867e33f937accc1ea951f0c2f5ef2fbaadb7fb1"
+    },
+    "docs/PAYLOADS.md": {
+      "bytes": 11299,
+      "mode": 420,
+      "sha256": "2d41557f01dedc5775e4a62eadc7fb1058ad3243ee4deb9f083057e81e6e0c37"
+    },
+    "docs/PHASE1_CLAUDE.md": {
+      "bytes": 16360,
+      "mode": 420,
+      "sha256": "0be08a725b8ac428d39c295299d9924375b55fca0e850a91c7d94341938c5fdc"
+    },
+    "docs/PHASE2_OMP.md": {
+      "bytes": 17445,
+      "mode": 420,
+      "sha256": "1a7b10afba49df8927fe26127b6eef3d4d71c3a320007f0a940f2970c9e4300f"
+    },
+    "docs/PRIVATE_REPOSITORIES_AND_HOST_TOOLS.md": {
+      "bytes": 17443,
+      "mode": 420,
+      "sha256": "855afcc79646dcb2e272033353a783b934e31d4572ca4454a8d6aacc8af00b05"
+    },
+    "docs/PROFILE_PRESERVATION.md": {
+      "bytes": 17821,
+      "mode": 420,
+      "sha256": "c3916a723fee22ebad67f98044bf78f440cc2466f72655b1820fad368bed8e0f"
+    },
+    "docs/QUICKSTART.md": {
+      "bytes": 7971,
+      "mode": 420,
+      "sha256": "af0023e4e9638bfe3fcc49131a8ee196a26d2e6c2ad267c22ac7c1b084433230"
+    },
+    "docs/R3_VALIDATION.md": {
+      "bytes": 7605,
+      "mode": 420,
+      "sha256": "f1400f59c2e08c571dd93f50fa9fb8bdc76d3f57d0e3fc9f92b183947c41d626"
+    },
+    "docs/R4_VALIDATION.md": {
+      "bytes": 4347,
+      "mode": 420,
+      "sha256": "9616f78ac2efaebfd0ca28387748af66e5780cad3bb5e17bcd47c94727932e4f"
+    },
+    "docs/R5_DELIVERY_WORKSPACE.md": {
+      "bytes": 12986,
+      "mode": 420,
+      "sha256": "043e46bd05c077816d0398026d387c209c08a1e81c6f45331848e62f599399b7"
+    },
+    "docs/REBUILD.md": {
+      "bytes": 17275,
+      "mode": 420,
+      "sha256": "e58fb6724a0d562da0bf623905f2664c2663b33ae89da04192686808d4049791"
+    },
+    "docs/RELEASING.md": {
+      "bytes": 7729,
+      "mode": 420,
+      "sha256": "56079fb1fc95ee909f362550cfb78299bdc992eb2bc6e5e53ff24031210be6a2"
+    },
+    "docs/SOFTWARE_INVENTORY.md": {
+      "bytes": 6809,
+      "mode": 420,
+      "sha256": "d0b3fc7a22d89b70c853dc646bb043bde1e6eecac29057e0a35098e4c0e1b9f9"
+    },
+    "docs/STAGED_CLIENT_RUNTIMES.md": {
+      "bytes": 2336,
+      "mode": 420,
+      "sha256": "f75f86e57a614d8e10dce74af3e89cd8a122eb53cf179f660e1b6f54b3d1a35d"
+    },
+    "docs/TARGET-BROWSER-HANDOFF.md": {
+      "bytes": 2353,
+      "mode": 420,
+      "sha256": "98bfb7edbe28c2038d12dbaf9f9fa771cf42fcedc543c415fa42a192c7ecb36c"
+    },
+    "docs/TWO_PHASE_UPGRADE.md": {
+      "bytes": 13368,
+      "mode": 420,
+      "sha256": "b10b359fdbf96a7d37cc0f893fb75370288a536701b161739cea5bc813e42033"
+    },
+    "docs/benchmark-plan.example.json": {
+      "bytes": 1026,
+      "mode": 420,
+      "sha256": "59eeab0779b878f3a408ace2c884d95dd4aecd5481a09bcb49a57bc4a2e4e530"
+    },
+    "docs/index.md": {
+      "bytes": 4887,
+      "mode": 420,
+      "sha256": "136f30c3246e0226c3036458547ff209292810c103171a2509bf958f480fa64c"
+    },
+    "install-all.sh": {
+      "bytes": 207,
+      "mode": 493,
+      "sha256": "0fc7d1f8ce0f0ccebdd1e383316c25b31992e34a0c4ab22672413b8c22f05548"
+    },
+    "install-host.sh": {
+      "bytes": 208,
+      "mode": 493,
+      "sha256": "900d5026ad4933458d69091e0b83101beff6fdb19245f4292a63a4d712493567"
+    },
+    "install-native.sh": {
+      "bytes": 210,
+      "mode": 493,
+      "sha256": "942d23b4d8c9a160b5c1f918dd844dddc85545a30475c08e5bdf1e3ad3ff4ce1"
+    },
+    "install-profiles.sh": {
+      "bytes": 212,
+      "mode": 493,
+      "sha256": "60ff5543bb9054b123d23517909c634945a19581ebf9a06648c4f2d1b3e9395c"
+    },
+    "install.sh": {
+      "bytes": 193,
+      "mode": 493,
+      "sha256": "93dd0dba686dd795d3bfa625bed8383277e382161e963ed7357d9737c3259524"
+    },
+    "integrations/evaluation/agentic-bench.py": {
+      "bytes": 14107,
+      "mode": 493,
+      "sha256": "3a7c92f2917bac9bc061fd205cedbea1a2ac59f3c338e9315e12fecb3708bff9"
+    },
+    "integrations/evaluation/browser-smoke.cjs": {
+      "bytes": 6062,
+      "mode": 493,
+      "sha256": "b23493186d0316c5c3d2c864f4bb605328a60fbb3529d6430f4748cdc9cca43d"
+    },
+    "integrations/evaluation/inspect-smoke.py": {
+      "bytes": 3293,
+      "mode": 493,
+      "sha256": "d66b9943bde3d91f6fdea3c71e97079a40cc03f5dba53dad80e1627b3fbe0eae"
+    },
+    "integrations/evaluation/playwright.offline.config.cjs": {
+      "bytes": 939,
+      "mode": 493,
+      "sha256": "e4d198e8360541df6d613ac91fc046f183812e2a97cea5620dd64a4dd0ce9294"
+    },
+    "integrations/evaluation/tests/test_agentic_bench.py": {
+      "bytes": 4775,
+      "mode": 420,
+      "sha256": "ea536370c5f37324a0b5518baef22690a9bb4962f16d53597247cdf52ae4ef25"
+    },
+    "launch-handoff.sh": {
+      "bytes": 2213,
+      "mode": 493,
+      "sha256": "91de2c22563a6bbafffd1647820bb9a1496d6364829a5fe33d023d1d9ac1792b"
+    },
+    "offline/manifest.json": {
+      "bytes": 1118164,
+      "mode": 420,
+      "sha256": "c57a537ec79d0adcc0d5e333df7f47e6cc1ad315ea805978deb882e115c45a59"
+    },
+    "payload.lock.json": {
+      "bytes": 585813,
+      "mode": 420,
+      "sha256": "2234876454c86a0a862a882d30776b40a928ff267889f96d98abf5c1a856e7ec"
+    },
+    "provenance/bun-v1.3.14-release.json": {
+      "bytes": 61581,
+      "mode": 420,
+      "sha256": "d306b623d544f10d3d9ce5cdcd87463fd2054007b7404551f43b91caefb47954"
+    },
+    "provenance/bun-v1.4.4-release.json": {
+      "bytes": 62728,
+      "mode": 420,
+      "sha256": "529fcf2e33299221a58571e1e33477a10bbf8a72cb8989c1a8b3697a1ef0b721"
+    },
+    "provenance/controller-payload-test.json": {
+      "bytes": 840,
+      "mode": 420,
+      "sha256": "7afc6a9113f1b23df20f4e0eaf9a1c9d688a0a70f3ef80e0cac8cdb1a9e6d7e3"
+    },
+    "provenance/controller-tests.log": {
+      "bytes": 2062,
+      "mode": 420,
+      "sha256": "165523aa9a3ee10b27ef829fccca4624792261d0c17edccb6a3fe3228ec63cce"
+    },
+    "provenance/controller-validation.json": {
+      "bytes": 329,
+      "mode": 420,
+      "sha256": "a9950ceaa6b7778d31d56b8d1695819dec97f4d15b6accca0e33ef0f6c6a0a64"
+    },
+    "provenance/debian-build-deps.log": {
+      "bytes": 31046,
+      "mode": 420,
+      "sha256": "9153a720119bc38111e69a52c8212c4789d174f86b107bd6102ce896fa023e8d"
+    },
+    "provenance/debian-build-packages.json": {
+      "bytes": 40380,
+      "mode": 420,
+      "sha256": "245a1567adc203725a94273875511ff4819f67074f14ebe784b78b8dd8b648a5"
+    },
+    "provenance/debian-musl-deps.log": {
+      "bytes": 2188,
+      "mode": 420,
+      "sha256": "8780a8b3f4019c19f1037727d57d8f7c8bcebc24dca205e1cad66aeb92f9dfd7"
+    },
+    "provenance/debian-update.log": {
+      "bytes": 774,
+      "mode": 420,
+      "sha256": "93a07aacfe52c4e49c42a59c861d6a075920435f99b73150db895bdd93fba368"
+    },
+    "provenance/fd-provenance.json": {
+      "bytes": 967,
+      "mode": 420,
+      "sha256": "355828b01085c60d22251163bc3b9a5f06f3a0eb485738855805f77006b766f0"
+    },
+    "provenance/foundry/v0.1.0-tests.json": {
+      "bytes": 714,
+      "mode": 420,
+      "sha256": "0583c8951924e7abc92c4367900ef9deaf3daede894b7b41290208aac0ddb057"
+    },
+    "provenance/herdr-latest-release.json": {
+      "bytes": 13315,
+      "mode": 420,
+      "sha256": "6705c19868c23eee709e50bcda02fb8aa3473817d3f8c1c14e7daf6dc7296a7b"
+    },
+    "provenance/herdr-zig-closure.json": {
+      "bytes": 19581,
+      "mode": 420,
+      "sha256": "1b7fcf9f9488c593f5a361ef2ae0f0992983696a7fb7a4acc18b8a788ea1d15e"
+    },
+    "provenance/herdr-zig-dependencies.json": {
+      "bytes": 23912,
+      "mode": 420,
+      "sha256": "ffc58559c8dc8a16683f637219ef8f522d8ced5ac14ef0d5d37e34ed91038a13"
+    },
+    "provenance/herdr-zig-imports.json": {
+      "bytes": 17168,
+      "mode": 420,
+      "sha256": "51b4594fddb51efe0e20b7a139121262621c55301f933c710adebb4591eff44b"
+    },
+    "provenance/host-tools.json": {
+      "bytes": 6291,
+      "mode": 420,
+      "sha256": "1f0e5d294c97e25a53e904a15974764a23282677a6835a2123616d48c7efb6c2"
+    },
+    "provenance/image-lock.json": {
+      "bytes": 686,
+      "mode": 420,
+      "sha256": "48602b04764bc7747fd0e443828505254ab9ef71e42750dad8eabf4b53480ef9"
+    },
+    "provenance/integration/paperclip-rootfs-integrity.json": {
+      "bytes": 4577,
+      "mode": 420,
+      "sha256": "b98d61b6ace6f3080a0824d0b497832734edc671f0152736f4a0000f49601bab"
+    },
+    "provenance/integration/postgres-rootfs-integrity.json": {
+      "bytes": 2399,
+      "mode": 420,
+      "sha256": "f9da149cdfe3a689a555bba902f920306b3f5e55b5bd9db26ce2f0e8bc80469c"
+    },
+    "provenance/integration/result.json": {
+      "bytes": 8234,
+      "mode": 420,
+      "sha256": "f8374cbaf792286c0979f6f3d3c8e5f579ffb0d53ffbca25400fb583f66596c3"
+    },
+    "provenance/integration/run-detail.json": {
+      "bytes": 21839,
+      "mode": 420,
+      "sha256": "415bf830d970fa193f416bc402ade3d1e800db1c5215352213947e749a98b481"
+    },
+    "provenance/integration/unmodified-result.json": {
+      "bytes": 567,
+      "mode": 420,
+      "sha256": "ed677516b21b1cd5871bd2362a2978f9a1cfeba8ba96a15afd24e9330288f9c1"
+    },
+    "provenance/jq-provenance.json": {
+      "bytes": 910,
+      "mode": 420,
+      "sha256": "f85de0098a8798195c25dffdaffb356a735d6b81e2c82b40f95182d7ea0529b6"
+    },
+    "provenance/node-pnpm-provenance.json": {
+      "bytes": 831,
+      "mode": 420,
+      "sha256": "d41bf32858de9ce3d30df6f8e71dca2f5fd7195fefbe41bc4812685fc3febce0"
+    },
+    "provenance/omp-host-provenance.json": {
+      "bytes": 387,
+      "mode": 420,
+      "sha256": "a50b1c38c9efb55ba5f1ac4074f0d253ddc147ad4e9e8f4bc2f58e9051d819d1"
+    },
+    "provenance/omp-latest-release.json": {
+      "bytes": 41585,
+      "mode": 420,
+      "sha256": "8647da6df9ac777cfc8a448f8ace3db988509fefb53ebe3f2eaf283ab05d11a9"
+    },
+    "provenance/omp-models-smoke.json": {
+      "bytes": 0,
+      "mode": 420,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "provenance/opencode-latest-release.json": {
+      "bytes": 74423,
+      "mode": 420,
+      "sha256": "f4db8ea9b370e5392a4921d66f755de32de931278553b34949ce05b48da36637"
+    },
+    "provenance/opencode-pinned-release.json": {
+      "bytes": 76344,
+      "mode": 420,
+      "sha256": "ee2ddd1db43bde18e0355758ce0a9e6ba4e8acfdce3156a966046807b55e7bd1"
+    },
+    "provenance/opencode-v2-linux-baseline-musl-npm.json": {
+      "bytes": 2002,
+      "mode": 420,
+      "sha256": "e3ba9f3fc41f0d2bd70e51aeecf08e27d639af470792524f2072f16876f26c44"
+    },
+    "provenance/opencode-v2-linux-baseline-npm.json": {
+      "bytes": 1963,
+      "mode": 420,
+      "sha256": "e0cc4f812e0928f345af7ea1884e5668d074c470160189bb74db832b120ca29a"
+    },
+    "provenance/opencode-v2-npm.json": {
+      "bytes": 2450,
+      "mode": 420,
+      "sha256": "c1c96477a2300ba76d54dcd7f3dc7b0e7ea17b37bcc1290eff786682977c056f"
+    },
+    "provenance/package-docker-29.10.0.tgz.json": {
+      "bytes": 220,
+      "mode": 420,
+      "sha256": "2dcc2e934760290315a3196bea970da84ce1e2f0ec9dd4a67d4a9de1ec19dbd4"
+    },
+    "provenance/package-docker-compose-v5.8.0-linux-x86_64.json": {
+      "bytes": 286,
+      "mode": 420,
+      "sha256": "1d178912ecf9276d279f5d4e02ab9431480fa761abfe18e9022f57663c9f2bd0"
+    },
+    "provenance/package-node-v24.22.3-linux-x64.tar.xz.json": {
+      "bytes": 259,
+      "mode": 420,
+      "sha256": "c1d08309837567deeba36142d46dc76a36d143890861ebb919dce2f0e1cad16e"
+    },
+    "provenance/package-rust-1.97.1-x86_64-unknown-linux-gnu.tar.xz.json": {
+      "bytes": 287,
+      "mode": 420,
+      "sha256": "5fe8df730b155ff1b95e69b767e84a224f302a47ef4ffa3c59d51a8eb8fdd031"
+    },
+    "provenance/paperclip-image-config.json": {
+      "bytes": 1547,
+      "mode": 420,
+      "sha256": "d65db94dd4f6bf70e52ad607abf3596403f1ad101e8fe0b60071fc096000829f"
+    },
+    "provenance/paperclip-image-manifest.json": {
+      "bytes": 3165,
+      "mode": 420,
+      "sha256": "b2784df63b428a3de231039f03c2a78f582dcf5e35e840685685c8cef28814e2"
+    },
+    "provenance/paperclip-offline-api-guide.json": {
+      "bytes": 11671,
+      "mode": 420,
+      "sha256": "b3a2fdbbfb176240e1744d1968704188e6f923e1a96de892e38d76764bbb84a4"
+    },
+    "provenance/paperclip-omp-adapter-runtime.json": {
+      "bytes": 23036,
+      "mode": 420,
+      "sha256": "f8bee36ce1987df6d2f63c9bd5991311346c7551107910f7297d2224a40cae58"
+    },
+    "provenance/paperclip-omp-offline-rebuild.json": {
+      "bytes": 878,
+      "mode": 420,
+      "sha256": "e174569280ca5e4cc199e1d77eb0a541a3e27dc6b80cf1287e027e6a0a1d4d02"
+    },
+    "provenance/paperclip-omp-offline-rebuild.log": {
+      "bytes": 539,
+      "mode": 420,
+      "sha256": "b62051064b81abfb46931430454b4bb0eef311291a83672e7dd28bed926cfa80"
+    },
+    "provenance/paperclip-omp-offline-runtime.json": {
+      "bytes": 2424,
+      "mode": 420,
+      "sha256": "d76203c72ad382287554946dd1a7555c09c0a259ee2a51aea2d78544f465af1a"
+    },
+    "provenance/paperclip-release-api.json": {
+      "bytes": 70552,
+      "mode": 420,
+      "sha256": "a585146bef181ab4c9370a9551f4291c50d8709c869aac8416c577fda112ee3e"
+    },
+    "provenance/paperclip-runner-cargo-metadata.json": {
+      "bytes": 1718313,
+      "mode": 420,
+      "sha256": "19811a24b0b7af4bc61c92402cf20a219a51869e75eed0f12b36bf1f1d23f53d"
+    },
+    "provenance/paperclip-runner-crate-artifact.json": {
+      "bytes": 174,
+      "mode": 420,
+      "sha256": "0256c73d4c46d8936988e7767b213bd1f9e94af106b108d318bb50aba2eb87b1"
+    },
+    "provenance/paperclip-runner-crates.json": {
+      "bytes": 161745,
+      "mode": 420,
+      "sha256": "1860f84afeebff61d5ce2f309e4964eaf9e744c75457b38caf22cc9667fbda10"
+    },
+    "provenance/paperclip-runner-vendor-validation.json": {
+      "bytes": 1386,
+      "mode": 420,
+      "sha256": "163f7869c3978e1ca753a559f52463fd4377757a414dddfebd2af5550825cda3"
+    },
+    "provenance/paperclip-sources.json": {
+      "bytes": 40058,
+      "mode": 420,
+      "sha256": "0489ba01827f88eb931a3d0c9dc7028d85e26e6308f5d30548912aeb91cdad9f"
+    },
+    "provenance/paperclip_npm.json": {
+      "bytes": 2853,
+      "mode": 420,
+      "sha256": "670c02bf341cd2e4bd933d92b20262bf82c5dd145cc5834b2b1630566379be91"
+    },
+    "provenance/pnpm-package.json": {
+      "bytes": 281,
+      "mode": 420,
+      "sha256": "0d79f24b573c040d0f8e814f91380e040708c4a68a7da93efc764215a9310eaa"
+    },
+    "provenance/postgres-image-config.json": {
+      "bytes": 474,
+      "mode": 420,
+      "sha256": "da470870ac3ce5d13349173f282ad3ad69525925a4c758b23d06c2c97cd7dea4"
+    },
+    "provenance/postgres-image-manifest.json": {
+      "bytes": 2678,
+      "mode": 420,
+      "sha256": "e80acae3f1109e8e4533618b594918936f2858c63afc7204c4773148a673add8"
+    },
+    "provenance/python-standalone.json": {
+      "bytes": 431,
+      "mode": 420,
+      "sha256": "c75c65f83452c44a98d4685497173dd3af869f55a31feef071150f40ff3acaf7"
+    },
+    "provenance/r2-controller-payload-test.json": {
+      "bytes": 1301,
+      "mode": 420,
+      "sha256": "dca3ec1118f8f78c107ae525d4ce970330817b79c6363586832fb3349e027639"
+    },
+    "provenance/r2-controller-tests.log": {
+      "bytes": 5050,
+      "mode": 420,
+      "sha256": "fb61da41473a50e3ab32dce3d1146ad6440474fc147c4d94fb7c0c344f3610f6"
+    },
+    "provenance/r2-controller-validation.json": {
+      "bytes": 1540,
+      "mode": 420,
+      "sha256": "8caa537a608c0ead93c46adff1f62f60f8eea8367098fb92b533b7b0d2bbc2ad"
+    },
+    "provenance/r3-native-packages.json": {
+      "bytes": 123764,
+      "mode": 420,
+      "sha256": "0c5c2b65617978f8b2cdb5c6863beef1313c2e893db6e22644c0ce7d9ccb1d5c"
+    },
+    "provenance/r3/VALIDATION.json": {
+      "bytes": 2834,
+      "mode": 420,
+      "sha256": "d6f65a6938785630a06e57fea9a06457f2220cd8823858bf75d0bf290bf99c95"
+    },
+    "provenance/r3/client-runtime-staging.json": {
+      "bytes": 7050,
+      "mode": 420,
+      "sha256": "6c52039703b7d1b8d7be689651a491f4b32c7e334959469c2637ec3bc5cf10f1"
+    },
+    "provenance/r3/client-staging-unit-validation.json": {
+      "bytes": 1041,
+      "mode": 420,
+      "sha256": "97964eecc9db45582c751332df0829ed07708727ff257c427b0ed5223b161d54"
+    },
+    "provenance/r3/codex-hook-activation.json": {
+      "bytes": 2195,
+      "mode": 420,
+      "sha256": "84189e0a3e66fcedbdabef56c111334e42acf8f250e55170e0a4b6fd5b881f8c"
+    },
+    "provenance/r3/coordinator-unit-tests.log": {
+      "bytes": 1455,
+      "mode": 420,
+      "sha256": "541295727391f5e0901ae12e647681a48c98425299b33b95f5ec6ab0dfdee5a6"
+    },
+    "provenance/r3/coordinator-unit-validation.json": {
+      "bytes": 1801,
+      "mode": 420,
+      "sha256": "da275240dfc9bc1b9a8b8184e5a513b40eead21d6552cf52f39c8b9cc8e6610a"
+    },
+    "provenance/r3/host-payload-canaries.json": {
+      "bytes": 4415,
+      "mode": 420,
+      "sha256": "693bd3ae865d33e78b0eee5a42c09c084479c4e3dff50e4b01a3d021a593fa0e"
+    },
+    "provenance/r3/host-payload-final-verification.json": {
+      "bytes": 39178,
+      "mode": 420,
+      "sha256": "96d47d0c00353c6716170884d0b429b4f8606b7762242c2bc5188a7cf1684ae7"
+    },
+    "provenance/r3/host-payload-receipt.json": {
+      "bytes": 120802,
+      "mode": 420,
+      "sha256": "c6a4ca25b9784e65b479439cd8c4529c4f660a1b568e41d9f1ab344f30e5acc5"
+    },
+    "provenance/r3/host-unit-tests.log": {
+      "bytes": 2626,
+      "mode": 420,
+      "sha256": "41dedd0ad0ee83e370e1708d495a1b1081d787e89896c801d57972ddc2d6f02e"
+    },
+    "provenance/r3/host-unit-validation.json": {
+      "bytes": 1213,
+      "mode": 420,
+      "sha256": "350eab478c2e099abc6dcea7650750a4fd8207e75f411ea44403f18bfb12fab3"
+    },
+    "provenance/r3/integration-source.json": {
+      "bytes": 433,
+      "mode": 420,
+      "sha256": "9bf26834beaa84e557b0a0df8e0d01fc078040669050c752d2b2441f692b2c7f"
+    },
+    "provenance/r3/kit-tests.log": {
+      "bytes": 11919,
+      "mode": 420,
+      "sha256": "d29e09819cbdd13c5184477379dc34750f6abb4e3e8ec2b00a31413ff3a9632b"
+    },
+    "provenance/r3/native-package-simulation.json": {
+      "bytes": 25835,
+      "mode": 420,
+      "sha256": "5c5543e835c8355b89f6467df28ee49440c2b348e78f4efa7e30304fd42cb8d2"
+    },
+    "provenance/r3/native-package-unit-validation.json": {
+      "bytes": 1447,
+      "mode": 420,
+      "sha256": "d4ef05ee49faee2be8b1363653e339bb3deca510bbc0f01d913b138c3d68d2e4"
+    },
+    "provenance/r3/native-profile-payload-receipt.json": {
+      "bytes": 24404,
+      "mode": 420,
+      "sha256": "a26b11607023d5f1c15e698d5b9e5f4960436a3a8241698511cfa62d984238b5"
+    },
+    "provenance/r3/native-profile-payload-result.json": {
+      "bytes": 762,
+      "mode": 420,
+      "sha256": "46ecdf4766f263ee3b6642889bbed55bd79f610d8a5d606d235a37aeb63bb403"
+    },
+    "provenance/r3/update-fixture-tests.log": {
+      "bytes": 2845,
+      "mode": 420,
+      "sha256": "d9c78489e684a714615ea48ae6dbbd3994fede405fc8911e0f4a7c741db40109"
+    },
+    "provenance/r4/VALIDATION.json": {
+      "bytes": 3088,
+      "mode": 420,
+      "sha256": "134287131e2c85a839cc4fd4ba58512aea19f0ef18508f3cb13b7c6756d1dbd4"
+    },
+    "provenance/r4/cli-validation.json": {
+      "bytes": 746,
+      "mode": 420,
+      "sha256": "1e425b6f6f8ef3dc0047058b726e62180304657771ec035bdaabb6ebce1c7b33"
+    },
+    "provenance/r4/integration-source.json": {
+      "bytes": 389,
+      "mode": 420,
+      "sha256": "4c899fc5d6b6ce468772b920f44d2f741bb997296dbd1fbc2393095a97c418e7"
+    },
+    "provenance/r4/kit-tests.log": {
+      "bytes": 25698,
+      "mode": 420,
+      "sha256": "083e646190a064f4549205f8705bca9def6834a65b09cb207ff81b0d26235ed5"
+    },
+    "provenance/r4/updater-tests.log": {
+      "bytes": 2845,
+      "mode": 420,
+      "sha256": "ae9f6119329c777b979997b7365fb6cf77a671bcd1f1d1e72486b84e47395c68"
+    },
+    "provenance/r5/VALIDATION.json": {
+      "bytes": 2351,
+      "mode": 420,
+      "sha256": "4f5366b3aa6cea0d97732d0b20f9469ff0276f99a78394167156d6e83f29ff77"
+    },
+    "provenance/r5/browser-native-packages.json": {
+      "bytes": 136101,
+      "mode": 420,
+      "sha256": "8bd009f69f265c5e385155ba7ca23558db1c63435d112d6988efdf0b42e97d54"
+    },
+    "provenance/r5/doctor-builder.json": {
+      "bytes": 3842,
+      "mode": 420,
+      "sha256": "65248685b5f136bc1ac022dc310381e92646ff3adc383f0c649bc291419f1c74"
+    },
+    "provenance/r5/git-source-ci.log": {
+      "bytes": 32965,
+      "mode": 420,
+      "sha256": "3ca8914c5a1c93234a41dceddc79bd2833da9405b2b35a36eab82ab8b9713d5b"
+    },
+    "provenance/r5/host-file-identities.json": {
+      "bytes": 9229,
+      "mode": 420,
+      "sha256": "7a69639477194749c1ac3e441ac85ba206096780e1e97f4e778b6f5673053ad7"
+    },
+    "provenance/r5/kit-tests-final.log": {
+      "bytes": 32965,
+      "mode": 420,
+      "sha256": "61d8dd4adcd8034f0639a92609f2b17817f14a6d59e79790aeb82f15fdb92f2b"
+    },
+    "provenance/r5/kit-tests-first.log": {
+      "bytes": 30064,
+      "mode": 420,
+      "sha256": "036d1e45d57e9297c4d624554067429c8c456fa5415b97448d0dc56ded855864"
+    },
+    "provenance/r5/merged-apt-resolution.json": {
+      "bytes": 32081,
+      "mode": 420,
+      "sha256": "5a008fa88e244c044fa8658e58ef187b3e51284976ee386a3a5c7e7b52ccee00"
+    },
+    "provenance/r5/merged-apt-resolution.log": {
+      "bytes": 110327,
+      "mode": 420,
+      "sha256": "075ba440abe9392e0f2b42fe2180589f0854c03b4b8b7ce4a5e8b872131fa88d"
+    },
+    "provenance/r5/productivity-installation.json": {
+      "bytes": 6568,
+      "mode": 420,
+      "sha256": "b38bed3beb21e46cb7f2baf6db9a59fbe5e2386061fda267232f938243fcf26a"
+    },
+    "provenance/r5/setup-help.txt": {
+      "bytes": 1120,
+      "mode": 420,
+      "sha256": "716b33ef1faf1968ae3f513623426824af7cc2ef2cfec3f204e1e4841149aa96"
+    },
+    "provenance/ripgrep-provenance.json": {
+      "bytes": 1006,
+      "mode": 420,
+      "sha256": "d13c1bbfe4437b4789ce9a1ac64893cf4537c4880f55ef1226ec10234bfaff20"
+    },
+    "provenance/ruff-provenance.json": {
+      "bytes": 971,
+      "mode": 420,
+      "sha256": "66ce66f53a031f0b55765c360e80754caa010045305c5b0952867d94ce4a883c"
+    },
+    "provenance/runtime-package-inventory.json": {
+      "bytes": 331618,
+      "mode": 420,
+      "sha256": "58cdbf88374812c3845f401683edaa2514db1d3d96f4ec8ea329d359d1ee7712"
+    },
+    "provenance/rust-herdr-musl-std.json": {
+      "bytes": 320,
+      "mode": 420,
+      "sha256": "c6c3864db179c4ceecd54aba4170c0ee8cb0974dc37257e556e1a3cc256a1ae3"
+    },
+    "provenance/source-paperclip-docs.json": {
+      "bytes": 785,
+      "mode": 420,
+      "sha256": "1076069e196158640f50145b7321e8312d5317d65007a0fa2b27a3a490e03ca4"
+    },
+    "provenance/source-paperclip-omp-adapter.json": {
+      "bytes": 813,
+      "mode": 420,
+      "sha256": "38f3f85759d80a5fe41f37e491783ec62e49764127387c66ca0a1f7adeab84e4"
+    },
+    "provenance/source-paperclip.json": {
+      "bytes": 755,
+      "mode": 420,
+      "sha256": "0c03fa64c3f23f05d2d77acfde38427b74692cc61a346e04bf21d1106cd1b9ec"
+    },
+    "provenance/supporting-sources.json": {
+      "bytes": 2017,
+      "mode": 420,
+      "sha256": "c85978eb65f3f91a317071eb26216fe9e0fd2ad494bbd7425bfcbda77b4d0c2f"
+    },
+    "provenance/uv-provenance.json": {
+      "bytes": 956,
+      "mode": 420,
+      "sha256": "7b29bf047ce81af725cbd448d367b37eaccdebaa485810b475577de60a66712a"
+    },
+    "provenance/worker-artifacts.json": {
+      "bytes": 11817,
+      "mode": 420,
+      "sha256": "3556ca872f0dac8718ac30d052c2de1491844cf1f52c62bea11e30f0d74c478b"
+    },
+    "provenance/worker-cargo-metadata.json": {
+      "bytes": 206,
+      "mode": 420,
+      "sha256": "bcf5179d007dd431cb4063f7759fb25a3325bb345aae74357854cf5c55f69d9c"
+    },
+    "provenance/worker-patched-smoke/results.json": {
+      "bytes": 4620,
+      "mode": 420,
+      "sha256": "4033ec73ea39e1c7783fea82b1e0aba131088d53b58872e8a944a153d4c468ba"
+    },
+    "provenance/worker-smoke/results.json": {
+      "bytes": 6621,
+      "mode": 420,
+      "sha256": "dead11752ad71db172fe8daac2fdc4f2a62fa3a5b5086917fa1b48d53726f10a"
+    },
+    "provenance/worker-toolchain-downloads.json": {
+      "bytes": 1860,
+      "mode": 420,
+      "sha256": "1b94ac082cc9e9c02dd07da01d44355e65d0418359203416886bd17140203a2d"
+    },
+    "provenance/yq-provenance.json": {
+      "bytes": 929,
+      "mode": 420,
+      "sha256": "a3310d8631a8fbd3ef71e7615f9d8beb8125ddb142212d3687817f44ee925e86"
+    },
+    "provenance/zig-toolchain.json": {
+      "bytes": 298,
+      "mode": 420,
+      "sha256": "aeabfd12d2786f680b13fb673a8c97dad3c33ef5bbcdf9195706194d3c0dd25b"
+    },
+    "releases/v0.1.0.md": {
+      "bytes": 3516,
+      "mode": 420,
+      "sha256": "b8772d1024610500a199f3574527c49f392d4a758ddef884f30ddd44e7696d6a"
+    },
+    "scripts/agenticctl.py": {
+      "bytes": 47855,
+      "mode": 493,
+      "sha256": "e2a6780580282c6e7a91ce6e7636a0895b46bc17a19c912bd6dc75ca4d5f5bfb"
+    },
+    "scripts/artifact_policy.py": {
+      "bytes": 10368,
+      "mode": 493,
+      "sha256": "be14caa9832a3e916306648c026a38a526fa60a1e692fd7638be43be732763d6"
+    },
+    "scripts/bootstrap-docker.sh": {
+      "bytes": 5788,
+      "mode": 493,
+      "sha256": "11d6fdd3be8f88d0891f17dacb619f68da6ec90224e1a44e5474aec48d41bc83"
+    },
+    "scripts/cleanup-retired.py": {
+      "bytes": 27348,
+      "mode": 493,
+      "sha256": "8ec508c7f0d03854a46c8f67fd0a30f90912242385fb42780dcab5f25a40d8f6"
+    },
+    "scripts/compile-site.py": {
+      "bytes": 27322,
+      "mode": 493,
+      "sha256": "917de2f6faf9c8e773bb7228d87000baa2826908ce26e89cf8fb2dba9c392a8e"
+    },
+    "scripts/herdr.sh": {
+      "bytes": 311,
+      "mode": 493,
+      "sha256": "35897e11b37a4682a916339a1e3ee9f655938c78228f68f91a5e221744250249"
+    },
+    "scripts/hostctl.py": {
+      "bytes": 45920,
+      "mode": 493,
+      "sha256": "5784aca751d20e7448539cdabfa34504ad234e1063d912742818f55cb95ce6ee"
+    },
+    "scripts/install-stack.py": {
+      "bytes": 19780,
+      "mode": 493,
+      "sha256": "ae6bf4bb911c26c3e7289eab7e7bc62c4a7c413b82e53bee66fda5ad4a3c3a2f"
+    },
+    "scripts/native-packages.py": {
+      "bytes": 13646,
+      "mode": 493,
+      "sha256": "43d6e1530be7fa8169806091c0c2a2123fc96b6bceec836df821e494fcd22318"
+    },
+    "scripts/offline_payload.py": {
+      "bytes": 18672,
+      "mode": 493,
+      "sha256": "69ef70e8204e896f57561188121afec2f75f6486b91c744d0694c75198165a1f"
+    },
+    "scripts/payload.py": {
+      "bytes": 5992,
+      "mode": 493,
+      "sha256": "c66ca44946f7392300f92303a2f7ffb98010fa3a070199e4d1a31ac24fe4793c"
+    },
+    "scripts/productivity.py": {
+      "bytes": 11854,
+      "mode": 493,
+      "sha256": "2fd8c0073a00141dca1eae68957f56b3ca9672eff6e8f5fc83daa598ba6ff8d7"
+    },
+    "scripts/profile-preservation.py": {
+      "bytes": 47800,
+      "mode": 493,
+      "sha256": "08fc064ca1f79a4134fc8b1bdfbae54751ebc9e5c82c1165ce6bcba70a04400b"
+    },
+    "scripts/python.sh": {
+      "bytes": 2873,
+      "mode": 493,
+      "sha256": "85e6b81525136899828a6c07c0f89cf51b63f8d4a24cfd7ce22a00313378b332"
+    },
+    "scripts/refresh-checksums.py": {
+      "bytes": 1493,
+      "mode": 493,
+      "sha256": "ccfcb4050e1d9b17d0807bf7b0034f39b240d5cd81bfe0dbaef4df33f984eb1b"
+    },
+    "scripts/setup.py": {
+      "bytes": 39140,
+      "mode": 493,
+      "sha256": "fba800dd995c642f69dd512d359eaf50b7095cd90f8e0b679a12a14911a02cab"
+    },
+    "scripts/source_integrity.py": {
+      "bytes": 5808,
+      "mode": 420,
+      "sha256": "6d7057fecd31c653079637065c11d591fbab33e701a8e4432ce76f97af4f1581"
+    },
+    "scripts/stage-clients.py": {
+      "bytes": 10033,
+      "mode": 493,
+      "sha256": "91bd6c890b0fa0b1008eade1aaff8f261e7a9b82534f9d74ae9400e330743e6f"
+    },
+    "scripts/stage-productivity.py": {
+      "bytes": 9402,
+      "mode": 493,
+      "sha256": "7a89c5202087ca4f8e6a325b9f1cc9d1175e514af0da793096df01f77d0d7dc2"
+    },
+    "scripts/upgrade-flow.py": {
+      "bytes": 38510,
+      "mode": 493,
+      "sha256": "9f4d1817ae28762cc1d6241958cc1b096814a6dd50cad3255c31a35fc09b6c59"
+    },
+    "setup.sh": {
+      "bytes": 2059,
+      "mode": 493,
+      "sha256": "e2d2f170cd44910635d0940cfbdf100ccb5967cbfc910e11c5161156b2f6e6c1"
+    },
+    "tests/test_artifact_policy.py": {
+      "bytes": 17958,
+      "mode": 420,
+      "sha256": "05343483759ed792943f7db6d720f83617009a77d139bd256da5cd810e14dc3a"
+    },
+    "tests/test_cleanup_retired.py": {
+      "bytes": 11041,
+      "mode": 420,
+      "sha256": "ce708768a7d61c95c61e75efda169b160d68db9b8fdbd55b4d69bb3382c90310"
+    },
+    "tests/test_compile_core_integration.py": {
+      "bytes": 6551,
+      "mode": 420,
+      "sha256": "a36cc9799b9c8990343957edc07ddbe912db96599168b3d3b20e7921a173088f"
+    },
+    "tests/test_compile_site.py": {
+      "bytes": 4155,
+      "mode": 420,
+      "sha256": "0f306a3de9708e68b7be0cd89223dbce929eceb67b031fb7a28fa5b0d6deb0ee"
+    },
+    "tests/test_controller.py": {
+      "bytes": 6970,
+      "mode": 420,
+      "sha256": "16a0df2b431fc8d78d9a1c462d7a69130de04616eedd0417f36e9c8bef77c023"
+    },
+    "tests/test_deploy_entry.py": {
+      "bytes": 5676,
+      "mode": 420,
+      "sha256": "93bbf13c52cb5852e1f7cb1e68d316ca56f9697817307be35b2d2ed82e980732"
+    },
+    "tests/test_environment_defaults.py": {
+      "bytes": 3049,
+      "mode": 420,
+      "sha256": "635af8d58f7bf05f6c5efa9d428b66f74a0f61fe5b7f68b31192273203ac49f1"
+    },
+    "tests/test_hostctl.py": {
+      "bytes": 15640,
+      "mode": 420,
+      "sha256": "e63d824a7928b5379b50d04db81e83bff54192707cfb1c892546fe1f674d3561"
+    },
+    "tests/test_install_stack.py": {
+      "bytes": 10995,
+      "mode": 420,
+      "sha256": "625d619f8877fe7d9f3d5ea89a2307c94a773f023aa57e5bf8606303f8d8c520"
+    },
+    "tests/test_native_packages.py": {
+      "bytes": 11858,
+      "mode": 420,
+      "sha256": "7664380dbfe8b74257b6dce7191477a87955cb488fb8cfb847ca13c52e9b2a16"
+    },
+    "tests/test_offline_payload.py": {
+      "bytes": 12626,
+      "mode": 420,
+      "sha256": "a83940025390dc4aca092ce84529d51642e661b7e8c0ff51daf3d76a1f33f0ce"
+    },
+    "tests/test_payload.py": {
+      "bytes": 2955,
+      "mode": 420,
+      "sha256": "7893ab4dac62a24e5a8d442d5782f13bd7575bb86e4fa88914b8897d6d557716"
+    },
+    "tests/test_productivity.py": {
+      "bytes": 3403,
+      "mode": 420,
+      "sha256": "c86393c814f13730f1ff53adff5fad91e3e9e4b009fce32adcc3b18d09163a9a"
+    },
+    "tests/test_profile_preservation.py": {
+      "bytes": 22967,
+      "mode": 420,
+      "sha256": "c4e21e50fb6111a2a0119858bf389a88d0fec0bf54d195061b4f633e861f935f"
+    },
+    "tests/test_remote_lfs.py": {
+      "bytes": 6883,
+      "mode": 420,
+      "sha256": "2b5c165839c669ffc80fcdd3ae4240252e4b5e17b24abe46d50d5ba858540d39"
+    },
+    "tests/test_repository_release.py": {
+      "bytes": 7419,
+      "mode": 420,
+      "sha256": "102daade9d0e35060485a557029f937779ae26046bffca2a534fcda5d52c0b6a"
+    },
+    "tests/test_setup.py": {
+      "bytes": 15926,
+      "mode": 420,
+      "sha256": "99d5d5dd194c68c281d83946cea07b89b0a8a9a87df87f4c8efe4ccd8da33d95"
+    },
+    "tests/test_source_release.py": {
+      "bytes": 8606,
+      "mode": 420,
+      "sha256": "1390db1d00b9f1029ba7f0bd0340c1d10165289de6c685a22ae2a5dc8af892f2"
+    },
+    "tests/test_stage_clients.py": {
+      "bytes": 5042,
+      "mode": 420,
+      "sha256": "3bf3f9986d0fca6cd40f284fa5c7d3ea3b06bde8ec0eb94eef1597a5ba421281"
+    },
+    "tests/test_stage_productivity.py": {
+      "bytes": 8264,
+      "mode": 420,
+      "sha256": "315a1c1c07fdb5fbe7bdfc2cc90e389c28ca856e9ccd7fbd5cf244458a95305a"
+    },
+    "tests/test_upgrade_flow.py": {
+      "bytes": 35828,
+      "mode": 420,
+      "sha256": "874f1b9ab6b2f5bd40d510320cd13cf84226e419d85f749012006928805195b4"
+    },
+    "upgrade.sh": {
+      "bytes": 333,
+      "mode": 493,
+      "sha256": "368ebe53cd6e8445916b07e02cf01a1c1208fceea3105694c884668a50cb5b23"
+    }
+  },
+  "schemaVersion": 1,
+  "scope": "Maintained source controls; immutable payload identities are pinned separately",
+  "version": "0.1.0"
+}

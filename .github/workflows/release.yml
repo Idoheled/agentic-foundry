@@ -1,0 +1,116 @@
+name: Release
+
+on:
+  push:
+    tags: ["v[0-9]*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing annotated release tag (for example v0.1.0)
+        required: true
+        type: string
+      publish:
+        description: Verify the complete LFS payload and publish this release
+        required: true
+        default: false
+        type: boolean
+      payload_source:
+        description: Verify checked-out LFS objects or stream them from GitHub
+        required: true
+        default: local
+        type: choice
+        options: [local, remote]
+      runner:
+        description: Runner label with enough space for the full LFS checkout
+        required: true
+        default: ubuntu-24.04
+        type: string
+      prerelease:
+        description: Mark the published release as a prerelease
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate tag and source
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    outputs:
+      commit: ${{ steps.identity.outputs.commit }}
+      tag: ${{ steps.identity.outputs.tag }}
+    env:
+      GIT_LFS_SKIP_SMUDGE: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - name: Check out the selected tag without offline binaries
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+          fetch-depth: 0
+          lfs: false
+          persist-credentials: false
+      - name: Bind version and release notes to the tag
+        id: identity
+        run: python3 -B ci/release.py validate --tag "$RELEASE_TAG" --github-output "$GITHUB_OUTPUT"
+      - name: Validate the offline payload manifest
+        run: python3 -B scripts/offline_payload.py validate
+      - name: Validate deployment checksums
+        run: python3 -B scripts/refresh-checksums.py --check
+      - name: Test source and syntax
+        run: bash ci/check.sh
+
+  publish:
+    name: Verify payload and publish release
+    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    needs: validate
+    runs-on: ${{ inputs.runner }}
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      RELEASE_TAG: ${{ needs.validate.outputs.tag }}
+      RELEASE_COMMIT: ${{ needs.validate.outputs.commit }}
+    steps:
+      - name: Check out the validated source revision
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.validate.outputs.commit }}
+          fetch-depth: 0
+          lfs: false
+          persist-credentials: false
+      - name: Check capacity before downloading the payload
+        if: inputs.payload_source == 'local'
+        run: python3 -B ci/release.py capacity
+      - name: Fetch the complete Git LFS payload
+        if: inputs.payload_source == 'local'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.validate.outputs.commit }}
+          fetch-depth: 0
+          lfs: true
+          persist-credentials: false
+      - name: Verify payload, attach release evidence and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_PRERELEASE: ${{ inputs.prerelease }}
+          PAYLOAD_SOURCE: ${{ inputs.payload_source }}
+        run: >-
+          python3 -B ci/release.py publish
+          --tag "$RELEASE_TAG"
+          --expected-sha "$RELEASE_COMMIT"
+          --repository "$GITHUB_REPOSITORY"
+          --prerelease "$RELEASE_PRERELEASE"
+          --payload-source "$PAYLOAD_SOURCE"
+          --github-user "$GITHUB_ACTOR"

@@ -1,0 +1,21 @@
+{
+  "name": "fd",
+  "version": "v10.5.2",
+  "repository": "https://github.com/sharkdp/fd",
+  "commit": "b2a287b3993768e0ec52f0852916917f23fb2a38",
+  "binary": {
+    "file": "fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+    "bytes": 1798931,
+    "sha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+    "url": "https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+    "publisherAssetDigestVerified": true
+  },
+  "source": {
+    "file": "fd-v10.5.2-source.tar.gz",
+    "bytes": 144064,
+    "sha256": "20f9a20cb8ff105680ac55143395997906319047849bda4f2dbbdd1a282f9288",
+    "url": "https://codeload.github.com/sharkdp/fd/tar.gz/b2a287b3993768e0ec52f0852916917f23fb2a38",
+    "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+  },
+  "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+}

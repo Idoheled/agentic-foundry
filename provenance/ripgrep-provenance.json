@@ -1,0 +1,21 @@
+{
+  "name": "ripgrep",
+  "version": "15.2.0",
+  "repository": "https://github.com/BurntSushi/ripgrep",
+  "commit": "e89fff89ac9af12e8d4ce9d5fd07beb408ca730f",
+  "binary": {
+    "file": "ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+    "bytes": 2265718,
+    "sha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+    "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+    "publisherAssetDigestVerified": true
+  },
+  "source": {
+    "file": "ripgrep-15.2.0-source.tar.gz",
+    "bytes": 607432,
+    "sha256": "af40d0f4cb7a55994906c009a7ba865047f0d487c95bceb8db59ffc4f2173d20",
+    "url": "https://codeload.github.com/BurntSushi/ripgrep/tar.gz/e89fff89ac9af12e8d4ce9d5fd07beb408ca730f",
+    "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+  },
+  "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+}

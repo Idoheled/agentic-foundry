@@ -1,0 +1,24 @@
+# Live private environment and transaction output never belong in source Git.
+.env
+.env.*
+!.env.example
+private/
+state/
+workspaces/
+runtime/
+*.token
+*.key
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/.tmp/
+
+# Hydrated runtimes are reconstructed from the tracked Git LFS object store.
+/payload/
+/reports/
+dist/
+build/
+*.tar
+*.tar.gz
+*.tar.zst
+*.tgz

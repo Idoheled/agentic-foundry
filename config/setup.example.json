@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "schemaKind": "setup",
+  "evidence": "REPLACE_WITH_COMPLETED_SITE_AND_PRIVATE_SOURCE_INSPECTION",
+  "bootstrapMode": "fresh",
+  "target": {
+    "profile": "debian13-x86_64",
+    "minimumGlibc": "2.28"
+  },
+  "installation": "/private/REPLACE_WITH_REVIEWED_INSTALLATION.json",
+  "docker": {
+    "enabled": true,
+    "artifactPlan": "/private/REPLACE_WITH_REVIEWED_ARTIFACT_PLAN.json",
+    "state": "/home/REPLACE_OPERATOR/.local/share/agentic-stack/core"
+  },
+  "productivity": {
+    "enabled": true,
+    "plan": "/private/REPLACE_WITH_PRODUCTIVITY_PLAN.json",
+    "state": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/productivity"
+  },
+  "enrollment": {
+    "enabled": true
+  },
+  "agent": {
+    "engine": "claude",
+    "upgradeState": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/upgrade-r5",
+    "args": []
+  }
+}

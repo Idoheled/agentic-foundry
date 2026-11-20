@@ -1,0 +1,22 @@
+{
+  "name": "paperclip-omp-adapter",
+  "source_url": "https://github.com/tickernelz/paperclip-omp-adapter.git",
+  "commit": "0f0864332d953ecd56839f8a60afcb8aa6d1e351",
+  "commit_time": "2026-09-24T17:33:52+07:00",
+  "git_shallow": false,
+  "source_checkout": "/workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip-omp-adapter",
+  "bundle_verified": true,
+  "git_fsck_passed": true,
+  "artifacts": [
+    {
+      "path": "artifacts/sources/paperclip-omp-adapter-0f0864332d95.tar.gz",
+      "bytes": 56373,
+      "sha256": "9e3f318662be099ad328d5eab29d3a81307209add000968a469846f5f95cbedd"
+    },
+    {
+      "path": "artifacts/sources/paperclip-omp-adapter-0f0864332d95.bundle",
+      "bytes": 103798,
+      "sha256": "c785ae666bb70a0aba6c549d10a84c264177b3684ea34b12aa9a3096fb3d0704"
+    }
+  ]
+}

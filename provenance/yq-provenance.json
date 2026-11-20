@@ -1,0 +1,21 @@
+{
+  "name": "yq",
+  "version": "v4.54.3",
+  "repository": "https://github.com/mikefarah/yq",
+  "commit": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+  "binary": {
+    "file": "yq_linux_amd64.tar.gz",
+    "bytes": 6326527,
+    "sha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+    "url": "https://github.com/mikefarah/yq/releases/download/v4.54.3/yq_linux_amd64.tar.gz",
+    "publisherAssetDigestVerified": true
+  },
+  "source": {
+    "file": "yq-v4.54.3-source.tar.gz",
+    "bytes": 403851,
+    "sha256": "785a5fa7a35db485d9769c838c5558fec24db772176d7c897ad48c715f4805a7",
+    "url": "https://codeload.github.com/mikefarah/yq/tar.gz/f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+    "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+  },
+  "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+}

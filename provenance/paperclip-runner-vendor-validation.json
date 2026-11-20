@@ -1,0 +1,29 @@
+{
+  "result": "passed",
+  "command": [
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/build-tools/rust-1.97.1/bin/cargo",
+    "--config",
+    "source.crates-io.replace-with=\"offline-vendor\"",
+    "--config",
+    "source.offline-vendor.directory=\"/workspace/scratch/e174c70ed48b/agentic-offline-build/artifacts/build-deps/paperclip-runner-rust-vendor/vendor\"",
+    "metadata",
+    "--format-version",
+    "1",
+    "--offline",
+    "--locked",
+    "--manifest-path",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/Cargo.toml"
+  ],
+  "network": "CARGO_NET_OFFLINE=true and --offline; isolated previously empty CARGO_HOME",
+  "versions": {
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+  },
+  "resolved_package_count": 335,
+  "workspace_members": [
+    "path+file:///workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/crates/process-table#paperclip-process-table@0.0.0",
+    "path+file:///workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/crates/runner-core#paperclip-runner-core@0.0.0"
+  ],
+  "lockfile_unchanged": true,
+  "limits": "Metadata validation proves vendored dependency resolution; it does not compile or execute the native Runner."
+}

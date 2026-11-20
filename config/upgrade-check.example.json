@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "purpose": "REPLACE_WITH_REAL_CHECK_IMPLEMENTATION_AND_EXPECTED_OBSERVATIONS",
+  "argv": [
+    "/absolute/REPLACE_VERIFIED_CHECK_SCRIPT",
+    "{OMP_COMMAND}",
+    "{PROOF_PATH}",
+    "{PROBE_TOKEN}"
+  ],
+  "cwd": "/absolute/REPLACE_PRESERVED_WORKSPACE",
+  "timeoutSeconds": 900
+}

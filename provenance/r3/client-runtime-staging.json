@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "operatorUid": 1000,
+  "hostReceipt": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/state/receipts/20261120T115124Z-d1243fcd.json",
+  "hostReceiptSha256": "c6a4ca25b9784e65b479439cd8c4529c4f660a1b568e41d9f1ab344f30e5acc5",
+  "passed": true,
+  "scope": "Complete selected host trees copied and identity-verified in core runtime; no container execution or profile installation performed",
+  "clients": {
+    "codex": {
+      "sourceInstallPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/codex/0.171.0-8391d6775749",
+      "sourceTreeSha256": "17ed8e9e32c4108fbd5510f9dd4a60893a697fc6ec3bc3f304dfc03fe82857fb",
+      "sourceArtifact": {
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/codex/codex-package-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "8391d67757496bfd14893eca6cbf0c96994bf2627566ff1f018f70600c9ef6b3",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "source": "kit",
+      "destination": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/core/runtime/clients/codex/0.171.0-17ed8e9e32c4108f",
+      "containerRoot": "/opt/agentic/clients/codex/0.171.0-17ed8e9e32c4108f",
+      "containerCommands": {
+        "codex": "/opt/agentic/clients/codex/0.171.0-17ed8e9e32c4108f/bin/codex"
+      },
+      "requiredPaths": [
+        "bin/codex-exec-server",
+        "bin/codex-code-mode-host",
+        "codex-path/rg",
+        "codex-resources/bwrap",
+        "codex-package.json",
+        "codex-resources/voice/NOTICE.md"
+      ],
+      "treeIdentityVerified": true,
+      "containerExecutionQualified": false
+    },
+    "claude": {
+      "sourceInstallPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/claude/2.1.329-248f23231556",
+      "sourceTreeSha256": "a565e24c49e6585ba35e556f4fc1e0c84e566e29b468bbf40478a0f9c5292564",
+      "sourceArtifact": {
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/native-profiles/claude/claude-linux-x64.tar.gz",
+        "sha256": "248f23231556ba4d13cc6dde6a9ed7625f36cf94aeb4c5652d05f72d093c1b46",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "source": "kit",
+      "destination": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/core/runtime/clients/claude/2.1.329-a565e24c49e6585b",
+      "containerRoot": "/opt/agentic/clients/claude/2.1.329-a565e24c49e6585b",
+      "containerCommands": {
+        "claude": "/opt/agentic/clients/claude/2.1.329-a565e24c49e6585b/claude"
+      },
+      "requiredPaths": [
+        "claude"
+      ],
+      "treeIdentityVerified": true,
+      "containerExecutionQualified": false
+    },
+    "python": {
+      "sourceInstallPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891",
+      "sourceTreeSha256": "615afaa145e0723078803e41415da63f8d0491da329a062d9a6244e7650decba",
+      "sourceArtifact": {
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/python-quality/python-3.12.16-quality-runtime.tar.gz",
+        "sha256": "0b2e3c3298915bf72de5063140cc3e28fd7ed79bada303caf0b3a345b68148ce",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "source": "kit",
+      "destination": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/core/runtime/clients/python/3.12.16-quality-r3-615afaa145e07230",
+      "containerRoot": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230",
+      "containerCommands": {
+        "python3": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/python3",
+        "pip3": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pip3",
+        "pytest": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pytest",
+        "mypy": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/mypy",
+        "coverage": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/coverage",
+        "pyproject-build": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pyproject-build"
+      },
+      "requiredPaths": [
+        "bin/python3.12",
+        "lib/python3.12/encodings",
+        "lib/python3.12/site-packages",
+        "lib/libpython3.12.so.1.0"
+      ],
+      "treeIdentityVerified": true,
+      "containerExecutionQualified": false
+    },
+    "native-profiles": {
+      "sourceInstallPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a",
+      "sourceTreeSha256": "a7bd11860c9836d116a77f4315b5313fea43a684b33e02b18e55eada45421afb",
+      "sourceArtifact": {
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/native-profiles/native-profiles-2026-11-20-r3-source.tar.gz",
+        "sha256": "fe445feb038af63175a500b10804d5d0f9bfc348122bf15db3c04d11b9a8ae26",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "source": "kit",
+      "destination": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/core/runtime/clients/native-profiles/2026-11-20-r3-a7bd11860c9836d1",
+      "containerRoot": "/opt/agentic/clients/native-profiles/2026-11-20-r3-a7bd11860c9836d1",
+      "containerCommands": {},
+      "requiredPaths": [
+        "install_profiles.py",
+        "ASSET_MANIFEST.json",
+        "hooks/native_hook.py",
+        "codex/trust_reviewed_kit_hooks.py",
+        "omp/agentic-offline.ts",
+        "skills/agentic-plan-and-deliver/SKILL.md"
+      ],
+      "treeIdentityVerified": true,
+      "containerExecutionQualified": false
+    }
+  },
+  "profilePlanHints": {
+    "nativeProfilesRoot": "/opt/agentic/clients/native-profiles/2026-11-20-r3-a7bd11860c9836d1",
+    "pythonCommands": {
+      "python3": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/python3",
+      "pip3": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pip3",
+      "pytest": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pytest",
+      "mypy": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/mypy",
+      "coverage": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/coverage",
+      "pyproject-build": "/opt/agentic/clients/python/3.12.16-quality-r3-615afaa145e07230/bin/pyproject-build"
+    },
+    "next": "Use these immutable container paths in the site-specific profile plan. Run the real profile installer with verified Python as the ordinary operator, then qualify actual container execution and models."
+  }
+}

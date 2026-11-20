@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "tools": [
+    {
+      "name": "uv",
+      "version": "0.13.9",
+      "repository": "https://github.com/astral-sh/uv",
+      "commit": "6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce",
+      "binary": {
+        "file": "uv-x86_64-unknown-linux-musl.tar.gz",
+        "bytes": 18735070,
+        "sha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+        "url": "https://github.com/astral-sh/uv/releases/download/0.13.9/uv-x86_64-unknown-linux-musl.tar.gz",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "uv-0.13.9-source.tar.gz",
+        "bytes": 9057266,
+        "sha256": "fb92d4bedc434810cbdaf2b1a6a034a6dbf9ef0f7185f40b634ccb90d263de73",
+        "url": "https://codeload.github.com/astral-sh/uv/tar.gz/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    },
+    {
+      "name": "ruff",
+      "version": "0.17.6",
+      "repository": "https://github.com/astral-sh/ruff",
+      "commit": "a7ba68b4919e56b6af949a42b2da38fe4eec67a9",
+      "binary": {
+        "file": "ruff-x86_64-unknown-linux-musl.tar.gz",
+        "bytes": 10371489,
+        "sha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+        "url": "https://github.com/astral-sh/ruff/releases/download/0.17.6/ruff-x86_64-unknown-linux-musl.tar.gz",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "ruff-0.17.6-source.tar.gz",
+        "bytes": 14955682,
+        "sha256": "3a9a4b98d2159a2d4fb1b1a2c57ba9623b0ce1811de09a3f3432604976bb0393",
+        "url": "https://codeload.github.com/astral-sh/ruff/tar.gz/a7ba68b4919e56b6af949a42b2da38fe4eec67a9",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    },
+    {
+      "name": "ripgrep",
+      "version": "15.2.0",
+      "repository": "https://github.com/BurntSushi/ripgrep",
+      "commit": "e89fff89ac9af12e8d4ce9d5fd07beb408ca730f",
+      "binary": {
+        "file": "ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+        "bytes": 2265718,
+        "sha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "ripgrep-15.2.0-source.tar.gz",
+        "bytes": 607432,
+        "sha256": "af40d0f4cb7a55994906c009a7ba865047f0d487c95bceb8db59ffc4f2173d20",
+        "url": "https://codeload.github.com/BurntSushi/ripgrep/tar.gz/e89fff89ac9af12e8d4ce9d5fd07beb408ca730f",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    },
+    {
+      "name": "fd",
+      "version": "v10.5.2",
+      "repository": "https://github.com/sharkdp/fd",
+      "commit": "b2a287b3993768e0ec52f0852916917f23fb2a38",
+      "binary": {
+        "file": "fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+        "bytes": 1798931,
+        "sha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "fd-v10.5.2-source.tar.gz",
+        "bytes": 144064,
+        "sha256": "20f9a20cb8ff105680ac55143395997906319047849bda4f2dbbdd1a282f9288",
+        "url": "https://codeload.github.com/sharkdp/fd/tar.gz/b2a287b3993768e0ec52f0852916917f23fb2a38",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    },
+    {
+      "name": "jq",
+      "version": "jq-1.8.2",
+      "repository": "https://github.com/jqlang/jq",
+      "commit": "34f7186b86743a083a589741b6cea95293524108",
+      "binary": {
+        "file": "jq-linux-amd64",
+        "bytes": 2267912,
+        "sha256": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f",
+        "url": "https://github.com/jqlang/jq/releases/download/jq-1.8.2/jq-linux-amd64",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "jq-jq-1.8.2-source.tar.gz",
+        "bytes": 1440937,
+        "sha256": "860f5609e96149f21371dd3317764a2b792dee9b6eddb0e5c8efce8fa0f9a9fd",
+        "url": "https://codeload.github.com/jqlang/jq/tar.gz/34f7186b86743a083a589741b6cea95293524108",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    },
+    {
+      "name": "yq",
+      "version": "v4.54.3",
+      "repository": "https://github.com/mikefarah/yq",
+      "commit": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+      "binary": {
+        "file": "yq_linux_amd64.tar.gz",
+        "bytes": 6326527,
+        "sha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+        "url": "https://github.com/mikefarah/yq/releases/download/v4.54.3/yq_linux_amd64.tar.gz",
+        "publisherAssetDigestVerified": true
+      },
+      "source": {
+        "file": "yq-v4.54.3-source.tar.gz",
+        "bytes": 403851,
+        "sha256": "785a5fa7a35db485d9769c838c5558fec24db772176d7c897ad48c715f4805a7",
+        "url": "https://codeload.github.com/mikefarah/yq/tar.gz/f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+        "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+      },
+      "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+    }
+  ]
+}

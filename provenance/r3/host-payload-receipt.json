@@ -1,0 +1,3487 @@
+{
+  "schemaVersion": 1,
+  "id": "20261120T115124Z-d1243fcd",
+  "mode": "user",
+  "operatorUid": 1000,
+  "operatorGid": 1000,
+  "catalogSha256": "677a2a57072204869fcf67aeabc57f1b4659c9f5496a75592c8f203d66f9068f",
+  "planSha256": "7b7c6833366f09d30c2c49012d7c555e5c1f9df241ca78e14668b9ed6052019d",
+  "status": "installed_and_verified",
+  "actions": [
+    {
+      "tool": "python",
+      "command": "python3",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-python3",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "4d9014b8da8d36fa53c12dc84d969216df572baf604526ae127cc60303a08091",
+        "size": 551
+      }
+    },
+    {
+      "tool": "python",
+      "command": "pip3",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pip3",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "23d52588340802d34a922f1390a4f30487803f97064a34117de53987aa178b27",
+        "size": 548
+      }
+    },
+    {
+      "tool": "python",
+      "command": "pytest",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pytest",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "20d1a859ea297359ffde970ca57419386585373d768cdec12f105697080d872d",
+        "size": 550
+      }
+    },
+    {
+      "tool": "python",
+      "command": "mypy",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-mypy",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "c46b726bd8acf5726223397f59483912845226800dcb12e822acafb020627ec9",
+        "size": 548
+      }
+    },
+    {
+      "tool": "python",
+      "command": "coverage",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-coverage",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "ea6276bd1777c4f7c2612c4341f0a021893894bbf9097546a15b62393cabaff3",
+        "size": 552
+      }
+    },
+    {
+      "tool": "python",
+      "command": "pyproject-build",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pyproject-build",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "101ef6d2c58f18ae99b48afad059b6a4957ddd678ca1054d1bc659790b1dd6da",
+        "size": 559
+      }
+    },
+    {
+      "tool": "node",
+      "command": "node",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-node",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "712298a7e8725a51ce166816f4a545c75ca02648bf901c991090fad2905ebb7f",
+        "size": 416
+      }
+    },
+    {
+      "tool": "node",
+      "command": "npm",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npm",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "899dbd307cc003f40203539f35598a4f4426ca31bb58779e64cca2df3995efca",
+        "size": 415
+      }
+    },
+    {
+      "tool": "node",
+      "command": "npx",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npx",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "52d640f28f8b6868f428a08b1a29c251b17324cfeedb0419c4deb13bbd718dbf",
+        "size": 415
+      }
+    },
+    {
+      "tool": "node",
+      "command": "pnpm",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pnpm",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "5d4f7ce16054d05b8c079d68e88f78bc5193f19d8410ecdf15afc7cfe32b3be9",
+        "size": 416
+      }
+    },
+    {
+      "tool": "bun",
+      "command": "bun",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-bun",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "b84494338dd9c1f9fef0e2807e03bf46adb660dd747649c973aa96836f5444e4",
+        "size": 186
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "rustc",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustc",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "9116754363a5fcd95fb11040cf1b6f344c3fae082714d8848fb732b50404b592",
+        "size": 391
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "cargo",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "09b4f90ce0f2999ce4657bfc62f3ba85d98a5f04edb79422496ea8350791fb34",
+        "size": 391
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "rustfmt",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustfmt",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "29bcb5eeb38838bddd611c6cbf557ee44504a5a5d6888b0dc075c9e8534cc5ca",
+        "size": 393
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "cargo-fmt",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-fmt",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "3edef449b3fb08361cf5f8227bc4b32d211e18558aca9bb18fd432254a0e37c0",
+        "size": 395
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "cargo-clippy",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-clippy",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "2cedddb63818c85e6d19794ac097d085f2b26aa41be3baa60f8f4632f73426cb",
+        "size": 398
+      }
+    },
+    {
+      "tool": "rust",
+      "command": "clippy-driver",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-clippy-driver",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "a9bfa3a8007ceeadd9707ac0fb6711a1d9ab54d8b728b2d6e2dd5da3bfc31c9f",
+        "size": 399
+      }
+    },
+    {
+      "tool": "zig",
+      "command": "zig",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-zig",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "d873b695e9685d8983c56867fc405f9e0386d87e5e8937c92ad3b82e69918d71",
+        "size": 187
+      }
+    },
+    {
+      "tool": "codex",
+      "command": "codex",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-codex",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "0790f2f693218bac52ac4e946bcaf92e82f99ef6f64e86a6f9f013095bb70aba",
+        "size": 395
+      }
+    },
+    {
+      "tool": "claude",
+      "command": "claude",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-claude",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "7c05173554c689063ae23594a468006b43f73a1c843b34f345aab28ea81189fb",
+        "size": 333
+      }
+    },
+    {
+      "tool": "omp",
+      "command": "omp",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-omp",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "0939bf1097885a55570974c194b660de8f07c4f46653502627fac23ad3275ea0",
+        "size": 407
+      }
+    },
+    {
+      "tool": "opencode",
+      "command": "opencode",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-opencode",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "efdd14c7d5ef80bbeea29c92a94eec5bdbf0b40cce5448ee3ba64e430cda382a",
+        "size": 355
+      }
+    },
+    {
+      "tool": "herdr",
+      "command": "herdr",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-herdr",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "3b21c3e1e1563491de2a5d518db5c0806f2cea855aacfff5508adaa58de454cd",
+        "size": 391
+      }
+    },
+    {
+      "tool": "docker",
+      "command": "docker",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "d26ccd3ba7e800128340368a7a09b0f78e5aad35dd27c6e883b52363eab1fe3f",
+        "size": 194
+      }
+    },
+    {
+      "tool": "compose",
+      "command": "docker-compose",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker-compose",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "5880cbf3bc9dc4783d00d25a0fca2cb213ae9a6157c59a9997f0da7640b7c805",
+        "size": 404
+      }
+    },
+    {
+      "tool": "uv",
+      "command": "uv",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uv",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "a8bf3538f50abb6c0c9362e84f2b5f9ba9076437aab6c2c475e567c90ed120a2",
+        "size": 218
+      }
+    },
+    {
+      "tool": "uv",
+      "command": "uvx",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uvx",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "f92b0aacc8bb37fd101ba69a5c373ed9ed3e19d138ec95ae4ab26fedf27e95b6",
+        "size": 219
+      }
+    },
+    {
+      "tool": "ruff",
+      "command": "ruff",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-ruff",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "2301ecf064a8c3d653f316e4b2c98d388a9ed4da102bb78971288e66ee5a2abf",
+        "size": 189
+      }
+    },
+    {
+      "tool": "ripgrep",
+      "command": "rg",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rg",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "e32bdb9d9af54e47a2d291801946f136adfef68f37b877f40d0d352988d7f6e0",
+        "size": 190
+      }
+    },
+    {
+      "tool": "fd",
+      "command": "fd",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-fd",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "3776cc7b0b4263a00d16b2b8bff2c4a431add9cf9ba431e0b89e3541685e0405",
+        "size": 186
+      }
+    },
+    {
+      "tool": "jq",
+      "command": "jq",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-jq",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "d196847a4da6430be881ca0ad18010405b8fe888280114af42f6be3dc19adb15",
+        "size": 388
+      }
+    },
+    {
+      "tool": "yq",
+      "command": "yq",
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-yq",
+      "before": {
+        "kind": "missing"
+      },
+      "kind": "launcher",
+      "previousManagedRecord": {},
+      "after": {
+        "uid": 1000,
+        "gid": 1000,
+        "mode": 493,
+        "kind": "file",
+        "sha256": "e966a21d490c2b4dacf2c43c491066661a3458f67cdd9ae23cccdac62877fa57",
+        "size": 198
+      }
+    }
+  ],
+  "tools": {
+    "python": {
+      "selection": {
+        "name": "python",
+        "source": "kit",
+        "version": "3.12.16-quality-r3",
+        "commands": {
+          "python3": {
+            "path": "bin/python3",
+            "verifyArgs": [
+              "-c",
+              "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+            ],
+            "verifyPattern": "required imports OK"
+          },
+          "pip3": {
+            "path": "bin/pip3",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "pytest": {
+            "path": "bin/pytest",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "mypy": {
+            "path": "bin/mypy",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "coverage": {
+            "path": "bin/coverage",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "pyproject-build": {
+            "path": "bin/pyproject-build",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "3.12.16-quality-r3",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ],
+            "glibcMin": "2.28"
+          },
+          "commands": {
+            "python3": {
+              "path": "bin/python3",
+              "verifyArgs": [
+                "-c",
+                "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+              ],
+              "verifyPattern": "required imports OK"
+            },
+            "pip3": {
+              "path": "bin/pip3",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "pytest": {
+              "path": "bin/pytest",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "mypy": {
+              "path": "bin/mypy",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "coverage": {
+              "path": "bin/coverage",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "pyproject-build": {
+              "path": "bin/pyproject-build",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/python3.12",
+            "lib/python3.12/encodings",
+            "lib/python3.12/site-packages",
+            "lib/libpython3.12.so.1.0"
+          ],
+          "artifact": {
+            "path": "payload/dependencies/python-quality/python-3.12.16-quality-runtime.tar.gz",
+            "sha256": "0b2e3c3298915bf72de5063140cc3e28fd7ed79bada303caf0b3a345b68148ce",
+            "format": "tar",
+            "stripComponents": 1
+          },
+          "environment": {
+            "PYTHONDONTWRITEBYTECODE": "1",
+            "PYTHONNOUSERSITE": "1",
+            "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+            "PIP_REQUIRE_VIRTUALENV": "1"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual python runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/python-quality/python-3.12.16-quality-runtime.tar.gz",
+          "sha256": "0b2e3c3298915bf72de5063140cc3e28fd7ed79bada303caf0b3a345b68148ce",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891",
+        "treeSha256": "615afaa145e0723078803e41415da63f8d0491da329a062d9a6244e7650decba",
+        "checks": {
+          "python3": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "3.12.16 (main, Nov 11 2026, 00:15:59) [Clang 23.1.3 ]\nrequired imports OK\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3",
+            "argv": [
+              "-c",
+              "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+            ]
+          },
+          "pip3": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "pip 26.3 from /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/pip (python 3.12)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/pip3",
+            "argv": [
+              "--version"
+            ]
+          },
+          "pytest": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "pytest 9.2.0\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/pytest",
+            "argv": [
+              "--version"
+            ]
+          },
+          "mypy": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "mypy 2.4.1 (compiled: yes)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/mypy",
+            "argv": [
+              "--version"
+            ]
+          },
+          "coverage": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "Coverage.py, version 7.17.3 with C extension\nFull documentation is at https://coverage.readthedocs.io/en/7.17.3\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/coverage",
+            "argv": [
+              "--version"
+            ]
+          },
+          "pyproject-build": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "build 1.6.1 (/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/build)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/pyproject-build",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "node": {
+      "selection": {
+        "name": "node",
+        "source": "kit",
+        "version": "24.22.3-pnpm-9.15.4",
+        "commands": {
+          "node": {
+            "path": "bin/node",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "npm": {
+            "path": "bin/npm",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "npx": {
+            "path": "bin/npx",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "pnpm": {
+            "path": "bin/pnpm",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "24.22.3-pnpm-9.15.4",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ],
+            "glibcMin": "2.28"
+          },
+          "commands": {
+            "node": {
+              "path": "bin/node",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "npm": {
+              "path": "bin/npm",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "npx": {
+              "path": "bin/npx",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "pnpm": {
+              "path": "bin/pnpm",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "lib/node_modules/npm",
+            "lib/node_modules/pnpm",
+            "include/node/node.h"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/node-v24.22.3-pnpm-9.15.4-runtime.tar.gz",
+            "sha256": "68f4365fe444115ae6bcf937f5353d0dddc83467a133ca175d2429f071e738ff",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual node runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/node-v24.22.3-pnpm-9.15.4-runtime.tar.gz",
+          "sha256": "68f4365fe444115ae6bcf937f5353d0dddc83467a133ca175d2429f071e738ff",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444",
+        "treeSha256": "1edae53345e6980cee6e536bcca37dce4b1b561eb5adcddbd8400aa2c5e2a36c",
+        "checks": {
+          "node": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "v24.22.3\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444/bin/node",
+            "argv": [
+              "--version"
+            ]
+          },
+          "npm": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "11.19.1\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444/bin/npm",
+            "argv": [
+              "--version"
+            ]
+          },
+          "npx": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "11.19.1\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444/bin/npx",
+            "argv": [
+              "--version"
+            ]
+          },
+          "pnpm": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "9.15.4\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/node/24.22.3-pnpm-9.15.4-68f4365fe444/bin/pnpm",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "bun": {
+      "selection": {
+        "name": "bun",
+        "source": "kit",
+        "version": "1.4.4",
+        "commands": {
+          "bun": {
+            "path": "bun",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "1.4.4",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "bun": {
+              "path": "bun",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "bun"
+          ],
+          "artifact": {
+            "path": "payload/toolchains/bun-v1.4.4-linux-x64-baseline.zip",
+            "sha256": "e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76",
+            "format": "zip",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual bun runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/toolchains/bun-v1.4.4-linux-x64-baseline.zip",
+          "sha256": "e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76",
+          "format": "zip",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/bun/1.4.4-e0446eb55995"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/bun/1.4.4-e0446eb55995",
+        "treeSha256": "3ea8fb597ed722ba02b72e26e5a2619a6c6d563cb588bfb77fefeb20728c3c63",
+        "checks": {
+          "bun": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "1.4.4\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/bun/1.4.4-e0446eb55995/bun",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "rust": {
+      "selection": {
+        "name": "rust",
+        "source": "kit",
+        "version": "1.99.1",
+        "commands": {
+          "rustc": {
+            "path": "bin/rustc",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "cargo": {
+            "path": "bin/cargo",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "rustfmt": {
+            "path": "bin/rustfmt",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "cargo-fmt": {
+            "path": "bin/cargo-fmt",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "cargo-clippy": {
+            "path": "bin/cargo-clippy",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "clippy-driver": {
+            "path": "bin/clippy-driver",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "1.99.1",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ],
+            "glibcMin": "2.28"
+          },
+          "commands": {
+            "rustc": {
+              "path": "bin/rustc",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "cargo": {
+              "path": "bin/cargo",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "rustfmt": {
+              "path": "bin/rustfmt",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "cargo-fmt": {
+              "path": "bin/cargo-fmt",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "cargo-clippy": {
+              "path": "bin/cargo-clippy",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "clippy-driver": {
+              "path": "bin/clippy-driver",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "lib/rustlib/x86_64-unknown-linux-gnu/lib",
+            "lib/rustlib/x86_64-unknown-linux-musl/lib",
+            "lib/rustlib/src/rust/library"
+          ],
+          "artifact": {
+            "path": "payload/dependencies/codex/rust-1.99.1-linux-x86_64-installed.tar.gz",
+            "sha256": "46b5a8991f6ba263dc41d1ffc1b2d529add23b60ec117498d51e6931dbfa03a4",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual rust runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/codex/rust-1.99.1-linux-x86_64-installed.tar.gz",
+          "sha256": "46b5a8991f6ba263dc41d1ffc1b2d529add23b60ec117498d51e6931dbfa03a4",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b",
+        "treeSha256": "c315934a3d0ec0a108e8e3fc2984cc431708b67c5c960c4f5bc192fcad27b8f9",
+        "checks": {
+          "rustc": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/rustc",
+            "argv": [
+              "--version"
+            ]
+          },
+          "cargo": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "cargo 1.99.1 (5f94df478 2026-08-27)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/cargo",
+            "argv": [
+              "--version"
+            ]
+          },
+          "rustfmt": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "rustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/rustfmt",
+            "argv": [
+              "--version"
+            ]
+          },
+          "cargo-fmt": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "rustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/cargo-fmt",
+            "argv": [
+              "--version"
+            ]
+          },
+          "cargo-clippy": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "clippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/cargo-clippy",
+            "argv": [
+              "--version"
+            ]
+          },
+          "clippy-driver": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "clippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/rust/1.99.1-46b5a8991f6b/bin/clippy-driver",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "zig": {
+      "selection": {
+        "name": "zig",
+        "source": "kit",
+        "version": "0.16.0",
+        "commands": {
+          "zig": {
+            "path": "zig",
+            "verifyArgs": [
+              "version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "0.16.0",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "zig": {
+              "path": "zig",
+              "verifyArgs": [
+                "version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "lib/std/std.zig",
+            "lib/compiler",
+            "doc/langref.html"
+          ],
+          "artifact": {
+            "path": "payload/toolchains/zig-x86_64-linux-0.16.0.tar.xz",
+            "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual zig runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/toolchains/zig-x86_64-linux-0.16.0.tar.xz",
+          "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/zig/0.16.0-70e49664a743"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/zig/0.16.0-70e49664a743",
+        "treeSha256": "2b3db6eec7c239e106b02daff693353646987163df22d7c52ef3fd2bfc570f82",
+        "checks": {
+          "zig": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "0.16.0\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/zig/0.16.0-70e49664a743/zig",
+            "argv": [
+              "version"
+            ]
+          }
+        }
+      }
+    },
+    "codex": {
+      "selection": {
+        "name": "codex",
+        "source": "kit",
+        "version": "0.171.0",
+        "commands": {
+          "codex": {
+            "path": "bin/codex",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "0.171.0",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "codex": {
+              "path": "bin/codex",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/codex-exec-server",
+            "bin/codex-code-mode-host",
+            "codex-path/rg",
+            "codex-resources/bwrap",
+            "codex-package.json",
+            "codex-resources/voice/NOTICE.md"
+          ],
+          "artifact": {
+            "path": "payload/dependencies/codex/codex-package-x86_64-unknown-linux-musl.tar.gz",
+            "sha256": "8391d67757496bfd14893eca6cbf0c96994bf2627566ff1f018f70600c9ef6b3",
+            "format": "tar",
+            "stripComponents": 0
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual codex runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/codex/codex-package-x86_64-unknown-linux-musl.tar.gz",
+          "sha256": "8391d67757496bfd14893eca6cbf0c96994bf2627566ff1f018f70600c9ef6b3",
+          "format": "tar",
+          "stripComponents": 0
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/codex/0.171.0-8391d6775749"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/codex/0.171.0-8391d6775749",
+        "treeSha256": "17ed8e9e32c4108fbd5510f9dd4a60893a697fc6ec3bc3f304dfc03fe82857fb",
+        "checks": {
+          "codex": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "codex-cli 0.171.0\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/codex/0.171.0-8391d6775749/bin/codex",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "claude": {
+      "selection": {
+        "name": "claude",
+        "source": "kit",
+        "version": "2.1.329",
+        "commands": {
+          "claude": {
+            "path": "claude",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "2.1.329",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ],
+            "glibcMin": "2.17"
+          },
+          "commands": {
+            "claude": {
+              "path": "claude",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "claude"
+          ],
+          "artifact": {
+            "path": "payload/dependencies/native-profiles/claude/claude-linux-x64.tar.gz",
+            "sha256": "248f23231556ba4d13cc6dde6a9ed7625f36cf94aeb4c5652d05f72d093c1b46",
+            "format": "tar",
+            "stripComponents": 0
+          },
+          "environment": {
+            "DISABLE_AUTOUPDATER": "1",
+            "DISABLE_TELEMETRY": "1",
+            "DISABLE_ERROR_REPORTING": "1",
+            "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual claude runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/native-profiles/claude/claude-linux-x64.tar.gz",
+          "sha256": "248f23231556ba4d13cc6dde6a9ed7625f36cf94aeb4c5652d05f72d093c1b46",
+          "format": "tar",
+          "stripComponents": 0
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/claude/2.1.329-248f23231556"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/claude/2.1.329-248f23231556",
+        "treeSha256": "a565e24c49e6585ba35e556f4fc1e0c84e566e29b468bbf40478a0f9c5292564",
+        "checks": {
+          "claude": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "2.1.329 (Claude Code)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/claude/2.1.329-248f23231556/claude",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "omp": {
+      "selection": {
+        "name": "omp",
+        "source": "kit",
+        "version": "19.0.1-offline.1",
+        "commands": {
+          "omp": {
+            "path": "bin/omp",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "19.0.1-offline.1",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "omp": {
+              "path": "bin/omp",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/omp-real"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/omp-v19.0.1-offline.1-host-runtime.tar.gz",
+            "sha256": "4a651590d92923c5f29831bfa9288006254764103c737f92886bef001762fb5f",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual omp runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/omp-v19.0.1-offline.1-host-runtime.tar.gz",
+          "sha256": "4a651590d92923c5f29831bfa9288006254764103c737f92886bef001762fb5f",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/omp/19.0.1-offline.1-4a651590d929"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/omp/19.0.1-offline.1-4a651590d929",
+        "treeSha256": "2f83891717f3fb2fcc5c2895071d6c616949a33a651d311b54ed920bb086edd1",
+        "checks": {
+          "omp": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "19.0.1\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/omp/19.0.1-offline.1-4a651590d929/bin/omp",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "opencode": {
+      "selection": {
+        "name": "opencode",
+        "source": "kit",
+        "version": "1.18.34",
+        "commands": {
+          "opencode": {
+            "path": "opencode",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "1.18.34",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "opencode": {
+              "path": "opencode",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "opencode"
+          ],
+          "artifact": {
+            "path": "payload/binaries/opencode-v1.18.34-linux-x64-baseline.tar.gz",
+            "sha256": "24b0d458d21ef548b2752166303defcf7f4945b049fb4876ab78dfaf86d81b27",
+            "format": "tar",
+            "stripComponents": 0
+          },
+          "environment": {
+            "OPENCODE_DISABLE_AUTOUPDATE": "1",
+            "OPENCODE_DISABLE_MODELS_FETCH": "1",
+            "OPENCODE_DISABLE_DEFAULT_PLUGINS": "1",
+            "OPENCODE_DISABLE_LSP_DOWNLOAD": "1"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual opencode runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/binaries/opencode-v1.18.34-linux-x64-baseline.tar.gz",
+          "sha256": "24b0d458d21ef548b2752166303defcf7f4945b049fb4876ab78dfaf86d81b27",
+          "format": "tar",
+          "stripComponents": 0
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/opencode/1.18.34-24b0d458d21e"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/opencode/1.18.34-24b0d458d21e",
+        "treeSha256": "a9c0fccd029277233453d8f9ae696920bdbfa1764101ad6903ed63c25f940302",
+        "checks": {
+          "opencode": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "1.18.34\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/opencode/1.18.34-24b0d458d21e/opencode",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "herdr": {
+      "selection": {
+        "name": "herdr",
+        "source": "kit",
+        "version": "0.9.5",
+        "commands": {
+          "herdr": {
+            "path": "bin/herdr",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "0.9.5",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "herdr": {
+              "path": "bin/herdr",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/herdr"
+          ],
+          "artifact": {
+            "path": "payload/binaries/herdr-v0.9.5-linux-x86_64",
+            "sha256": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d",
+            "format": "file"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual herdr runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/binaries/herdr-v0.9.5-linux-x86_64",
+          "sha256": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d",
+          "format": "file"
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/herdr/0.9.5-14d9e8bc8b4a"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/herdr/0.9.5-14d9e8bc8b4a",
+        "treeSha256": "796c7abd7400e5f0eb07ddb313dec76245b815da09c538b3134762f55976bedc",
+        "checks": {
+          "herdr": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "herdr 0.9.5\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/herdr/0.9.5-14d9e8bc8b4a/bin/herdr",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "docker": {
+      "selection": {
+        "name": "docker",
+        "source": "kit",
+        "version": "29.10.0",
+        "commands": {
+          "docker": {
+            "path": "docker",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "29.10.0",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "docker": {
+              "path": "docker",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "docker",
+            "dockerd",
+            "containerd",
+            "runc",
+            "containerd-shim-runc-v2"
+          ],
+          "artifact": {
+            "path": "payload/packages/docker-29.10.0.tgz",
+            "sha256": "7c1ebadc65c716cdc6d35fc78759ed0e4317debf43c21dd12f066f2006999def",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual docker runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/packages/docker-29.10.0.tgz",
+          "sha256": "7c1ebadc65c716cdc6d35fc78759ed0e4317debf43c21dd12f066f2006999def",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/docker/29.10.0-7c1ebadc65c7"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/docker/29.10.0-7c1ebadc65c7",
+        "treeSha256": "ec5fa0795879f9e3b2d2f2472988e31ab546257da76016121af9f63e1d194b07",
+        "checks": {
+          "docker": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "Docker version 29.10.0, build fdd4b8e\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/docker/29.10.0-7c1ebadc65c7/docker",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "compose": {
+      "selection": {
+        "name": "compose",
+        "source": "kit",
+        "version": "5.8.0",
+        "commands": {
+          "docker-compose": {
+            "path": "bin/docker-compose",
+            "verifyArgs": [
+              "version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "5.8.0",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "docker-compose": {
+              "path": "bin/docker-compose",
+              "verifyArgs": [
+                "version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/docker-compose"
+          ],
+          "artifact": {
+            "path": "payload/packages/docker-compose-v5.8.0-linux-x86_64",
+            "sha256": "b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6",
+            "format": "file"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual compose runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/packages/docker-compose-v5.8.0-linux-x86_64",
+          "sha256": "b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6",
+          "format": "file"
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/compose/5.8.0-b8840f5008c4"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/compose/5.8.0-b8840f5008c4",
+        "treeSha256": "89336ff3a2da5d77acb38a734e58a7d95270a588ff3db6c868137f487e9404d1",
+        "checks": {
+          "docker-compose": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "Docker Compose version v5.8.0\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/compose/5.8.0-b8840f5008c4/bin/docker-compose",
+            "argv": [
+              "version"
+            ]
+          }
+        }
+      }
+    },
+    "uv": {
+      "selection": {
+        "name": "uv",
+        "source": "kit",
+        "version": "0.13.9",
+        "commands": {
+          "uv": {
+            "path": "uv",
+            "verifyArgs": [
+              "--version"
+            ]
+          },
+          "uvx": {
+            "path": "uvx",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "0.13.9",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "uv": {
+              "path": "uv",
+              "verifyArgs": [
+                "--version"
+              ]
+            },
+            "uvx": {
+              "path": "uvx",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "uv",
+            "uvx"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/uv-x86_64-unknown-linux-musl.tar.gz",
+            "sha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+            "format": "tar",
+            "stripComponents": 1
+          },
+          "environment": {
+            "UV_PYTHON_DOWNLOADS": "never"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual uv runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/uv-x86_64-unknown-linux-musl.tar.gz",
+          "sha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/uv/0.13.9-58ccf5f1792b"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/uv/0.13.9-58ccf5f1792b",
+        "treeSha256": "ce5db8a70523a6f1b0f9693e9c2b1a235f4e5b2fb28a4a89db0d24b6cbffe832",
+        "checks": {
+          "uv": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "uv 0.13.9 (x86_64-unknown-linux-musl)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/uv/0.13.9-58ccf5f1792b/uv",
+            "argv": [
+              "--version"
+            ]
+          },
+          "uvx": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "uvx 0.13.9 (x86_64-unknown-linux-musl)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/uv/0.13.9-58ccf5f1792b/uvx",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "ruff": {
+      "selection": {
+        "name": "ruff",
+        "source": "kit",
+        "version": "0.17.6",
+        "commands": {
+          "ruff": {
+            "path": "ruff",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "0.17.6",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "ruff": {
+              "path": "ruff",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "ruff"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/ruff-x86_64-unknown-linux-musl.tar.gz",
+            "sha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual ruff runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/ruff-x86_64-unknown-linux-musl.tar.gz",
+          "sha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ruff/0.17.6-3c8d5a426455"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ruff/0.17.6-3c8d5a426455",
+        "treeSha256": "a5d2d0930537c7bacfd835c6a20dd1a0921390219aff68d9a2eb85acccb36e83",
+        "checks": {
+          "ruff": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "ruff 0.17.6\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ruff/0.17.6-3c8d5a426455/ruff",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "ripgrep": {
+      "selection": {
+        "name": "ripgrep",
+        "source": "kit",
+        "version": "15.2.0",
+        "commands": {
+          "rg": {
+            "path": "rg",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "15.2.0",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "rg": {
+              "path": "rg",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "rg",
+            "doc/rg.1"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+            "sha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual ripgrep runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+          "sha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ripgrep/15.2.0-33e15bcf1624"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ripgrep/15.2.0-33e15bcf1624",
+        "treeSha256": "199275251df8f83f2543b39cd557f225c69432fdd63dd92f92f9ff21f8f6b418",
+        "checks": {
+          "rg": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "ripgrep 15.2.0 (rev e89fff89ac)\n\nfeatures:+pcre2\nsimd(compile):+SSE2,-SSSE3,-AVX2\nsimd(runtime):+SSE2,+SSSE3,+AVX2\n\nPCRE2 10.45 is available (JIT is available)\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/ripgrep/15.2.0-33e15bcf1624/rg",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "fd": {
+      "selection": {
+        "name": "fd",
+        "source": "kit",
+        "version": "v10.5.2",
+        "commands": {
+          "fd": {
+            "path": "fd",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "v10.5.2",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "fd": {
+              "path": "fd",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "fd"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+            "sha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+            "format": "tar",
+            "stripComponents": 1
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual fd runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+          "sha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+          "format": "tar",
+          "stripComponents": 1
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/fd/v10.5.2-7e2d07fa2b88"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/fd/v10.5.2-7e2d07fa2b88",
+        "treeSha256": "287022bbf95213055d0987d48aa432f10e0d223a0916107db55dda17387ae26e",
+        "checks": {
+          "fd": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "fd 10.5.2\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/fd/v10.5.2-7e2d07fa2b88/fd",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "jq": {
+      "selection": {
+        "name": "jq",
+        "source": "kit",
+        "version": "jq-1.8.2",
+        "commands": {
+          "jq": {
+            "path": "bin/jq",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "jq-1.8.2",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "jq": {
+              "path": "bin/jq",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [
+            "bin"
+          ],
+          "requiredPaths": [
+            "bin/jq"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/jq-linux-amd64",
+            "sha256": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f",
+            "format": "file"
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual jq runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/jq-linux-amd64",
+          "sha256": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f",
+          "format": "file"
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/jq/jq-1.8.2-b1c22172dd30"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/jq/jq-1.8.2-b1c22172dd30",
+        "treeSha256": "7a85c5fcf77052facc127f71030b0add9decf66e8e2ab81ce053d0645d8c018e",
+        "checks": {
+          "jq": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "jq-1.8.2\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/jq/jq-1.8.2-b1c22172dd30/bin/jq",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "yq": {
+      "selection": {
+        "name": "yq",
+        "source": "kit",
+        "version": "v4.54.3",
+        "commands": {
+          "yq": {
+            "path": "yq_linux_amd64",
+            "verifyArgs": [
+              "--version"
+            ]
+          }
+        },
+        "catalog": {
+          "version": "v4.54.3",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {
+            "yq": {
+              "path": "yq_linux_amd64",
+              "verifyArgs": [
+                "--version"
+              ]
+            }
+          },
+          "pathEntries": [],
+          "requiredPaths": [
+            "yq_linux_amd64",
+            "yq.1"
+          ],
+          "artifact": {
+            "path": "payload/host-tools/yq_linux_amd64.tar.gz",
+            "sha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+            "format": "tar",
+            "stripComponents": 0
+          }
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual yq runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/host-tools/yq_linux_amd64.tar.gz",
+          "sha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+          "format": "tar",
+          "stripComponents": 0
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/yq/v4.54.3-09a25baa0e13"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/yq/v4.54.3-09a25baa0e13",
+        "treeSha256": "ffb262ba292a7ced9b873f9b7825313728653b36ef0e9c0472e2722545ae7843",
+        "checks": {
+          "yq": {
+            "passed": true,
+            "exitCode": 0,
+            "output": "yq (https://github.com/mikefarah/yq/) version v4.54.3\n",
+            "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/yq/v4.54.3-09a25baa0e13/yq_linux_amd64",
+            "argv": [
+              "--version"
+            ]
+          }
+        }
+      }
+    },
+    "native-profiles": {
+      "selection": {
+        "name": "native-profiles",
+        "source": "kit",
+        "version": "2026-11-20-r3",
+        "commands": {},
+        "catalog": {
+          "version": "2026-11-20-r3",
+          "platform": {
+            "architectures": [
+              "x86_64",
+              "amd64"
+            ]
+          },
+          "commands": {},
+          "pathEntries": [],
+          "requiredPaths": [
+            "install_profiles.py",
+            "ASSET_MANIFEST.json",
+            "hooks/native_hook.py",
+            "codex/trust_reviewed_kit_hooks.py",
+            "omp/agentic-offline.ts",
+            "skills/agentic-plan-and-deliver/SKILL.md"
+          ],
+          "artifact": {
+            "path": "payload/dependencies/native-profiles/native-profiles-2026-11-20-r3-source.tar.gz",
+            "sha256": "fe445feb038af63175a500b10804d5d0f9bfc348122bf15db3c04d11b9a8ae26",
+            "format": "tar",
+            "stripComponents": 0
+          },
+          "kind": "asset-tree"
+        },
+        "choice": {
+          "source": "kit",
+          "fallbackReason": "unavailable",
+          "evidence": "Controlled builder fixture for actual native-profiles runtime installation and closure checks; no customer repository is available in this builder.",
+          "canonicalLinks": []
+        },
+        "reuse": false,
+        "artifact": {
+          "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r3/payload/dependencies/native-profiles/native-profiles-2026-11-20-r3-source.tar.gz",
+          "sha256": "fe445feb038af63175a500b10804d5d0f9bfc348122bf15db3c04d11b9a8ae26",
+          "format": "tar",
+          "stripComponents": 0
+        },
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a"
+      },
+      "staged": {
+        "reuse": false,
+        "installPath": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a",
+        "treeSha256": "a7bd11860c9836d116a77f4315b5313fea43a684b33e02b18e55eada45421afb",
+        "checks": {}
+      }
+    }
+  },
+  "retirements": [],
+  "blockers": [],
+  "verification": {
+    "passed": true,
+    "checks": [
+      {
+        "tool": "python",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "3.12.16 (main, Nov 11 2026, 00:15:59) [Clang 23.1.3 ]\nrequired imports OK\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-python3",
+        "argv": [
+          "-c",
+          "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "python3"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-python3\n3.12.16 (main, Nov 11 2026, 00:15:59) [Clang 23.1.3 ]\nrequired imports OK\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-python3",
+          "agentic-python3",
+          "-c",
+          "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "python3"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "pip 26.3 from /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/pip (python 3.12)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pip3",
+        "argv": [
+          "--version"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "pip3"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pip3\npip 26.3 from /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/pip (python 3.12)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-pip3",
+          "agentic-pip3",
+          "--version"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "pip3"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "pytest 9.2.0\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pytest",
+        "argv": [
+          "--version"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "pytest"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pytest\npytest 9.2.0\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-pytest",
+          "agentic-pytest",
+          "--version"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "pytest"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "mypy 2.4.1 (compiled: yes)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-mypy",
+        "argv": [
+          "--version"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "mypy"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-mypy\nmypy 2.4.1 (compiled: yes)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-mypy",
+          "agentic-mypy",
+          "--version"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "mypy"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "Coverage.py, version 7.17.3 with C extension\nFull documentation is at https://coverage.readthedocs.io/en/7.17.3\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-coverage",
+        "argv": [
+          "--version"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "coverage"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-coverage\nCoverage.py, version 7.17.3 with C extension\nFull documentation is at https://coverage.readthedocs.io/en/7.17.3\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-coverage",
+          "agentic-coverage",
+          "--version"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "coverage"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "build 1.6.1 (/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/build)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pyproject-build",
+        "argv": [
+          "--version"
+        ],
+        "tool": "python",
+        "check": "namespaced-command",
+        "command": "pyproject-build"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pyproject-build\nbuild 1.6.1 (/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/lib/python3.12/site-packages/build)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-pyproject-build",
+          "agentic-pyproject-build",
+          "--version"
+        ],
+        "tool": "python",
+        "check": "fresh-shell-command",
+        "command": "pyproject-build"
+      },
+      {
+        "tool": "node",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "v24.22.3\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-node",
+        "argv": [
+          "--version"
+        ],
+        "tool": "node",
+        "check": "namespaced-command",
+        "command": "node"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-node\nv24.22.3\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-node",
+          "agentic-node",
+          "--version"
+        ],
+        "tool": "node",
+        "check": "fresh-shell-command",
+        "command": "node"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "11.19.1\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npm",
+        "argv": [
+          "--version"
+        ],
+        "tool": "node",
+        "check": "namespaced-command",
+        "command": "npm"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npm\n11.19.1\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-npm",
+          "agentic-npm",
+          "--version"
+        ],
+        "tool": "node",
+        "check": "fresh-shell-command",
+        "command": "npm"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "11.19.1\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npx",
+        "argv": [
+          "--version"
+        ],
+        "tool": "node",
+        "check": "namespaced-command",
+        "command": "npx"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npx\n11.19.1\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-npx",
+          "agentic-npx",
+          "--version"
+        ],
+        "tool": "node",
+        "check": "fresh-shell-command",
+        "command": "npx"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "9.15.4\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pnpm",
+        "argv": [
+          "--version"
+        ],
+        "tool": "node",
+        "check": "namespaced-command",
+        "command": "pnpm"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pnpm\n9.15.4\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-pnpm",
+          "agentic-pnpm",
+          "--version"
+        ],
+        "tool": "node",
+        "check": "fresh-shell-command",
+        "command": "pnpm"
+      },
+      {
+        "tool": "bun",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "1.4.4\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-bun",
+        "argv": [
+          "--version"
+        ],
+        "tool": "bun",
+        "check": "namespaced-command",
+        "command": "bun"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-bun\n1.4.4\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-bun",
+          "agentic-bun",
+          "--version"
+        ],
+        "tool": "bun",
+        "check": "fresh-shell-command",
+        "command": "bun"
+      },
+      {
+        "tool": "rust",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustc",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "rustc"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustc\nrustc 1.99.1 (58cf8f9c3 2026-10-13)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-rustc",
+          "agentic-rustc",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "rustc"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "cargo 1.99.1 (5f94df478 2026-08-27)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "cargo"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo\ncargo 1.99.1 (5f94df478 2026-08-27)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-cargo",
+          "agentic-cargo",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "cargo"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "rustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustfmt",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "rustfmt"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustfmt\nrustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-rustfmt",
+          "agentic-rustfmt",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "rustfmt"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "rustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-fmt",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "cargo-fmt"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-fmt\nrustfmt 1.10.0-stable (58cf8f9c35 2026-10-13)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-cargo-fmt",
+          "agentic-cargo-fmt",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "cargo-fmt"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "clippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-clippy",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "cargo-clippy"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-clippy\nclippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-cargo-clippy",
+          "agentic-cargo-clippy",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "cargo-clippy"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "clippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-clippy-driver",
+        "argv": [
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "namespaced-command",
+        "command": "clippy-driver"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-clippy-driver\nclippy 0.1.99 (58cf8f9c35 2026-10-13)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-clippy-driver",
+          "agentic-clippy-driver",
+          "--version"
+        ],
+        "tool": "rust",
+        "check": "fresh-shell-command",
+        "command": "clippy-driver"
+      },
+      {
+        "tool": "zig",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "0.16.0\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-zig",
+        "argv": [
+          "version"
+        ],
+        "tool": "zig",
+        "check": "namespaced-command",
+        "command": "zig"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-zig\n0.16.0\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-zig",
+          "agentic-zig",
+          "version"
+        ],
+        "tool": "zig",
+        "check": "fresh-shell-command",
+        "command": "zig"
+      },
+      {
+        "tool": "codex",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "codex-cli 0.171.0\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-codex",
+        "argv": [
+          "--version"
+        ],
+        "tool": "codex",
+        "check": "namespaced-command",
+        "command": "codex"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-codex\ncodex-cli 0.171.0\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-codex",
+          "agentic-codex",
+          "--version"
+        ],
+        "tool": "codex",
+        "check": "fresh-shell-command",
+        "command": "codex"
+      },
+      {
+        "tool": "claude",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "2.1.329 (Claude Code)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-claude",
+        "argv": [
+          "--version"
+        ],
+        "tool": "claude",
+        "check": "namespaced-command",
+        "command": "claude"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-claude\n2.1.329 (Claude Code)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-claude",
+          "agentic-claude",
+          "--version"
+        ],
+        "tool": "claude",
+        "check": "fresh-shell-command",
+        "command": "claude"
+      },
+      {
+        "tool": "omp",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "19.0.1\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-omp",
+        "argv": [
+          "--version"
+        ],
+        "tool": "omp",
+        "check": "namespaced-command",
+        "command": "omp"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-omp\n19.0.1\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-omp",
+          "agentic-omp",
+          "--version"
+        ],
+        "tool": "omp",
+        "check": "fresh-shell-command",
+        "command": "omp"
+      },
+      {
+        "tool": "opencode",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "1.18.34\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-opencode",
+        "argv": [
+          "--version"
+        ],
+        "tool": "opencode",
+        "check": "namespaced-command",
+        "command": "opencode"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-opencode\n1.18.34\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-opencode",
+          "agentic-opencode",
+          "--version"
+        ],
+        "tool": "opencode",
+        "check": "fresh-shell-command",
+        "command": "opencode"
+      },
+      {
+        "tool": "herdr",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "herdr 0.9.5\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-herdr",
+        "argv": [
+          "--version"
+        ],
+        "tool": "herdr",
+        "check": "namespaced-command",
+        "command": "herdr"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-herdr\nherdr 0.9.5\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-herdr",
+          "agentic-herdr",
+          "--version"
+        ],
+        "tool": "herdr",
+        "check": "fresh-shell-command",
+        "command": "herdr"
+      },
+      {
+        "tool": "docker",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "Docker version 29.10.0, build fdd4b8e\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker",
+        "argv": [
+          "--version"
+        ],
+        "tool": "docker",
+        "check": "namespaced-command",
+        "command": "docker"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker\nDocker version 29.10.0, build fdd4b8e\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-docker",
+          "agentic-docker",
+          "--version"
+        ],
+        "tool": "docker",
+        "check": "fresh-shell-command",
+        "command": "docker"
+      },
+      {
+        "tool": "compose",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "Docker Compose version v5.8.0\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker-compose",
+        "argv": [
+          "version"
+        ],
+        "tool": "compose",
+        "check": "namespaced-command",
+        "command": "docker-compose"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker-compose\nDocker Compose version v5.8.0\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-docker-compose",
+          "agentic-docker-compose",
+          "version"
+        ],
+        "tool": "compose",
+        "check": "fresh-shell-command",
+        "command": "docker-compose"
+      },
+      {
+        "tool": "uv",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "uv 0.13.9 (x86_64-unknown-linux-musl)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uv",
+        "argv": [
+          "--version"
+        ],
+        "tool": "uv",
+        "check": "namespaced-command",
+        "command": "uv"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uv\nuv 0.13.9 (x86_64-unknown-linux-musl)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-uv",
+          "agentic-uv",
+          "--version"
+        ],
+        "tool": "uv",
+        "check": "fresh-shell-command",
+        "command": "uv"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "uvx 0.13.9 (x86_64-unknown-linux-musl)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uvx",
+        "argv": [
+          "--version"
+        ],
+        "tool": "uv",
+        "check": "namespaced-command",
+        "command": "uvx"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uvx\nuvx 0.13.9 (x86_64-unknown-linux-musl)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-uvx",
+          "agentic-uvx",
+          "--version"
+        ],
+        "tool": "uv",
+        "check": "fresh-shell-command",
+        "command": "uvx"
+      },
+      {
+        "tool": "ruff",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "ruff 0.17.6\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-ruff",
+        "argv": [
+          "--version"
+        ],
+        "tool": "ruff",
+        "check": "namespaced-command",
+        "command": "ruff"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-ruff\nruff 0.17.6\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-ruff",
+          "agentic-ruff",
+          "--version"
+        ],
+        "tool": "ruff",
+        "check": "fresh-shell-command",
+        "command": "ruff"
+      },
+      {
+        "tool": "ripgrep",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "ripgrep 15.2.0 (rev e89fff89ac)\n\nfeatures:+pcre2\nsimd(compile):+SSE2,-SSSE3,-AVX2\nsimd(runtime):+SSE2,+SSSE3,+AVX2\n\nPCRE2 10.45 is available (JIT is available)\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rg",
+        "argv": [
+          "--version"
+        ],
+        "tool": "ripgrep",
+        "check": "namespaced-command",
+        "command": "rg"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rg\nripgrep 15.2.0 (rev e89fff89ac)\n\nfeatures:+pcre2\nsimd(compile):+SSE2,-SSSE3,-AVX2\nsimd(runtime):+SSE2,+SSSE3,+AVX2\n\nPCRE2 10.45 is available (JIT is available)\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-rg",
+          "agentic-rg",
+          "--version"
+        ],
+        "tool": "ripgrep",
+        "check": "fresh-shell-command",
+        "command": "rg"
+      },
+      {
+        "tool": "fd",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "fd 10.5.2\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-fd",
+        "argv": [
+          "--version"
+        ],
+        "tool": "fd",
+        "check": "namespaced-command",
+        "command": "fd"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-fd\nfd 10.5.2\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-fd",
+          "agentic-fd",
+          "--version"
+        ],
+        "tool": "fd",
+        "check": "fresh-shell-command",
+        "command": "fd"
+      },
+      {
+        "tool": "jq",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "jq-1.8.2\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-jq",
+        "argv": [
+          "--version"
+        ],
+        "tool": "jq",
+        "check": "namespaced-command",
+        "command": "jq"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-jq\njq-1.8.2\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-jq",
+          "agentic-jq",
+          "--version"
+        ],
+        "tool": "jq",
+        "check": "fresh-shell-command",
+        "command": "jq"
+      },
+      {
+        "tool": "yq",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "yq (https://github.com/mikefarah/yq/) version v4.54.3\n",
+        "executable": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-yq",
+        "argv": [
+          "--version"
+        ],
+        "tool": "yq",
+        "check": "namespaced-command",
+        "command": "yq"
+      },
+      {
+        "passed": true,
+        "exitCode": 0,
+        "output": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-yq\nyq (https://github.com/mikefarah/yq/) version v4.54.3\n",
+        "executable": "/bin/sh",
+        "argv": [
+          "-c",
+          "command -v \"$1\" && shift && exec \"$@\"",
+          "hostctl",
+          "agentic-yq",
+          "agentic-yq",
+          "--version"
+        ],
+        "tool": "yq",
+        "check": "fresh-shell-command",
+        "command": "yq"
+      },
+      {
+        "tool": "native-profiles",
+        "check": "installed-tree-identity",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-python3",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pip3",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pytest",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-mypy",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-coverage",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pyproject-build",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-node",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npm",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-npx",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-pnpm",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-bun",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustc",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rustfmt",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-fmt",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-cargo-clippy",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-clippy-driver",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-zig",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-codex",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-claude",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-omp",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-opencode",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-herdr",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-docker-compose",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uv",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-uvx",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-ruff",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-rg",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-fd",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-jq",
+        "passed": true
+      },
+      {
+        "check": "entry-point-identity",
+        "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/bin/agentic-yq",
+        "passed": true
+      }
+    ]
+  }
+}

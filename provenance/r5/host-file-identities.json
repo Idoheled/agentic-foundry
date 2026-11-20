@@ -1,0 +1,224 @@
+{
+  "python": {
+    "artifactSha256": "0b2e3c3298915bf72de5063140cc3e28fd7ed79bada303caf0b3a345b68148ce",
+    "commands": {
+      "python3": "e74c565bbccaaf3c2ec6527962890418ab6fe740c19129b02ae1b7effc322230",
+      "pip3": "382add9eb02ba9a59ebc36209a3d5ec7bf93e348cacf622154d716f8e831af98",
+      "pytest": "85d35fdcd673602e78d1e1cc7a2471356fadf83d58eec6924ebf37ab169fe4ef",
+      "mypy": "ba7260c85d9310c00f3962b3fdd361c44e32165af24e0666de76d69c67eced02",
+      "coverage": "d5f775365daf64f1504eb1de7e81fa708d6887e3fa777ce3eacfe5a73308d2b5",
+      "pyproject-build": "eda9f892663a957195422565c4d692631fd3a42ec445e6b0a71f107956502a78"
+    },
+    "files": {}
+  },
+  "node": {
+    "artifactSha256": "68f4365fe444115ae6bcf937f5353d0dddc83467a133ca175d2429f071e738ff",
+    "commands": {
+      "node": "a7ec1b37e6ff9d187e4198c5b6df9a4eb1c74dd31804fb3bac55cc4ceca1ac01",
+      "npm": "8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7",
+      "npx": "237adf8f3747cad8b9b62fcfd0d9c8d509a64e550337707f55100afcb79e8900",
+      "pnpm": "98e6b99a881d64a1cc982c3e60aa260bf02160386b12e74475e06486dc74b090"
+    },
+    "files": {}
+  },
+  "bun": {
+    "artifactSha256": "e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76",
+    "commands": {
+      "bun": "10702245766b225e70bbf6235fd6b47214fd94b4760d00ffaed8ab0df57ac235"
+    },
+    "files": {}
+  },
+  "rust": {
+    "artifactSha256": "46b5a8991f6ba263dc41d1ffc1b2d529add23b60ec117498d51e6931dbfa03a4",
+    "commands": {
+      "rustc": "b53b780f77f952062f8ca8a3b70aef2390b1e45ad91939be94afdc9543026853",
+      "cargo": "a670e02cfa39ac2e53f77a2d911ca1fc9e2c479b0603ec956625be1daf24e3af",
+      "rustfmt": "68cb47a2a38daa8ff2ec6d623a2374b0a165d77ec74f1f654216665018c04598",
+      "cargo-fmt": "6b42f43e4523abba428eb42b3a106727843428b096ef7ed8a9497bddcc50448a",
+      "cargo-clippy": "4255f7671a17fba900ffd84a20f1dd0c986d52a2404496d3b7518f5044de5663",
+      "clippy-driver": "89b6cc8d0d988b00a3f65bc90c76fedbaedb6bcb442b34563aefe3621f26544b"
+    },
+    "files": {}
+  },
+  "zig": {
+    "artifactSha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+    "commands": {
+      "zig": "2317bbb91798556d9d0f38aabdac23db83f0979b25f767259ae474546724087c"
+    },
+    "files": {}
+  },
+  "codex": {
+    "artifactSha256": "8391d67757496bfd14893eca6cbf0c96994bf2627566ff1f018f70600c9ef6b3",
+    "commands": {
+      "codex": "b76a027d6b210f9a8da7aaf321dd235c700f0ef7a794d4a5314b9af6c134f0f0"
+    },
+    "files": {}
+  },
+  "claude": {
+    "artifactSha256": "248f23231556ba4d13cc6dde6a9ed7625f36cf94aeb4c5652d05f72d093c1b46",
+    "commands": {
+      "claude": "30e2724e2aecb1bf5dc9f3130901afb71c5fa229051c190a6d7ad9aff6378d6d"
+    },
+    "files": {}
+  },
+  "omp": {
+    "artifactSha256": "4a651590d92923c5f29831bfa9288006254764103c737f92886bef001762fb5f",
+    "commands": {
+      "omp": "00a19f3ade3f23c823dc4bbce1b1a12e856e538f478069c49e0d2b2925e2c6a8"
+    },
+    "files": {}
+  },
+  "opencode": {
+    "artifactSha256": "24b0d458d21ef548b2752166303defcf7f4945b049fb4876ab78dfaf86d81b27",
+    "commands": {
+      "opencode": "9ca0b9953d49997601655e54f846a3efa464f237e47c6f1b04716d0f2e64c4c2"
+    },
+    "files": {}
+  },
+  "herdr": {
+    "artifactSha256": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d",
+    "commands": {
+      "herdr": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d"
+    },
+    "files": {}
+  },
+  "docker": {
+    "artifactSha256": "7c1ebadc65c716cdc6d35fc78759ed0e4317debf43c21dd12f066f2006999def",
+    "commands": {
+      "docker": "5f04c9b96fc08fcf50295fb5c3dc3992f62224c7b053ecedbd86486f10844131"
+    },
+    "files": {}
+  },
+  "compose": {
+    "artifactSha256": "b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6",
+    "commands": {
+      "docker-compose": "b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6"
+    },
+    "files": {}
+  },
+  "uv": {
+    "artifactSha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+    "commands": {
+      "uv": "edbfb9a3d00dc84148e6691cd8740781fdc32db6505d7ef88ba6c3e569d5bec9",
+      "uvx": "5340cc220291c621beae12675b83a52b6b614ad5306d3d60bada03e143252e62"
+    },
+    "files": {}
+  },
+  "ruff": {
+    "artifactSha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+    "commands": {
+      "ruff": "427390db027ec004b71f15f62103c610e2219f284238eed0d42085b16a0085ea"
+    },
+    "files": {}
+  },
+  "ripgrep": {
+    "artifactSha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+    "commands": {
+      "rg": "e62198eb19b136b88c330af83647b5a962cb99b6b1f066758568f12de1974849"
+    },
+    "files": {}
+  },
+  "fd": {
+    "artifactSha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+    "commands": {
+      "fd": "bd664fa3c5c4919234adf2b489c4b7ec47282e8e926c012e3f67112cf9f8c182"
+    },
+    "files": {}
+  },
+  "jq": {
+    "artifactSha256": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f",
+    "commands": {
+      "jq": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f"
+    },
+    "files": {}
+  },
+  "yq": {
+    "artifactSha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+    "commands": {
+      "yq": "129534601871538efe0ba4c5e62a34fb1d5f469bcb975c4fddeb467d82974973"
+    },
+    "files": {}
+  },
+  "native-profiles": {
+    "artifactSha256": "fe445feb038af63175a500b10804d5d0f9bfc348122bf15db3c04d11b9a8ae26",
+    "commands": {},
+    "files": {
+      "ASSET_MANIFEST.json": "22608ee2ae22712d7d1c9673fd568fe9acbe204c4926e703d3dd10617d7f982c"
+    }
+  },
+  "worktrunk": {
+    "artifactSha256": "4c20bc2bb4d61f43f1d0e168218085fb20d1c1db45601b041f87cd6a3acefb16",
+    "commands": {
+      "wt": "d5e9d5e951eb248ce38f6e0dc3c0d48f9dd3b379b0ab538408f72fbe85d3a0e9",
+      "git-wt": "67e350c5dc1b6e808b95967620ea99a0f8896c468b235e8ce493b622ac1cc42b"
+    },
+    "files": {}
+  },
+  "rtk": {
+    "artifactSha256": "31ec1e7088b5a8659402ba42802864439b1758cf4e19576b442180ebfe8ac568",
+    "commands": {
+      "rtk": "e2950ef652b7e5af115b4573d19ca329a6ee2af758ccaa1de67d5d308694ada0"
+    },
+    "files": {}
+  },
+  "zoekt": {
+    "artifactSha256": "d68acb0116c7b793d198ea097b291e45ac1e8f31b75cfebf5ba32190cd23bdc1",
+    "commands": {
+      "zoekt": "71bc5719b8c144a737378d85e9a9dfe3f0ac5513d0bbe4c250b1bcad30442cbf",
+      "zoekt-index": "573690ff6c5a9c9ae1197eda177dae551c557b7797074b63769d75d49f248149",
+      "zoekt-git-index": "fe34fe2351bad346832bb8e649fed9715ca77f1c0ee7f25a553cde4b4350d938",
+      "zoekt-webserver": "9113f90a1162d3163887a10fb3f31ec4b160393a92c6e08cfdf511897e959241",
+      "zoekt-local-sync": "539abe9bff92a9c8c7560617470141898862015dd04604f7159fff8722d14dc4",
+      "universal-ctags": "b4c060955aba2af0c2545c3915b87406b9c238cbe7d930cf9a1f1bc5901131cf"
+    },
+    "files": {}
+  },
+  "language-servers": {
+    "artifactSha256": "cafb7b3b1df0221c323ae2fcb6130dfc5d43c6d8bc042fb2118c11689f03908f",
+    "commands": {
+      "pyright": "69809361d1e40193b433fc8e45a73daeb622ee49df5f060d0dacd8b0432121a0",
+      "pyright-langserver": "3029f7b0e731e54bde48de99a4f3cd9129452ea52186f8ecb7b0f431128a9b68",
+      "tsc": "3abd775f470f5e54657ce09e24b8e91f6528164883cdc01ebac77e958f58cae6",
+      "typescript-language-server": "296d314d5e551a66aeeb6301acc175175c9d30ba428f5b04045a524af59b9445",
+      "bash-language-server": "d0a8cc22c2e1dfda75e6cb679b6286a511331140722cccbef6a47a17bff61c34",
+      "yaml-language-server": "e3592a07ca797fb2f9a5a8d1e3f4fb7581c56059790731b6b5313f7c2655e3bb",
+      "vscode-json-language-server": "ba9bb31cfba3dca2e9c09722ee8e2aa5b9578d9c62f1af7d3c0aad9cfe2c6b15",
+      "vscode-html-language-server": "d79e1dca332615cbae703adfa1d66ad3dcf8d6f63a01c8629b1597e66d6ff553",
+      "vscode-css-language-server": "05b3c4d3e9392a8af38b0fc9260656fcd017ef0792c85290237d5c0bb484aa38"
+    },
+    "files": {}
+  },
+  "trivy": {
+    "artifactSha256": "0216040d279058cb90d6c6972259cb437959e3da8fd4070115de126128f9a5f2",
+    "commands": {
+      "trivy": "a55cb2ad2ceec91e3c0fc71ec2d433d1883c24c1c8b904e0b5fa48a956a5f212"
+    },
+    "files": {}
+  },
+  "go": {
+    "artifactSha256": "7226736c2339719cda28fbf3a54d71aa63bcefe376e98cef00034268dab24840",
+    "commands": {
+      "go": "de0ae3e082ce7599eae4fb69fa2ef1e43b8f31ffd3fce62cdf81930aa9005050",
+      "gofmt": "96d48ae3c8754e4a10e8f5ec2472d1344767d276e0ba6e94948c00cf8558e378"
+    },
+    "files": {}
+  },
+  "inspect": {
+    "artifactSha256": "ff139adc32637c6a8ec68f5e6acb20e90c016a098ff54e76e1cb781242528078",
+    "commands": {
+      "inspect": "9b4369bcef76e67e1af43107f62a4f4d00d721d57b38c502f27e1ef0db26ad49",
+      "inspect-smoke": "e8208d43741d6c04245e51bc5a85c3f99d92b5c5662884cb6cf536a2c60a0979",
+      "bench": "aa396b808554925c2f5cdc4ed3d58e9c556892ab97b1185c55f14eb1a939d27c",
+      "bench-selftest": "f728e1f1a393e780b892329b53550d85fb0bb40f2699ac6e5e70be79fac0e202"
+    },
+    "files": {}
+  },
+  "playwright": {
+    "artifactSha256": "3e6ccd09224a8b6a770d45ca616935d70c9df48f74bf19d49de674bf62e4874f",
+    "commands": {
+      "playwright": "6d081f998d1e1c27ffe86d6d1a03983341680be6166f92e83db79b2a8103903e",
+      "browser-smoke": "68b018e7f719009cca17def055181ea42e75a3142b68f4e16b776975487277b1"
+    },
+    "files": {}
+  }
+}

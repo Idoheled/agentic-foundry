@@ -1,0 +1,14 @@
+[
+  {
+    "project": "oh-my-pi",
+    "exit_code": 0,
+    "stderr": "",
+    "resolved_packages": 1021
+  },
+  {
+    "project": "herdr",
+    "exit_code": 0,
+    "stderr": "",
+    "resolved_packages": 297
+  }
+]

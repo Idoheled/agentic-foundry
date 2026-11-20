@@ -1,0 +1,16 @@
+Usage: ./setup.sh doctor|plan|apply|agent [--config /absolute/site.json] [--state /absolute/private-state]
+       ./setup.sh --config /absolute/site.json [--state /absolute/private-state]
+
+doctor  Inspect Linux, architecture, libc, existing commands and candidate profiles; no installation.
+plan    Validate factual private-first plans and show exact stages; no installation.
+apply   Install and verify requested stages; safe repeat runs verify completed receipts.
+agent   Existing machine: launch the original Claude -> OMP two-phase workflow.
+
+--config alone means apply. --only productivity limits plan/apply to productivity tools.
+Run as the ordinary operator, with existing sudo access for system installs.
+No public-network download or dependency-resolution fallback is provided.
+
+Python bootstrap: select an existing Python >=3.9 via AGENTIC_PYTHON=/absolute/python.
+If no suitable Python exists, first inspect internal repositories, then supply a factual
+AGENTIC_BOOTSTRAP_PYTHON_FALLBACK_REASON to allow the included Linux x86-64 CPython.
+That controller is separate from the eventual native tool installation.

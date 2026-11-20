@@ -1,0 +1,944 @@
+{
+  "created_utc": "2026-11-20T09:59:34.031606+00:00",
+  "scope": "Official Paperclip stable source, official documentation source, and separately identified community OMP adapter. Root bundle includes runtimes and other worker repositories independently.",
+  "paperclip_release": {
+    "tag_name": "v2026.1117.0",
+    "name": "v2026.1117.0",
+    "html_url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1117.0",
+    "published_at": "2026-11-18T22:20:29Z",
+    "prerelease": false,
+    "draft": false
+  },
+  "sources": [
+    {
+      "name": "paperclip",
+      "source_url": "https://github.com/paperclipai/paperclip.git",
+      "commit": "c0f132898d2a2677312d8c72096187b27a3d9a38",
+      "commit_time": "2026-11-18T19:19:03Z",
+      "git_shallow": false,
+      "source_checkout": "sources/paperclip",
+      "bundle_verified": true,
+      "git_fsck_passed": true,
+      "artifacts": [
+        {
+          "path": "artifacts/sources/paperclip-c0f132898d2a.tar.gz",
+          "bytes": 61880776,
+          "sha256": "832176c6c7934a61a44abbfe026722200492d8a231da61458e34036f4faaa39b"
+        },
+        {
+          "path": "artifacts/sources/paperclip-c0f132898d2a.bundle",
+          "bytes": 306975634,
+          "sha256": "30bbcf7978ebee9dc5008ef5b4790cebac429d1850fe9eabe6b43fe590c7c94a"
+        }
+      ],
+      "license_files": [
+        "sources/paperclip/LICENSE"
+      ],
+      "clean_checkout": true
+    },
+    {
+      "name": "paperclip-docs",
+      "source_url": "https://github.com/paperclipai/paperclip-docs.git",
+      "commit": "7a2663ad9662915bb394d075be0a1b360b72297d",
+      "commit_time": "2026-11-19T14:28:18+01:00",
+      "git_shallow": false,
+      "source_checkout": "sources/paperclip-docs",
+      "bundle_verified": true,
+      "git_fsck_passed": true,
+      "artifacts": [
+        {
+          "path": "artifacts/sources/paperclip-docs-7a2663ad9662.tar.gz",
+          "bytes": 70914333,
+          "sha256": "32c6c1f3c37a9bd0ed195a9e8f0e0178264001deb45247f1c6af6abd0285db7b"
+        },
+        {
+          "path": "artifacts/sources/paperclip-docs-7a2663ad9662.bundle",
+          "bytes": 488928984,
+          "sha256": "c5ea263196b287994e95d94d2f6aaf5e95d6a436ea243f225c62eaafc76070bc"
+        }
+      ],
+      "license_files": [
+        "sources/paperclip-docs/LICENSE"
+      ],
+      "clean_checkout": true
+    },
+    {
+      "name": "paperclip-omp-adapter",
+      "source_url": "https://github.com/tickernelz/paperclip-omp-adapter.git",
+      "commit": "0f0864332d953ecd56839f8a60afcb8aa6d1e351",
+      "commit_time": "2026-09-24T17:33:52+07:00",
+      "git_shallow": false,
+      "source_checkout": "sources/paperclip-omp-adapter",
+      "bundle_verified": true,
+      "git_fsck_passed": true,
+      "artifacts": [
+        {
+          "path": "artifacts/sources/paperclip-omp-adapter-0f0864332d95.tar.gz",
+          "bytes": 56373,
+          "sha256": "9e3f318662be099ad328d5eab29d3a81307209add000968a469846f5f95cbedd"
+        },
+        {
+          "path": "artifacts/sources/paperclip-omp-adapter-0f0864332d95.bundle",
+          "bytes": 103798,
+          "sha256": "c785ae666bb70a0aba6c549d10a84c264177b3684ea34b12aa9a3096fb3d0704"
+        }
+      ],
+      "license_files": [
+        "sources/paperclip-omp-adapter/LICENSE"
+      ],
+      "clean_checkout": true
+    }
+  ],
+  "runtime_packaging": {
+    "official_image": "ghcr.io/paperclipai/paperclip:2026.1117.0",
+    "source_sha_tag": "ghcr.io/paperclipai/paperclip:sha-c0f1328",
+    "docker_target": "production",
+    "image_digest_note": "The root bundle image manifest records the retrieved linux/amd64 digest. Do not replace with latest or the cloud variant.",
+    "container_node_major": 24,
+    "entrypoint": [
+      "/usr/bin/tini",
+      "-s",
+      "--",
+      "docker-entrypoint.sh"
+    ],
+    "command": [
+      "node",
+      "server/dist-runtime/index.mjs"
+    ],
+    "state_root": "/paperclip",
+    "provider_pack": "/opt/paperclip-runner/provider-pack",
+    "provider_pack_note": "Preserve image-native paperclip-runnerd and stamped provider-pack files together. They are used by native Runner and are distinct from legacy CLI adapters.",
+    "pinned_runner_opencode_package": "opencode-ai@1.18.34",
+    "image_global_cli_note": "Dockerfile installs several CLI packages with latest or unversioned npm specifiers. The root bundle pins the standalone OpenCode executable and uses an explicit adapter command path.",
+    "official_external_database_compose": "sources/paperclip/docker/docker-compose.yml",
+    "official_embedded_database_compose": "sources/paperclip/docker/docker-compose.quickstart.yml",
+    "offline_compose_note": "Official compose recipes use build. Use imported pinned runtime images; no offline docker build is implied.",
+    "official_compose_shutdown_seconds": 90,
+    "official_compose_pids_limit": 2048
+  },
+  "local_trusted": {
+    "environment": {
+      "PAPERCLIP_DEPLOYMENT_MODE": "local_trusted",
+      "PAPERCLIP_BIND": "loopback",
+      "HOST": "127.0.0.1",
+      "PORT": "3100",
+      "PAPERCLIP_TELEMETRY_DISABLED": "1",
+      "DO_NOT_TRACK": "1"
+    },
+    "constraints": [
+      "Server refuses local_trusted on a nonloopback bind.",
+      "A Linux host-network container allows localhost-only host access. Remote UI can use an SSH tunnel.",
+      "No Authorization or Origin is needed for localhost API; implicit Local Board has instance administrator privileges.",
+      "Use authenticated mode with a stable BETTER_AUTH_SECRET for shared network access; the bundle does not silently turn local_trusted into a LAN service."
+    ],
+    "auth_bootstrap": "BetterAuth is not instantiated in local_trusted; the local board principal is initialized by the server."
+  },
+  "api_contracts": {
+    "create_company": {
+      "method": "POST",
+      "path": "/api/companies",
+      "body": {
+        "name": "Offline Engineering",
+        "description": "Private multi-project workspace"
+      }
+    },
+    "create_project": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/projects",
+      "body": {
+        "name": "Project A",
+        "workspace": {
+          "sourceType": "local_path",
+          "cwd": "/workspaces/project-a",
+          "isPrimary": true
+        }
+      }
+    },
+    "create_legacy_opencode_agent": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/agents",
+      "body": {
+        "name": "OpenCode Engineer",
+        "role": "engineer",
+        "adapterType": "opencode_local",
+        "runner": "legacy",
+        "adapterConfig": {
+          "command": "/opt/offline/bin/opencode",
+          "model": "internal/model-id",
+          "cwd": "/workspaces/project-a",
+          "timeoutSec": 1800
+        },
+        "runtimeConfig": {
+          "heartbeat": {
+            "enabled": false,
+            "intervalSec": 0,
+            "wakeOnDemand": false,
+            "maxConcurrentRuns": 1
+          }
+        }
+      }
+    },
+    "install_compiled_omp_adapter": {
+      "method": "POST",
+      "path": "/api/adapters/install",
+      "body": {
+        "packageName": "/opt/offline/adapters/paperclip-omp-adapter-0.7.0",
+        "isLocalPath": true
+      }
+    },
+    "create_legacy_omp_agent": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/agents",
+      "body": {
+        "name": "OMP Engineer",
+        "role": "engineer",
+        "adapterType": "omp_local",
+        "runner": "legacy",
+        "adapterConfig": {
+          "command": "/opt/offline/bin/omp",
+          "model": "internal/model-id",
+          "agentDir": "/paperclip/omp-agent",
+          "cwd": "/workspaces/project-a",
+          "approvalMode": "yolo",
+          "timeoutSec": 1800
+        },
+        "runtimeConfig": {
+          "heartbeat": {
+            "enabled": false,
+            "intervalSec": 0,
+            "wakeOnDemand": false,
+            "maxConcurrentRuns": 1
+          }
+        }
+      }
+    },
+    "notes": [
+      "Paths and model IDs in examples are templates and must match mounted artifacts and configured internal model provider.",
+      "Company requireBoardApprovalForNewAgents defaults false in this release; if an existing company enables it, direct agent creation409 requires its approval flow, not silent governance changes.",
+      "OMP installation requires the compiled dist tree and bundled production node_modules accessible to Paperclip. isLocalPath:true skips npm.",
+      "Agent configuration supports runner auto, paperclip, legacy. The legacy CLI route is deliberate here; it does not claim native Runner child-worker introspection.",
+      "Heartbeat defaults are intentionally inert until provider and sandbox acceptance checks pass; wakeOnDemand is the non-timer execution gate."
+    ]
+  },
+  "evidence_files": [
+    "sources/paperclip/.github/workflows/docker.yml",
+    "sources/paperclip/Dockerfile",
+    "sources/paperclip/scripts/docker-entrypoint.sh",
+    "sources/paperclip/packages/paperclip-runner/package.json",
+    "sources/paperclip/server/src/config.ts",
+    "sources/paperclip/server/src/config-file.ts",
+    "sources/paperclip/server/src/index.ts",
+    "sources/paperclip/server/src/middleware/auth.ts",
+    "sources/paperclip/server/src/middleware/board-mutation-guard.ts",
+    "sources/paperclip/server/src/routes/adapters.ts",
+    "sources/paperclip/server/src/routes/companies.ts",
+    "sources/paperclip/server/src/routes/agents.ts",
+    "sources/paperclip/server/src/routes/projects.ts",
+    "sources/paperclip/packages/shared/src/validators/agent.ts",
+    "sources/paperclip/packages/shared/src/validators/company.ts",
+    "sources/paperclip/packages/shared/src/validators/project.ts",
+    "sources/paperclip/packages/adapters/opencode-local/src/server/runtime-config.ts",
+    "sources/paperclip-docs/docs/reference/deploy/docker.md",
+    "sources/paperclip-docs/docs/reference/adapters/external-adapters.md",
+    "sources/paperclip-omp-adapter/src/metadata.ts"
+  ],
+  "limitations": [
+    "Source archives and Git bundles contain complete pinned source, docs, license files and repository history; source alone is not the offline dependency closure. Runtime images, compiled adapter and Rust vendoring artifacts are separate.",
+    "The OMP adapter is community software with its own pinned adapter-utils dependency; local build/typecheck/mock smoke and module-import validation do not substitute for onsite Paperclip/OMP/model execution acceptance.",
+    "Paperclip shows registered agents/tasks/runs. Hidden OMP descendants and independent Herdr panes are not automatically separate Paperclip agents."
+  ],
+  "omp_adapter_runtime": {
+    "name": "@zhafron/paperclip-omp-adapter",
+    "version": "0.7.0",
+    "commit": "0f0864332d953ecd56839f8a60afcb8aa6d1e351",
+    "built_from": "sources/paperclip-omp-adapter",
+    "artifact": "artifacts/adapters/paperclip-omp-adapter-0.7.0-runtime.tar.gz",
+    "sha256": "7a130aa067bf16a86415eb9fe82981d52be4dc22f01c3f70fada5f059bb57bec",
+    "bytes": 12670061,
+    "runtime_dir": "artifacts/adapters/paperclip-omp-adapter-0.7.0",
+    "dependency_install": "npm ci --ignore-scripts from upstream package-lock.json; npm prune --omit=dev --ignore-scripts --offline",
+    "verified": [
+      "npm run typecheck",
+      "npm test (build and node test/smoke.mjs): adapter smoke passed",
+      "production dependency import createServerAdapter(): omp_local, execute, testEnvironment, supportsSessionResume:true"
+    ],
+    "installation": {
+      "endpoint": "POST /api/adapters/install",
+      "body": {
+        "packageName": "/absolute/path/to/paperclip-omp-adapter-0.7.0",
+        "isLocalPath": true
+      },
+      "needs": "instance admin auth; local path with dist and node_modules; no npm invocation for isLocalPath:true"
+    },
+    "scope_limit": "Build/import and mock adapter smoke tests passed. Not yet qualified against the actual internal inference endpoint or full Paperclip 2026.1117.0 runtime.",
+    "dependency_lock_inventory": {
+      "node_modules/@esbuild/aix-ppc64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.28.2.tgz",
+        "integrity": "sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ=="
+      },
+      "node_modules/@esbuild/android-arm": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.28.2.tgz",
+        "integrity": "sha512-kXXoiPVVGQcnIYGOeaovwOURpniDBpSq4A03qkQ+BMQqtGG6HYap3xne9C1O1yo4TR3qxlCX5IqqmX6fFo2Lqg=="
+      },
+      "node_modules/@esbuild/android-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.28.2.tgz",
+        "integrity": "sha512-5YfKeeI8qWfBZIX+u2xZC3Zlb3Os/gLS2sbEKM+I4ZOcsWmHS2WLysCcQZDAFRslDUU5Oiq44gf6PYN1vGwG5A=="
+      },
+      "node_modules/@esbuild/android-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.28.2.tgz",
+        "integrity": "sha512-O387ite7SzUyCcy3JQX4P4bLtEA7bLLkx+esve5JHnyYfNTxcVpXZo9jhdB0lTKN44gztELTdU7nS8Nr16Fs1Q=="
+      },
+      "node_modules/@esbuild/darwin-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.28.2.tgz",
+        "integrity": "sha512-n4KqkOQrraxHJcgjM1RvwbigfQKIKJVpM7xp+KsxiyUSrRdIXnt73VhrPAx0fV44hgfmIVKjxMN9J1t5jySVkw=="
+      },
+      "node_modules/@esbuild/darwin-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.28.2.tgz",
+        "integrity": "sha512-uq6suIWYP37qzGddBKPw5QEQPi6HiLGsO7UmkpfyaYNQ3D+rN6w6WfwH+nuqcGXWvawGwxOEroO4YGnFh95azw=="
+      },
+      "node_modules/@esbuild/freebsd-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.28.2.tgz",
+        "integrity": "sha512-n+I0BTSRIoy+d6RPKnEVwql5UwBJolytvY4mAOIEJorKlqgPII8ix6slVVrfZ5Tnj7glIZvloylbB/EJPMWEXw=="
+      },
+      "node_modules/@esbuild/freebsd-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.28.2.tgz",
+        "integrity": "sha512-78XJTJkvPs0kz2w61301PJjXl4g7q3JqiYMZ/M/yVI73EHBrCRTgkhu9oqG7vPqq+a/yadEW8aD+agKlk5xrmg=="
+      },
+      "node_modules/@esbuild/linux-arm": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.28.2.tgz",
+        "integrity": "sha512-XlDnu2q5yoqems+xay6wSAcg9DDD7K9RLKZEBOMZm3ckNpJBvOX20tSfby8KfrrhINDyv9V2YVZKY/SpoGJI8w=="
+      },
+      "node_modules/@esbuild/linux-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.28.2.tgz",
+        "integrity": "sha512-pW4AC0P3it8c7do9MVM4p51FzHzdM/TZrerurgRcHJ2WTa1VQ1CIq18xncfpBJw4ojkiZZrKW2yIBWBP92j6Ug=="
+      },
+      "node_modules/@esbuild/linux-ia32": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.28.2.tgz",
+        "integrity": "sha512-CYbnj78HsIeA+DhgUKgFCfvNsTHFhMMrinUrMZpDXJXKN8T3XViTZ/+wtHeVxEWY8ewSzTFN+nRmSwO2tZaLUQ=="
+      },
+      "node_modules/@esbuild/linux-loong64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.28.2.tgz",
+        "integrity": "sha512-buwkd8nsph4R+ajRvw0qM5Hja/TXQow3ptzWO2EbG/cqcIkHloRrdlBtQlshyYGTNFvfkfJ5tpPLVkY4DtsPfQ=="
+      },
+      "node_modules/@esbuild/linux-mips64el": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.28.2.tgz",
+        "integrity": "sha512-ZVykbDyk7519VwiNb9Lcj9m8XM6v5V9uKPvrEMkkEedVewf+0itkhahp4HDpgERXhwLRpWFypsGbG/J8s0QjJA=="
+      },
+      "node_modules/@esbuild/linux-ppc64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.28.2.tgz",
+        "integrity": "sha512-CAXl+Dtd9UUuJd8pKKdwh6MLm3MUMiqMPmhZ3tTSXPqfyQ3vDl6R5hZdZ/kYojK4ofXtdfSv1tFq8XzWx3heNQ=="
+      },
+      "node_modules/@esbuild/linux-riscv64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.28.2.tgz",
+        "integrity": "sha512-GeXCej4IQtU1B+QlDV8W/RRvbzI3O/Stss+/bCXv4lZls5WGRtu2a+3JkA3i4qIUlMXpcHebWpF8AkJhATowuA=="
+      },
+      "node_modules/@esbuild/linux-s390x": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.28.2.tgz",
+        "integrity": "sha512-3H1weTYZPxt/WOhByszQZybS9w5lKzUn1FDMsgEChbHWQwHYQQRfBxgCcZvPhjHfKyJjIievvMmEUawJrdY9Dg=="
+      },
+      "node_modules/@esbuild/netbsd-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.28.2.tgz",
+        "integrity": "sha512-sSATRjPeDBg3pdgHoQfoYBob11Kk1FGa9lui5RIHZCoCkJa9QKlvl3/vKz2usCmYYjs7ymJR/2Nnsqe+Hjt5nw=="
+      },
+      "node_modules/@esbuild/netbsd-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.28.2.tgz",
+        "integrity": "sha512-lqnzCV+mM0gIADaKihiCg6ifgfU2L3h5E33rNQBN1Y4MaVGnzryzmvvf7UHxprpQdE8hpqLolJ9Rl+SkIRDpyw=="
+      },
+      "node_modules/@esbuild/openbsd-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.28.2.tgz",
+        "integrity": "sha512-AL2qJILH7lNjrDmCQDvdxMfAUIv8KMNZOvrwAQ8i8//ntL9FflhOyMJ8OZSMBb8/AWXe3/5v5S20y3zCoZWKoQ=="
+      },
+      "node_modules/@esbuild/openbsd-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.28.2.tgz",
+        "integrity": "sha512-QtiuPytchRyC4rwUKhexJdQKvDuZ6hWloi3igqPQNUJCS1/v9EiO3UTOXR6A3FoMo4fnAKbWJdqaIwhOzh8qEw=="
+      },
+      "node_modules/@esbuild/openharmony-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.28.2.tgz",
+        "integrity": "sha512-WkhYDmpTjLvGlScA1rwjRUmhl4k8oXR3cIbtqWmELgU/dFeHHlEllxDvdWcNJV9rbzCexB5vz8gtNewWLgCT7Q=="
+      },
+      "node_modules/@esbuild/sunos-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.28.2.tgz",
+        "integrity": "sha512-GPMSkTOtMnv2U2F8gxe4Io6qmVs+YKyp832Etqqxr0hFngmXQ3rzwytelm3GIn7T4VviRUlf3sOgBOiTdvaf7g=="
+      },
+      "node_modules/@esbuild/win32-arm64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.28.2.tgz",
+        "integrity": "sha512-PIhhEkE9uPBleRBrQEJpUn7MBnibZzbGzYWPmY3x+YoVg/95zbjB4CxPPOQ8l5tYYM4mMaCthF8/1DIfBQQyWQ=="
+      },
+      "node_modules/@esbuild/win32-ia32": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.28.2.tgz",
+        "integrity": "sha512-YmJbfTlvU7Sdn9BB+4PRES4oB6pxgS37MAONj+hBr/cpXS1aBPKXxNnDbu+QCWPj0o9dgyxeq79g6c5P8KeuYA=="
+      },
+      "node_modules/@esbuild/win32-x64": {
+        "version": "0.28.2",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.2.tgz",
+        "integrity": "sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g=="
+      },
+      "node_modules/@paperclipai/adapter-utils": {
+        "version": "2026.916.0",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@paperclipai/adapter-utils/-/adapter-utils-2026.916.0.tgz",
+        "integrity": "sha512-5fjTEVja4M3FCgknYAb5zSzrpnhezC4gnQatilnedvukpsZCh/6ilnQynjvnRLzaz16xIFTj8OoCGwpV5pUnPA=="
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/@agentclientprotocol/sdk": {
+        "version": "1.4.0",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/@clack/core": {
+        "version": "1.5.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/@clack/prompts": {
+        "version": "1.8.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/@esbuild/linux-x64": {
+        "version": "0.28.2",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/acpx": {
+        "version": "0.12.0",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/b4a": {
+        "version": "1.9.0",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/bare-events": {
+        "version": "2.9.2",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/bare-fs": {
+        "version": "4.8.1",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/bare-path": {
+        "version": "3.1.2",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/bare-stream": {
+        "version": "2.13.4",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/bare-url": {
+        "version": "2.5.4",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/commander": {
+        "version": "15.0.0",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/esbuild": {
+        "version": "0.28.2",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/events-universal": {
+        "version": "1.0.1",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/fast-fifo": {
+        "version": "1.3.2",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-truncated-width": {
+        "version": "3.0.3",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-width": {
+        "version": "3.0.2",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/fast-wrap-ansi": {
+        "version": "0.2.2",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/sisteransi": {
+        "version": "1.0.5",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/skillflag": {
+        "version": "0.2.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/streamx": {
+        "version": "2.28.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/tar-stream": {
+        "version": "3.2.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/teex": {
+        "version": "1.0.1",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/text-decoder": {
+        "version": "1.2.7",
+        "license": "Apache-2.0"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/tsx": {
+        "version": "4.23.13",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/adapter-utils/node_modules/zod": {
+        "version": "4.6.5",
+        "license": "MIT"
+      },
+      "node_modules/@paperclipai/shared": {
+        "version": "2026.916.0",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/@paperclipai/shared/-/shared-2026.916.0.tgz",
+        "integrity": "sha512-MO85MsXvOAAmfz4t2mHPvpYkUVFAcFZiKuZ4Y3pgJ+xZJjYP0Maused/Ml/DV9gODvV4UvbN4R8VlBl82YDB1w=="
+      },
+      "node_modules/fsevents": {
+        "version": "2.3.3",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+        "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="
+      },
+      "node_modules/picocolors": {
+        "version": "1.1.1",
+        "license": "ISC",
+        "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+        "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+      },
+      "node_modules/yaml": {
+        "version": "2.9.0",
+        "license": "ISC",
+        "resolved": "https://registry.npmjs.org/yaml/-/yaml-2.9.0.tgz",
+        "integrity": "sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA=="
+      },
+      "node_modules/zod": {
+        "version": "4.6.5",
+        "license": "MIT",
+        "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.5.tgz",
+        "integrity": "sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q=="
+      }
+    },
+    "installed_runtime_packages": [
+      {
+        "name": "@agentclientprotocol/sdk",
+        "version": "1.4.0",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/@agentclientprotocol/sdk",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/@agentclientprotocol/sdk/LICENSE"
+        ]
+      },
+      {
+        "name": "@clack/core",
+        "version": "1.5.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/@clack/core",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/@clack/core/LICENSE"
+        ]
+      },
+      {
+        "name": "@clack/prompts",
+        "version": "1.8.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/@clack/prompts",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/@clack/prompts/LICENSE"
+        ]
+      },
+      {
+        "name": "@esbuild/linux-x64",
+        "version": "0.28.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/@esbuild/linux-x64",
+        "license": "MIT",
+        "license_files": []
+      },
+      {
+        "name": "acpx",
+        "version": "0.12.0",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/acpx",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/acpx/LICENSE"
+        ]
+      },
+      {
+        "name": "b4a",
+        "version": "1.9.0",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/b4a",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/b4a/LICENSE"
+        ]
+      },
+      {
+        "name": "bare-events",
+        "version": "2.9.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/bare-events",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-events/LICENSE"
+        ]
+      },
+      {
+        "name": "bare-fs",
+        "version": "4.8.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/bare-fs",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-fs/LICENSE"
+        ]
+      },
+      {
+        "name": "bare-path",
+        "version": "3.1.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/bare-path",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-path/NOTICE",
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-path/LICENSE"
+        ]
+      },
+      {
+        "name": "bare-stream",
+        "version": "2.13.4",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/bare-stream",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-stream/LICENSE"
+        ]
+      },
+      {
+        "name": "bare-url",
+        "version": "2.5.4",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/bare-url",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/bare-url/LICENSE"
+        ]
+      },
+      {
+        "name": "commander",
+        "version": "15.0.0",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/commander",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/commander/LICENSE"
+        ]
+      },
+      {
+        "name": "esbuild",
+        "version": "0.28.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/esbuild",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/esbuild/LICENSE.md"
+        ]
+      },
+      {
+        "name": "events-universal",
+        "version": "1.0.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/events-universal",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/events-universal/LICENSE"
+        ]
+      },
+      {
+        "name": "fast-fifo",
+        "version": "1.3.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/fast-fifo",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/fast-fifo/LICENSE"
+        ]
+      },
+      {
+        "name": "fast-string-truncated-width",
+        "version": "3.0.3",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-truncated-width",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-truncated-width/license"
+        ]
+      },
+      {
+        "name": "fast-string-width",
+        "version": "3.0.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-width",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/fast-string-width/license"
+        ]
+      },
+      {
+        "name": "fast-wrap-ansi",
+        "version": "0.2.2",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/fast-wrap-ansi",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/fast-wrap-ansi/LICENSE"
+        ]
+      },
+      {
+        "name": "sisteransi",
+        "version": "1.0.5",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/sisteransi",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/sisteransi/license"
+        ]
+      },
+      {
+        "name": "skillflag",
+        "version": "0.2.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/skillflag",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/skillflag/LICENSE"
+        ]
+      },
+      {
+        "name": "streamx",
+        "version": "2.28.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/streamx",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/streamx/LICENSE"
+        ]
+      },
+      {
+        "name": "tar-stream",
+        "version": "3.2.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/tar-stream",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/tar-stream/LICENSE"
+        ]
+      },
+      {
+        "name": "teex",
+        "version": "1.0.1",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/teex",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/teex/LICENSE"
+        ]
+      },
+      {
+        "name": "text-decoder",
+        "version": "1.2.7",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/text-decoder",
+        "license": "Apache-2.0",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/text-decoder/LICENSE"
+        ]
+      },
+      {
+        "name": "tsx",
+        "version": "4.23.13",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/tsx",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/tsx/LICENSE"
+        ]
+      },
+      {
+        "name": "zod",
+        "version": "4.6.5",
+        "path": "node_modules/@paperclipai/adapter-utils/node_modules/zod",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/adapter-utils/node_modules/zod/LICENSE"
+        ]
+      },
+      {
+        "name": "@paperclipai/adapter-utils",
+        "version": "2026.916.0",
+        "path": "node_modules/@paperclipai/adapter-utils",
+        "license": "MIT",
+        "license_files": []
+      },
+      {
+        "name": "@paperclipai/shared",
+        "version": "2026.916.0",
+        "path": "node_modules/@paperclipai/shared",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/@paperclipai/shared/LICENSE"
+        ]
+      },
+      {
+        "name": "picocolors",
+        "version": "1.1.1",
+        "path": "node_modules/picocolors",
+        "license": "ISC",
+        "license_files": [
+          "node_modules/picocolors/LICENSE"
+        ]
+      },
+      {
+        "name": "yaml",
+        "version": "2.9.0",
+        "path": "node_modules/yaml",
+        "license": "ISC",
+        "license_files": [
+          "node_modules/yaml/LICENSE"
+        ]
+      },
+      {
+        "name": "zod",
+        "version": "4.6.5",
+        "path": "node_modules/zod",
+        "license": "MIT",
+        "license_files": [
+          "node_modules/zod/LICENSE"
+        ]
+      }
+    ],
+    "build_host_node_version": "v24.22.3",
+    "build_host_npm_version": "11.19.1"
+  },
+  "omp_adapter_offline_rebuild": {
+    "artifact": "artifacts/build-deps/paperclip-omp-adapter-npm-cache.tar.gz",
+    "bytes": 17205113,
+    "sha256": "a5ca73e99febe3dfa2072a7f39d7cf5fb40c46eef5f4a0aff61567059906e147",
+    "scope": "npm content-addressed cache populated for the original OMP adapter 0.7.0 package-lock.json, including TypeScript dev dependencies; logs excluded.",
+    "verified": "Clean npm ci --offline --ignore-scripts and npm run build passed.",
+    "build_log": "research/paperclip-omp-offline-rebuild.log",
+    "rebuild_commands": [
+      "Extract npm cache tar into /absolute/npm-cache",
+      "In extracted paperclip-omp-adapter source run npm ci --offline --ignore-scripts --no-audit --no-fund --cache /absolute/npm-cache",
+      "npm run build"
+    ],
+    "note": "This supplies the pinned lock dependency closure for Linux x86_64. New or changed dependency versions require separately imported artifacts."
+  },
+  "omp_adapter_selected_runtime": {
+    "name": "@zhafron/paperclip-omp-adapter",
+    "upstream_version": "0.7.0",
+    "version": "0.7.0-offline.1",
+    "upstream_commit": "0f0864332d953ecd56839f8a60afcb8aa6d1e351",
+    "artifact": "artifacts/adapters/paperclip-omp-adapter-0.7.0-offline.1-runtime.tar.gz",
+    "bytes": 12700756,
+    "sha256": "71494b3cc34a9053cb74e26b0fcdeb143c7f7c0420f3fcc173bb40e61a813e3c",
+    "runtime_directory": "artifacts/adapters/paperclip-omp-adapter-0.7.0-offline.1",
+    "patch": {
+      "path": "artifacts/patches/paperclip-omp-adapter-0.7.0-offline.1.patch",
+      "sha256": "3b6e29739972a7ff6449e5dca58030f5d901f8858328aea5ed468b6259236b0a",
+      "applies_to_pristine_upstream": true
+    },
+    "validation": [
+      "Clean dependency install used npm ci --offline --ignore-scripts from bundled cache",
+      "npm run typecheck",
+      "npm run build",
+      "node test/offline-models.mjs: startup/list/refresh/catalog validation/quota probe paths launch zero OMP subprocesses",
+      "Same test passed after pruning dev dependencies and copying final runtime artifact",
+      "Pristine official upstream checkout remains clean"
+    ],
+    "build_log": "research/paperclip-omp-offline-patch-tests.log",
+    "offline_environment": {
+      "PAPERCLIP_OMP_OFFLINE_MODELS": "[\"internal/REPLACE_MODEL_ID\"]"
+    },
+    "defaults": {
+      "model_discovery": "disabled; static catalog or empty model list",
+      "quota_probes": "disabled; explicit unavailable result; per-run usage parsing unchanged"
+    },
+    "operator_opt_ins_outside_offline_profile": [
+      "PAPERCLIP_OMP_ALLOW_MODEL_DISCOVERY=true with no static catalog",
+      "PAPERCLIP_OMP_ALLOW_QUOTA_PROBE=true"
+    ],
+    "offline_install": {
+      "method": "POST",
+      "path": "/api/adapters/install",
+      "body": {
+        "packageName": "/opt/agentic/adapters/omp",
+        "isLocalPath": true
+      }
+    },
+    "limits": [
+      "Provisioned model catalog is a picker/discovery control, not a general-purpose egress firewall. OMP execution configuration/extensions and environment still require internal-only provisioning.",
+      "Stock OMP19 session persistence could not be validated on this build host because AF_UNIX sockets are denied; perform target smoke/save/resume acceptance and preserve existingOMP baseline.",
+      "Upstream adapter mock smoke passed before the downstream patch; patched build has focused offline regression tests. Actual Paperclip+OMP+internal-model end-to-end behavior remains a target acceptance gate."
+    ]
+  },
+  "runner_crate_artifact": {
+    "path": "artifacts/build-deps/paperclip-runner-rust-vendor.tar.gz",
+    "bytes": 61498660,
+    "sha256": "4ad2b2c2ce45b5fb37a647a55010da81389b81a654f75e038dbafd10a3b29bdb"
+  },
+  "runner_vendor_validation": {
+    "result": "passed",
+    "command": [
+      "/workspace/scratch/e174c70ed48b/agentic-offline-build/build-tools/rust-1.97.1/bin/cargo",
+      "--config",
+      "source.crates-io.replace-with=\"offline-vendor\"",
+      "--config",
+      "source.offline-vendor.directory=\"/workspace/scratch/e174c70ed48b/agentic-offline-build/artifacts/build-deps/paperclip-runner-rust-vendor/vendor\"",
+      "metadata",
+      "--format-version",
+      "1",
+      "--offline",
+      "--locked",
+      "--manifest-path",
+      "/workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/Cargo.toml"
+    ],
+    "network": "CARGO_NET_OFFLINE=true and --offline; isolated previously empty CARGO_HOME",
+    "versions": {
+      "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)",
+      "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+    },
+    "resolved_package_count": 335,
+    "workspace_members": [
+      "path+file:///workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/crates/process-table#paperclip-process-table@0.0.0",
+      "path+file:///workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip/packages/paperclip-runner/runner/crates/runner-core#paperclip-runner-core@0.0.0"
+    ],
+    "lockfile_unchanged": true,
+    "limits": "Metadata validation proves vendored dependency resolution; it does not compile or execute the native Runner."
+  },
+  "offline_api_guide": "research/paperclip-offline-api-guide.json"
+}

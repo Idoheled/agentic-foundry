@@ -1,0 +1,34 @@
+Reading package lists...
+Building dependency tree...
+The following additional packages will be installed:
+  binutils-common binutils-x86-64-linux-gnu cpp-14-x86-64-linux-gnu
+  cpp-x86-64-linux-gnu gcc-14-base gcc-14-x86-64-linux-gnu
+  gcc-x86-64-linux-gnu libasan8 libatomic1 libbinutils libc-dev-bin libc6
+  libc6-dev libcc1-0 libcrypt-dev libcrypt1 libctf-nobfd0 libctf0
+  libgcc-14-dev libgcc-s1 libgmp10 libgomp1 libhwasan0 libidn2-0 libisl23
+  libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1
+  libstdc++6 libtsan2 libubsan1 libunistring5 libzstd1 linux-libc-dev manpages
+  manpages-dev musl rpcsvc-proto zlib1g
+Suggested packages:
+  binutils-doc gcc-14-locales cpp-14-doc cpp-doc gcc-14-doc make autoconf
+  automake libtool flex bison gdb-x86-64-linux-gnu gcc-doc libc-devtools
+  glibc-doc debconf | debconf-2.0 libc-l10n locales libnss-nis libnss-nisplus
+  man-browser
+The following NEW packages will be installed:
+  binutils-common binutils-x86-64-linux-gnu cpp-14-x86-64-linux-gnu
+  cpp-x86-64-linux-gnu gcc-14-base gcc-14-x86-64-linux-gnu
+  gcc-x86-64-linux-gnu libasan8 libatomic1 libbinutils libc-dev-bin libc6
+  libc6-dev libcc1-0 libcrypt-dev libcrypt1 libctf-nobfd0 libctf0
+  libgcc-14-dev libgcc-s1 libgmp10 libgomp1 libhwasan0 libidn2-0 libisl23
+  libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1
+  libstdc++6 libtsan2 libubsan1 libunistring5 libzstd1 linux-libc-dev manpages
+  manpages-dev musl musl-dev musl-tools rpcsvc-proto zlib1g
+0 upgraded, 45 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1086 kB/65.5 MB of archives.
+After this operation, 243 MB of additional disk space will be used.
+Get:1 https://deb.debian.org/debian trixie/main amd64 musl amd64 1.2.5-3.1~deb13u1 [428 kB]
+Get:2 https://deb.debian.org/debian trixie/main amd64 musl-dev amd64 1.2.5-3.1~deb13u1 [616 kB]
+Get:3 https://deb.debian.org/debian trixie/main amd64 musl-tools amd64 1.2.5-3.1~deb13u1 [41.9 kB]
+Fetched 1086 kB in 7s (152 kB/s)
+Download complete and in download only mode
+W: Unable to read /workspace/scratch/e174c70ed48b/agentic-offline-build/build-tools/apt/etc/preferences.d/ - DirectoryExists (2: No such file or directory)

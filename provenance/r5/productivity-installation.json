@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "fixtureOnly": true,
+  "targetMachineQualified": false,
+  "privateRepositoryAccess": false,
+  "kit": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5",
+  "catalogSha256": "5bea671c5fdc61299b2dd2ef92ef7d5065449b00da8c265b3ba275390c7ad469",
+  "tools": [
+    "worktrunk",
+    "rtk",
+    "zoekt",
+    "language-servers",
+    "trivy",
+    "go",
+    "inspect",
+    "playwright"
+  ],
+  "fakePrefix": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/prefix",
+  "temporaryHome": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/operator-home",
+  "coreStateUsed": false,
+  "containerToolsUsed": false,
+  "browserUiExecuted": false,
+  "steps": [
+    {
+      "name": "plan",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/scripts/productivity.py",
+        "plan",
+        "--plan",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/validation/integration-productivity-plan-input.json",
+        "--state",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/state",
+        "--prefix",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/prefix"
+      ],
+      "returncode": 0,
+      "seconds": 2.33,
+      "stdoutFile": "validation/integration-productivity-plan.stdout",
+      "stderrFile": "validation/integration-productivity-plan.stderr",
+      "passed": true
+    },
+    {
+      "name": "apply",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/scripts/productivity.py",
+        "apply",
+        "--plan",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/validation/integration-productivity-plan-input.json",
+        "--state",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/state",
+        "--prefix",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/prefix"
+      ],
+      "returncode": 0,
+      "seconds": 126.18,
+      "stdoutFile": "validation/integration-productivity-apply.stdout",
+      "stderrFile": "validation/integration-productivity-apply.stderr",
+      "passed": true
+    },
+    {
+      "name": "trivy-offline",
+      "argv": [
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/prefix/usr/local/bin/agentic-trivy",
+        "fs",
+        "--scanners",
+        "vuln,misconfig",
+        "--format",
+        "json",
+        "--output",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/validation/integration-productivity-trivy-scan.json",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/validation/trivy-fixture"
+      ],
+      "returncode": 0,
+      "seconds": 5.25,
+      "stdoutFile": "validation/integration-productivity-trivy-offline.stdout",
+      "stderrFile": "validation/integration-productivity-trivy-offline.stderr",
+      "passed": true
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/scripts/productivity.py",
+        "verify",
+        "--plan",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/validation/integration-productivity-plan-input.json",
+        "--state",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/state",
+        "--prefix",
+        "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/native/productivity-fixture-oj_cembq/prefix"
+      ],
+      "returncode": 0,
+      "seconds": 40.21,
+      "stdoutFile": "validation/integration-productivity-verify.stdout",
+      "stderrFile": "validation/integration-productivity-verify.stderr",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "cleaned": true,
+  "dependencies": {
+    "git": {
+      "requiredMinimum": "2.43",
+      "observed": "git version 2.56.1",
+      "executable": "/usr/local/bin/git"
+    },
+    "node": {
+      "requiredMinimum": "22.22.2",
+      "observed": "v24.22.3",
+      "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node"
+    }
+  },
+  "scriptsAtStart": {
+    "productivity.py": "2fd8c0073a00141dca1eae68957f56b3ca9672eff6e8f5fc83daa598ba6ff8d7",
+    "hostctl.py": "5784aca751d20e7448539cdabfa34504ad234e1063d912742818f55cb95ce6ee"
+  },
+  "appliedPrerequisites": [
+    {
+      "command": "git",
+      "path": "/usr/local/bin/git",
+      "version": "2.56.1",
+      "passed": true
+    },
+    {
+      "command": "node",
+      "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "version": "24.22.3",
+      "passed": true
+    }
+  ],
+  "ownershipMarkerObserved": true,
+  "trivy": {
+    "findings": {
+      "vulnerabilities": 6,
+      "misconfigurations": 4
+    },
+    "cacheOutsidePrefix": true,
+    "dbBytes": 1782759424,
+    "passed": true
+  },
+  "hostVerificationPassed": true,
+  "verificationChecks": 89,
+  "installedTreeChecks": [
+    {
+      "tool": "worktrunk",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "rtk",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "zoekt",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "language-servers",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "trivy",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "go",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "inspect",
+      "check": "installed-tree-identity",
+      "passed": true
+    },
+    {
+      "tool": "playwright",
+      "check": "installed-tree-identity",
+      "passed": true
+    }
+  ],
+  "preservationSentinelsUnchanged": true,
+  "catalogUnchanged": true,
+  "scriptsAtEnd": {
+    "productivity.py": "2fd8c0073a00141dca1eae68957f56b3ca9672eff6e8f5fc83daa598ba6ff8d7",
+    "hostctl.py": "5784aca751d20e7448539cdabfa34504ad234e1063d912742818f55cb95ce6ee"
+  },
+  "scriptsUnchanged": true
+}

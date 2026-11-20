@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "command": "./ci/check.sh",
+  "passed": true,
+  "tests": 262,
+  "seconds": 24.411,
+  "sourceOnly": true,
+  "payloadHydrated": false,
+  "scope": "Controller behavior, LFS reconstruction, deployment entry points, source/checksum/export, release boundary and remote-streaming fixtures; no installation on a user machine",
+  "actualInternalModelsQualified": false,
+  "actualDockerDeploymentQualified": false,
+  "actualBrowserUIQualified": false,
+  "additionalChecks": [
+    "Python and Bash syntax",
+    "source-manifest and runtime checksum contract",
+    "read-only deploy doctor on builder",
+    "47 first-party Markdown files: local paths and heading anchors"
+  ]
+}

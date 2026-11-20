@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "tools": {
+    "worktrunk": {
+      "source": "internal",
+      "version": "REPLACE_QUALIFIED_PRIVATE_VERSION",
+      "path": "/mnt/REPLACE_PRIVATE_MIRROR/worktrunk-runtime.tar.gz",
+      "sha256": "REPLACE_WITH_ACTUAL_ARTIFACT_SHA256",
+      "format": "tar",
+      "stripComponents": 1,
+      "evidence": "REPLACE_WITH_ACTUAL_PRIVATE_RUNTIME_LAYOUT_AND_CAPABILITY_QUALIFICATION"
+    }
+  },
+  "files": {},
+  "images": {},
+  "approvedInternalRegistries": []
+}

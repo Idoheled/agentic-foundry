@@ -1,0 +1,48 @@
+{
+  "name": "@zhafron/paperclip-omp-adapter",
+  "upstream_version": "0.7.0",
+  "version": "0.7.0-offline.1",
+  "upstream_commit": "0f0864332d953ecd56839f8a60afcb8aa6d1e351",
+  "artifact": "artifacts/adapters/paperclip-omp-adapter-0.7.0-offline.1-runtime.tar.gz",
+  "bytes": 12700756,
+  "sha256": "71494b3cc34a9053cb74e26b0fcdeb143c7f7c0420f3fcc173bb40e61a813e3c",
+  "runtime_directory": "artifacts/adapters/paperclip-omp-adapter-0.7.0-offline.1",
+  "patch": {
+    "path": "artifacts/patches/paperclip-omp-adapter-0.7.0-offline.1.patch",
+    "sha256": "3b6e29739972a7ff6449e5dca58030f5d901f8858328aea5ed468b6259236b0a",
+    "applies_to_pristine_upstream": true
+  },
+  "validation": [
+    "Clean dependency install used npm ci --offline --ignore-scripts from bundled cache",
+    "npm run typecheck",
+    "npm run build",
+    "node test/offline-models.mjs: startup/list/refresh/catalog validation/quota probe paths launch zero OMP subprocesses",
+    "Same test passed after pruning dev dependencies and copying final runtime artifact",
+    "Pristine official upstream checkout remains clean"
+  ],
+  "build_log": "research/paperclip-omp-offline-patch-tests.log",
+  "offline_environment": {
+    "PAPERCLIP_OMP_OFFLINE_MODELS": "[\"internal/REPLACE_MODEL_ID\"]"
+  },
+  "defaults": {
+    "model_discovery": "disabled; static catalog or empty model list",
+    "quota_probes": "disabled; explicit unavailable result; per-run usage parsing unchanged"
+  },
+  "operator_opt_ins_outside_offline_profile": [
+    "PAPERCLIP_OMP_ALLOW_MODEL_DISCOVERY=true with no static catalog",
+    "PAPERCLIP_OMP_ALLOW_QUOTA_PROBE=true"
+  ],
+  "offline_install": {
+    "method": "POST",
+    "path": "/api/adapters/install",
+    "body": {
+      "packageName": "/opt/agentic/adapters/omp",
+      "isLocalPath": true
+    }
+  },
+  "limits": [
+    "Provisioned model catalog is a picker/discovery control, not a general-purpose egress firewall. OMP execution configuration/extensions and environment still require internal-only provisioning.",
+    "Stock OMP19 session persistence could not be validated on this build host because AF_UNIX sockets are denied; perform target smoke/save/resume acceptance and preserve existingOMP baseline.",
+    "Upstream adapter mock smoke passed before the downstream patch; patched build has focused offline regression tests. Actual Paperclip+OMP+internal-model end-to-end behavior remains a target acceptance gate."
+  ]
+}

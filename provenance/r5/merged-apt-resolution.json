@@ -1,0 +1,1600 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-20T17:46:07.545438+00:00",
+  "kit": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5",
+  "repository": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/payload/packages/debian13-amd64",
+  "repositoryType": "local-file-only",
+  "requestedBasePackages": [
+    "git",
+    "build-essential",
+    "pkg-config",
+    "cmake",
+    "ninja-build",
+    "tmux",
+    "rsync",
+    "file",
+    "unzip",
+    "zip",
+    "shellcheck",
+    "bubblewrap",
+    "python3-venv",
+    "python3-pip",
+    "libssl-dev",
+    "libffi-dev",
+    "clang",
+    "protobuf-compiler",
+    "lsof",
+    "strace",
+    "socat"
+  ],
+  "requestedBrowserPackages": [
+    "chromium",
+    "chromium-common",
+    "chromium-sandbox",
+    "fonts-liberation",
+    "fonts-noto-color-emoji"
+  ],
+  "requestedPackages": [
+    "git",
+    "build-essential",
+    "pkg-config",
+    "cmake",
+    "ninja-build",
+    "tmux",
+    "rsync",
+    "file",
+    "unzip",
+    "zip",
+    "shellcheck",
+    "bubblewrap",
+    "python3-venv",
+    "python3-pip",
+    "libssl-dev",
+    "libffi-dev",
+    "clang",
+    "protobuf-compiler",
+    "lsof",
+    "strace",
+    "socat",
+    "chromium",
+    "chromium-common",
+    "chromium-sandbox",
+    "fonts-liberation",
+    "fonts-noto-color-emoji"
+  ],
+  "emptyInitialStatus": true,
+  "installRecommends": false,
+  "installSuggests": false,
+  "nativeInstallationPerformed": false,
+  "networkRepositoryConfigured": false,
+  "passed": true,
+  "hostDpkgStatusSha256Before": null,
+  "commands": [
+    {
+      "argv": [
+        "apt-get",
+        "update"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "apt-get",
+        "--simulate",
+        "--no-remove",
+        "--no-install-recommends",
+        "install",
+        "git",
+        "build-essential",
+        "pkg-config",
+        "cmake",
+        "ninja-build",
+        "tmux",
+        "rsync",
+        "file",
+        "unzip",
+        "zip",
+        "shellcheck",
+        "bubblewrap",
+        "python3-venv",
+        "python3-pip",
+        "libssl-dev",
+        "libffi-dev",
+        "clang",
+        "protobuf-compiler",
+        "lsof",
+        "strace",
+        "socat",
+        "chromium",
+        "chromium-common",
+        "chromium-sandbox",
+        "fonts-liberation",
+        "fonts-noto-color-emoji"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "apt-get",
+        "--download-only",
+        "--yes",
+        "--no-remove",
+        "--no-install-recommends",
+        "install",
+        "git",
+        "build-essential",
+        "pkg-config",
+        "cmake",
+        "ninja-build",
+        "tmux",
+        "rsync",
+        "file",
+        "unzip",
+        "zip",
+        "shellcheck",
+        "bubblewrap",
+        "python3-venv",
+        "python3-pip",
+        "libssl-dev",
+        "libffi-dev",
+        "clang",
+        "protobuf-compiler",
+        "lsof",
+        "strace",
+        "socat",
+        "chromium",
+        "chromium-common",
+        "chromium-sandbox",
+        "fonts-liberation",
+        "fonts-noto-color-emoji"
+      ],
+      "returncode": 0
+    }
+  ],
+  "indexSha256": "3e2a4246a95a1257b1ce23d4f15da8ec35dc15374891f8ca50ff670ef101b34f",
+  "packageArtifactsVerified": 426,
+  "sourcesList": "deb [arch=amd64 trusted=yes] file:/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/payload/packages/debian13-amd64 ./\n",
+  "isolatedConfig": {
+    "Dir": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/eval-browser/merged-apt-wb909ck5",
+    "Dir::Etc": "etc/apt",
+    "Dir::Etc::sourcelist": "sources.list",
+    "Dir::Etc::sourceparts": "sources.list.d",
+    "Dir::Etc::parts": "apt.conf.d",
+    "Dir::Etc::main": "apt.conf",
+    "Dir::State": "var/lib/apt",
+    "Dir::State::status": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/eval-browser/merged-apt-wb909ck5/var/lib/dpkg/status",
+    "Dir::State::lists": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/eval-browser/merged-apt-wb909ck5/var/lib/apt/lists",
+    "Dir::Cache": "var/cache/apt",
+    "Dir::Cache::archives": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/eval-browser/merged-apt-wb909ck5/var/cache/apt/archives",
+    "Dir::Cache::pkgcache": "",
+    "Dir::Cache::srcpkgcache": "",
+    "Dir::Log": "/workspace/scratch/e174c70ed48b/agentic-offline-build/r5-work/eval-browser/merged-apt-wb909ck5/var/log/apt",
+    "Dir::Bin::methods": "/usr/lib/apt/methods",
+    "Dir::Bin::solvers": "/usr/lib/apt/solvers",
+    "APT::Architecture": "amd64",
+    "APT::Sandbox::User": "agent",
+    "Acquire::Languages": "none",
+    "APT::Install-Recommends": "false",
+    "APT::Install-Suggests": "false"
+  },
+  "selectedPackages": [
+    {
+      "package": "gcc-14-base",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libc6",
+      "version": "2.41-12+deb13u4"
+    },
+    {
+      "package": "libgcc-s1",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "mawk",
+      "version": "1.3.4.20250131-1"
+    },
+    {
+      "package": "base-files",
+      "version": "13.8+deb13u7"
+    },
+    {
+      "package": "libbz2-1.0",
+      "version": "1.0.8-6"
+    },
+    {
+      "package": "liblzma5",
+      "version": "5.8.1-1+deb13u2"
+    },
+    {
+      "package": "libmd0",
+      "version": "1.1.0-2+b1"
+    },
+    {
+      "package": "libpcre2-8-0",
+      "version": "10.46-1~deb13u3"
+    },
+    {
+      "package": "libselinux1",
+      "version": "3.8.1-1"
+    },
+    {
+      "package": "libzstd1",
+      "version": "1.5.7+dfsg-1"
+    },
+    {
+      "package": "zlib1g",
+      "version": "1:1.3.dfsg+really1.3.1-1+deb13u1"
+    },
+    {
+      "package": "libacl1",
+      "version": "2.3.2-2+b1"
+    },
+    {
+      "package": "tar",
+      "version": "1.35+dfsg-3.1"
+    },
+    {
+      "package": "dpkg",
+      "version": "1.22.22"
+    },
+    {
+      "package": "libcrypt1",
+      "version": "1:4.4.38-1"
+    },
+    {
+      "package": "perl-base",
+      "version": "5.40.1-6+deb13u1"
+    },
+    {
+      "package": "init-system-helpers",
+      "version": "1.69~deb13u1"
+    },
+    {
+      "package": "sysvinit-utils",
+      "version": "3.14-4"
+    },
+    {
+      "package": "libaudit-common",
+      "version": "1:4.0.2-2+deb13u1"
+    },
+    {
+      "package": "libcap-ng0",
+      "version": "0.8.5-4+b1"
+    },
+    {
+      "package": "libaudit1",
+      "version": "1:4.0.2-2+deb13u1"
+    },
+    {
+      "package": "libdb5.3t64",
+      "version": "5.3.28+dfsg2-9"
+    },
+    {
+      "package": "debconf",
+      "version": "1.5.91"
+    },
+    {
+      "package": "libpam0g",
+      "version": "1.7.0-5"
+    },
+    {
+      "package": "libcap2",
+      "version": "1:2.75-10+deb13u1+b3"
+    },
+    {
+      "package": "libsystemd0",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "libpam-modules-bin",
+      "version": "1.7.0-5"
+    },
+    {
+      "package": "libpam-modules",
+      "version": "1.7.0-5"
+    },
+    {
+      "package": "libblkid1",
+      "version": "2.41.5-0+deb13u1"
+    },
+    {
+      "package": "libmount1",
+      "version": "2.41.5-0+deb13u1"
+    },
+    {
+      "package": "libsmartcols1",
+      "version": "2.41.5-0+deb13u1"
+    },
+    {
+      "package": "mount",
+      "version": "2.41.5-0+deb13u1"
+    },
+    {
+      "package": "libseccomp2",
+      "version": "2.6.0-2"
+    },
+    {
+      "package": "openssl-provider-legacy",
+      "version": "3.5.7-1~deb13u3"
+    },
+    {
+      "package": "libssl3t64",
+      "version": "3.5.7-1~deb13u3"
+    },
+    {
+      "package": "libsystemd-shared",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "libapparmor1",
+      "version": "4.1.0-1"
+    },
+    {
+      "package": "systemd",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "systemd-sysv",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "libdbus-1-3",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "dbus-bin",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "dbus-session-bus-common",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "libexpat1",
+      "version": "2.9.0-1~deb13u1"
+    },
+    {
+      "package": "dbus-daemon",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "dbus-system-bus-common",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "dbus",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "libpython3.13-minimal",
+      "version": "3.13.5-2+deb13u5"
+    },
+    {
+      "package": "python3.13-minimal",
+      "version": "3.13.5-2+deb13u5"
+    },
+    {
+      "package": "python3-minimal",
+      "version": "3.13.5-1"
+    },
+    {
+      "package": "media-types",
+      "version": "13.0.0"
+    },
+    {
+      "package": "netbase",
+      "version": "6.5"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026f-0+deb13u1"
+    },
+    {
+      "package": "libffi8",
+      "version": "3.4.8-2"
+    },
+    {
+      "package": "libtinfo6",
+      "version": "6.5+20250216-2"
+    },
+    {
+      "package": "libncursesw6",
+      "version": "6.5+20250216-2"
+    },
+    {
+      "package": "readline-common",
+      "version": "8.2-6"
+    },
+    {
+      "package": "libreadline8t64",
+      "version": "8.2-6"
+    },
+    {
+      "package": "libsqlite3-0",
+      "version": "3.46.1-7+deb13u2"
+    },
+    {
+      "package": "libuuid1",
+      "version": "2.41.5-0+deb13u1"
+    },
+    {
+      "package": "libpython3.13-stdlib",
+      "version": "3.13.5-2+deb13u5"
+    },
+    {
+      "package": "python3.13",
+      "version": "3.13.5-2+deb13u5"
+    },
+    {
+      "package": "libpython3-stdlib",
+      "version": "3.13.5-1"
+    },
+    {
+      "package": "python3",
+      "version": "3.13.5-1"
+    },
+    {
+      "package": "libxxhash0",
+      "version": "0.8.3-2"
+    },
+    {
+      "package": "liblz4-1",
+      "version": "1.10.0-4"
+    },
+    {
+      "package": "libpopt0",
+      "version": "1.19+dfsg-2"
+    },
+    {
+      "package": "rsync",
+      "version": "3.5.0+ds1-0+deb13u1"
+    },
+    {
+      "package": "libpam-runtime",
+      "version": "1.7.0-5"
+    },
+    {
+      "package": "libproc2-0",
+      "version": "2:4.0.4-9"
+    },
+    {
+      "package": "procps",
+      "version": "2:4.0.4-9"
+    },
+    {
+      "package": "bzip2",
+      "version": "1.0.8-6"
+    },
+    {
+      "package": "openssl",
+      "version": "3.5.7-1~deb13u3"
+    },
+    {
+      "package": "ca-certificates",
+      "version": "20250419+deb13u1"
+    },
+    {
+      "package": "libmagic-mgc",
+      "version": "1:5.46-5"
+    },
+    {
+      "package": "libmagic1t64",
+      "version": "1:5.46-5"
+    },
+    {
+      "package": "file",
+      "version": "1:5.46-5"
+    },
+    {
+      "package": "libpam-systemd",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "liblsof0",
+      "version": "4.99.4+dfsg-2"
+    },
+    {
+      "package": "libkrb5support0",
+      "version": "1.21.3-5+deb13u1"
+    },
+    {
+      "package": "libcom-err2",
+      "version": "1.47.2-3+b12"
+    },
+    {
+      "package": "libk5crypto3",
+      "version": "1.21.3-5+deb13u1"
+    },
+    {
+      "package": "libkeyutils1",
+      "version": "1.6.3-6"
+    },
+    {
+      "package": "libkrb5-3",
+      "version": "1.21.3-5+deb13u1"
+    },
+    {
+      "package": "libgssapi-krb5-2",
+      "version": "1.21.3-5+deb13u1"
+    },
+    {
+      "package": "libtirpc-common",
+      "version": "1.3.6+ds-1"
+    },
+    {
+      "package": "libtirpc3t64",
+      "version": "1.3.6+ds-1"
+    },
+    {
+      "package": "lsof",
+      "version": "4.99.4+dfsg-2"
+    },
+    {
+      "package": "perl-modules-5.40",
+      "version": "5.40.1-6+deb13u1"
+    },
+    {
+      "package": "libgdbm6t64",
+      "version": "1.24-2"
+    },
+    {
+      "package": "libgdbm-compat4t64",
+      "version": "1.24-2"
+    },
+    {
+      "package": "libperl5.40",
+      "version": "5.40.1-6+deb13u1"
+    },
+    {
+      "package": "perl",
+      "version": "5.40.1-6+deb13u1"
+    },
+    {
+      "package": "xz-utils",
+      "version": "5.8.1-1+deb13u2"
+    },
+    {
+      "package": "libgdk-pixbuf2.0-common",
+      "version": "2.42.12+dfsg-4+deb13u1"
+    },
+    {
+      "package": "libatomic1",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libglib2.0-0t64",
+      "version": "2.84.4-3~deb13u5"
+    },
+    {
+      "package": "libstdc++6",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libxml2",
+      "version": "2.12.7+dfsg+really2.9.14-2.1+deb13u3"
+    },
+    {
+      "package": "shared-mime-info",
+      "version": "2.4-5+b2"
+    },
+    {
+      "package": "libjpeg62-turbo",
+      "version": "1:2.1.5-4"
+    },
+    {
+      "package": "libpng16-16t64",
+      "version": "1.6.48-1+deb13u6"
+    },
+    {
+      "package": "libdeflate0",
+      "version": "1.23-2"
+    },
+    {
+      "package": "libjbig0",
+      "version": "2.1-6.1+b2"
+    },
+    {
+      "package": "liblerc4",
+      "version": "4.0.0+ds-5"
+    },
+    {
+      "package": "libsharpyuv0",
+      "version": "1.5.0-0.1"
+    },
+    {
+      "package": "libwebp7",
+      "version": "1.5.0-0.1"
+    },
+    {
+      "package": "libtiff6",
+      "version": "4.7.0-3+deb13u3"
+    },
+    {
+      "package": "libgdk-pixbuf-2.0-0",
+      "version": "2.42.12+dfsg-4+deb13u1"
+    },
+    {
+      "package": "gtk-update-icon-cache",
+      "version": "4.18.6+ds-2"
+    },
+    {
+      "package": "hicolor-icon-theme",
+      "version": "0.18-2"
+    },
+    {
+      "package": "adwaita-icon-theme",
+      "version": "48.1-1"
+    },
+    {
+      "package": "at-spi2-common",
+      "version": "2.56.2-1+deb13u2"
+    },
+    {
+      "package": "libsframe1",
+      "version": "2.44-3"
+    },
+    {
+      "package": "binutils-common",
+      "version": "2.44-3"
+    },
+    {
+      "package": "libbinutils",
+      "version": "2.44-3"
+    },
+    {
+      "package": "libgprofng0",
+      "version": "2.44-3"
+    },
+    {
+      "package": "libctf-nobfd0",
+      "version": "2.44-3"
+    },
+    {
+      "package": "libctf0",
+      "version": "2.44-3"
+    },
+    {
+      "package": "libjansson4",
+      "version": "2.14-2+b3"
+    },
+    {
+      "package": "binutils-x86-64-linux-gnu",
+      "version": "2.44-3"
+    },
+    {
+      "package": "binutils",
+      "version": "2.44-3"
+    },
+    {
+      "package": "bubblewrap",
+      "version": "0.12.0-1~deb13u1"
+    },
+    {
+      "package": "libc-dev-bin",
+      "version": "2.41-12+deb13u4"
+    },
+    {
+      "package": "linux-libc-dev",
+      "version": "6.12.117-1"
+    },
+    {
+      "package": "libcrypt-dev",
+      "version": "1:4.4.38-1"
+    },
+    {
+      "package": "rpcsvc-proto",
+      "version": "1.4.3-1"
+    },
+    {
+      "package": "libc6-dev",
+      "version": "2.41-12+deb13u4"
+    },
+    {
+      "package": "libgmp10",
+      "version": "2:6.3.0+dfsg-3"
+    },
+    {
+      "package": "libisl23",
+      "version": "0.27-1"
+    },
+    {
+      "package": "libmpfr6",
+      "version": "4.2.2-1"
+    },
+    {
+      "package": "libmpc3",
+      "version": "1.3.1-1+b3"
+    },
+    {
+      "package": "cpp-14-x86-64-linux-gnu",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "cpp-14",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "cpp-x86-64-linux-gnu",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "cpp",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "libcc1-0",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libgomp1",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libitm1",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libasan8",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "liblsan0",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libtsan2",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libubsan1",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libhwasan0",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libquadmath0",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libgcc-14-dev",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "gcc-14-x86-64-linux-gnu",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "gcc-14",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "gcc-x86-64-linux-gnu",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "gcc",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "libstdc++-14-dev",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "g++-14-x86-64-linux-gnu",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "g++-14",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "g++-x86-64-linux-gnu",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "g++",
+      "version": "4:14.2.0-1"
+    },
+    {
+      "package": "make",
+      "version": "4.4.1-2"
+    },
+    {
+      "package": "libdpkg-perl",
+      "version": "1.22.22"
+    },
+    {
+      "package": "patch",
+      "version": "2.8-2"
+    },
+    {
+      "package": "dpkg-dev",
+      "version": "1.22.22"
+    },
+    {
+      "package": "build-essential",
+      "version": "12.12"
+    },
+    {
+      "package": "libasound2-data",
+      "version": "1.2.14-1+deb13u1"
+    },
+    {
+      "package": "libasound2t64",
+      "version": "1.2.14-1+deb13u1"
+    },
+    {
+      "package": "libatk1.0-0t64",
+      "version": "2.56.2-1+deb13u2"
+    },
+    {
+      "package": "libxau6",
+      "version": "1:1.0.11-1"
+    },
+    {
+      "package": "libxdmcp6",
+      "version": "1:1.1.5-1"
+    },
+    {
+      "package": "libxcb1",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libx11-data",
+      "version": "2:1.8.12-1"
+    },
+    {
+      "package": "libx11-6",
+      "version": "2:1.8.12-1"
+    },
+    {
+      "package": "libxext6",
+      "version": "2:1.3.4-1+b3"
+    },
+    {
+      "package": "libxi6",
+      "version": "2:1.8.2-1"
+    },
+    {
+      "package": "libatspi2.0-0t64",
+      "version": "2.56.2-1+deb13u2"
+    },
+    {
+      "package": "libatk-bridge2.0-0t64",
+      "version": "2.56.2-1+deb13u2"
+    },
+    {
+      "package": "libbrotli1",
+      "version": "1.1.0-2+deb13u1"
+    },
+    {
+      "package": "libfreetype6",
+      "version": "2.13.3+dfsg-1+deb13u1"
+    },
+    {
+      "package": "fonts-liberation",
+      "version": "1:2.1.5-3"
+    },
+    {
+      "package": "fontconfig-config",
+      "version": "2.15.0-2.3"
+    },
+    {
+      "package": "libfontconfig1",
+      "version": "2.15.0-2.3"
+    },
+    {
+      "package": "libpixman-1-0",
+      "version": "0.44.0-3"
+    },
+    {
+      "package": "libxcb-render0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxcb-shm0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxrender1",
+      "version": "1:0.9.12-1"
+    },
+    {
+      "package": "libcairo2",
+      "version": "1.18.4-1+b1"
+    },
+    {
+      "package": "libavahi-common-data",
+      "version": "0.8-16"
+    },
+    {
+      "package": "libavahi-common3",
+      "version": "0.8-16"
+    },
+    {
+      "package": "libavahi-client3",
+      "version": "0.8-16"
+    },
+    {
+      "package": "libnettle8t64",
+      "version": "3.10.1-1"
+    },
+    {
+      "package": "libhogweed6t64",
+      "version": "3.10.1-1"
+    },
+    {
+      "package": "libunistring5",
+      "version": "1.3-2"
+    },
+    {
+      "package": "libidn2-0",
+      "version": "2.3.8-2"
+    },
+    {
+      "package": "libp11-kit0",
+      "version": "0.25.5-3"
+    },
+    {
+      "package": "libtasn1-6",
+      "version": "4.20.0-2+deb13u1"
+    },
+    {
+      "package": "libgnutls30t64",
+      "version": "3.8.9-3+deb13u4"
+    },
+    {
+      "package": "libcups2t64",
+      "version": "2.4.10-3+deb13u2"
+    },
+    {
+      "package": "libdav1d7",
+      "version": "1.5.1-1"
+    },
+    {
+      "package": "libdouble-conversion3",
+      "version": "3.3.1-1"
+    },
+    {
+      "package": "libogg0",
+      "version": "1.3.5-3+b2"
+    },
+    {
+      "package": "libflac14",
+      "version": "1.5.0+ds-2"
+    },
+    {
+      "package": "libdrm-common",
+      "version": "2.4.124-2"
+    },
+    {
+      "package": "libdrm2",
+      "version": "2.4.124-2"
+    },
+    {
+      "package": "libwayland-server0",
+      "version": "1.23.1-3"
+    },
+    {
+      "package": "libdrm-amdgpu1",
+      "version": "2.4.124-2"
+    },
+    {
+      "package": "libpciaccess0",
+      "version": "0.17-3+b3"
+    },
+    {
+      "package": "libdrm-intel1",
+      "version": "2.4.124-2"
+    },
+    {
+      "package": "libelf1t64",
+      "version": "0.192-4"
+    },
+    {
+      "package": "libbsd0",
+      "version": "0.12.2-2"
+    },
+    {
+      "package": "libedit2",
+      "version": "3.1-20250104-1"
+    },
+    {
+      "package": "libz3-4",
+      "version": "4.13.3-1"
+    },
+    {
+      "package": "libllvm19",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "libsensors-config",
+      "version": "1:3.6.2-2"
+    },
+    {
+      "package": "libsensors5",
+      "version": "1:3.6.2-2"
+    },
+    {
+      "package": "libx11-xcb1",
+      "version": "2:1.8.12-1"
+    },
+    {
+      "package": "libxcb-dri3-0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxcb-present0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxcb-randr0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxcb-sync1",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxcb-xfixes0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxshmfence1",
+      "version": "1.3.3-1"
+    },
+    {
+      "package": "mesa-libgallium",
+      "version": "25.0.7-2+deb13u1"
+    },
+    {
+      "package": "libgbm1",
+      "version": "25.0.7-2+deb13u1"
+    },
+    {
+      "package": "libgraphite2-3",
+      "version": "1.3.14-2+deb13u1"
+    },
+    {
+      "package": "libharfbuzz0b",
+      "version": "10.2.0-1+deb13u1"
+    },
+    {
+      "package": "libharfbuzz-subset0",
+      "version": "10.2.0-1+deb13u1"
+    },
+    {
+      "package": "liblcms2-2",
+      "version": "2.16-2+deb13u2"
+    },
+    {
+      "package": "libminizip1t64",
+      "version": "1:1.3.dfsg+really1.3.1-1+deb13u1"
+    },
+    {
+      "package": "libnspr4",
+      "version": "2:4.36-1"
+    },
+    {
+      "package": "libnss3",
+      "version": "2:3.110-1+deb13u5"
+    },
+    {
+      "package": "libopenh264-8",
+      "version": "2.6.0+dfsg-2"
+    },
+    {
+      "package": "libopenjp2-7",
+      "version": "2.5.3-2.1~deb13u2"
+    },
+    {
+      "package": "libopus0",
+      "version": "1.5.2-2"
+    },
+    {
+      "package": "fontconfig",
+      "version": "2.15.0-2.3"
+    },
+    {
+      "package": "libfribidi0",
+      "version": "1.0.16-1"
+    },
+    {
+      "package": "libthai-data",
+      "version": "0.1.29-2"
+    },
+    {
+      "package": "libdatrie1",
+      "version": "0.2.13-3+b1"
+    },
+    {
+      "package": "libthai0",
+      "version": "0.1.29-2+b1"
+    },
+    {
+      "package": "libpango-1.0-0",
+      "version": "1.56.3-1"
+    },
+    {
+      "package": "libasyncns0",
+      "version": "0.8-6+b5"
+    },
+    {
+      "package": "libmp3lame0",
+      "version": "3.100-6+b3"
+    },
+    {
+      "package": "libmpg123-0t64",
+      "version": "1.32.10-1+deb13u1"
+    },
+    {
+      "package": "libvorbis0a",
+      "version": "1.3.7-3"
+    },
+    {
+      "package": "libvorbisenc2",
+      "version": "1.3.7-3"
+    },
+    {
+      "package": "libsndfile1",
+      "version": "1.2.2-2+deb13u1"
+    },
+    {
+      "package": "libpulse0",
+      "version": "17.0+dfsg1-2+b1"
+    },
+    {
+      "package": "libudev1",
+      "version": "257.13-1~deb13u1"
+    },
+    {
+      "package": "libxcomposite1",
+      "version": "1:0.4.6-1"
+    },
+    {
+      "package": "libxdamage1",
+      "version": "1:1.1.6-1+b2"
+    },
+    {
+      "package": "libxfixes3",
+      "version": "1:6.0.0-2+b4"
+    },
+    {
+      "package": "xkb-data",
+      "version": "2.42-1"
+    },
+    {
+      "package": "libxkbcommon0",
+      "version": "1.7.0-2"
+    },
+    {
+      "package": "libxnvctrl0",
+      "version": "535.171.04-1+b2"
+    },
+    {
+      "package": "libxrandr2",
+      "version": "2:1.5.4-1+b3"
+    },
+    {
+      "package": "libcairo-gobject2",
+      "version": "1.18.4-1+b1"
+    },
+    {
+      "package": "libcloudproviders0",
+      "version": "0.3.6-2"
+    },
+    {
+      "package": "libcolord2",
+      "version": "1.4.7-3"
+    },
+    {
+      "package": "libepoxy0",
+      "version": "1.5.10-2"
+    },
+    {
+      "package": "libpangoft2-1.0-0",
+      "version": "1.56.3-1"
+    },
+    {
+      "package": "libpangocairo-1.0-0",
+      "version": "1.56.3-1"
+    },
+    {
+      "package": "libwayland-client0",
+      "version": "1.23.1-3"
+    },
+    {
+      "package": "libwayland-cursor0",
+      "version": "1.23.1-3"
+    },
+    {
+      "package": "libwayland-egl1",
+      "version": "1.23.1-3"
+    },
+    {
+      "package": "libxcursor1",
+      "version": "1:1.2.3-1"
+    },
+    {
+      "package": "libxinerama1",
+      "version": "2:1.1.4-3+b4"
+    },
+    {
+      "package": "dbus-user-session",
+      "version": "1.16.2-2"
+    },
+    {
+      "package": "libdconf1",
+      "version": "0.40.0-5"
+    },
+    {
+      "package": "dconf-service",
+      "version": "0.40.0-5"
+    },
+    {
+      "package": "dconf-gsettings-backend",
+      "version": "0.40.0-5"
+    },
+    {
+      "package": "libgtk-3-common",
+      "version": "3.24.49-3"
+    },
+    {
+      "package": "libgtk-3-0t64",
+      "version": "3.24.49-3"
+    },
+    {
+      "package": "libglvnd0",
+      "version": "1.7.0-1+b2"
+    },
+    {
+      "package": "libxcb-glx0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxxf86vm1",
+      "version": "1:1.1.4-1+b4"
+    },
+    {
+      "package": "libvulkan1",
+      "version": "1.4.309.0-1"
+    },
+    {
+      "package": "libgl1-mesa-dri",
+      "version": "25.0.7-2+deb13u1"
+    },
+    {
+      "package": "libglx-mesa0",
+      "version": "25.0.7-2+deb13u1"
+    },
+    {
+      "package": "libglx0",
+      "version": "1.7.0-1+b2"
+    },
+    {
+      "package": "libgl1",
+      "version": "1.7.0-1+b2"
+    },
+    {
+      "package": "lsb-base",
+      "version": "11.6"
+    },
+    {
+      "package": "x11-common",
+      "version": "1:7.7+24+deb13u1"
+    },
+    {
+      "package": "libice6",
+      "version": "2:1.1.1-1"
+    },
+    {
+      "package": "libsm6",
+      "version": "2:1.2.6-1"
+    },
+    {
+      "package": "libxt6t64",
+      "version": "1:1.2.1-1.2+b2"
+    },
+    {
+      "package": "libxmu6",
+      "version": "2:1.1.3-3+b4"
+    },
+    {
+      "package": "libxpm4",
+      "version": "1:3.5.17-1+deb13u1"
+    },
+    {
+      "package": "libxaw7",
+      "version": "2:1.0.16-1"
+    },
+    {
+      "package": "libxcb-shape0",
+      "version": "1.17.0-2+b1"
+    },
+    {
+      "package": "libxft2",
+      "version": "2.3.6-1+b4"
+    },
+    {
+      "package": "libxkbfile1",
+      "version": "1:1.1.0-1+b4"
+    },
+    {
+      "package": "libxmuu1",
+      "version": "2:1.1.3-3+b4"
+    },
+    {
+      "package": "libxtst6",
+      "version": "2:1.2.5-1"
+    },
+    {
+      "package": "libxv1",
+      "version": "2:1.0.11-1.1+b3"
+    },
+    {
+      "package": "libxxf86dga1",
+      "version": "2:1.1.5-1+b3"
+    },
+    {
+      "package": "x11-utils",
+      "version": "7.7+7"
+    },
+    {
+      "package": "xdg-utils",
+      "version": "1.2.1-2"
+    },
+    {
+      "package": "chromium-common",
+      "version": "156.0.8078.79-1~deb13u1"
+    },
+    {
+      "package": "chromium",
+      "version": "156.0.8078.79-1~deb13u1"
+    },
+    {
+      "package": "chromium-sandbox",
+      "version": "156.0.8078.79-1~deb13u1"
+    },
+    {
+      "package": "libclang-cpp19",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "libgc1",
+      "version": "1:8.2.8-1"
+    },
+    {
+      "package": "libobjc4",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libobjc-14-dev",
+      "version": "14.2.0-19"
+    },
+    {
+      "package": "libclang-common-19-dev",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "llvm-19-linker-tools",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "libclang1-19",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "clang-19",
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "package": "clang",
+      "version": "1:19.0-63"
+    },
+    {
+      "package": "cmake-data",
+      "version": "3.31.6-2"
+    },
+    {
+      "package": "libarchive13t64",
+      "version": "3.7.4-4+deb13u1"
+    },
+    {
+      "package": "libsasl2-modules-db",
+      "version": "2.1.28+dfsg1-9"
+    },
+    {
+      "package": "libsasl2-2",
+      "version": "2.1.28+dfsg1-9"
+    },
+    {
+      "package": "libldap2",
+      "version": "2.6.10+dfsg-1"
+    },
+    {
+      "package": "libnghttp2-14",
+      "version": "1.64.0-1.1+deb13u1"
+    },
+    {
+      "package": "libnghttp3-9",
+      "version": "1.8.0-1"
+    },
+    {
+      "package": "libpsl5t64",
+      "version": "0.21.2-1.1+b1"
+    },
+    {
+      "package": "librtmp1",
+      "version": "2.4+20151223.gitfa8646d.1-2+b5"
+    },
+    {
+      "package": "libssh2-1t64",
+      "version": "1.11.1-1+deb13u2"
+    },
+    {
+      "package": "libcurl4t64",
+      "version": "8.14.1-2+deb13u7"
+    },
+    {
+      "package": "libjsoncpp26",
+      "version": "1.9.6-3"
+    },
+    {
+      "package": "librhash1",
+      "version": "1.4.5-1"
+    },
+    {
+      "package": "libuv1t64",
+      "version": "1.50.0-2"
+    },
+    {
+      "package": "cmake",
+      "version": "3.31.6-2"
+    },
+    {
+      "package": "fonts-noto-color-emoji",
+      "version": "2.051-0+deb13u1"
+    },
+    {
+      "package": "libngtcp2-16",
+      "version": "1.11.0-1+deb13u1"
+    },
+    {
+      "package": "libngtcp2-crypto-gnutls8",
+      "version": "1.11.0-1+deb13u1"
+    },
+    {
+      "package": "libcurl3t64-gnutls",
+      "version": "8.14.1-2+deb13u7"
+    },
+    {
+      "package": "liberror-perl",
+      "version": "0.17030-1"
+    },
+    {
+      "package": "git-man",
+      "version": "1:2.47.3-0+deb13u1"
+    },
+    {
+      "package": "git",
+      "version": "1:2.47.3-0+deb13u1"
+    },
+    {
+      "package": "libevent-core-2.1-7t64",
+      "version": "2.1.13-stable-1~deb13u1"
+    },
+    {
+      "package": "libffi-dev",
+      "version": "3.4.8-2"
+    },
+    {
+      "package": "libjemalloc2",
+      "version": "5.3.0-3"
+    },
+    {
+      "package": "libpkgconf3",
+      "version": "1.8.1-4"
+    },
+    {
+      "package": "libprotobuf32t64",
+      "version": "3.21.12-11+deb13u1"
+    },
+    {
+      "package": "libprotoc32t64",
+      "version": "3.21.12-11+deb13u1"
+    },
+    {
+      "package": "libssl-dev",
+      "version": "3.5.7-1~deb13u3"
+    },
+    {
+      "package": "libunwind8",
+      "version": "1.8.1-0.1"
+    },
+    {
+      "package": "libwrap0",
+      "version": "7.6.q-36"
+    },
+    {
+      "package": "ninja-build",
+      "version": "1.12.1-1"
+    },
+    {
+      "package": "pkgconf-bin",
+      "version": "1.8.1-4"
+    },
+    {
+      "package": "pkgconf",
+      "version": "1.8.1-4"
+    },
+    {
+      "package": "pkg-config",
+      "version": "1.8.1-4"
+    },
+    {
+      "package": "protobuf-compiler",
+      "version": "3.21.12-11+deb13u1"
+    },
+    {
+      "package": "python3-packaging",
+      "version": "25.0-1"
+    },
+    {
+      "package": "python3-wheel",
+      "version": "0.46.1-2"
+    },
+    {
+      "package": "python3-pip",
+      "version": "25.1.1+dfsg-1"
+    },
+    {
+      "package": "python3-pip-whl",
+      "version": "25.1.1+dfsg-1"
+    },
+    {
+      "package": "python3-setuptools-whl",
+      "version": "78.1.1-0.1"
+    },
+    {
+      "package": "python3.13-venv",
+      "version": "3.13.5-2+deb13u5"
+    },
+    {
+      "package": "python3-venv",
+      "version": "3.13.5-1"
+    },
+    {
+      "package": "shellcheck",
+      "version": "0.10.0-1"
+    },
+    {
+      "package": "socat",
+      "version": "1.8.0.3-1+deb13u1"
+    },
+    {
+      "package": "strace",
+      "version": "6.13+ds-1"
+    },
+    {
+      "package": "tmux",
+      "version": "3.5a-3"
+    },
+    {
+      "package": "unzip",
+      "version": "6.0-29+deb13u1"
+    },
+    {
+      "package": "zip",
+      "version": "3.0-15+deb13u1"
+    }
+  ],
+  "selectedPackageCount": 353,
+  "localArchiveAcquisitionPassed": true,
+  "privateStatusStillEmpty": true,
+  "hostDpkgStatusSha256After": null,
+  "finishedAt": "2026-11-20T17:46:11.786242+00:00",
+  "logSha256": "075ba440abe9392e0f2b42fe2180589f0854c03b4b8b7ce4a5e8b872131fa88d"
+}

@@ -1,0 +1,14 @@
+test_all_wrapper_preserves_site_argument_with_spaces (test_install_stack.InstallationCoordinatorTests.test_all_wrapper_preserves_site_argument_with_spaces) ... ok
+test_complete_sequence_uses_exact_receipt_and_retires_only_after_verification (test_install_stack.InstallationCoordinatorTests.test_complete_sequence_uses_exact_receipt_and_retires_only_after_verification) ... ok
+test_native_state_cannot_pollute_uninitialized_core_state (test_install_stack.InstallationCoordinatorTests.test_native_state_cannot_pollute_uninitialized_core_state) ... ok
+test_plan_is_read_only_and_focused_wrappers_do_not_retire (test_install_stack.InstallationCoordinatorTests.test_plan_is_read_only_and_focused_wrappers_do_not_retire) ... ok
+test_profile_binding_rejects_different_asset_path_or_python_identity (test_install_stack.InstallationCoordinatorTests.test_profile_binding_rejects_different_asset_path_or_python_identity) ... ok
+test_profile_failure_stops_model_probe_and_retirement_without_secret_output (test_install_stack.InstallationCoordinatorTests.test_profile_failure_stops_model_probe_and_retirement_without_secret_output) ... ok
+test_unreviewed_hook_activation_and_incomplete_private_sources_are_rejected (test_install_stack.InstallationCoordinatorTests.test_unreviewed_hook_activation_and_incomplete_private_sources_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.243s
+
+OK
+
+Shell syntax exit: 0

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "passed": false,
+  "summary": "REPLACE_WITH_OBSERVED_RESULTS",
+  "realInternalEndpoints": false,
+  "preservedExistingConfiguration": false,
+  "oldToolDisposition": "REPLACE_WITH_PACKAGE_TRANSACTION_OR_EXACT_RETIREMENT_AND_RECOVERY_FACTS",
+  "checks": {
+    "native-tools": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "client-model-tool-loops": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "native-skills-hooks": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "orchestration": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "multi-project": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "recovery": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "canonical-commands": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    }
+  }
+}

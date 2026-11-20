@@ -1,0 +1,37 @@
+name: Capability or platform request
+description: Propose a practical delivery improvement or a qualified Linux profile.
+title: "[Capability]: "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Workflow and delivery problem
+      description: Describe the current friction and the result you need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+      description: Explain how it fits Paperclip, native agents and existing configuration ownership.
+    validations:
+      required: true
+  - type: textarea
+    id: platform
+    attributes:
+      label: Platform and offline supply
+      description: Identify the OS, architecture, dependency closure and private supply approach without secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What real task proves this improves delivery? What must be preserved during an upgrade?
+    validations:
+      required: true
+  - type: textarea
+    id: upstream
+    attributes:
+      label: Upstream source and licensing
+      description: Link the official project and relevant documentation when proposing a tool.

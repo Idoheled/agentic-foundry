@@ -1,0 +1,8 @@
+{
+  "version": "0.16.0",
+  "path": "artifacts/toolchains/zig-x86_64-linux-0.16.0.tar.xz",
+  "url": "https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz",
+  "size": 55478392,
+  "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+  "official_verified": true
+}

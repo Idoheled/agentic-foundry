@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "begin",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "manual-boundary-before-completion",
+      "exitCode": 2,
+      "expectedExitCode": 2
+    },
+    {
+      "name": "actual-proof",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "changed-brain-blocked",
+      "exitCode": 2,
+      "expectedExitCode": 2
+    },
+    {
+      "name": "status",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    }
+  ],
+  "realSubprocessCLI": true,
+  "mutatedHost": false,
+  "calledInternalModel": false,
+  "scope": "Actual begin/proof/preservation/manual-boundary CLI mechanisms using owned fixture files; full host/model workflow remains onsite."
+}

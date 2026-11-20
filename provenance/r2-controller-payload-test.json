@@ -1,0 +1,58 @@
+{
+  "revision": "2026-11-20-r2",
+  "scope": "Real packaged file staging from existing local artifact cache, versions, Compose schema, repeated preparation. No daemon, registry, host package installation or internal model.",
+  "elapsedSeconds": 21.48,
+  "checks": [
+    {
+      "check": "docker-client",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Docker version 29.10.0, build fdd4b8e",
+      "stderr": ""
+    },
+    {
+      "check": "compose",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Docker Compose version v5.8.0",
+      "stderr": ""
+    },
+    {
+      "check": "opencode",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "1.18.34",
+      "stderr": ""
+    },
+    {
+      "check": "omp",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "omp/19.0.1",
+      "stderr": ""
+    },
+    {
+      "check": "herdr",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "herdr 0.9.5",
+      "stderr": ""
+    },
+    {
+      "check": "compose-config",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "idempotent-managed-binary-contents-and-mtimes",
+      "passed": true
+    },
+    {
+      "check": "all-selected-file-sources-existing",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

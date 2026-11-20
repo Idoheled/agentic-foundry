@@ -1,0 +1,21 @@
+{
+  "name": "uv",
+  "version": "0.13.9",
+  "repository": "https://github.com/astral-sh/uv",
+  "commit": "6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce",
+  "binary": {
+    "file": "uv-x86_64-unknown-linux-musl.tar.gz",
+    "bytes": 18735070,
+    "sha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+    "url": "https://github.com/astral-sh/uv/releases/download/0.13.9/uv-x86_64-unknown-linux-musl.tar.gz",
+    "publisherAssetDigestVerified": true
+  },
+  "source": {
+    "file": "uv-0.13.9-source.tar.gz",
+    "bytes": 9057266,
+    "sha256": "fb92d4bedc434810cbdaf2b1a6a034a6dbf9ef0f7185f40b634ccb90d263de73",
+    "url": "https://codeload.github.com/astral-sh/uv/tar.gz/6b2d39dcc390293d51c9c0d2bbcd650f4bcbfdce",
+    "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+  },
+  "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+}

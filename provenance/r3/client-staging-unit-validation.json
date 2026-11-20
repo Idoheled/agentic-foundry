@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-11-20T11:40:59.177053+00:00",
+  "passed": true,
+  "testCount": 4,
+  "scope": "Tiny complete-tree fixtures in dedicated temporary core state. Actual copy, identity checks, symlink handling and Linux atomic no-replace promotion exercised. No Docker, model calls, production payload staging or host-global writes.",
+  "checks": [
+    "Complete dependency tree and relative symlink preservation",
+    "Immutable container command paths, private report and idempotent staging",
+    "Changed source, missing requested client and reused bare executable rejected",
+    "Foreign changed destination and escaping source link preserved/rejected",
+    "Core marker ownership and qualified host receipt required"
+  ],
+  "sourceSha256": {
+    "kit-r3/scripts/stage-clients.py": "53d15b5e223dce5bd7a52f66026c0babb4b31d6cfb3b6796a19e6fb7e906028b",
+    "kit-r3/tests/test_stage_clients.py": "3bf3f9986d0fca6cd40f284fa5c7d3ea3b06bde8ec0eb94eef1597a5ba421281"
+  },
+  "log": "research/r3-client-staging-validation.log"
+}

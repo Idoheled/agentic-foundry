@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible installer, workflow or documentation problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not include access tokens, model keys, private endpoints, live site files,
+        session content or unredacted logs. Report vulnerabilities through SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Release tag and commit
+      placeholder: v0.1.0 / commit SHA
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system, version, architecture and libc
+      placeholder: Debian 13 / x86-64 / glibc
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Affected workflow
+      options:
+        - Fresh-machine setup
+        - Existing-machine Claude phase 1
+        - Existing-machine OMP phase 2
+        - Payload download or hydration
+        - Source development or release tooling
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include sanitized command arguments and the stage that failed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence
+      description: Include exact error text and relevant checks without private data.

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "expectedOS": {
+    "id": "debian",
+    "versionID": "13",
+    "architecture": "x86_64"
+  },
+  "privateRepositoriesChecked": [
+    "REPLACE_WITH_ACTUAL_INTERNAL_NATIVE_REPOSITORY_INSPECTION"
+  ],
+  "source": "internal",
+  "evidence": "REPLACE_WITH_ACTUAL_SOURCE_AND_COMPATIBILITY_FINDINGS",
+  "approvedInternalHosts": [
+    "apt.internal.example"
+  ],
+  "repositories": [
+    {
+      "uri": "https://apt.internal.example/debian",
+      "suite": "trixie",
+      "components": [
+        "main"
+      ],
+      "signedBy": "/usr/share/keyrings/REPLACE_WITH_EXISTING_INTERNAL_KEYRING.gpg"
+    }
+  ],
+  "packages": [
+    "git",
+    "build-essential",
+    "pkg-config",
+    "cmake",
+    "ninja-build",
+    "tmux",
+    "rsync",
+    "file",
+    "unzip",
+    "zip",
+    "shellcheck",
+    "bubblewrap",
+    "python3-venv",
+    "python3-pip",
+    "libssl-dev",
+    "libffi-dev",
+    "clang",
+    "protobuf-compiler",
+    "lsof",
+    "strace",
+    "socat"
+  ],
+  "hostRecoveryEvidence": "REPLACE_WITH_HOST_SNAPSHOT_OR_CONCRETE_NATIVE_PACKAGE_RECOVERY_PROCEDURE"
+}

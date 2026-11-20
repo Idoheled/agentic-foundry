@@ -1,0 +1,349 @@
+{
+  "assetRoot": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a",
+  "auditDirectory": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+  "codexActivationReport": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/receipts/20261120T115347-de1b42eb452845fd/codex-hook-activation.json",
+  "codexActivationStatus": "trusted",
+  "codexExecutableSha256": "b76a027d6b210f9a8da7aaf321dd235c700f0ef7a794d4a5314b9af6c134f0f0",
+  "destinations": {
+    "claude": {
+      "profile": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude",
+      "skills": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills"
+    },
+    "codex": {
+      "profile": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex",
+      "skills": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills"
+    },
+    "omp": {
+      "profile": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent",
+      "skills": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills"
+    }
+  },
+  "hookActivation": {
+    "claude": "definitions installed; verify native event execution onsite",
+    "codex": "trusted: four reviewed definitions verified through the native hooks/list and config/batchWrite APIs",
+    "omp": "native discovery shim installed; verify selected agent directory onsite"
+  },
+  "managedHooks": {
+    "claude": {
+      "hooks": {
+        "PostToolUse": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "PostToolUseFailure": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "PreCompact": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "SessionEnd": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "SessionStart": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "Stop": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client claude --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "codex": {
+      "hooks": {
+        "PostToolUse": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client codex --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "SessionEnd": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client codex --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 3,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "SessionStart": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client codex --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ],
+        "Stop": [
+          {
+            "hooks": [
+              {
+                "command": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12 /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/native-profiles/2026-11-20-r3-fe445feb038a/hooks/native_hook.py --client codex --state /workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/audit",
+                "timeout": 5,
+                "type": "command"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "modelAndCredentialSettingsModified": false,
+  "operations": [
+    {
+      "afterSha256": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-plan-and-deliver/SKILL.md"
+    },
+    {
+      "afterSha256": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-parallel-worktrees/SKILL.md"
+    },
+    {
+      "afterSha256": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-debug-systematically/SKILL.md"
+    },
+    {
+      "afterSha256": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-review-and-verify/SKILL.md"
+    },
+    {
+      "afterSha256": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-private-dependencies/SKILL.md"
+    },
+    {
+      "afterSha256": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-host-tooling/SKILL.md"
+    },
+    {
+      "afterSha256": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-offline-acceptance/SKILL.md"
+    },
+    {
+      "afterSha256": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-handoff-and-recovery/SKILL.md"
+    },
+    {
+      "afterSha256": "ab4a11a792421d697b2b02ed3f2583554f92cecdd04b2c195e88c87b552634ed",
+      "backup": "originals/8",
+      "before": {
+        "mode": 420,
+        "sha256": "12197822c50e0553b634a9f58b622dec5cc98262ed50a999003bf102f9dd72c0"
+      },
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/settings.json"
+    },
+    {
+      "afterSha256": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-plan-and-deliver/SKILL.md"
+    },
+    {
+      "afterSha256": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-parallel-worktrees/SKILL.md"
+    },
+    {
+      "afterSha256": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-debug-systematically/SKILL.md"
+    },
+    {
+      "afterSha256": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-review-and-verify/SKILL.md"
+    },
+    {
+      "afterSha256": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-private-dependencies/SKILL.md"
+    },
+    {
+      "afterSha256": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-host-tooling/SKILL.md"
+    },
+    {
+      "afterSha256": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-offline-acceptance/SKILL.md"
+    },
+    {
+      "afterSha256": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-handoff-and-recovery/SKILL.md"
+    },
+    {
+      "afterSha256": "64dff557222f820fd4129f3adc6ca826ae805d68cc3a4d1d6b569f3c4d37524d",
+      "before": null,
+      "mode": 384,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json"
+    },
+    {
+      "afterSha256": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-plan-and-deliver/SKILL.md"
+    },
+    {
+      "afterSha256": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-parallel-worktrees/SKILL.md"
+    },
+    {
+      "afterSha256": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-debug-systematically/SKILL.md"
+    },
+    {
+      "afterSha256": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-review-and-verify/SKILL.md"
+    },
+    {
+      "afterSha256": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-private-dependencies/SKILL.md"
+    },
+    {
+      "afterSha256": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-host-tooling/SKILL.md"
+    },
+    {
+      "afterSha256": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-offline-acceptance/SKILL.md"
+    },
+    {
+      "afterSha256": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-handoff-and-recovery/SKILL.md"
+    },
+    {
+      "afterSha256": "96d2fe71cc53eb4a8fcae78b41ad6bda6c6e625a371f5df2cb3cbb2f097e40ae",
+      "before": null,
+      "mode": 420,
+      "path": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/hooks/pre/agentic-offline.ts"
+    }
+  ],
+  "ownedFiles": {
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-debug-systematically/SKILL.md": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-handoff-and-recovery/SKILL.md": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-host-tooling/SKILL.md": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-offline-acceptance/SKILL.md": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-parallel-worktrees/SKILL.md": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-plan-and-deliver/SKILL.md": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-private-dependencies/SKILL.md": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/agents/skills/agentic-review-and-verify/SKILL.md": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-debug-systematically/SKILL.md": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-handoff-and-recovery/SKILL.md": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-host-tooling/SKILL.md": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-offline-acceptance/SKILL.md": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-parallel-worktrees/SKILL.md": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-plan-and-deliver/SKILL.md": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-private-dependencies/SKILL.md": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/claude/skills/agentic-review-and-verify/SKILL.md": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/hooks/pre/agentic-offline.ts": "96d2fe71cc53eb4a8fcae78b41ad6bda6c6e625a371f5df2cb3cbb2f097e40ae",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-debug-systematically/SKILL.md": "8aec3817a72f301b7a681a4f8a20b2567c41a406cc45d16af14e27987b46f497",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-handoff-and-recovery/SKILL.md": "28ab2102900842778be1d03f45bbcbe87f2bc1ffe173e354d777c34117707b04",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-host-tooling/SKILL.md": "71cceabb037a65b1882b5b6e53355b6a3d25871a62df5c159e7a1ecb416de9f6",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-offline-acceptance/SKILL.md": "c2ca0230d64fc7c07adaf9102da62bf68310e9687cb2f318591ca6879fa2bc02",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-parallel-worktrees/SKILL.md": "0ccb714d8f69c5b8cec77a1c90af9215376d68d33692ec1125fd6949ad6942df",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-plan-and-deliver/SKILL.md": "5f17f75bea9fc6e16b00a361c4041a1b0073ce5fc46d123a13f5c1e0c62283a2",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-private-dependencies/SKILL.md": "d55830974d20e96a161fd960edc54d11aec113caa2d23282d72f23419c82702a",
+    "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/omp/agent/skills/agentic-review-and-verify/SKILL.md": "53b8782c3fcfaccb36cb2015f779a0d9f1ac8fa666ba7df946204b8c9b28475a"
+  },
+  "profileVersion": "2026-11-20-r3",
+  "python": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/operator/.local/share/agentic-stack/tools/python/3.12.16-quality-r3-0b2e3c329891/bin/python3.12",
+  "pythonSha256": "e74c565bbccaaf3c2ec6527962890418ab6fe740c19129b02ae1b7effc322230",
+  "receiptDirectory": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/receipts",
+  "reviewedAssetManifestSha256": "22608ee2ae22712d7d1c9673fd568fe9acbe204c4926e703d3dd10617d7f982c",
+  "status": "applied",
+  "transaction": "20261120T115347-de1b42eb452845fd"
+}

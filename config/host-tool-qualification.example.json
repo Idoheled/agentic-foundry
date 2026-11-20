@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "artifact": "docker",
+  "sha256": "REPLACE_WITH_SELECTED_HOST_EXECUTABLE_SHA256",
+  "passed": false,
+  "checks": [
+    {
+      "name": "version-executes",
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVED_RESULT"
+    },
+    {
+      "name": "local-engine-compatible",
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVED_RESULT"
+    },
+    {
+      "name": "selected-socket-access",
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVED_RESULT"
+    }
+  ]
+}

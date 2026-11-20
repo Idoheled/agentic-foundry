@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "2026-11-20-r4",
+  "tools": {
+    "python": {
+      "version": "3.12.16-quality-r3",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "glibcMin": "2.28"
+      },
+      "commands": {
+        "python3": {
+          "path": "bin/python3",
+          "verifyArgs": [
+            "-c",
+            "import sys,ssl,sqlite3,ctypes,venv,pytest,mypy.build,yaml,build; print(sys.version); print('required imports OK')"
+          ],
+          "verifyPattern": "required imports OK"
+        },
+        "pip3": {
+          "path": "bin/pip3",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "pytest": {
+          "path": "bin/pytest",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "mypy": {
+          "path": "bin/mypy",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "coverage": {
+          "path": "bin/coverage",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "pyproject-build": {
+          "path": "bin/pyproject-build",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/python3.12",
+        "lib/python3.12/encodings",
+        "lib/python3.12/site-packages",
+        "lib/libpython3.12.so.1.0"
+      ],
+      "artifact": {
+        "path": "payload/dependencies/python-quality/python-3.12.16-quality-runtime.tar.gz",
+        "sha256": "0b2e3c3298915bf72de5063140cc3e28fd7ed79bada303caf0b3a345b68148ce",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PIP_REQUIRE_VIRTUALENV": "1"
+      }
+    },
+    "node": {
+      "version": "24.22.3-pnpm-9.15.4",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "glibcMin": "2.28"
+      },
+      "commands": {
+        "node": {
+          "path": "bin/node",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "npm": {
+          "path": "bin/npm",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "npx": {
+          "path": "bin/npx",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "pnpm": {
+          "path": "bin/pnpm",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "lib/node_modules/npm",
+        "lib/node_modules/pnpm",
+        "include/node/node.h"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/node-v24.22.3-pnpm-9.15.4-runtime.tar.gz",
+        "sha256": "68f4365fe444115ae6bcf937f5353d0dddc83467a133ca175d2429f071e738ff",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "bun": {
+      "version": "1.4.4",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "bun": {
+          "path": "bun",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "bun"
+      ],
+      "artifact": {
+        "path": "payload/toolchains/bun-v1.4.4-linux-x64-baseline.zip",
+        "sha256": "e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76",
+        "format": "zip",
+        "stripComponents": 1
+      }
+    },
+    "rust": {
+      "version": "1.99.1",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "glibcMin": "2.28"
+      },
+      "commands": {
+        "rustc": {
+          "path": "bin/rustc",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "cargo": {
+          "path": "bin/cargo",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "rustfmt": {
+          "path": "bin/rustfmt",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "cargo-fmt": {
+          "path": "bin/cargo-fmt",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "cargo-clippy": {
+          "path": "bin/cargo-clippy",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "clippy-driver": {
+          "path": "bin/clippy-driver",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "lib/rustlib/x86_64-unknown-linux-gnu/lib",
+        "lib/rustlib/x86_64-unknown-linux-musl/lib",
+        "lib/rustlib/src/rust/library"
+      ],
+      "artifact": {
+        "path": "payload/dependencies/codex/rust-1.99.1-linux-x86_64-installed.tar.gz",
+        "sha256": "46b5a8991f6ba263dc41d1ffc1b2d529add23b60ec117498d51e6931dbfa03a4",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "zig": {
+      "version": "0.16.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "zig": {
+          "path": "zig",
+          "verifyArgs": [
+            "version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "lib/std/std.zig",
+        "lib/compiler",
+        "doc/langref.html"
+      ],
+      "artifact": {
+        "path": "payload/toolchains/zig-x86_64-linux-0.16.0.tar.xz",
+        "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "codex": {
+      "version": "0.171.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "codex": {
+          "path": "bin/codex",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/codex-exec-server",
+        "bin/codex-code-mode-host",
+        "codex-path/rg",
+        "codex-resources/bwrap",
+        "codex-package.json",
+        "codex-resources/voice/NOTICE.md"
+      ],
+      "artifact": {
+        "path": "payload/dependencies/codex/codex-package-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "8391d67757496bfd14893eca6cbf0c96994bf2627566ff1f018f70600c9ef6b3",
+        "format": "tar",
+        "stripComponents": 0
+      }
+    },
+    "claude": {
+      "version": "2.1.329",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "glibcMin": "2.17"
+      },
+      "commands": {
+        "claude": {
+          "path": "claude",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "claude"
+      ],
+      "artifact": {
+        "path": "payload/dependencies/native-profiles/claude/claude-linux-x64.tar.gz",
+        "sha256": "248f23231556ba4d13cc6dde6a9ed7625f36cf94aeb4c5652d05f72d093c1b46",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "environment": {
+        "DISABLE_AUTOUPDATER": "1",
+        "DISABLE_TELEMETRY": "1",
+        "DISABLE_ERROR_REPORTING": "1",
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+      }
+    },
+    "omp": {
+      "version": "19.0.1-offline.1",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "omp": {
+          "path": "bin/omp",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/omp-real"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/omp-v19.0.1-offline.1-host-runtime.tar.gz",
+        "sha256": "4a651590d92923c5f29831bfa9288006254764103c737f92886bef001762fb5f",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "opencode": {
+      "version": "1.18.34",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "opencode": {
+          "path": "opencode",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "opencode"
+      ],
+      "artifact": {
+        "path": "payload/binaries/opencode-v1.18.34-linux-x64-baseline.tar.gz",
+        "sha256": "24b0d458d21ef548b2752166303defcf7f4945b049fb4876ab78dfaf86d81b27",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "environment": {
+        "OPENCODE_DISABLE_AUTOUPDATE": "1",
+        "OPENCODE_DISABLE_MODELS_FETCH": "1",
+        "OPENCODE_DISABLE_DEFAULT_PLUGINS": "1",
+        "OPENCODE_DISABLE_LSP_DOWNLOAD": "1"
+      }
+    },
+    "herdr": {
+      "version": "0.9.5",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "herdr": {
+          "path": "bin/herdr",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/herdr"
+      ],
+      "artifact": {
+        "path": "payload/binaries/herdr-v0.9.5-linux-x86_64",
+        "sha256": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d",
+        "format": "file"
+      }
+    },
+    "docker": {
+      "version": "29.10.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "docker": {
+          "path": "docker",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "docker",
+        "dockerd",
+        "containerd",
+        "runc",
+        "containerd-shim-runc-v2"
+      ],
+      "artifact": {
+        "path": "payload/packages/docker-29.10.0.tgz",
+        "sha256": "7c1ebadc65c716cdc6d35fc78759ed0e4317debf43c21dd12f066f2006999def",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "compose": {
+      "version": "5.8.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "docker-compose": {
+          "path": "bin/docker-compose",
+          "verifyArgs": [
+            "version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/docker-compose"
+      ],
+      "artifact": {
+        "path": "payload/packages/docker-compose-v5.8.0-linux-x86_64",
+        "sha256": "b8840f5008c447f41fce0a57ae3adeab42c89b1eb6e6012524bcabbfb4ffbaf6",
+        "format": "file"
+      }
+    },
+    "uv": {
+      "version": "0.13.9",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "uv": {
+          "path": "uv",
+          "verifyArgs": [
+            "--version"
+          ]
+        },
+        "uvx": {
+          "path": "uvx",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "uv",
+        "uvx"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/uv-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "58ccf5f1792b8a5a88d01bc910ea131a8b3db4a319a17ad5fad75e0845a3e271",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "environment": {
+        "UV_PYTHON_DOWNLOADS": "never"
+      }
+    },
+    "ruff": {
+      "version": "0.17.6",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "ruff": {
+          "path": "ruff",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "ruff"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/ruff-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "ripgrep": {
+      "version": "15.2.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "rg": {
+          "path": "rg",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "rg",
+        "doc/rg.1"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "fd": {
+      "version": "v10.5.2",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "fd": {
+          "path": "fd",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "fd"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/fd-v10.5.2-x86_64-unknown-linux-musl.tar.gz",
+        "sha256": "7e2d07fa2b8807642aaec67b7e2972a9fbe4db26fcb340a7372392db42b26694",
+        "format": "tar",
+        "stripComponents": 1
+      }
+    },
+    "jq": {
+      "version": "jq-1.8.2",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "jq": {
+          "path": "bin/jq",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "bin/jq"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/jq-linux-amd64",
+        "sha256": "b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f",
+        "format": "file"
+      }
+    },
+    "yq": {
+      "version": "v4.54.3",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "yq": {
+          "path": "yq_linux_amd64",
+          "verifyArgs": [
+            "--version"
+          ]
+        }
+      },
+      "pathEntries": [],
+      "requiredPaths": [
+        "yq_linux_amd64",
+        "yq.1"
+      ],
+      "artifact": {
+        "path": "payload/host-tools/yq_linux_amd64.tar.gz",
+        "sha256": "09a25baa0e136b8633949e03117fc82cb9e50d10910f988ef17a1305539ebce4",
+        "format": "tar",
+        "stripComponents": 0
+      }
+    },
+    "native-profiles": {
+      "version": "2026-11-20-r3",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {},
+      "pathEntries": [],
+      "requiredPaths": [
+        "install_profiles.py",
+        "ASSET_MANIFEST.json",
+        "hooks/native_hook.py",
+        "codex/trust_reviewed_kit_hooks.py",
+        "omp/agentic-offline.ts",
+        "skills/agentic-plan-and-deliver/SKILL.md"
+      ],
+      "artifact": {
+        "path": "payload/dependencies/native-profiles/native-profiles-2026-11-20-r3-source.tar.gz",
+        "sha256": "fe445feb038af63175a500b10804d5d0f9bfc348122bf15db3c04d11b9a8ae26",
+        "format": "tar",
+        "stripComponents": 0
+      },
+      "kind": "asset-tree"
+    }
+  }
+}

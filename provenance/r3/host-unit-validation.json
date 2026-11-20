@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-11-20T11:54:03.125516+00:00",
+  "passed": true,
+  "unitTests": {
+    "count": 14,
+    "exitCode": 0
+  },
+  "cliChecks": [
+    {
+      "command": "inventory",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "validate",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "plan",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "apply",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "verify",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "retire",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "command": "rollback",
+      "passed": true,
+      "exitCode": 0
+    }
+  ],
+  "scope": "Synthetic local tool and asset trees, fake host prefix, and literal runtime environment checks; no real sudo, package transaction, internal repository or production-runtime qualification.",
+  "gitCommit": "e60057920760623be8d6a9d0598ce145e7e9792e",
+  "sourceSha256": {
+    "hostctl.py": "1119cddfb235d506910e33b0a9fd5e2c5aa5815142594ba530b87f414ff90b0d",
+    "tests/test_hostctl.py": "f956865e73195f89b956d15ff823bec3b54f47d031bdbc2525930ed0551c4876"
+  }
+}

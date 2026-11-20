@@ -1,0 +1,52 @@
+[
+  {
+    "filename": "docker-compose-v5.8.0-source.tar.gz",
+    "url": "https://codeload.github.com/docker/compose/tar.gz/refs/tags/v5.8.0",
+    "size": 1000151,
+    "sha256": "1836019594ad054f8459cea7efc1d52eae7d05c64217c4efffe02d0d2930c44b"
+  },
+  {
+    "filename": "regclient-v0.11.7-source.tar.gz",
+    "url": "https://codeload.github.com/regclient/regclient/tar.gz/refs/tags/v0.11.7",
+    "size": 421526,
+    "sha256": "a648fcf3b5b81c55773f47f6d7401d1904675c32520a76159d960a9e8798badd"
+  },
+  {
+    "filename": "docker-cli-v29.10.0-source.tar.gz",
+    "url": "https://codeload.github.com/docker/cli/tar.gz/refs/tags/v29.10.0",
+    "size": 6976525,
+    "sha256": "7b955259e070e839586faff4957ce71484380f3aff5caf519470c1448f9e9192"
+  },
+  {
+    "filename": "postgresql-17.12-source.tar.bz2",
+    "url": "https://ftp.postgresql.org/pub/source/v17.12/postgresql-17.12.tar.bz2",
+    "size": 22292547,
+    "sha256": "9cf136a703d8ee2f83465c43be4e9e8e7930c82b0bfba13be7e2537be769ac55",
+    "publisherChecksumVerified": true
+  },
+  {
+    "filename": "node-v24.22.3-source.tar.xz",
+    "url": "https://nodejs.org/dist/v24.22.3/node-v24.22.3.tar.xz",
+    "size": 56764640,
+    "sha256": "48ca3aa8a9b02133356922ef4fc80200e00598c80a4ef446f7c39a459222593d",
+    "publisherChecksumVerified": true
+  },
+  {
+    "filename": "runc-v1.5.3-source.tar.gz",
+    "url": "https://codeload.github.com/opencontainers/runc/tar.gz/refs/tags/v1.5.3",
+    "sha256": "22e3e29e93c71b9d56caa95fed66b6448dd2db282129067ead987b2003837d1a",
+    "size": 2666271
+  },
+  {
+    "filename": "containerd-v2.4.2-source.tar.gz",
+    "url": "https://codeload.github.com/containerd/containerd/tar.gz/refs/tags/v2.4.2",
+    "sha256": "02cbbecd0ef78a521d124afa791b843ba5458ef206e1f7f017999ff45c80c0b4",
+    "size": 12232456
+  },
+  {
+    "filename": "moby-engine-06db173-source.tar.gz",
+    "url": "https://codeload.github.com/moby/moby/tar.gz/06db173",
+    "sha256": "1b9434f42a46cc95fb5c1b8a47ae86c6eabd6ec4bcc4f68f596d048fdffe518a",
+    "size": 23383264
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "step": "--check",
+      "exitCode": 0,
+      "output": "research/r3-host/actual-install-v2/native-profiles/check.json"
+    },
+    {
+      "step": "--apply",
+      "exitCode": 0,
+      "output": "research/r3-host/actual-install-v2/native-profiles/apply.json"
+    },
+    {
+      "step": "--check",
+      "exitCode": 0,
+      "output": "research/r3-host/actual-install-v2/native-profiles/check-after.json"
+    },
+    {
+      "preservedClaudeFixtureModelAndEnvironment": true
+    }
+  ],
+  "scope": "Real profile assets and verified Python/Codex from actual hostctl-installed trees; native Codex trust API; no real model request or container execution",
+  "allDiscoveredSkillFiles": 30,
+  "kitSkillFilesInstalled": 24
+}

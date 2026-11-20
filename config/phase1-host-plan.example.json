@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "privateRepositoriesChecked": [
+    "REPLACE_WITH_FACTUAL_INTERNAL_REPOSITORY_AND_CACHE_FINDINGS"
+  ],
+  "tools": {
+    "omp": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_OMP",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/omp",
+          "command": "omp",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_CANONICAL_MIGRATION_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    }
+  }
+}

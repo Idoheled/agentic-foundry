@@ -1,0 +1,48 @@
+{
+  "name": "REPLACE_WITH_UNIQUE_CLAUDE_WORKER_NAME",
+  "role": "engineer",
+  "adapterType": "claude_local",
+  "runner": "legacy",
+  "adapterConfig": {
+    "engine": "cli",
+    "command": "/REPLACE_WITH_CLIENT_RUNTIME_REPORT_CLAUDE_COMMAND",
+    "cwd": "/workspaces/REPLACE_WITH_SELECTED_PROJECT",
+    "instructionsFilePath": "/opt/agentic/playbooks/implementer.md",
+    "model": "REPLACE_WITH_QUALIFIED_INTERNAL_CLAUDE_MODEL_ID",
+    "chrome": false,
+    "dangerouslySkipPermissions": false,
+    "extraArgs": [
+      "--permission-mode",
+      "acceptEdits",
+      "--permission-prompts",
+      "none"
+    ],
+    "env": {
+      "CLAUDE_CONFIG_DIR": "/paperclip/agentic-config/native/claude/REPLACE_WITH_UNIQUE_PROFILE",
+      "ANTHROPIC_BASE_URL": "https://REPLACE_WITH_EXISTING_APPROVED_ANTHROPIC_GATEWAY",
+      "ANTHROPIC_AUTH_TOKEN": {
+        "type": "secret_ref",
+        "secretId": "REPLACE_WITH_REAL_INTERNAL_PROVIDER_SECRET_UUID",
+        "version": "latest"
+      },
+      "DISABLE_AUTOUPDATER": "1",
+      "DISABLE_TELEMETRY": "1",
+      "DISABLE_ERROR_REPORTING": "1",
+      "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "timeoutSec": 1800,
+    "graceSec": 30
+  },
+  "runtimeConfig": {
+    "heartbeat": {
+      "enabled": false,
+      "intervalSec": 0,
+      "wakeOnDemand": false,
+      "maxConcurrentRuns": 1
+    }
+  },
+  "permissions": {
+    "canCreateAgents": false
+  }
+}

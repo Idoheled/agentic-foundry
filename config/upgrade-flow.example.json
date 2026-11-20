@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "evidence": "REPLACE_WITH_HOST_AND_PRIVATE_REPOSITORY_INSPECTION",
+  "profileDiscovery": "REPLACE_WITH_ACTUAL_PROFILES_CWD_WRAPPERS_PROJECT_BRAINS_ROUTES_AND_AUTH_SOURCE_DISCOVERY",
+  "preservationPlan": "/private/REPLACE_PRESERVATION_PLAN.json",
+  "existingOmp": {
+    "command": "/absolute/REPLACE_CURRENT_OMP",
+    "version": "REPLACE_CURRENT_VERSION"
+  },
+  "expectedOmpVersion": "REPLACE_ACTUALLY_SELECTED_VERSION",
+  "ompContext": {
+    "command": "/usr/local/bin/omp",
+    "arguments": [],
+    "cwd": "/absolute/REPLACE_ORIGINAL_WORKSPACE"
+  }
+}

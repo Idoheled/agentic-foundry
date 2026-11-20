@@ -1,0 +1,21 @@
+{
+  "name": "ruff",
+  "version": "0.17.6",
+  "repository": "https://github.com/astral-sh/ruff",
+  "commit": "a7ba68b4919e56b6af949a42b2da38fe4eec67a9",
+  "binary": {
+    "file": "ruff-x86_64-unknown-linux-musl.tar.gz",
+    "bytes": 10371489,
+    "sha256": "3c8d5a4264558df8b1587ce32409b658069b6a1ef5bfe4d279431eb1db62a183",
+    "url": "https://github.com/astral-sh/ruff/releases/download/0.17.6/ruff-x86_64-unknown-linux-musl.tar.gz",
+    "publisherAssetDigestVerified": true
+  },
+  "source": {
+    "file": "ruff-0.17.6-source.tar.gz",
+    "bytes": 14955682,
+    "sha256": "3a9a4b98d2159a2d4fb1b1a2c57ba9623b0ce1811de09a3f3432604976bb0393",
+    "url": "https://codeload.github.com/astral-sh/ruff/tar.gz/a7ba68b4919e56b6af949a42b2da38fe4eec67a9",
+    "scope": "Full pinned source snapshot, including upstream docs/licenses/lockfiles; no Git history"
+  },
+  "runtime": "Official prebuilt Linux x86_64 portable executable distribution; actual execution tested separately"
+}

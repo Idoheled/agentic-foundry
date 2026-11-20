@@ -1,0 +1,21 @@
+{
+  "scope": "Actual shipped image files in user/mount/network-namespace chroots; rootfs copies have ownership/passwd/symlink adaptations. This is not a Docker-daemon test.",
+  "checks": [
+    {
+      "test": "network_namespace_has_no_external_route",
+      "ok": true,
+      "error_type": "OSError"
+    },
+    {
+      "test": "postgres_official_image_binary_boot",
+      "ok": true,
+      "port": 55491
+    },
+    {
+      "test": "integration_exception",
+      "ok": false,
+      "error": "Paperclip exited, inspect paperclip.log"
+    }
+  ],
+  "model_requests": []
+}

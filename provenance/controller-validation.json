@@ -1,0 +1,11 @@
+{
+  "revision": "2026-11-20-r2",
+  "tests": 23,
+  "passed": true,
+  "evidence": "r2-controller-validation.json",
+  "actualPayload": "r2-controller-payload-test.json",
+  "DockerDaemonEndToEndTested": false,
+  "actualInternalModelTested": false,
+  "actualPrivateRepositoriesInspected": false,
+  "targetHostToolsInstalled": false
+}

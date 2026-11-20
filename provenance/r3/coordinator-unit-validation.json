@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "time": "2026-11-20T11:54:01.772239+00:00",
+  "passed": true,
+  "testCount": 7,
+  "shellSyntaxPassed": true,
+  "scope": "Coordinator sequencing and source/receipt/profile-binding tests use synthetic local files and mocked child installers. One real wrapper plan invocation verifies quoted site paths without installation. No package transaction, host provisioning, Docker, profile mutation, model calls or agent enrollment occurred.",
+  "checks": [
+    "Explicit sequential stage order and exact returned host receipt",
+    "No retirement before requested verification and model smoke",
+    "Profile failure stops later steps without printing private output",
+    "Permanent asset tree and verified Python binding",
+    "No automatic hook-trust selection; completed private-source plans required",
+    "Read-only plan mode and restricted wrappers",
+    "Non-nested component state directories",
+    "Executable wrappers preserve arguments with spaces"
+  ],
+  "log": "research/r3-installation-coordinator-validation.log",
+  "sourceSha256": {
+    "kit-r3/scripts/install-stack.py": "8d37e6c4b5c94a0836194c3e5006652b8a77f94567f2481afbde546728dbffcb",
+    "kit-r3/tests/test_install_stack.py": "625d619f8877fe7d9f3d5ea89a2307c94a773f023aa57e5bf8606303f8d8c520",
+    "kit-r3/config/installation.example.json": "e97a36ecd183379086298a1bf02503ec6f00902c96be7bdda280b4189d923764",
+    "kit-r3/install-all.sh": "0fc7d1f8ce0f0ccebdd1e383316c25b31992e34a0c4ab22672413b8c22f05548",
+    "kit-r3/install-host.sh": "900d5026ad4933458d69091e0b83101beff6fdb19245f4292a63a4d712493567",
+    "kit-r3/install-native.sh": "942d23b4d8c9a160b5c1f918dd844dddc85545a30475c08e5bdf1e3ad3ff4ce1",
+    "kit-r3/install-profiles.sh": "60ff5543bb9054b123d23517909c634945a19581ebf9a06648c4f2d1b3e9395c"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "artifact": "artifacts/build-deps/paperclip-omp-adapter-npm-cache.tar.gz",
+  "bytes": 17205113,
+  "sha256": "a5ca73e99febe3dfa2072a7f39d7cf5fb40c46eef5f4a0aff61567059906e147",
+  "scope": "npm content-addressed cache populated for the original OMP adapter 0.7.0 package-lock.json, including TypeScript dev dependencies; logs excluded.",
+  "verified": "Clean npm ci --offline --ignore-scripts and npm run build passed.",
+  "build_log": "research/paperclip-omp-offline-rebuild.log",
+  "rebuild_commands": [
+    "Extract npm cache tar into /absolute/npm-cache",
+    "In extracted paperclip-omp-adapter source run npm ci --offline --ignore-scripts --no-audit --no-fund --cache /absolute/npm-cache",
+    "npm run build"
+  ],
+  "note": "This supplies the pinned lock dependency closure for Linux x86_64. New or changed dependency versions require separately imported artifacts."
+}

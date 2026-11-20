@@ -1,0 +1,974 @@
+{
+  "distribution": "Debian13/trixie",
+  "sourceIndexes": "Signed Debian archive/security indexes retrieved 2026-11-20; install only in matching disposable builder",
+  "packages": [
+    {
+      "archive": "adduser_3.152_all.deb",
+      "fields": "Package: adduser\nVersion: 3.152\nArchitecture: all"
+    },
+    {
+      "archive": "apt_3.0.4_amd64.deb",
+      "fields": "Package: apt\nVersion: 3.0.4\nArchitecture: amd64"
+    },
+    {
+      "archive": "base-passwd_3.6.7_amd64.deb",
+      "fields": "Package: base-passwd\nVersion: 3.6.7\nArchitecture: amd64"
+    },
+    {
+      "archive": "bash-completion_1%3a2.16.0-7_all.deb",
+      "fields": "Package: bash-completion\nVersion: 1:2.16.0-7\nArchitecture: all"
+    },
+    {
+      "archive": "binfmt-support_2.2.2-7_amd64.deb",
+      "fields": "Package: binfmt-support\nVersion: 2.2.2-7\nArchitecture: amd64"
+    },
+    {
+      "archive": "binutils-common_2.44-3_amd64.deb",
+      "fields": "Package: binutils-common\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "binutils-x86-64-linux-gnu_2.44-3_amd64.deb",
+      "fields": "Package: binutils-x86-64-linux-gnu\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "binutils_2.44-3_amd64.deb",
+      "fields": "Package: binutils\nVersion: 2.44-3\nArchitecture: amd64"
+    },
+    {
+      "archive": "build-essential_12.12_amd64.deb",
+      "fields": "Package: build-essential\nVersion: 12.12\nArchitecture: amd64"
+    },
+    {
+      "archive": "bzip2_1.0.8-6_amd64.deb",
+      "fields": "Package: bzip2\nVersion: 1.0.8-6\nArchitecture: amd64"
+    },
+    {
+      "archive": "ca-certificates_20250419+deb13u1_all.deb",
+      "fields": "Package: ca-certificates\nVersion: 20250419+deb13u1\nArchitecture: all"
+    },
+    {
+      "archive": "clang-19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: clang-19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "clang-tools-19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: clang-tools-19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "clang_1%3a19.0-63_amd64.deb",
+      "fields": "Package: clang\nVersion: 1:19.0-63\nArchitecture: amd64\nSource: llvm-defaults (0.63)"
+    },
+    {
+      "archive": "cmake-data_3.31.6-2_all.deb",
+      "fields": "Package: cmake-data\nVersion: 3.31.6-2\nArchitecture: all\nSource: cmake"
+    },
+    {
+      "archive": "cmake_3.31.6-2_amd64.deb",
+      "fields": "Package: cmake\nVersion: 3.31.6-2\nArchitecture: amd64"
+    },
+    {
+      "archive": "cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+      "fields": "Package: cpp-14-x86-64-linux-gnu\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "cpp-14_14.2.0-19_amd64.deb",
+      "fields": "Package: cpp-14\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: cpp-x86-64-linux-gnu\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "cpp_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: cpp\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "curl_8.14.1-2+deb13u7_amd64.deb",
+      "fields": "Package: curl\nVersion: 8.14.1-2+deb13u7\nArchitecture: amd64"
+    },
+    {
+      "archive": "debconf-i18n_1.5.91_all.deb",
+      "fields": "Package: debconf-i18n\nVersion: 1.5.91\nArchitecture: all\nSource: debconf"
+    },
+    {
+      "archive": "debconf_1.5.91_all.deb",
+      "fields": "Package: debconf\nVersion: 1.5.91\nArchitecture: all"
+    },
+    {
+      "archive": "debian-archive-keyring_2025.1_all.deb",
+      "fields": "Package: debian-archive-keyring\nVersion: 2025.1\nArchitecture: all"
+    },
+    {
+      "archive": "dpkg-dev_1.22.22_all.deb",
+      "fields": "Package: dpkg-dev\nVersion: 1.22.22\nArchitecture: all\nSource: dpkg"
+    },
+    {
+      "archive": "dpkg_1.22.22_amd64.deb",
+      "fields": "Package: dpkg\nVersion: 1.22.22\nArchitecture: amd64"
+    },
+    {
+      "archive": "fakeroot_1.37.1.1-1_amd64.deb",
+      "fields": "Package: fakeroot\nVersion: 1.37.1.1-1\nArchitecture: amd64"
+    },
+    {
+      "archive": "g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+      "fields": "Package: g++-14-x86-64-linux-gnu\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "g++-14_14.2.0-19_amd64.deb",
+      "fields": "Package: g++-14\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: g++-x86-64-linux-gnu\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "g++_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: g++\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "gcc-14-base_14.2.0-19_amd64.deb",
+      "fields": "Package: gcc-14-base\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+      "fields": "Package: gcc-14-x86-64-linux-gnu\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "gcc-14_14.2.0-19_amd64.deb",
+      "fields": "Package: gcc-14\nVersion: 14.2.0-19\nArchitecture: amd64"
+    },
+    {
+      "archive": "gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: gcc-x86-64-linux-gnu\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "gcc_4%3a14.2.0-1_amd64.deb",
+      "fields": "Package: gcc\nVersion: 4:14.2.0-1\nArchitecture: amd64\nSource: gcc-defaults (1.220)"
+    },
+    {
+      "archive": "git-man_1%3a2.47.3-0+deb13u1_all.deb",
+      "fields": "Package: git-man\nVersion: 1:2.47.3-0+deb13u1\nArchitecture: all\nSource: git"
+    },
+    {
+      "archive": "git_1%3a2.47.3-0+deb13u1_amd64.deb",
+      "fields": "Package: git\nVersion: 1:2.47.3-0+deb13u1\nArchitecture: amd64"
+    },
+    {
+      "archive": "init-system-helpers_1.69~deb13u1_all.deb",
+      "fields": "Package: init-system-helpers\nVersion: 1.69~deb13u1\nArchitecture: all"
+    },
+    {
+      "archive": "krb5-locales_1.21.3-5+deb13u1_all.deb",
+      "fields": "Package: krb5-locales\nVersion: 1.21.3-5+deb13u1\nArchitecture: all\nSource: krb5"
+    },
+    {
+      "archive": "less_668-1_amd64.deb",
+      "fields": "Package: less\nVersion: 668-1\nArchitecture: amd64"
+    },
+    {
+      "archive": "lib32gcc-s1_14.2.0-19_amd64.deb",
+      "fields": "Package: lib32gcc-s1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "lib32stdc++6_14.2.0-19_amd64.deb",
+      "fields": "Package: lib32stdc++6\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libacl1_2.3.2-2+b1_amd64.deb",
+      "fields": "Package: libacl1\nVersion: 2.3.2-2+b1\nArchitecture: amd64\nSource: acl (2.3.2-2)"
+    },
+    {
+      "archive": "libalgorithm-diff-perl_1.201-1_all.deb",
+      "fields": "Package: libalgorithm-diff-perl\nVersion: 1.201-1\nArchitecture: all"
+    },
+    {
+      "archive": "libalgorithm-diff-xs-perl_0.04-9_amd64.deb",
+      "fields": "Package: libalgorithm-diff-xs-perl\nVersion: 0.04-9\nArchitecture: amd64"
+    },
+    {
+      "archive": "libalgorithm-merge-perl_0.08-5_all.deb",
+      "fields": "Package: libalgorithm-merge-perl\nVersion: 0.08-5\nArchitecture: all"
+    },
+    {
+      "archive": "libapt-pkg7.0_3.0.4_amd64.deb",
+      "fields": "Package: libapt-pkg7.0\nVersion: 3.0.4\nArchitecture: amd64\nSource: apt"
+    },
+    {
+      "archive": "libarchive13t64_3.7.4-4+deb13u1_amd64.deb",
+      "fields": "Package: libarchive13t64\nVersion: 3.7.4-4+deb13u1\nArchitecture: amd64\nSource: libarchive"
+    },
+    {
+      "archive": "libasan8_14.2.0-19_amd64.deb",
+      "fields": "Package: libasan8\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libatomic1_14.2.0-19_amd64.deb",
+      "fields": "Package: libatomic1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libattr1_1%3a2.5.2-3_amd64.deb",
+      "fields": "Package: libattr1\nVersion: 1:2.5.2-3\nArchitecture: amd64\nSource: attr"
+    },
+    {
+      "archive": "libaudit-common_1%3a4.0.2-2+deb13u1_all.deb",
+      "fields": "Package: libaudit-common\nVersion: 1:4.0.2-2+deb13u1\nArchitecture: all\nSource: audit"
+    },
+    {
+      "archive": "libaudit1_1%3a4.0.2-2+deb13u1_amd64.deb",
+      "fields": "Package: libaudit1\nVersion: 1:4.0.2-2+deb13u1\nArchitecture: amd64\nSource: audit"
+    },
+    {
+      "archive": "libbinutils_2.44-3_amd64.deb",
+      "fields": "Package: libbinutils\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "libbrotli1_1.1.0-2+deb13u1_amd64.deb",
+      "fields": "Package: libbrotli1\nVersion: 1.1.0-2+deb13u1\nArchitecture: amd64\nSource: brotli"
+    },
+    {
+      "archive": "libbsd0_0.12.2-2_amd64.deb",
+      "fields": "Package: libbsd0\nVersion: 0.12.2-2\nArchitecture: amd64\nSource: libbsd"
+    },
+    {
+      "archive": "libbz2-1.0_1.0.8-6_amd64.deb",
+      "fields": "Package: libbz2-1.0\nVersion: 1.0.8-6\nArchitecture: amd64\nSource: bzip2"
+    },
+    {
+      "archive": "libc-dev-bin_2.41-12+deb13u4_amd64.deb",
+      "fields": "Package: libc-dev-bin\nVersion: 2.41-12+deb13u4\nArchitecture: amd64\nSource: glibc"
+    },
+    {
+      "archive": "libc6-dev_2.41-12+deb13u4_amd64.deb",
+      "fields": "Package: libc6-dev\nVersion: 2.41-12+deb13u4\nArchitecture: amd64\nSource: glibc"
+    },
+    {
+      "archive": "libc6-i386_2.41-12+deb13u4_amd64.deb",
+      "fields": "Package: libc6-i386\nVersion: 2.41-12+deb13u4\nArchitecture: amd64\nSource: glibc"
+    },
+    {
+      "archive": "libc6_2.41-12+deb13u4_amd64.deb",
+      "fields": "Package: libc6\nVersion: 2.41-12+deb13u4\nArchitecture: amd64\nSource: glibc"
+    },
+    {
+      "archive": "libcap-ng0_0.8.5-4+b1_amd64.deb",
+      "fields": "Package: libcap-ng0\nVersion: 0.8.5-4+b1\nArchitecture: amd64\nSource: libcap-ng (0.8.5-4)"
+    },
+    {
+      "archive": "libcap2_1%3a2.75-10+deb13u1+b3_amd64.deb",
+      "fields": "Package: libcap2\nVersion: 1:2.75-10+deb13u1+b3\nArchitecture: amd64\nSource: libcap2 (1:2.75-10+deb13u1)"
+    },
+    {
+      "archive": "libcbor0.10_0.10.2-2_amd64.deb",
+      "fields": "Package: libcbor0.10\nVersion: 0.10.2-2\nArchitecture: amd64\nSource: libcbor"
+    },
+    {
+      "archive": "libcc1-0_14.2.0-19_amd64.deb",
+      "fields": "Package: libcc1-0\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libclang-common-19-dev_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: libclang-common-19-dev\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "libclang-cpp19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: libclang-cpp19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "libclang-rt-19-dev_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: libclang-rt-19-dev\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "libclang1-19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: libclang1-19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "libcom-err2_1.47.2-3+b12_amd64.deb",
+      "fields": "Package: libcom-err2\nVersion: 1.47.2-3+b12\nArchitecture: amd64\nSource: e2fsprogs (1.47.2-3)"
+    },
+    {
+      "archive": "libcrypt-dev_1%3a4.4.38-1_amd64.deb",
+      "fields": "Package: libcrypt-dev\nVersion: 1:4.4.38-1\nArchitecture: amd64\nSource: libxcrypt"
+    },
+    {
+      "archive": "libcrypt1_1%3a4.4.38-1_amd64.deb",
+      "fields": "Package: libcrypt1\nVersion: 1:4.4.38-1\nArchitecture: amd64\nSource: libxcrypt"
+    },
+    {
+      "archive": "libctf-nobfd0_2.44-3_amd64.deb",
+      "fields": "Package: libctf-nobfd0\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "libctf0_2.44-3_amd64.deb",
+      "fields": "Package: libctf0\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "libcurl3t64-gnutls_8.14.1-2+deb13u7_amd64.deb",
+      "fields": "Package: libcurl3t64-gnutls\nVersion: 8.14.1-2+deb13u7\nArchitecture: amd64\nSource: curl"
+    },
+    {
+      "archive": "libcurl4t64_8.14.1-2+deb13u7_amd64.deb",
+      "fields": "Package: libcurl4t64\nVersion: 8.14.1-2+deb13u7\nArchitecture: amd64\nSource: curl"
+    },
+    {
+      "archive": "libdb5.3t64_5.3.28+dfsg2-9_amd64.deb",
+      "fields": "Package: libdb5.3t64\nVersion: 5.3.28+dfsg2-9\nArchitecture: amd64\nSource: db5.3"
+    },
+    {
+      "archive": "libdebconfclient0_0.280_amd64.deb",
+      "fields": "Package: libdebconfclient0\nVersion: 0.280\nArchitecture: amd64\nSource: cdebconf"
+    },
+    {
+      "archive": "libdpkg-perl_1.22.22_all.deb",
+      "fields": "Package: libdpkg-perl\nVersion: 1.22.22\nArchitecture: all\nSource: dpkg"
+    },
+    {
+      "archive": "libedit2_3.1-20250104-1_amd64.deb",
+      "fields": "Package: libedit2\nVersion: 3.1-20250104-1\nArchitecture: amd64\nSource: libedit"
+    },
+    {
+      "archive": "liberror-perl_0.17030-1_all.deb",
+      "fields": "Package: liberror-perl\nVersion: 0.17030-1\nArchitecture: all"
+    },
+    {
+      "archive": "libexpat1_2.9.0-1~deb13u1_amd64.deb",
+      "fields": "Package: libexpat1\nVersion: 2.9.0-1~deb13u1\nArchitecture: amd64\nSource: expat"
+    },
+    {
+      "archive": "libfakeroot_1.37.1.1-1_amd64.deb",
+      "fields": "Package: libfakeroot\nVersion: 1.37.1.1-1\nArchitecture: amd64\nSource: fakeroot"
+    },
+    {
+      "archive": "libffi-dev_3.4.8-2_amd64.deb",
+      "fields": "Package: libffi-dev\nVersion: 3.4.8-2\nArchitecture: amd64\nSource: libffi"
+    },
+    {
+      "archive": "libffi8_3.4.8-2_amd64.deb",
+      "fields": "Package: libffi8\nVersion: 3.4.8-2\nArchitecture: amd64\nSource: libffi"
+    },
+    {
+      "archive": "libfido2-1_1.15.0-1+b1_amd64.deb",
+      "fields": "Package: libfido2-1\nVersion: 1.15.0-1+b1\nArchitecture: amd64\nSource: libfido2 (1.15.0-1)"
+    },
+    {
+      "archive": "libfile-fcntllock-perl_0.22-4+b4_amd64.deb",
+      "fields": "Package: libfile-fcntllock-perl\nVersion: 0.22-4+b4\nArchitecture: amd64\nSource: libfile-fcntllock-perl (0.22-4)"
+    },
+    {
+      "archive": "libgc1_1%3a8.2.8-1_amd64.deb",
+      "fields": "Package: libgc1\nVersion: 1:8.2.8-1\nArchitecture: amd64\nSource: libgc"
+    },
+    {
+      "archive": "libgcc-14-dev_14.2.0-19_amd64.deb",
+      "fields": "Package: libgcc-14-dev\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libgcc-s1_14.2.0-19_amd64.deb",
+      "fields": "Package: libgcc-s1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libgdbm-compat4t64_1.24-2_amd64.deb",
+      "fields": "Package: libgdbm-compat4t64\nVersion: 1.24-2\nArchitecture: amd64\nSource: gdbm"
+    },
+    {
+      "archive": "libgdbm6t64_1.24-2_amd64.deb",
+      "fields": "Package: libgdbm6t64\nVersion: 1.24-2\nArchitecture: amd64\nSource: gdbm"
+    },
+    {
+      "archive": "libgmp10_2%3a6.3.0+dfsg-3_amd64.deb",
+      "fields": "Package: libgmp10\nVersion: 2:6.3.0+dfsg-3\nArchitecture: amd64\nSource: gmp"
+    },
+    {
+      "archive": "libgnutls30t64_3.8.9-3+deb13u4_amd64.deb",
+      "fields": "Package: libgnutls30t64\nVersion: 3.8.9-3+deb13u4\nArchitecture: amd64\nSource: gnutls28"
+    },
+    {
+      "archive": "libgomp1_14.2.0-19_amd64.deb",
+      "fields": "Package: libgomp1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libgpm2_1.20.7-11+b2_amd64.deb",
+      "fields": "Package: libgpm2\nVersion: 1.20.7-11+b2\nArchitecture: amd64\nSource: gpm (1.20.7-11)"
+    },
+    {
+      "archive": "libgprofng0_2.44-3_amd64.deb",
+      "fields": "Package: libgprofng0\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb",
+      "fields": "Package: libgssapi-krb5-2\nVersion: 1.21.3-5+deb13u1\nArchitecture: amd64\nSource: krb5"
+    },
+    {
+      "archive": "libhogweed6t64_3.10.1-1_amd64.deb",
+      "fields": "Package: libhogweed6t64\nVersion: 3.10.1-1\nArchitecture: amd64\nSource: nettle"
+    },
+    {
+      "archive": "libhwasan0_14.2.0-19_amd64.deb",
+      "fields": "Package: libhwasan0\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libidn2-0_2.3.8-2_amd64.deb",
+      "fields": "Package: libidn2-0\nVersion: 2.3.8-2\nArchitecture: amd64\nSource: libidn2"
+    },
+    {
+      "archive": "libisl23_0.27-1_amd64.deb",
+      "fields": "Package: libisl23\nVersion: 0.27-1\nArchitecture: amd64\nSource: isl"
+    },
+    {
+      "archive": "libitm1_14.2.0-19_amd64.deb",
+      "fields": "Package: libitm1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libjansson4_2.14-2+b3_amd64.deb",
+      "fields": "Package: libjansson4\nVersion: 2.14-2+b3\nArchitecture: amd64\nSource: jansson (2.14-2)"
+    },
+    {
+      "archive": "libjsoncpp26_1.9.6-3_amd64.deb",
+      "fields": "Package: libjsoncpp26\nVersion: 1.9.6-3\nArchitecture: amd64\nSource: libjsoncpp"
+    },
+    {
+      "archive": "libk5crypto3_1.21.3-5+deb13u1_amd64.deb",
+      "fields": "Package: libk5crypto3\nVersion: 1.21.3-5+deb13u1\nArchitecture: amd64\nSource: krb5"
+    },
+    {
+      "archive": "libkeyutils1_1.6.3-6_amd64.deb",
+      "fields": "Package: libkeyutils1\nVersion: 1.6.3-6\nArchitecture: amd64\nSource: keyutils"
+    },
+    {
+      "archive": "libkrb5-3_1.21.3-5+deb13u1_amd64.deb",
+      "fields": "Package: libkrb5-3\nVersion: 1.21.3-5+deb13u1\nArchitecture: amd64\nSource: krb5"
+    },
+    {
+      "archive": "libkrb5support0_1.21.3-5+deb13u1_amd64.deb",
+      "fields": "Package: libkrb5support0\nVersion: 1.21.3-5+deb13u1\nArchitecture: amd64\nSource: krb5"
+    },
+    {
+      "archive": "libldap-common_2.6.10+dfsg-1_all.deb",
+      "fields": "Package: libldap-common\nVersion: 2.6.10+dfsg-1\nArchitecture: all\nSource: openldap"
+    },
+    {
+      "archive": "libldap2_2.6.10+dfsg-1_amd64.deb",
+      "fields": "Package: libldap2\nVersion: 2.6.10+dfsg-1\nArchitecture: amd64\nSource: openldap"
+    },
+    {
+      "archive": "libllvm19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: libllvm19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "liblocale-gettext-perl_1.07-7+b1_amd64.deb",
+      "fields": "Package: liblocale-gettext-perl\nVersion: 1.07-7+b1\nArchitecture: amd64\nSource: liblocale-gettext-perl (1.07-7)"
+    },
+    {
+      "archive": "liblsan0_14.2.0-19_amd64.deb",
+      "fields": "Package: liblsan0\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "liblz4-1_1.10.0-4_amd64.deb",
+      "fields": "Package: liblz4-1\nVersion: 1.10.0-4\nArchitecture: amd64\nSource: lz4"
+    },
+    {
+      "archive": "liblzma5_5.8.1-1+deb13u2_amd64.deb",
+      "fields": "Package: liblzma5\nVersion: 5.8.1-1+deb13u2\nArchitecture: amd64\nSource: xz-utils"
+    },
+    {
+      "archive": "libmd0_1.1.0-2+b1_amd64.deb",
+      "fields": "Package: libmd0\nVersion: 1.1.0-2+b1\nArchitecture: amd64\nSource: libmd (1.1.0-2)"
+    },
+    {
+      "archive": "libmpc3_1.3.1-1+b3_amd64.deb",
+      "fields": "Package: libmpc3\nVersion: 1.3.1-1+b3\nArchitecture: amd64\nSource: mpclib3 (1.3.1-1)"
+    },
+    {
+      "archive": "libmpfr6_4.2.2-1_amd64.deb",
+      "fields": "Package: libmpfr6\nVersion: 4.2.2-1\nArchitecture: amd64\nSource: mpfr4"
+    },
+    {
+      "archive": "libncurses-dev_6.5+20250216-2_amd64.deb",
+      "fields": "Package: libncurses-dev\nVersion: 6.5+20250216-2\nArchitecture: amd64\nSource: ncurses"
+    },
+    {
+      "archive": "libncurses6_6.5+20250216-2_amd64.deb",
+      "fields": "Package: libncurses6\nVersion: 6.5+20250216-2\nArchitecture: amd64\nSource: ncurses"
+    },
+    {
+      "archive": "libncursesw6_6.5+20250216-2_amd64.deb",
+      "fields": "Package: libncursesw6\nVersion: 6.5+20250216-2\nArchitecture: amd64\nSource: ncurses"
+    },
+    {
+      "archive": "libnettle8t64_3.10.1-1_amd64.deb",
+      "fields": "Package: libnettle8t64\nVersion: 3.10.1-1\nArchitecture: amd64\nSource: nettle"
+    },
+    {
+      "archive": "libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb",
+      "fields": "Package: libnghttp2-14\nVersion: 1.64.0-1.1+deb13u1\nArchitecture: amd64\nSource: nghttp2"
+    },
+    {
+      "archive": "libnghttp3-9_1.8.0-1_amd64.deb",
+      "fields": "Package: libnghttp3-9\nVersion: 1.8.0-1\nArchitecture: amd64\nSource: nghttp3"
+    },
+    {
+      "archive": "libngtcp2-16_1.11.0-1+deb13u1_amd64.deb",
+      "fields": "Package: libngtcp2-16\nVersion: 1.11.0-1+deb13u1\nArchitecture: amd64\nSource: ngtcp2"
+    },
+    {
+      "archive": "libngtcp2-crypto-gnutls8_1.11.0-1+deb13u1_amd64.deb",
+      "fields": "Package: libngtcp2-crypto-gnutls8\nVersion: 1.11.0-1+deb13u1\nArchitecture: amd64\nSource: ngtcp2"
+    },
+    {
+      "archive": "libobjc-14-dev_14.2.0-19_amd64.deb",
+      "fields": "Package: libobjc-14-dev\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libobjc4_14.2.0-19_amd64.deb",
+      "fields": "Package: libobjc4\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libp11-kit0_0.25.5-3_amd64.deb",
+      "fields": "Package: libp11-kit0\nVersion: 0.25.5-3\nArchitecture: amd64\nSource: p11-kit"
+    },
+    {
+      "archive": "libpam-modules-bin_1.7.0-5_amd64.deb",
+      "fields": "Package: libpam-modules-bin\nVersion: 1.7.0-5\nArchitecture: amd64\nSource: pam"
+    },
+    {
+      "archive": "libpam-modules_1.7.0-5_amd64.deb",
+      "fields": "Package: libpam-modules\nVersion: 1.7.0-5\nArchitecture: amd64\nSource: pam"
+    },
+    {
+      "archive": "libpam0g_1.7.0-5_amd64.deb",
+      "fields": "Package: libpam0g\nVersion: 1.7.0-5\nArchitecture: amd64\nSource: pam"
+    },
+    {
+      "archive": "libpcre2-8-0_10.46-1~deb13u3_amd64.deb",
+      "fields": "Package: libpcre2-8-0\nVersion: 10.46-1~deb13u3\nArchitecture: amd64\nSource: pcre2"
+    },
+    {
+      "archive": "libperl5.40_5.40.1-6+deb13u1_amd64.deb",
+      "fields": "Package: libperl5.40\nVersion: 5.40.1-6+deb13u1\nArchitecture: amd64\nSource: perl"
+    },
+    {
+      "archive": "libpfm4_4.13.0+git99-gc5587f9-1_amd64.deb",
+      "fields": "Package: libpfm4\nVersion: 4.13.0+git99-gc5587f9-1\nArchitecture: amd64"
+    },
+    {
+      "archive": "libpipeline1_1.5.8-1_amd64.deb",
+      "fields": "Package: libpipeline1\nVersion: 1.5.8-1\nArchitecture: amd64\nSource: libpipeline"
+    },
+    {
+      "archive": "libpkgconf3_1.8.1-4_amd64.deb",
+      "fields": "Package: libpkgconf3\nVersion: 1.8.1-4\nArchitecture: amd64\nSource: pkgconf"
+    },
+    {
+      "archive": "libproc2-0_2%3a4.0.4-9_amd64.deb",
+      "fields": "Package: libproc2-0\nVersion: 2:4.0.4-9\nArchitecture: amd64\nSource: procps"
+    },
+    {
+      "archive": "libprotobuf-dev_3.21.12-11+deb13u1_amd64.deb",
+      "fields": "Package: libprotobuf-dev\nVersion: 3.21.12-11+deb13u1\nArchitecture: amd64\nSource: protobuf"
+    },
+    {
+      "archive": "libprotobuf-lite32t64_3.21.12-11+deb13u1_amd64.deb",
+      "fields": "Package: libprotobuf-lite32t64\nVersion: 3.21.12-11+deb13u1\nArchitecture: amd64\nSource: protobuf"
+    },
+    {
+      "archive": "libprotobuf32t64_3.21.12-11+deb13u1_amd64.deb",
+      "fields": "Package: libprotobuf32t64\nVersion: 3.21.12-11+deb13u1\nArchitecture: amd64\nSource: protobuf"
+    },
+    {
+      "archive": "libprotoc32t64_3.21.12-11+deb13u1_amd64.deb",
+      "fields": "Package: libprotoc32t64\nVersion: 3.21.12-11+deb13u1\nArchitecture: amd64\nSource: protobuf"
+    },
+    {
+      "archive": "libpsl5t64_0.21.2-1.1+b1_amd64.deb",
+      "fields": "Package: libpsl5t64\nVersion: 0.21.2-1.1+b1\nArchitecture: amd64\nSource: libpsl (0.21.2-1.1)"
+    },
+    {
+      "archive": "libpython3-stdlib_3.13.5-1_amd64.deb",
+      "fields": "Package: libpython3-stdlib\nVersion: 3.13.5-1\nArchitecture: amd64\nSource: python3-defaults"
+    },
+    {
+      "archive": "libpython3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+      "fields": "Package: libpython3.13-minimal\nVersion: 3.13.5-2+deb13u5\nArchitecture: amd64\nSource: python3.13"
+    },
+    {
+      "archive": "libpython3.13-stdlib_3.13.5-2+deb13u5_amd64.deb",
+      "fields": "Package: libpython3.13-stdlib\nVersion: 3.13.5-2+deb13u5\nArchitecture: amd64\nSource: python3.13"
+    },
+    {
+      "archive": "libquadmath0_14.2.0-19_amd64.deb",
+      "fields": "Package: libquadmath0\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libreadline8t64_8.2-6_amd64.deb",
+      "fields": "Package: libreadline8t64\nVersion: 8.2-6\nArchitecture: amd64\nSource: readline"
+    },
+    {
+      "archive": "librhash1_1.4.5-1_amd64.deb",
+      "fields": "Package: librhash1\nVersion: 1.4.5-1\nArchitecture: amd64\nSource: rhash"
+    },
+    {
+      "archive": "librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb",
+      "fields": "Package: librtmp1\nVersion: 2.4+20151223.gitfa8646d.1-2+b5\nArchitecture: amd64\nSource: rtmpdump (2.4+20151223.gitfa8646d.1-2)"
+    },
+    {
+      "archive": "libsasl2-2_2.1.28+dfsg1-9_amd64.deb",
+      "fields": "Package: libsasl2-2\nVersion: 2.1.28+dfsg1-9\nArchitecture: amd64\nSource: cyrus-sasl2"
+    },
+    {
+      "archive": "libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb",
+      "fields": "Package: libsasl2-modules-db\nVersion: 2.1.28+dfsg1-9\nArchitecture: amd64\nSource: cyrus-sasl2"
+    },
+    {
+      "archive": "libsasl2-modules_2.1.28+dfsg1-9_amd64.deb",
+      "fields": "Package: libsasl2-modules\nVersion: 2.1.28+dfsg1-9\nArchitecture: amd64\nSource: cyrus-sasl2"
+    },
+    {
+      "archive": "libseccomp2_2.6.0-2_amd64.deb",
+      "fields": "Package: libseccomp2\nVersion: 2.6.0-2\nArchitecture: amd64\nSource: libseccomp"
+    },
+    {
+      "archive": "libselinux1_3.8.1-1_amd64.deb",
+      "fields": "Package: libselinux1\nVersion: 3.8.1-1\nArchitecture: amd64\nSource: libselinux"
+    },
+    {
+      "archive": "libsemanage-common_3.8.1-1_all.deb",
+      "fields": "Package: libsemanage-common\nVersion: 3.8.1-1\nArchitecture: all\nSource: libsemanage"
+    },
+    {
+      "archive": "libsemanage2_3.8.1-1_amd64.deb",
+      "fields": "Package: libsemanage2\nVersion: 3.8.1-1\nArchitecture: amd64\nSource: libsemanage"
+    },
+    {
+      "archive": "libsepol2_3.8.1-1_amd64.deb",
+      "fields": "Package: libsepol2\nVersion: 3.8.1-1\nArchitecture: amd64\nSource: libsepol"
+    },
+    {
+      "archive": "libsframe1_2.44-3_amd64.deb",
+      "fields": "Package: libsframe1\nVersion: 2.44-3\nArchitecture: amd64\nSource: binutils"
+    },
+    {
+      "archive": "libsqlite3-0_3.46.1-7+deb13u2_amd64.deb",
+      "fields": "Package: libsqlite3-0\nVersion: 3.46.1-7+deb13u2\nArchitecture: amd64\nSource: sqlite3"
+    },
+    {
+      "archive": "libssh2-1t64_1.11.1-1+deb13u2_amd64.deb",
+      "fields": "Package: libssh2-1t64\nVersion: 1.11.1-1+deb13u2\nArchitecture: amd64\nSource: libssh2"
+    },
+    {
+      "archive": "libssl-dev_3.5.7-1~deb13u3_amd64.deb",
+      "fields": "Package: libssl-dev\nVersion: 3.5.7-1~deb13u3\nArchitecture: amd64\nSource: openssl"
+    },
+    {
+      "archive": "libssl3t64_3.5.7-1~deb13u3_amd64.deb",
+      "fields": "Package: libssl3t64\nVersion: 3.5.7-1~deb13u3\nArchitecture: amd64\nSource: openssl"
+    },
+    {
+      "archive": "libstdc++-14-dev_14.2.0-19_amd64.deb",
+      "fields": "Package: libstdc++-14-dev\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libstdc++6_14.2.0-19_amd64.deb",
+      "fields": "Package: libstdc++6\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libsystemd0_257.13-1~deb13u1_amd64.deb",
+      "fields": "Package: libsystemd0\nVersion: 257.13-1~deb13u1\nArchitecture: amd64\nSource: systemd"
+    },
+    {
+      "archive": "libtasn1-6_4.20.0-2+deb13u1_amd64.deb",
+      "fields": "Package: libtasn1-6\nVersion: 4.20.0-2+deb13u1\nArchitecture: amd64"
+    },
+    {
+      "archive": "libtext-charwidth-perl_0.04-11+b4_amd64.deb",
+      "fields": "Package: libtext-charwidth-perl\nVersion: 0.04-11+b4\nArchitecture: amd64\nSource: libtext-charwidth-perl (0.04-11)"
+    },
+    {
+      "archive": "libtext-iconv-perl_1.7-8+b4_amd64.deb",
+      "fields": "Package: libtext-iconv-perl\nVersion: 1.7-8+b4\nArchitecture: amd64\nSource: libtext-iconv-perl (1.7-8)"
+    },
+    {
+      "archive": "libtext-wrapi18n-perl_0.06-10_all.deb",
+      "fields": "Package: libtext-wrapi18n-perl\nVersion: 0.06-10\nArchitecture: all"
+    },
+    {
+      "archive": "libtinfo6_6.5+20250216-2_amd64.deb",
+      "fields": "Package: libtinfo6\nVersion: 6.5+20250216-2\nArchitecture: amd64\nSource: ncurses"
+    },
+    {
+      "archive": "libtsan2_14.2.0-19_amd64.deb",
+      "fields": "Package: libtsan2\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libubsan1_14.2.0-19_amd64.deb",
+      "fields": "Package: libubsan1\nVersion: 14.2.0-19\nArchitecture: amd64\nSource: gcc-14"
+    },
+    {
+      "archive": "libudev1_257.13-1~deb13u1_amd64.deb",
+      "fields": "Package: libudev1\nVersion: 257.13-1~deb13u1\nArchitecture: amd64\nSource: systemd"
+    },
+    {
+      "archive": "libunistring5_1.3-2_amd64.deb",
+      "fields": "Package: libunistring5\nVersion: 1.3-2\nArchitecture: amd64\nSource: libunistring"
+    },
+    {
+      "archive": "libuuid1_2.41.5-0+deb13u1_amd64.deb",
+      "fields": "Package: libuuid1\nVersion: 2.41.5-0+deb13u1\nArchitecture: amd64\nSource: util-linux"
+    },
+    {
+      "archive": "libuv1t64_1.50.0-2_amd64.deb",
+      "fields": "Package: libuv1t64\nVersion: 1.50.0-2\nArchitecture: amd64\nSource: libuv1"
+    },
+    {
+      "archive": "libx11-6_2%3a1.8.12-1_amd64.deb",
+      "fields": "Package: libx11-6\nVersion: 2:1.8.12-1\nArchitecture: amd64\nSource: libx11"
+    },
+    {
+      "archive": "libx11-data_2%3a1.8.12-1_all.deb",
+      "fields": "Package: libx11-data\nVersion: 2:1.8.12-1\nArchitecture: all\nSource: libx11"
+    },
+    {
+      "archive": "libxau6_1%3a1.0.11-1_amd64.deb",
+      "fields": "Package: libxau6\nVersion: 1:1.0.11-1\nArchitecture: amd64\nSource: libxau"
+    },
+    {
+      "archive": "libxcb1_1.17.0-2+b1_amd64.deb",
+      "fields": "Package: libxcb1\nVersion: 1.17.0-2+b1\nArchitecture: amd64\nSource: libxcb (1.17.0-2)"
+    },
+    {
+      "archive": "libxdmcp6_1%3a1.1.5-1_amd64.deb",
+      "fields": "Package: libxdmcp6\nVersion: 1:1.1.5-1\nArchitecture: amd64\nSource: libxdmcp"
+    },
+    {
+      "archive": "libxext6_2%3a1.3.4-1+b3_amd64.deb",
+      "fields": "Package: libxext6\nVersion: 2:1.3.4-1+b3\nArchitecture: amd64\nSource: libxext (2:1.3.4-1)"
+    },
+    {
+      "archive": "libxml2-dev_2.12.7+dfsg+really2.9.14-2.1+deb13u3_amd64.deb",
+      "fields": "Package: libxml2-dev\nVersion: 2.12.7+dfsg+really2.9.14-2.1+deb13u3\nArchitecture: amd64\nSource: libxml2"
+    },
+    {
+      "archive": "libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u3_amd64.deb",
+      "fields": "Package: libxml2\nVersion: 2.12.7+dfsg+really2.9.14-2.1+deb13u3\nArchitecture: amd64"
+    },
+    {
+      "archive": "libxmuu1_2%3a1.1.3-3+b4_amd64.deb",
+      "fields": "Package: libxmuu1\nVersion: 2:1.1.3-3+b4\nArchitecture: amd64\nSource: libxmu (2:1.1.3-3)"
+    },
+    {
+      "archive": "libxxhash0_0.8.3-2_amd64.deb",
+      "fields": "Package: libxxhash0\nVersion: 0.8.3-2\nArchitecture: amd64\nSource: xxhash"
+    },
+    {
+      "archive": "libyaml-0-2_0.2.5-2_amd64.deb",
+      "fields": "Package: libyaml-0-2\nVersion: 0.2.5-2\nArchitecture: amd64\nSource: libyaml"
+    },
+    {
+      "archive": "libz3-4_4.13.3-1_amd64.deb",
+      "fields": "Package: libz3-4\nVersion: 4.13.3-1\nArchitecture: amd64\nSource: z3"
+    },
+    {
+      "archive": "libz3-dev_4.13.3-1_amd64.deb",
+      "fields": "Package: libz3-dev\nVersion: 4.13.3-1\nArchitecture: amd64\nSource: z3"
+    },
+    {
+      "archive": "libzstd1_1.5.7+dfsg-1_amd64.deb",
+      "fields": "Package: libzstd1\nVersion: 1.5.7+dfsg-1\nArchitecture: amd64\nSource: libzstd"
+    },
+    {
+      "archive": "linux-libc-dev_6.12.117-1_all.deb",
+      "fields": "Package: linux-libc-dev\nVersion: 6.12.117-1\nArchitecture: all\nSource: linux"
+    },
+    {
+      "archive": "linux-sysctl-defaults_4.12.1_all.deb",
+      "fields": "Package: linux-sysctl-defaults\nVersion: 4.12.1\nArchitecture: all\nSource: linux-base"
+    },
+    {
+      "archive": "llvm-19-dev_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: llvm-19-dev\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "llvm-19-linker-tools_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: llvm-19-linker-tools\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "llvm-19-runtime_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: llvm-19-runtime\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "llvm-19-tools_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: llvm-19-tools\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "llvm-19_1%3a19.1.7-3+b1_amd64.deb",
+      "fields": "Package: llvm-19\nVersion: 1:19.1.7-3+b1\nArchitecture: amd64\nSource: llvm-toolchain-19 (1:19.1.7-3)"
+    },
+    {
+      "archive": "login.defs_1%3a4.17.4-2_all.deb",
+      "fields": "Package: login.defs\nVersion: 1:4.17.4-2\nArchitecture: all\nSource: shadow"
+    },
+    {
+      "archive": "make_4.4.1-2_amd64.deb",
+      "fields": "Package: make\nVersion: 4.4.1-2\nArchitecture: amd64\nSource: make-dfsg"
+    },
+    {
+      "archive": "manpages-dev_6.9.1-1_all.deb",
+      "fields": "Package: manpages-dev\nVersion: 6.9.1-1\nArchitecture: all\nSource: manpages"
+    },
+    {
+      "archive": "manpages_6.9.1-1_all.deb",
+      "fields": "Package: manpages\nVersion: 6.9.1-1\nArchitecture: all"
+    },
+    {
+      "archive": "media-types_13.0.0_all.deb",
+      "fields": "Package: media-types\nVersion: 13.0.0\nArchitecture: all"
+    },
+    {
+      "archive": "musl-dev_1.2.5-3.1~deb13u1_amd64.deb",
+      "fields": "Package: musl-dev\nVersion: 1.2.5-3.1~deb13u1\nArchitecture: amd64\nSource: musl"
+    },
+    {
+      "archive": "musl-tools_1.2.5-3.1~deb13u1_amd64.deb",
+      "fields": "Package: musl-tools\nVersion: 1.2.5-3.1~deb13u1\nArchitecture: amd64\nSource: musl"
+    },
+    {
+      "archive": "musl_1.2.5-3.1~deb13u1_amd64.deb",
+      "fields": "Package: musl\nVersion: 1.2.5-3.1~deb13u1\nArchitecture: amd64"
+    },
+    {
+      "archive": "netbase_6.5_all.deb",
+      "fields": "Package: netbase\nVersion: 6.5\nArchitecture: all"
+    },
+    {
+      "archive": "openssh-client_1%3a10.0p1-7+deb13u4_amd64.deb",
+      "fields": "Package: openssh-client\nVersion: 1:10.0p1-7+deb13u4\nArchitecture: amd64\nSource: openssh"
+    },
+    {
+      "archive": "openssl-provider-legacy_3.5.7-1~deb13u3_amd64.deb",
+      "fields": "Package: openssl-provider-legacy\nVersion: 3.5.7-1~deb13u3\nArchitecture: amd64\nSource: openssl"
+    },
+    {
+      "archive": "openssl_3.5.7-1~deb13u3_amd64.deb",
+      "fields": "Package: openssl\nVersion: 3.5.7-1~deb13u3\nArchitecture: amd64"
+    },
+    {
+      "archive": "passwd_1%3a4.17.4-2_amd64.deb",
+      "fields": "Package: passwd\nVersion: 1:4.17.4-2\nArchitecture: amd64\nSource: shadow"
+    },
+    {
+      "archive": "patch_2.8-2_amd64.deb",
+      "fields": "Package: patch\nVersion: 2.8-2\nArchitecture: amd64"
+    },
+    {
+      "archive": "perl-base_5.40.1-6+deb13u1_amd64.deb",
+      "fields": "Package: perl-base\nVersion: 5.40.1-6+deb13u1\nArchitecture: amd64\nSource: perl"
+    },
+    {
+      "archive": "perl-modules-5.40_5.40.1-6+deb13u1_all.deb",
+      "fields": "Package: perl-modules-5.40\nVersion: 5.40.1-6+deb13u1\nArchitecture: all\nSource: perl"
+    },
+    {
+      "archive": "perl_5.40.1-6+deb13u1_amd64.deb",
+      "fields": "Package: perl\nVersion: 5.40.1-6+deb13u1\nArchitecture: amd64"
+    },
+    {
+      "archive": "pkg-config_1.8.1-4_amd64.deb",
+      "fields": "Package: pkg-config\nVersion: 1.8.1-4\nArchitecture: amd64\nSource: pkgconf"
+    },
+    {
+      "archive": "pkgconf-bin_1.8.1-4_amd64.deb",
+      "fields": "Package: pkgconf-bin\nVersion: 1.8.1-4\nArchitecture: amd64\nSource: pkgconf"
+    },
+    {
+      "archive": "pkgconf_1.8.1-4_amd64.deb",
+      "fields": "Package: pkgconf\nVersion: 1.8.1-4\nArchitecture: amd64"
+    },
+    {
+      "archive": "procps_2%3a4.0.4-9_amd64.deb",
+      "fields": "Package: procps\nVersion: 2:4.0.4-9\nArchitecture: amd64"
+    },
+    {
+      "archive": "protobuf-compiler_3.21.12-11+deb13u1_amd64.deb",
+      "fields": "Package: protobuf-compiler\nVersion: 3.21.12-11+deb13u1\nArchitecture: amd64\nSource: protobuf"
+    },
+    {
+      "archive": "psmisc_23.7-2_amd64.deb",
+      "fields": "Package: psmisc\nVersion: 23.7-2\nArchitecture: amd64"
+    },
+    {
+      "archive": "publicsuffix_20250328.1952-0.1_all.deb",
+      "fields": "Package: publicsuffix\nVersion: 20250328.1952-0.1\nArchitecture: all"
+    },
+    {
+      "archive": "python3-minimal_3.13.5-1_amd64.deb",
+      "fields": "Package: python3-minimal\nVersion: 3.13.5-1\nArchitecture: amd64\nSource: python3-defaults"
+    },
+    {
+      "archive": "python3-pygments_2.18.0+dfsg-2_all.deb",
+      "fields": "Package: python3-pygments\nVersion: 2.18.0+dfsg-2\nArchitecture: all\nSource: pygments"
+    },
+    {
+      "archive": "python3-yaml_6.0.2-1+b2_amd64.deb",
+      "fields": "Package: python3-yaml\nVersion: 6.0.2-1+b2\nArchitecture: amd64\nSource: pyyaml (6.0.2-1)"
+    },
+    {
+      "archive": "python3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+      "fields": "Package: python3.13-minimal\nVersion: 3.13.5-2+deb13u5\nArchitecture: amd64\nSource: python3.13"
+    },
+    {
+      "archive": "python3.13_3.13.5-2+deb13u5_amd64.deb",
+      "fields": "Package: python3.13\nVersion: 3.13.5-2+deb13u5\nArchitecture: amd64"
+    },
+    {
+      "archive": "python3_3.13.5-1_amd64.deb",
+      "fields": "Package: python3\nVersion: 3.13.5-1\nArchitecture: amd64\nSource: python3-defaults"
+    },
+    {
+      "archive": "readline-common_8.2-6_all.deb",
+      "fields": "Package: readline-common\nVersion: 8.2-6\nArchitecture: all\nSource: readline"
+    },
+    {
+      "archive": "rpcsvc-proto_1.4.3-1_amd64.deb",
+      "fields": "Package: rpcsvc-proto\nVersion: 1.4.3-1\nArchitecture: amd64"
+    },
+    {
+      "archive": "sensible-utils_0.0.25_all.deb",
+      "fields": "Package: sensible-utils\nVersion: 0.0.25\nArchitecture: all"
+    },
+    {
+      "archive": "sq_1.3.1-2+b2_amd64.deb",
+      "fields": "Package: sq\nVersion: 1.3.1-2+b2\nArchitecture: amd64\nSource: rust-sequoia-sq (1.3.1-2)"
+    },
+    {
+      "archive": "sqv_1.3.0-3+b2_amd64.deb",
+      "fields": "Package: sqv\nVersion: 1.3.0-3+b2\nArchitecture: amd64\nSource: rust-sequoia-sqv (1.3.0-3)"
+    },
+    {
+      "archive": "tar_1.35+dfsg-3.1_amd64.deb",
+      "fields": "Package: tar\nVersion: 1.35+dfsg-3.1\nArchitecture: amd64"
+    },
+    {
+      "archive": "tzdata_2026f-0+deb13u1_all.deb",
+      "fields": "Package: tzdata\nVersion: 2026f-0+deb13u1\nArchitecture: all"
+    },
+    {
+      "archive": "xauth_1%3a1.1.2-1.1_amd64.deb",
+      "fields": "Package: xauth\nVersion: 1:1.1.2-1.1\nArchitecture: amd64"
+    },
+    {
+      "archive": "xz-utils_5.8.1-1+deb13u2_amd64.deb",
+      "fields": "Package: xz-utils\nVersion: 5.8.1-1+deb13u2\nArchitecture: amd64"
+    },
+    {
+      "archive": "zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb",
+      "fields": "Package: zlib1g-dev\nVersion: 1:1.3.dfsg+really1.3.1-1+deb13u1\nArchitecture: amd64\nSource: zlib"
+    },
+    {
+      "archive": "zlib1g_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb",
+      "fields": "Package: zlib1g\nVersion: 1:1.3.dfsg+really1.3.1-1+deb13u1\nArchitecture: amd64\nSource: zlib"
+    },
+    {
+      "archive": "zstd_1.5.7+dfsg-1_amd64.deb",
+      "fields": "Package: zstd\nVersion: 1.5.7+dfsg-1\nArchitecture: amd64\nSource: libzstd"
+    }
+  ]
+}

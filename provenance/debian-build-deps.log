@@ -1,0 +1,351 @@
+Reading package lists...
+Building dependency tree...
+The following additional packages will be installed:
+  adduser apt base-passwd bash-completion binfmt-support binutils
+  binutils-common binutils-x86-64-linux-gnu bzip2 clang-19 clang-tools-19
+  cmake-data cpp cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu debconf
+  debconf-i18n debian-archive-keyring dpkg dpkg-dev fakeroot g++ g++-14
+  g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-14 gcc-14-base
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu git-man init-system-helpers
+  krb5-locales less lib32gcc-s1 lib32stdc++6 libacl1 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libapt-pkg7.0
+  libarchive13t64 libasan8 libatomic1 libattr1 libaudit-common libaudit1
+  libbinutils libbrotli1 libbsd0 libbz2-1.0 libc-dev-bin libc6 libc6-dev
+  libc6-i386 libcap-ng0 libcap2 libcbor0.10 libcc1-0 libclang-common-19-dev
+  libclang-cpp19 libclang-rt-19-dev libclang1-19 libcom-err2 libcrypt-dev
+  libcrypt1 libctf-nobfd0 libctf0 libcurl3t64-gnutls libcurl4t64 libdb5.3t64
+  libdebconfclient0 libdpkg-perl libedit2 liberror-perl libexpat1 libfakeroot
+  libffi-dev libffi8 libfido2-1 libfile-fcntllock-perl libgc1 libgcc-14-dev
+  libgcc-s1 libgdbm-compat4t64 libgdbm6t64 libgmp10 libgnutls30t64 libgomp1
+  libgpm2 libgprofng0 libgssapi-krb5-2 libhogweed6t64 libhwasan0 libidn2-0
+  libisl23 libitm1 libjansson4 libjsoncpp26 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-common libldap2 libllvm19
+  liblocale-gettext-perl liblsan0 liblz4-1 liblzma5 libmd0 libmpc3 libmpfr6
+  libncurses-dev libncurses6 libncursesw6 libnettle8t64 libnghttp2-14
+  libnghttp3-9 libngtcp2-16 libngtcp2-crypto-gnutls8 libobjc-14-dev libobjc4
+  libp11-kit0 libpam-modules libpam-modules-bin libpam0g libpcre2-8-0
+  libperl5.40 libpfm4 libpipeline1 libpkgconf3 libproc2-0 libprotobuf-dev
+  libprotobuf-lite32t64 libprotobuf32t64 libprotoc32t64 libpsl5t64
+  libpython3-stdlib libpython3.13-minimal libpython3.13-stdlib libquadmath0
+  libreadline8t64 librhash1 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2
+  libsepol2 libsframe1 libsqlite3-0 libssh2-1t64 libssl3t64 libstdc++-14-dev
+  libstdc++6 libsystemd0 libtasn1-6 libtext-charwidth-perl libtext-iconv-perl
+  libtext-wrapi18n-perl libtinfo6 libtsan2 libubsan1 libudev1 libunistring5
+  libuuid1 libuv1t64 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6
+  libxml2 libxml2-dev libxmuu1 libxxhash0 libyaml-0-2 libz3-4 libz3-dev
+  libzstd1 linux-libc-dev linux-sysctl-defaults llvm-19 llvm-19-dev
+  llvm-19-linker-tools llvm-19-runtime llvm-19-tools login.defs make manpages
+  manpages-dev media-types netbase openssh-client openssl
+  openssl-provider-legacy passwd patch perl perl-base perl-modules-5.40
+  pkgconf pkgconf-bin procps psmisc publicsuffix python3-minimal
+  python3-pygments python3-yaml python3.13 python3.13-minimal readline-common
+  rpcsvc-proto sensible-utils sq sqv tar tzdata xauth zlib1g zlib1g-dev
+Suggested packages:
+  cron quota apt-doc aptitude | synaptic | wajig gnupg | gnupg2 | gnupg1
+  powermgmt-base binutils-doc gprofng-gui binutils-gold bzip2-doc clang-19-doc
+  wasi-libc cmake-doc cmake-format elpa-cmake-mode ninja-build cpp-doc
+  gcc-14-locales cpp-14-doc debconf-doc debconf-kde-helper debconf-utils
+  libgtk3-perl libnet-ldap-perl libterm-readline-gnu-perl whiptail | dialog
+  debsig-verify debian-keyring debian-tag2upload-keyring g++-multilib
+  g++-14-multilib gcc-14-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-14-multilib gdb-x86-64-linux-gnu gettext-base git-doc
+  git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn lrzip
+  libc-devtools glibc-doc libc-l10n locales libnss-nis libnss-nisplus bzr
+  gdbm-l10n gnutls-bin gpm krb5-doc krb5-user ncurses-doc libpam-doc
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+  libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql libssl-doc
+  libstdc++-14-doc libgcrypt20 uuid-runtime llvm-19-doc make-doc man-browser
+  keychain libpam-ssh monkeysphere ssh-askpass ed diffutils-doc perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl
+  libtap-harness-archive-perl protobuf-mode-el python3-doc python3-tk
+  python3-venv python-pygments-doc ttf-bitstream-vera python3.13-venv
+  python3.13-doc readline-doc ncompress tar-scripts tar-doc
+The following NEW packages will be installed:
+  adduser apt base-passwd bash-completion binfmt-support binutils
+  binutils-common binutils-x86-64-linux-gnu build-essential bzip2
+  ca-certificates clang clang-19 clang-tools-19 cmake cmake-data cpp cpp-14
+  cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu curl debconf debconf-i18n
+  debian-archive-keyring dpkg dpkg-dev fakeroot g++ g++-14
+  g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-14 gcc-14-base
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu git git-man init-system-helpers
+  krb5-locales less lib32gcc-s1 lib32stdc++6 libacl1 libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libapt-pkg7.0
+  libarchive13t64 libasan8 libatomic1 libattr1 libaudit-common libaudit1
+  libbinutils libbrotli1 libbsd0 libbz2-1.0 libc-dev-bin libc6 libc6-dev
+  libc6-i386 libcap-ng0 libcap2 libcbor0.10 libcc1-0 libclang-common-19-dev
+  libclang-cpp19 libclang-rt-19-dev libclang1-19 libcom-err2 libcrypt-dev
+  libcrypt1 libctf-nobfd0 libctf0 libcurl3t64-gnutls libcurl4t64 libdb5.3t64
+  libdebconfclient0 libdpkg-perl libedit2 liberror-perl libexpat1 libfakeroot
+  libffi-dev libffi8 libfido2-1 libfile-fcntllock-perl libgc1 libgcc-14-dev
+  libgcc-s1 libgdbm-compat4t64 libgdbm6t64 libgmp10 libgnutls30t64 libgomp1
+  libgpm2 libgprofng0 libgssapi-krb5-2 libhogweed6t64 libhwasan0 libidn2-0
+  libisl23 libitm1 libjansson4 libjsoncpp26 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-common libldap2 libllvm19
+  liblocale-gettext-perl liblsan0 liblz4-1 liblzma5 libmd0 libmpc3 libmpfr6
+  libncurses-dev libncurses6 libncursesw6 libnettle8t64 libnghttp2-14
+  libnghttp3-9 libngtcp2-16 libngtcp2-crypto-gnutls8 libobjc-14-dev libobjc4
+  libp11-kit0 libpam-modules libpam-modules-bin libpam0g libpcre2-8-0
+  libperl5.40 libpfm4 libpipeline1 libpkgconf3 libproc2-0 libprotobuf-dev
+  libprotobuf-lite32t64 libprotobuf32t64 libprotoc32t64 libpsl5t64
+  libpython3-stdlib libpython3.13-minimal libpython3.13-stdlib libquadmath0
+  libreadline8t64 librhash1 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2
+  libsepol2 libsframe1 libsqlite3-0 libssh2-1t64 libssl-dev libssl3t64
+  libstdc++-14-dev libstdc++6 libsystemd0 libtasn1-6 libtext-charwidth-perl
+  libtext-iconv-perl libtext-wrapi18n-perl libtinfo6 libtsan2 libubsan1
+  libudev1 libunistring5 libuuid1 libuv1t64 libx11-6 libx11-data libxau6
+  libxcb1 libxdmcp6 libxext6 libxml2 libxml2-dev libxmuu1 libxxhash0
+  libyaml-0-2 libz3-4 libz3-dev libzstd1 linux-libc-dev linux-sysctl-defaults
+  llvm-19 llvm-19-dev llvm-19-linker-tools llvm-19-runtime llvm-19-tools
+  login.defs make manpages manpages-dev media-types netbase openssh-client
+  openssl openssl-provider-legacy passwd patch perl perl-base
+  perl-modules-5.40 pkg-config pkgconf pkgconf-bin procps protobuf-compiler
+  psmisc publicsuffix python3 python3-minimal python3-pygments python3-yaml
+  python3.13 python3.13-minimal readline-common rpcsvc-proto sensible-utils sq
+  sqv tar tzdata xauth xz-utils zlib1g zlib1g-dev zstd
+0 upgraded, 239 newly installed, 0 to remove and 0 not upgraded.
+Need to get 306 MB of archives.
+After this operation, 1504 MB of additional disk space will be used.
+Get:1 https://security.debian.org/debian-security trixie-security/main amd64 liblzma5 amd64 5.8.1-1+deb13u2 [310 kB]
+Get:2 https://security.debian.org/debian-security trixie-security/main amd64 libpcre2-8-0 amd64 10.46-1~deb13u3 [299 kB]
+Get:3 https://security.debian.org/debian-security trixie-security/main amd64 zlib1g amd64 1:1.3.dfsg+really1.3.1-1+deb13u1 [88.7 kB]
+Get:4 https://security.debian.org/debian-security trixie-security/main amd64 libssl3t64 amd64 3.5.7-1~deb13u3 [2458 kB]
+Get:5 https://deb.debian.org/debian trixie/main amd64 gcc-14-base amd64 14.2.0-19 [49.4 kB]
+Get:6 https://deb.debian.org/debian trixie/main amd64 libc6 amd64 2.41-12+deb13u4 [2847 kB]
+Get:7 https://security.debian.org/debian-security trixie-security/main amd64 openssl-provider-legacy amd64 3.5.7-1~deb13u3 [316 kB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 libgcc-s1 amd64 14.2.0-19 [72.8 kB]
+Get:9 https://security.debian.org/debian-security trixie-security/main amd64 libapt-pkg7.0 amd64 3.0.4 [1114 kB]
+Get:10 https://deb.debian.org/debian trixie/main amd64 libbz2-1.0 amd64 1.0.8-6 [37.9 kB]
+Get:11 https://deb.debian.org/debian trixie/main amd64 libmd0 amd64 1.1.0-2+b1 [36.3 kB]
+Get:12 https://deb.debian.org/debian trixie/main amd64 libselinux1 amd64 3.8.1-1 [84.7 kB]
+Get:13 https://deb.debian.org/debian trixie/main amd64 libzstd1 amd64 1.5.7+dfsg-1 [304 kB]
+Get:14 https://security.debian.org/debian-security trixie-security/main amd64 apt amd64 3.0.4 [1453 kB]
+Get:15 https://deb.debian.org/debian trixie/main amd64 libacl1 amd64 2.3.2-2+b1 [32.9 kB]
+Get:16 https://deb.debian.org/debian trixie/main amd64 tar amd64 1.35+dfsg-3.1 [815 kB]
+Get:17 https://deb.debian.org/debian trixie/main amd64 dpkg amd64 1.22.22 [1537 kB]
+Get:18 https://security.debian.org/debian-security trixie-security/main amd64 libexpat1 amd64 2.9.0-1~deb13u1 [126 kB]
+Get:19 https://deb.debian.org/debian trixie/main amd64 libcrypt1 amd64 1:4.4.38-1 [90.1 kB]
+Get:20 https://deb.debian.org/debian trixie/main amd64 perl-base amd64 5.40.1-6+deb13u1 [1666 kB]
+Get:21 https://security.debian.org/debian-security trixie-security/main amd64 openssl amd64 3.5.7-1~deb13u3 [1508 kB]
+Get:22 https://deb.debian.org/debian trixie/main amd64 libdebconfclient0 amd64 0.280 [10.6 kB]
+Get:23 https://deb.debian.org/debian trixie/main amd64 base-passwd amd64 3.6.7 [53.7 kB]
+Get:24 https://deb.debian.org/debian trixie/main amd64 libaudit-common all 1:4.0.2-2+deb13u1 [12.8 kB]
+Get:25 https://deb.debian.org/debian trixie/main amd64 libcap-ng0 amd64 0.8.5-4+b1 [17.6 kB]
+Get:26 https://security.debian.org/debian-security trixie-security/main amd64 ca-certificates all 20250419+deb13u1 [161 kB]
+Get:27 https://deb.debian.org/debian trixie/main amd64 libaudit1 amd64 1:4.0.2-2+deb13u1 [57.7 kB]
+Get:28 https://deb.debian.org/debian trixie/main amd64 libdb5.3t64 amd64 5.3.28+dfsg2-9 [704 kB]
+Get:29 https://security.debian.org/debian-security trixie-security/main amd64 xz-utils amd64 5.8.1-1+deb13u2 [660 kB]
+Get:30 https://deb.debian.org/debian trixie/main amd64 debconf all 1.5.91 [121 kB]
+Get:31 https://security.debian.org/debian-security trixie-security/main amd64 linux-libc-dev all 6.12.117-1 [3086 kB]
+Get:32 https://deb.debian.org/debian trixie/main amd64 libpam0g amd64 1.7.0-5 [69.9 kB]
+Get:33 https://deb.debian.org/debian trixie/main amd64 libcap2 amd64 1:2.75-10+deb13u1+b3 [29.0 kB]
+Get:34 https://deb.debian.org/debian trixie/main amd64 libsystemd0 amd64 257.13-1~deb13u1 [455 kB]
+Get:35 https://deb.debian.org/debian trixie/main amd64 libpam-modules-bin amd64 1.7.0-5 [49.1 kB]
+Get:36 https://deb.debian.org/debian trixie/main amd64 libpam-modules amd64 1.7.0-5 [179 kB]
+Get:37 https://security.debian.org/debian-security trixie-security/main amd64 libbrotli1 amd64 1.1.0-2+deb13u1 [304 kB]
+Get:38 https://deb.debian.org/debian trixie/main amd64 login.defs all 1:4.17.4-2 [186 kB]
+Get:39 https://deb.debian.org/debian trixie/main amd64 libattr1 amd64 1:2.5.2-3 [22.9 kB]
+Get:40 https://deb.debian.org/debian trixie/main amd64 libbsd0 amd64 0.12.2-2 [131 kB]
+Get:41 https://security.debian.org/debian-security trixie-security/main amd64 libcurl4t64 amd64 8.14.1-2+deb13u7 [392 kB]
+Get:42 https://deb.debian.org/debian trixie/main amd64 libsemanage-common all 3.8.1-1 [7812 B]
+Get:43 https://deb.debian.org/debian trixie/main amd64 libsepol2 amd64 3.8.1-1 [296 kB]
+Get:44 https://deb.debian.org/debian trixie/main amd64 libsemanage2 amd64 3.8.1-1 [95.3 kB]
+Get:45 https://security.debian.org/debian-security trixie-security/main amd64 curl amd64 8.14.1-2+deb13u7 [270 kB]
+Get:46 https://deb.debian.org/debian trixie/main amd64 passwd amd64 1:4.17.4-2 [1229 kB]
+Get:47 https://deb.debian.org/debian trixie/main amd64 adduser all 3.152 [191 kB]
+Get:48 https://security.debian.org/debian-security trixie-security/main amd64 libcurl3t64-gnutls amd64 8.14.1-2+deb13u7 [385 kB]
+Get:49 https://deb.debian.org/debian trixie/main amd64 libgmp10 amd64 2:6.3.0+dfsg-3 [560 kB]
+Get:50 https://security.debian.org/debian-security trixie-security/main amd64 zlib1g-dev amd64 1:1.3.dfsg+really1.3.1-1+deb13u1 [920 kB]
+Get:51 https://deb.debian.org/debian trixie/main amd64 libnettle8t64 amd64 3.10.1-1 [305 kB]
+Get:52 https://security.debian.org/debian-security trixie-security/main amd64 libssl-dev amd64 3.5.7-1~deb13u3 [2968 kB]
+Get:53 https://deb.debian.org/debian trixie/main amd64 libhogweed6t64 amd64 3.10.1-1 [335 kB]
+Get:54 https://deb.debian.org/debian trixie/main amd64 sqv amd64 1.3.0-3+b2 [661 kB]
+Get:55 https://deb.debian.org/debian trixie/main amd64 libxxhash0 amd64 0.8.3-2 [27.1 kB]
+Get:56 https://deb.debian.org/debian trixie/main amd64 liblz4-1 amd64 1.10.0-4 [63.9 kB]
+Get:57 https://deb.debian.org/debian trixie/main amd64 libstdc++6 amd64 14.2.0-19 [714 kB]
+Get:58 https://deb.debian.org/debian trixie/main amd64 libudev1 amd64 257.13-1~deb13u1 [152 kB]
+Get:59 https://deb.debian.org/debian trixie/main amd64 debian-archive-keyring all 2025.1 [179 kB]
+Get:60 https://deb.debian.org/debian trixie/main amd64 libseccomp2 amd64 2.6.0-2 [51.7 kB]
+Get:61 https://deb.debian.org/debian trixie/main amd64 init-system-helpers all 1.69~deb13u1 [39.4 kB]
+Get:62 https://deb.debian.org/debian trixie/main amd64 libpipeline1 amd64 1.5.8-1 [42.0 kB]
+Get:63 https://deb.debian.org/debian trixie/main amd64 binfmt-support amd64 2.2.2-7 [64.3 kB]
+Get:64 https://deb.debian.org/debian trixie/main amd64 liblocale-gettext-perl amd64 1.07-7+b1 [15.3 kB]
+Get:65 https://deb.debian.org/debian trixie/main amd64 libpython3.13-minimal amd64 3.13.5-2+deb13u5 [863 kB]
+Get:66 https://deb.debian.org/debian trixie/main amd64 python3.13-minimal amd64 3.13.5-2+deb13u5 [2225 kB]
+Get:67 https://deb.debian.org/debian trixie/main amd64 python3-minimal amd64 3.13.5-1 [27.2 kB]
+Get:68 https://deb.debian.org/debian trixie/main amd64 media-types all 13.0.0 [29.3 kB]
+Get:69 https://deb.debian.org/debian trixie/main amd64 netbase all 6.5 [12.4 kB]
+Get:70 https://deb.debian.org/debian trixie-updates/main amd64 tzdata all 2026f-0+deb13u1 [268 kB]
+Get:71 https://deb.debian.org/debian trixie/main amd64 libffi8 amd64 3.4.8-2 [24.1 kB]
+Get:72 https://deb.debian.org/debian trixie/main amd64 libtinfo6 amd64 6.5+20250216-2 [348 kB]
+Get:73 https://deb.debian.org/debian trixie/main amd64 libncursesw6 amd64 6.5+20250216-2 [135 kB]
+Get:74 https://deb.debian.org/debian trixie/main amd64 readline-common all 8.2-6 [69.4 kB]
+Get:75 https://deb.debian.org/debian trixie/main amd64 libreadline8t64 amd64 8.2-6 [169 kB]
+Get:76 https://deb.debian.org/debian trixie/main amd64 libsqlite3-0 amd64 3.46.1-7+deb13u2 [915 kB]
+Get:77 https://deb.debian.org/debian trixie/main amd64 libuuid1 amd64 2.41.5-0+deb13u1 [37.8 kB]
+Get:78 https://deb.debian.org/debian trixie/main amd64 libpython3.13-stdlib amd64 3.13.5-2+deb13u5 [1959 kB]
+Get:79 https://deb.debian.org/debian trixie/main amd64 python3.13 amd64 3.13.5-2+deb13u5 [757 kB]
+Get:80 https://deb.debian.org/debian trixie/main amd64 libpython3-stdlib amd64 3.13.5-1 [10.2 kB]
+Get:81 https://deb.debian.org/debian trixie/main amd64 python3 amd64 3.13.5-1 [28.2 kB]
+Get:82 https://deb.debian.org/debian trixie/main amd64 libtext-charwidth-perl amd64 0.04-11+b4 [9476 B]
+Get:83 https://deb.debian.org/debian trixie/main amd64 libtext-iconv-perl amd64 1.7-8+b4 [14.4 kB]
+Get:84 https://deb.debian.org/debian trixie/main amd64 libtext-wrapi18n-perl all 0.06-10 [8808 B]
+Get:85 https://deb.debian.org/debian trixie/main amd64 debconf-i18n all 1.5.91 [217 kB]
+Get:86 https://deb.debian.org/debian trixie/main amd64 less amd64 668-1 [161 kB]
+Get:87 https://deb.debian.org/debian trixie/main amd64 linux-sysctl-defaults all 4.12.1 [5724 B]
+Get:88 https://deb.debian.org/debian trixie/main amd64 libproc2-0 amd64 2:4.0.4-9 [65.6 kB]
+Get:89 https://deb.debian.org/debian trixie/main amd64 procps amd64 2:4.0.4-9 [882 kB]
+Get:90 https://deb.debian.org/debian trixie/main amd64 sensible-utils all 0.0.25 [25.0 kB]
+Get:91 https://deb.debian.org/debian trixie/main amd64 bash-completion all 1:2.16.0-7 [319 kB]
+Get:92 https://deb.debian.org/debian trixie/main amd64 bzip2 amd64 1.0.8-6 [40.5 kB]
+Get:93 https://deb.debian.org/debian trixie/main amd64 krb5-locales all 1.21.3-5+deb13u1 [101 kB]
+Get:94 https://deb.debian.org/debian trixie/main amd64 manpages all 6.9.1-1 [1393 kB]
+Get:95 https://deb.debian.org/debian trixie/main amd64 libedit2 amd64 3.1-20250104-1 [93.8 kB]
+Get:96 https://deb.debian.org/debian trixie/main amd64 libcbor0.10 amd64 0.10.2-2 [28.3 kB]
+Get:97 https://deb.debian.org/debian trixie/main amd64 libfido2-1 amd64 1.15.0-1+b1 [78.7 kB]
+Get:98 https://deb.debian.org/debian trixie/main amd64 libkrb5support0 amd64 1.21.3-5+deb13u1 [33.1 kB]
+Get:99 https://deb.debian.org/debian trixie/main amd64 libcom-err2 amd64 1.47.2-3+b12 [25.0 kB]
+Get:100 https://deb.debian.org/debian trixie/main amd64 libk5crypto3 amd64 1.21.3-5+deb13u1 [81.2 kB]
+Get:101 https://deb.debian.org/debian trixie/main amd64 libkeyutils1 amd64 1.6.3-6 [9456 B]
+Get:102 https://deb.debian.org/debian trixie/main amd64 libkrb5-3 amd64 1.21.3-5+deb13u1 [326 kB]
+Get:103 https://deb.debian.org/debian trixie/main amd64 libgssapi-krb5-2 amd64 1.21.3-5+deb13u1 [138 kB]
+Get:104 https://deb.debian.org/debian trixie/main amd64 openssh-client amd64 1:10.0p1-7+deb13u4 [990 kB]
+Get:105 https://deb.debian.org/debian trixie/main amd64 perl-modules-5.40 all 5.40.1-6+deb13u1 [3014 kB]
+Get:106 https://deb.debian.org/debian trixie/main amd64 libgdbm6t64 amd64 1.24-2 [75.2 kB]
+Get:107 https://deb.debian.org/debian trixie/main amd64 libgdbm-compat4t64 amd64 1.24-2 [50.3 kB]
+Get:108 https://deb.debian.org/debian trixie/main amd64 libperl5.40 amd64 5.40.1-6+deb13u1 [4326 kB]
+Get:109 https://deb.debian.org/debian trixie/main amd64 perl amd64 5.40.1-6+deb13u1 [268 kB]
+Get:110 https://deb.debian.org/debian trixie/main amd64 libsframe1 amd64 2.44-3 [78.4 kB]
+Get:111 https://deb.debian.org/debian trixie/main amd64 binutils-common amd64 2.44-3 [2509 kB]
+Get:112 https://deb.debian.org/debian trixie/main amd64 libbinutils amd64 2.44-3 [534 kB]
+Get:113 https://deb.debian.org/debian trixie/main amd64 libgprofng0 amd64 2.44-3 [808 kB]
+Get:114 https://deb.debian.org/debian trixie/main amd64 libctf-nobfd0 amd64 2.44-3 [156 kB]
+Get:115 https://deb.debian.org/debian trixie/main amd64 libctf0 amd64 2.44-3 [88.6 kB]
+Get:116 https://deb.debian.org/debian trixie/main amd64 libjansson4 amd64 2.14-2+b3 [39.8 kB]
+Get:117 https://deb.debian.org/debian trixie/main amd64 binutils-x86-64-linux-gnu amd64 2.44-3 [1014 kB]
+Get:118 https://deb.debian.org/debian trixie/main amd64 binutils amd64 2.44-3 [265 kB]
+Get:119 https://deb.debian.org/debian trixie/main amd64 libc-dev-bin amd64 2.41-12+deb13u4 [60.0 kB]
+Get:120 https://deb.debian.org/debian trixie/main amd64 libcrypt-dev amd64 1:4.4.38-1 [119 kB]
+Get:121 https://deb.debian.org/debian trixie/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+Get:122 https://deb.debian.org/debian trixie/main amd64 libc6-dev amd64 2.41-12+deb13u4 [1995 kB]
+Get:123 https://deb.debian.org/debian trixie/main amd64 libisl23 amd64 0.27-1 [659 kB]
+Get:124 https://deb.debian.org/debian trixie/main amd64 libmpfr6 amd64 4.2.2-1 [729 kB]
+Get:125 https://deb.debian.org/debian trixie/main amd64 libmpc3 amd64 1.3.1-1+b3 [52.2 kB]
+Get:126 https://deb.debian.org/debian trixie/main amd64 cpp-14-x86-64-linux-gnu amd64 14.2.0-19 [11.0 MB]
+Get:127 https://deb.debian.org/debian trixie/main amd64 cpp-14 amd64 14.2.0-19 [1280 B]
+Get:128 https://deb.debian.org/debian trixie/main amd64 cpp-x86-64-linux-gnu amd64 4:14.2.0-1 [4840 B]
+Get:129 https://deb.debian.org/debian trixie/main amd64 cpp amd64 4:14.2.0-1 [1568 B]
+Get:130 https://deb.debian.org/debian trixie/main amd64 libcc1-0 amd64 14.2.0-19 [42.8 kB]
+Get:131 https://deb.debian.org/debian trixie/main amd64 libgomp1 amd64 14.2.0-19 [137 kB]
+Get:132 https://deb.debian.org/debian trixie/main amd64 libitm1 amd64 14.2.0-19 [26.0 kB]
+Get:133 https://deb.debian.org/debian trixie/main amd64 libatomic1 amd64 14.2.0-19 [9308 B]
+Get:134 https://deb.debian.org/debian trixie/main amd64 libasan8 amd64 14.2.0-19 [2725 kB]
+Get:135 https://deb.debian.org/debian trixie/main amd64 liblsan0 amd64 14.2.0-19 [1204 kB]
+Get:136 https://deb.debian.org/debian trixie/main amd64 libtsan2 amd64 14.2.0-19 [2460 kB]
+Get:137 https://deb.debian.org/debian trixie/main amd64 libubsan1 amd64 14.2.0-19 [1074 kB]
+Get:138 https://deb.debian.org/debian trixie/main amd64 libhwasan0 amd64 14.2.0-19 [1488 kB]
+Get:139 https://deb.debian.org/debian trixie/main amd64 libquadmath0 amd64 14.2.0-19 [145 kB]
+Get:140 https://deb.debian.org/debian trixie/main amd64 libgcc-14-dev amd64 14.2.0-19 [2672 kB]
+Get:141 https://deb.debian.org/debian trixie/main amd64 gcc-14-x86-64-linux-gnu amd64 14.2.0-19 [21.4 MB]
+Get:142 https://deb.debian.org/debian trixie/main amd64 gcc-14 amd64 14.2.0-19 [540 kB]
+Get:143 https://deb.debian.org/debian trixie/main amd64 gcc-x86-64-linux-gnu amd64 4:14.2.0-1 [1436 B]
+Get:144 https://deb.debian.org/debian trixie/main amd64 gcc amd64 4:14.2.0-1 [5136 B]
+Get:145 https://deb.debian.org/debian trixie/main amd64 libstdc++-14-dev amd64 14.2.0-19 [2376 kB]
+Get:146 https://deb.debian.org/debian trixie/main amd64 g++-14-x86-64-linux-gnu amd64 14.2.0-19 [12.1 MB]
+Get:147 https://deb.debian.org/debian trixie/main amd64 g++-14 amd64 14.2.0-19 [22.5 kB]
+Get:148 https://deb.debian.org/debian trixie/main amd64 g++-x86-64-linux-gnu amd64 4:14.2.0-1 [1200 B]
+Get:149 https://deb.debian.org/debian trixie/main amd64 g++ amd64 4:14.2.0-1 [1344 B]
+Get:150 https://deb.debian.org/debian trixie/main amd64 make amd64 4.4.1-2 [463 kB]
+Get:151 https://deb.debian.org/debian trixie/main amd64 libdpkg-perl all 1.22.22 [651 kB]
+Get:152 https://deb.debian.org/debian trixie/main amd64 patch amd64 2.8-2 [134 kB]
+Get:153 https://deb.debian.org/debian trixie/main amd64 dpkg-dev all 1.22.22 [1337 kB]
+Get:154 https://deb.debian.org/debian trixie/main amd64 build-essential amd64 12.12 [4624 B]
+Get:155 https://deb.debian.org/debian trixie/main amd64 libxml2 amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3 [700 kB]
+Get:156 https://deb.debian.org/debian trixie/main amd64 libz3-4 amd64 4.13.3-1 [8560 kB]
+Get:157 https://deb.debian.org/debian trixie/main amd64 libllvm19 amd64 1:19.1.7-3+b1 [26.0 MB]
+Get:158 https://deb.debian.org/debian trixie/main amd64 libclang-cpp19 amd64 1:19.1.7-3+b1 [13.2 MB]
+Get:159 https://deb.debian.org/debian trixie/main amd64 libgc1 amd64 1:8.2.8-1 [247 kB]
+Get:160 https://deb.debian.org/debian trixie/main amd64 libobjc4 amd64 14.2.0-19 [43.3 kB]
+Get:161 https://deb.debian.org/debian trixie/main amd64 libobjc-14-dev amd64 14.2.0-19 [173 kB]
+Get:162 https://deb.debian.org/debian trixie/main amd64 libclang-common-19-dev amd64 1:19.1.7-3+b1 [740 kB]
+Get:163 https://deb.debian.org/debian trixie/main amd64 llvm-19-linker-tools amd64 1:19.1.7-3+b1 [1263 kB]
+Get:164 https://deb.debian.org/debian trixie/main amd64 libclang1-19 amd64 1:19.1.7-3+b1 [7623 kB]
+Get:165 https://deb.debian.org/debian trixie/main amd64 clang-19 amd64 1:19.1.7-3+b1 [117 kB]
+Get:166 https://deb.debian.org/debian trixie/main amd64 clang amd64 1:19.0-63 [6244 B]
+Get:167 https://deb.debian.org/debian trixie/main amd64 clang-tools-19 amd64 1:19.1.7-3+b1 [8952 kB]
+Get:168 https://deb.debian.org/debian trixie/main amd64 cmake-data all 3.31.6-2 [2268 kB]
+Get:169 https://deb.debian.org/debian trixie/main amd64 libarchive13t64 amd64 3.7.4-4+deb13u1 [350 kB]
+Get:170 https://deb.debian.org/debian trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+Get:171 https://deb.debian.org/debian trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+Get:172 https://deb.debian.org/debian trixie/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-9 [19.8 kB]
+Get:173 https://deb.debian.org/debian trixie/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-9 [57.5 kB]
+Get:174 https://deb.debian.org/debian trixie/main amd64 libldap2 amd64 2.6.10+dfsg-1 [194 kB]
+Get:175 https://deb.debian.org/debian trixie/main amd64 libnghttp2-14 amd64 1.64.0-1.1+deb13u1 [76.2 kB]
+Get:176 https://deb.debian.org/debian trixie/main amd64 libnghttp3-9 amd64 1.8.0-1 [67.7 kB]
+Get:177 https://deb.debian.org/debian trixie/main amd64 libpsl5t64 amd64 0.21.2-1.1+b1 [57.2 kB]
+Get:178 https://deb.debian.org/debian trixie/main amd64 libp11-kit0 amd64 0.25.5-3 [425 kB]
+Get:179 https://deb.debian.org/debian trixie/main amd64 libtasn1-6 amd64 4.20.0-2+deb13u1 [50.1 kB]
+Get:180 https://deb.debian.org/debian trixie/main amd64 libgnutls30t64 amd64 3.8.9-3+deb13u4 [1469 kB]
+Get:181 https://deb.debian.org/debian trixie/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b5 [58.8 kB]
+Get:182 https://deb.debian.org/debian trixie/main amd64 libssh2-1t64 amd64 1.11.1-1+deb13u2 [245 kB]
+Get:183 https://deb.debian.org/debian trixie/main amd64 libjsoncpp26 amd64 1.9.6-3 [81.7 kB]
+Get:184 https://deb.debian.org/debian trixie/main amd64 librhash1 amd64 1.4.5-1 [132 kB]
+Get:185 https://deb.debian.org/debian trixie/main amd64 libuv1t64 amd64 1.50.0-2 [154 kB]
+Get:186 https://deb.debian.org/debian trixie/main amd64 cmake amd64 3.31.6-2 [12.0 MB]
+Get:187 https://deb.debian.org/debian trixie/main amd64 libfakeroot amd64 1.37.1.1-1 [29.6 kB]
+Get:188 https://deb.debian.org/debian trixie/main amd64 fakeroot amd64 1.37.1.1-1 [76.0 kB]
+Get:189 https://deb.debian.org/debian trixie/main amd64 libngtcp2-16 amd64 1.11.0-1+deb13u1 [132 kB]
+Get:190 https://deb.debian.org/debian trixie/main amd64 libngtcp2-crypto-gnutls8 amd64 1.11.0-1+deb13u1 [29.5 kB]
+Get:191 https://deb.debian.org/debian trixie/main amd64 liberror-perl all 0.17030-1 [26.9 kB]
+Get:192 https://deb.debian.org/debian trixie/main amd64 git-man all 1:2.47.3-0+deb13u1 [2205 kB]
+Get:193 https://deb.debian.org/debian trixie/main amd64 git amd64 1:2.47.3-0+deb13u1 [8862 kB]
+Get:194 https://deb.debian.org/debian trixie/main amd64 libc6-i386 amd64 2.41-12+deb13u4 [2539 kB]
+Get:195 https://deb.debian.org/debian trixie/main amd64 lib32gcc-s1 amd64 14.2.0-19 [88.4 kB]
+Get:196 https://deb.debian.org/debian trixie/main amd64 lib32stdc++6 amd64 14.2.0-19 [745 kB]
+Get:197 https://deb.debian.org/debian trixie/main amd64 libalgorithm-diff-perl all 1.201-1 [43.3 kB]
+Get:198 https://deb.debian.org/debian trixie/main amd64 libalgorithm-diff-xs-perl amd64 0.04-9 [11.1 kB]
+Get:199 https://deb.debian.org/debian trixie/main amd64 libalgorithm-merge-perl all 0.08-5 [11.8 kB]
+Get:200 https://deb.debian.org/debian trixie/main amd64 libclang-rt-19-dev amd64 1:19.1.7-3+b1 [3690 kB]
+Get:201 https://deb.debian.org/debian trixie/main amd64 libffi-dev amd64 3.4.8-2 [61.1 kB]
+Get:202 https://deb.debian.org/debian trixie/main amd64 libfile-fcntllock-perl amd64 0.22-4+b4 [34.6 kB]
+Get:203 https://deb.debian.org/debian trixie/main amd64 libgpm2 amd64 1.20.7-11+b2 [14.4 kB]
+Get:204 https://deb.debian.org/debian trixie/main amd64 libldap-common all 2.6.10+dfsg-1 [35.1 kB]
+Get:205 https://deb.debian.org/debian trixie/main amd64 libncurses6 amd64 6.5+20250216-2 [105 kB]
+Get:206 https://deb.debian.org/debian trixie/main amd64 libncurses-dev amd64 6.5+20250216-2 [353 kB]
+Get:207 https://deb.debian.org/debian trixie/main amd64 libpfm4 amd64 4.13.0+git99-gc5587f9-1 [371 kB]
+Get:208 https://deb.debian.org/debian trixie/main amd64 libpkgconf3 amd64 1.8.1-4 [36.4 kB]
+Get:209 https://deb.debian.org/debian trixie/main amd64 libprotobuf32t64 amd64 3.21.12-11+deb13u1 [981 kB]
+Get:210 https://deb.debian.org/debian trixie/main amd64 libprotobuf-lite32t64 amd64 3.21.12-11+deb13u1 [275 kB]
+Get:211 https://deb.debian.org/debian trixie/main amd64 libprotobuf-dev amd64 3.21.12-11+deb13u1 [1329 kB]
+Get:212 https://deb.debian.org/debian trixie/main amd64 libprotoc32t64 amd64 3.21.12-11+deb13u1 [922 kB]
+Get:213 https://deb.debian.org/debian trixie/main amd64 libsasl2-modules amd64 2.1.28+dfsg1-9 [66.7 kB]
+Get:214 https://deb.debian.org/debian trixie/main amd64 libxau6 amd64 1:1.0.11-1 [20.4 kB]
+Get:215 https://deb.debian.org/debian trixie/main amd64 libxdmcp6 amd64 1:1.1.5-1 [27.8 kB]
+Get:216 https://deb.debian.org/debian trixie/main amd64 libxcb1 amd64 1.17.0-2+b1 [144 kB]
+Get:217 https://deb.debian.org/debian trixie/main amd64 libx11-data all 2:1.8.12-1 [343 kB]
+Get:218 https://deb.debian.org/debian trixie/main amd64 libx11-6 amd64 2:1.8.12-1 [815 kB]
+Get:219 https://deb.debian.org/debian trixie/main amd64 libxext6 amd64 2:1.3.4-1+b3 [50.4 kB]
+Get:220 https://deb.debian.org/debian trixie/main amd64 libxml2-dev amd64 2.12.7+dfsg+really2.9.14-2.1+deb13u3 [795 kB]
+Get:221 https://deb.debian.org/debian trixie/main amd64 libxmuu1 amd64 2:1.1.3-3+b4 [21.9 kB]
+Get:222 https://deb.debian.org/debian trixie/main amd64 libyaml-0-2 amd64 0.2.5-2 [52.5 kB]
+Get:223 https://deb.debian.org/debian trixie/main amd64 libz3-dev amd64 4.13.3-1 [107 kB]
+Get:224 https://deb.debian.org/debian trixie/main amd64 llvm-19-runtime amd64 1:19.1.7-3+b1 [551 kB]
+Get:225 https://deb.debian.org/debian trixie/main amd64 llvm-19 amd64 1:19.1.7-3+b1 [16.4 MB]
+Get:226 https://deb.debian.org/debian trixie/main amd64 python3-pygments all 2.18.0+dfsg-2 [836 kB]
+Get:227 https://deb.debian.org/debian trixie/main amd64 python3-yaml amd64 6.0.2-1+b2 [136 kB]
+Get:228 https://deb.debian.org/debian trixie/main amd64 llvm-19-tools amd64 1:19.1.7-3+b1 [511 kB]
+Get:229 https://deb.debian.org/debian trixie/main amd64 llvm-19-dev amd64 1:19.1.7-3+b1 [43.1 MB]
+Get:230 https://deb.debian.org/debian trixie/main amd64 manpages-dev all 6.9.1-1 [2122 kB]
+Get:231 https://deb.debian.org/debian trixie/main amd64 pkgconf-bin amd64 1.8.1-4 [30.2 kB]
+Get:232 https://deb.debian.org/debian trixie/main amd64 pkgconf amd64 1.8.1-4 [26.2 kB]
+Get:233 https://deb.debian.org/debian trixie/main amd64 pkg-config amd64 1.8.1-4 [14.0 kB]
+Get:234 https://deb.debian.org/debian trixie/main amd64 protobuf-compiler amd64 3.21.12-11+deb13u1 [85.0 kB]
+Get:235 https://deb.debian.org/debian trixie/main amd64 psmisc amd64 23.7-2 [267 kB]
+Get:236 https://deb.debian.org/debian trixie/main amd64 publicsuffix all 20250328.1952-0.1 [296 kB]
+Get:237 https://deb.debian.org/debian trixie/main amd64 sq amd64 1.3.1-2+b2 [5653 kB]
+Get:238 https://deb.debian.org/debian trixie/main amd64 xauth amd64 1:1.1.2-1.1 [35.9 kB]
+Get:239 https://deb.debian.org/debian trixie/main amd64 zstd amd64 1.5.7+dfsg-1 [756 kB]
+Fetched 306 MB in 46s (6702 kB/s)
+Download complete and in download only mode
+W: Unable to read /workspace/scratch/e174c70ed48b/agentic-offline-build/build-tools/apt/etc/preferences.d/ - DirectoryExists (2: No such file or directory)

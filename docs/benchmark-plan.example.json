@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "/absolute/project/repository",
+  "revision": "REPLACE_WITH_FULL_40_OR_64_CHARACTER_COMMIT_HASH",
+  "routingEvidence": "REPLACE_WITH_SANITIZED_FACTUAL_INTERNAL_ROUTE_QUALIFICATION",
+  "isolationAcknowledgment": "git-worktrees-are-not-an-os-sandbox",
+  "repetitions": 2,
+  "agents": [
+    {
+      "id": "omp",
+      "argv": ["/absolute/site/adapters/omp-benchmark", "{prompt_file}"],
+      "timeoutSeconds": 1200
+    },
+    {
+      "id": "opencode",
+      "argv": ["/absolute/site/adapters/opencode-benchmark", "{prompt_file}"],
+      "timeoutSeconds": 1200
+    }
+  ],
+  "tasks": [
+    {
+      "id": "representative-repair",
+      "prompt": "Implement the specified repair in this working tree. Keep acceptance files unchanged. Use the project's established tests and report the verified result.",
+      "checks": [
+        {
+          "argv": ["/absolute/qualified/python3", "/absolute/protected-checkers/check_repair.py"],
+          "timeoutSeconds": 300
+        }
+      ]
+    }
+  ]
+}

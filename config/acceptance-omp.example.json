@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "passed": false,
+  "summary": "REPLACE_WITH_OBSERVED_RESULTS",
+  "realInternalEndpoints": false,
+  "preservedExistingConfiguration": false,
+  "oldToolDisposition": "REPLACE_WITH_PACKAGE_TRANSACTION_OR_EXACT_RETIREMENT_AND_RECOVERY_FACTS",
+  "checks": {
+    "profile-rehearsal": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "internal-model": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "tool-roundtrip": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "session-resume": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "existing-skills-hooks-brain": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    },
+    "canonical-command": {
+      "passed": false,
+      "evidence": "REPLACE_WITH_OBSERVATIONS_AND_PRIVATE_EVIDENCE_LOCATIONS"
+    }
+  }
+}

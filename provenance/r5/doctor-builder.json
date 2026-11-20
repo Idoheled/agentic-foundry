@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "system": "Linux",
+  "architecture": "x86_64",
+  "os": {
+    "id": "debian",
+    "versionID": "13"
+  },
+  "libc": {
+    "name": "glibc",
+    "version": "2.41"
+  },
+  "uid": 1000,
+  "commands": {
+    "claude": {
+      "path": null,
+      "resolved": null
+    },
+    "omp": {
+      "path": null,
+      "resolved": null
+    },
+    "codex": {
+      "path": "/opt/codex/bin/codex",
+      "resolved": "/opt/codex/bin/codex"
+    },
+    "opencode": {
+      "path": null,
+      "resolved": null
+    },
+    "git": {
+      "path": "/usr/local/bin/git",
+      "resolved": "/usr/local/bin/git"
+    },
+    "python3": {
+      "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "resolved": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12"
+    },
+    "node": {
+      "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "resolved": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node"
+    },
+    "bun": {
+      "path": null,
+      "resolved": null
+    },
+    "docker": {
+      "path": null,
+      "resolved": null
+    },
+    "podman": {
+      "path": null,
+      "resolved": null
+    },
+    "tmux": {
+      "path": null,
+      "resolved": null
+    },
+    "uv": {
+      "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv",
+      "resolved": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/uv"
+    },
+    "rg": {
+      "path": "/usr/local/bin/rg",
+      "resolved": "/opt/codex/codex-path/rg"
+    },
+    "fd": {
+      "path": null,
+      "resolved": null
+    },
+    "jq": {
+      "path": "/usr/bin/jq",
+      "resolved": "/usr/bin/jq"
+    },
+    "just": {
+      "path": null,
+      "resolved": null
+    },
+    "direnv": {
+      "path": null,
+      "resolved": null
+    },
+    "ast-grep": {
+      "path": null,
+      "resolved": null
+    }
+  },
+  "candidateProfiles": [
+    {
+      "path": "/home/agent/.claude",
+      "role": "Claude configuration, skills, hooks, memory and agent instructions",
+      "exists": false
+    },
+    {
+      "path": "/home/agent/.claude.json",
+      "role": "Claude existing user/route state",
+      "exists": false
+    },
+    {
+      "path": "/home/agent/.codex",
+      "role": "Codex configuration, hooks, agents and instructions",
+      "exists": true
+    },
+    {
+      "path": "/home/agent/.agents",
+      "role": "Shared Codex skills and agent instructions",
+      "exists": false
+    },
+    {
+      "path": "/home/agent/.omp/agent",
+      "role": "Candidate OMP active profile; named profiles and launch flags must be inspected",
+      "exists": false
+    },
+    {
+      "path": "/home/agent/.config/opencode",
+      "role": "OpenCode configuration, skills, plugins and instructions",
+      "exists": true
+    },
+    {
+      "path": "/home/agent/.local/share/opencode/auth.json",
+      "role": "OpenCode existing credential configuration",
+      "exists": false
+    }
+  ],
+  "existingProfiles": [
+    "/home/agent/.codex",
+    "/home/agent/.config/opencode"
+  ],
+  "discoveryComplete": false,
+  "discoveryNote": "Paths only; no client was invoked. Inspect aliases, wrappers, project roots, named profiles, brain directories and inherited environment before confirming completeness.",
+  "supportedTargetProfiles": [
+    "debian13-x86_64",
+    "apt-x86_64-internal",
+    "linux-x86_64-internal"
+  ],
+  "missingSiteRequest": {
+    "schemaKind": "minimal",
+    "required": [
+      "bootstrapMode",
+      "evidence",
+      "stateRoot",
+      "privateSupply",
+      "model"
+    ],
+    "template": "/workspace/scratch/e174c70ed48b/agentic-offline-build/kit-r5/config/site-minimal.example.json",
+    "credentials": "Supply the model apiKeyEnv through the existing private environment; never put credentials into this request or Git."
+  }
+}

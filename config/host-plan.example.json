@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "privateRepositoriesChecked": [
+    "REPLACE_WITH_ACTUAL_INTERNAL_REPOSITORY_AND_CACHE_INSPECTION_FINDINGS"
+  ],
+  "tools": {
+    "python": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_PYTHON",
+      "canonicalLinks": []
+    },
+    "node": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_NODE",
+      "canonicalLinks": []
+    },
+    "bun": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_BUN",
+      "canonicalLinks": []
+    },
+    "rust": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RUST",
+      "canonicalLinks": []
+    },
+    "zig": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_ZIG",
+      "canonicalLinks": []
+    },
+    "codex": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_CODEX",
+      "canonicalLinks": []
+    },
+    "claude": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_CLAUDE",
+      "canonicalLinks": []
+    },
+    "omp": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_OMP",
+      "canonicalLinks": []
+    },
+    "opencode": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_OPENCODE",
+      "canonicalLinks": []
+    },
+    "herdr": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_HERDR",
+      "canonicalLinks": []
+    },
+    "docker": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_DOCKER",
+      "canonicalLinks": []
+    },
+    "compose": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_COMPOSE",
+      "canonicalLinks": []
+    },
+    "uv": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_UV",
+      "canonicalLinks": []
+    },
+    "ruff": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RUFF",
+      "canonicalLinks": []
+    },
+    "ripgrep": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RIPGREP",
+      "canonicalLinks": []
+    },
+    "fd": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_FD",
+      "canonicalLinks": []
+    },
+    "jq": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_JQ",
+      "canonicalLinks": []
+    },
+    "yq": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_YQ",
+      "canonicalLinks": []
+    },
+    "native-profiles": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_NATIVE-PROFILES",
+      "canonicalLinks": []
+    }
+  }
+}

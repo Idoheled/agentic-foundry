@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kitRevision": "2026-11-20-r2",
+  "time": "2026-11-20T11:04:23.200367+00:00",
+  "passed": true,
+  "testCount": 23,
+  "testDurationSeconds": 0.177,
+  "scope": "Focused controller/source-selection and preservation contracts using tiny synthetic local fixtures and mocked Docker, plus shell syntax. No real deployment, repository discovery, model execution, public networking or large-payload scan.",
+  "unitTests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s kit/tests -v",
+    "exitCode": 0,
+    "newArtifactPolicyTests": 14,
+    "existingControllerTests": 9
+  },
+  "shellSyntax": {
+    "command": "bash -n kit/scripts/python.sh kit/scripts/bootstrap-docker.sh",
+    "exitCode": 0,
+    "passed": true
+  },
+  "log": "research/r2-controller-tests.log",
+  "separateActualPayloadEvidence": "research/r2-controller-payload-test.json",
+  "testedFileSha256": {
+    "kit/scripts/artifact_policy.py": "be14caa9832a3e916306648c026a38a526fa60a1e692fd7638be43be732763d6",
+    "kit/scripts/agenticctl.py": "04c428e82fd7f26fec38b02b07a8a14ed9952b2722bd594e2395dd3f555ea707",
+    "kit/scripts/python.sh": "85e6b81525136899828a6c07c0f89cf51b63f8d4a24cfd7ce22a00313378b332",
+    "kit/scripts/bootstrap-docker.sh": "11d6fdd3be8f88d0891f17dacb619f68da6ec90224e1a44e5474aec48d41bc83",
+    "kit/tests/test_artifact_policy.py": "05343483759ed792943f7db6d720f83617009a77d139bd256da5cd810e14dc3a",
+    "kit/tests/test_controller.py": "db2815aa11dbc317845ddd9fc79b1bfb1c2b4e681071a3f1a20b59aa8164bf4c"
+  }
+}

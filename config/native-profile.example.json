@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "assetRoot": "/opt/agentic-stack/tools/native-profiles/REPLACE_FROM_EXACT_HOST_RECEIPT",
+  "python": "/opt/agentic-stack/tools/python/REPLACE_FROM_EXACT_HOST_RECEIPT/bin/python3",
+  "pythonSha256": "REPLACE_WITH_SHA256_OF_RESOLVED_VERIFIED_PYTHON",
+  "reviewedAssetManifestSha256": "REPLACE_WITH_SHA256_OF_REVIEWED_ASSET_MANIFEST",
+  "auditDirectory": "/home/OPERATOR/.local/state/agentic-native/audit",
+  "receiptDirectory": "/home/OPERATOR/.local/state/agentic-native/receipts",
+  "clients": {
+    "claude": {
+      "configDir": "/home/OPERATOR/.claude"
+    },
+    "codex": {
+      "home": "/home/OPERATOR/.codex",
+      "skillsDir": "/home/OPERATOR/.agents/skills",
+      "binary": "/opt/agentic-stack/tools/codex/REPLACE_FROM_EXACT_HOST_RECEIPT/bin/codex",
+      "binarySha256": "REPLACE_WITH_SHA256_OF_RESOLVED_VERIFIED_CODEX",
+      "activateReviewedHooks": true
+    },
+    "omp": {
+      "agentDir": "/home/OPERATOR/.omp/agent"
+    }
+  },
+  "inspectedReplacements": []
+}

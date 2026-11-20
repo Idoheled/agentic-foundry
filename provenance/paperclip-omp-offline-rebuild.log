@@ -1,0 +1,9 @@
+$ npm ci --offline --ignore-scripts --no-audit --no-fund --cache /workspace/scratch/e174c70ed48b/agentic-offline-build/build/npm-cache-omp-adapter
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+added 8 packages in 4s
+$ npm run build
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> @zhafron/paperclip-omp-adapter@0.7.0 build
+> tsc

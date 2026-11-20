@@ -1,0 +1,11 @@
+# Native browser activation handoff
+
+1. Resolve the browser capability through private repositories first, using the parent kit's reviewed native plan. The offline fallback is Debian Chromium `156.0.8078.79-1~deb13u1` with the retained 215-package dependency closure. Preserve an existing sufficient internal selection.
+2. Install or reuse libraries, fonts and the browser with the native package manager on qualified Debian 13 amd64. Do not manually replace shared libraries, symlinks or sandbox helper ownership.
+3. Prefer the selected native browser's absolute binary path, normally `/usr/lib/chromium/chromium`, when the native package is installed. Record its package version and actual hash. Its native sandbox helper remains adjacent at `/usr/lib/chromium/chrome-sandbox` under package-manager ownership.
+4. Qualify the actual selection with `agentic-browser-smoke --browser /usr/lib/chromium/chromium --state /absolute/new/operator-state/browser-acceptance-001`. Use the equivalent approved absolute internal path if different. Read the resulting `qualification.json`; process launch or `--version` alone is insufficient.
+5. After a successful real UI test, pass `AGENTIC_CHROMIUM_EXECUTABLE=/usr/lib/chromium/chromium` for this capability's project jobs, or set the same explicit `launchOptions.executablePath` in the existing project's Playwright config. Preserve existing application/model routes and browser defaults. This process environment is not a new global default browser alias.
+
+The archive also retains an exact private Chromium/common tree for immutable fallback addressing. It does not manually install a setuid sandbox helper into the application prefix. A private executable needs a supported Chromium sandbox path, such as approved user namespaces. If the site's execution policy requires the native package helper, use the approved native binary and qualify it as above. Do not copy/setuid files manually or disable Chromium sandboxing to make a check pass.
+
+The builder's real browser attempt was blocked before page navigation because the managed executor forbids the Unix socket operation Chromium requires. That failure is preserved. Browser functional acceptance remains pending until the test above succeeds on the deployment machine. The offline assets are present; an unqualified browser is never reported as working.

@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "status": "finalized_with_declared_optional_rebuild_gap",
+  "platform": "linux-x86_64",
+  "created_utc": "2026-11-20",
+  "policies": {
+    "existing_omp_preserved": true,
+    "internal_model_endpoints_reused": true,
+    "model_weights_included": false,
+    "source_format": "complete tracked snapshots, no Git history"
+  },
+  "workers": [
+    {
+      "name": "oh-my-pi",
+      "version": "19.0.1",
+      "tag": "v19.0.1",
+      "commit": "f40f335845f0b136453d12fec8d6057011082766",
+      "repository": "https://github.com/can1357/oh-my-pi",
+      "license": "MIT",
+      "artifacts": [
+        {
+          "path": "artifacts/binaries/omp-v19.0.1-linux-x64",
+          "size_bytes": 296482992,
+          "sha256": "6ceef04430851bb1050c6fda3af467412eb44a11df0a6ff8121fe601013c5415",
+          "upstream_digest_verified": true
+        },
+        {
+          "path": "artifacts/sources/oh-my-pi-v19.0.1-source.tar.gz",
+          "size_bytes": 84033945,
+          "sha256": "ac1a741980102e8a3df85eba77e2aa9f99a96204bd31000a8287ad9be0da4f72",
+          "upstream_digest_verified": null
+        }
+      ],
+      "complete_tracked_source_verified": true,
+      "tracked_file_count": 10873,
+      "submodules": [],
+      "managed_binary": {
+        "path": "artifacts/binaries/omp-v19.0.1-offline.1-linux-x64",
+        "size_bytes": 252000432,
+        "sha256": "90c9251b3564c7501e9ea606010a632e8197ed2b8cb6e4fa60c0947e42d16ebc"
+      },
+      "managed_build_id": "19.0.1+offline.1",
+      "upstream_version_string": "omp/19.0.1",
+      "managed_provenance": "Official source plus local catalog-offline patch, compiled with official Bun1.4.4 baseline and unchanged baseline native addon extracted from verified official release",
+      "cpu_floor": "x86-64-v2 native addon; Bun baseline avoids AVX2 dependency",
+      "glibc_max_symbol": "2.17",
+      "native_addons_embedded": true,
+      "managed_native_variants": [
+        "baseline"
+      ],
+      "required_launcher_environment": {
+        "OMP_OFFLINE_CATALOG": "1",
+        "PI_NATIVE_VARIANT": "baseline"
+      },
+      "native_addon_sha256": "f16f7f05ab40bbc6f74453231a857af577619409ab09dbab5783ebf4800d5b15",
+      "source_patch": {
+        "path": "artifacts/patches/omp-v19.0.1-offline.1.patch",
+        "size_bytes": 3096,
+        "sha256": "fa7983f15cbce5ccdfc3eea35e0e0c3f22163beb2a1d325356778b95a0e39b8c"
+      }
+    },
+    {
+      "name": "herdr",
+      "version": "0.9.5",
+      "tag": "v0.9.5",
+      "commit": "2ecf19a92fc3a7fff75b6ce3655ef04f4625ec01",
+      "repository": "https://github.com/herdrdev/herdr",
+      "license": "Apache-2.0",
+      "artifacts": [
+        {
+          "path": "artifacts/binaries/herdr-v0.9.5-linux-x86_64",
+          "size_bytes": 30285672,
+          "sha256": "14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d",
+          "upstream_digest_verified": true
+        },
+        {
+          "path": "artifacts/sources/herdr-v0.9.5-source.tar.gz",
+          "size_bytes": 10977885,
+          "sha256": "a4f7f437de62a640b5d03cb15a4257d8f7a7a346264ceb817cba05080992572b",
+          "upstream_digest_verified": null
+        }
+      ],
+      "complete_tracked_source_verified": true,
+      "tracked_file_count": 2957,
+      "submodules": [],
+      "linkage": "static-pie musl",
+      "runtime_toolchain_required": false,
+      "source_rebuild_status": "Cargo source graph validated offline; one required Zig source unavailable, see HERDR-ZIG-REBUILD-LIMITATION.md"
+    },
+    {
+      "name": "opencode",
+      "version": "1.18.34",
+      "tag": "v1.18.34",
+      "commit": "aec0b9a6d8898f68f923aaf08b7306d931fd9d76",
+      "repository": "https://github.com/anomalyco/opencode",
+      "license": "MIT",
+      "artifacts": [
+        {
+          "path": "artifacts/binaries/opencode-v1.18.34-linux-x64-baseline.tar.gz",
+          "size_bytes": 60665421,
+          "sha256": "24b0d458d21ef548b2752166303defcf7f4945b049fb4876ab78dfaf86d81b27",
+          "upstream_digest_verified": true
+        },
+        {
+          "path": "artifacts/sources/opencode-v1.18.34-source.tar.gz",
+          "size_bytes": 81548804,
+          "sha256": "8b085428096cf4e4f404149604cc613448b18561a67831dfaa35db5ab159678a",
+          "upstream_digest_verified": null
+        }
+      ],
+      "complete_tracked_source_verified": true,
+      "tracked_file_count": 6641,
+      "submodules": [],
+      "selection_reason": "Matches Paperclipv2026.1117.0 paperclip-runner opencode-ai1.18.34 dependency",
+      "installed_binary": {
+        "path": "artifacts/binaries/opencode-v1.18.34-linux-x64-baseline/opencode",
+        "size_bytes": 185632896,
+        "sha256": "9ca0b9953d49997601655e54f846a3efa464f237e47c6f1b04716d0f2e64c4c2"
+      },
+      "glibc_max_symbol": "2.17",
+      "cpu_target": "official Linux x64 baseline asset",
+      "internal_provider_sdk": "@ai-sdk/openai-compatible is compiled in, verified fresh-profile local mock"
+    }
+  ],
+  "validation": {
+    "opencode_mock": "passed with fresh config/cache, bundled OpenAI-compatible SDK, JSON text/usage and exit0",
+    "omp_pristine_mock_no_session": "passed local streaming inference exit0",
+    "omp_durable_session": "blocked by host AF_UNIX socket creation restriction, target acceptance still required",
+    "omp_global_models_listing": "automatic review rejected unexpected external DashScope catalog request; not retried",
+    "omp_offline_patch_source_tests": "3 passed, 0 failed, 9 assertions; all injected catalog fetches and runtime discovery callbacks remained uncalled",
+    "omp_cache_offline_reinstall": "Bun1.4.4 --offline --frozen-lockfile --ignore-scripts passed",
+    "opencode_cache_offline_reinstall": "Cross-version Bun1.4.4 failed applying upstream photon patch; pinned1.3.14-installed dependency tree being packaged instead",
+    "no_egress_trace": "unavailable: host disallows ptrace/strace",
+    "omp_managed_compile": "passed: full TypeScript/JavaScript CLI source compile with pinned baseline Bun and official native addon",
+    "omp_managed_local_mock": "passed: fresh profile, OMP_OFFLINE_CATALOG=1, --no-session, local streaming OpenAI-compatible mock, JSON response+usage, exit0, no stderr",
+    "cargo_offline_metadata": {
+      "oh-my-pi": {
+        "exit_code": 0,
+        "resolved_packages": 1021
+      },
+      "herdr": {
+        "exit_code": 0,
+        "resolved_packages": 297
+      }
+    },
+    "herdr_zig_offline_graph": "--system resolves captured sources but fails on missing translate_c; remote fetching disabled"
+  },
+  "generated_utc": "2026-11-20T10:20:51.135331+00:00",
+  "toolchains": [
+    {
+      "path": "artifacts/toolchains/bun-v1.3.14-linux-x64-baseline.zip",
+      "size_bytes": 35595658,
+      "sha256": "a063908ae08b7852ca10939bbdc6ceed3ddabce8fb9402dce83d65d73b36e6c7",
+      "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-linux-x64-baseline.zip",
+      "official_sha256_verified": true,
+      "purpose": "OpenCode build/runtime"
+    },
+    {
+      "path": "artifacts/toolchains/bun-v1.4.4-linux-x64-baseline.zip",
+      "size_bytes": 51794559,
+      "sha256": "e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76",
+      "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-baseline.zip",
+      "official_sha256_verified": true,
+      "purpose": "OMP build/runtime"
+    },
+    {
+      "path": "artifacts/toolchains/rust-1.96.1-x86_64-unknown-linux-gnu.tar.xz",
+      "size_bytes": 197897224,
+      "sha256": "d29ccb1559a177c4e72291f6e5f629de7fe8885e7521ca47802627544b121e95",
+      "url": "https://static.rust-lang.org/dist/2026-06-30/rust-1.96.1-x86_64-unknown-linux-gnu.tar.xz",
+      "official_sha256_verified": true,
+      "purpose": "Herdr toolchain"
+    },
+    {
+      "path": "artifacts/toolchains/cargo-1.96.1-x86_64-unknown-linux-gnu.tar.xz",
+      "size_bytes": 11155376,
+      "sha256": "ecc53a3c49fab5ab8c9301b3bbc8fb1dff9be6c65287add3f57a0fe8fddfea9e",
+      "url": "https://static.rust-lang.org/dist/2026-06-30/cargo-1.96.1-x86_64-unknown-linux-gnu.tar.xz",
+      "official_sha256_verified": true,
+      "purpose": "Herdr toolchain"
+    },
+    {
+      "path": "artifacts/toolchains/rust-nightly-2026-11-08-x86_64-unknown-linux-gnu.tar.xz",
+      "size_bytes": 220828388,
+      "sha256": "74b17a87dea336e33a324b78926aa06fdcf772c5b1c0a4676de30967b222a6b3",
+      "url": "https://static.rust-lang.org/dist/2026-11-08/rust-nightly-x86_64-unknown-linux-gnu.tar.xz",
+      "official_sha256_verified": true,
+      "purpose": "OMP toolchain"
+    },
+    {
+      "path": "artifacts/toolchains/cargo-nightly-2026-11-08-x86_64-unknown-linux-gnu.tar.xz",
+      "size_bytes": 10823764,
+      "sha256": "933f57c1ca9ab478f29b04ed536a3c12ec500124165b2865b4de551aaa35e8a2",
+      "url": "https://static.rust-lang.org/dist/2026-11-08/cargo-nightly-x86_64-unknown-linux-gnu.tar.xz",
+      "official_sha256_verified": true,
+      "purpose": "OMP toolchain"
+    },
+    {
+      "path": "artifacts/toolchains/zig-x86_64-linux-0.16.0.tar.xz",
+      "size_bytes": 55478392,
+      "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00",
+      "url": "https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz",
+      "official_sha256_verified": true
+    },
+    {
+      "path": "artifacts/toolchains/rust-std-1.96.1-x86_64-unknown-linux-musl.tar.xz",
+      "size_bytes": 38835540,
+      "sha256": "94192fe7e10f11e8595f2a29ebda182da0f786797fe908f44fbf80213cd845ac",
+      "url": "https://static.rust-lang.org/dist/2026-06-30/rust-std-1.96.1-x86_64-unknown-linux-musl.tar.xz",
+      "official_sha256_verified": true
+    }
+  ],
+  "dependency_artifacts": [
+    {
+      "path": "artifacts/dependencies/omp-v19.0.1-bun-cache.tar.gz",
+      "size_bytes": 195617020,
+      "sha256": "cd217c0a14bb757d12c8782b5c666a99d9b95907cf5e7dd946ebc249c4979492"
+    },
+    {
+      "path": "artifacts/dependencies/omp-v19.0.1-herdr-v0.9.5-cargo-vendor.tar.gz",
+      "size_bytes": 179473475,
+      "sha256": "8eaf4b62e4e69d64a586311f1b99eb0d77eda57a4f53724a666b9e3cc75ab8cf"
+    },
+    {
+      "path": "artifacts/dependencies/opencode-v1.18.34-installed-dependencies.tar.gz",
+      "size_bytes": 728275100,
+      "sha256": "c66fae266c840b4969fac6956ada41a8db25b11a062fc0c72d302a7de54b7cad"
+    },
+    {
+      "path": "artifacts/dependencies/herdr-v0.9.5-zig-packages.tar.gz",
+      "size_bytes": 112881933,
+      "sha256": "5457b582c8efd89708b440032ab68fd14dcba7e583b2735e6ab0e4d4267f53b1"
+    }
+  ],
+  "limitations": [
+    "This host forbids AF_UNIX socket creation, preventing OMP durable-session acceptance. Destination must verify save/resume; no-session was only a smoke-test isolation option.",
+    "Host ptrace/strace denied; no comprehensive packet-level no-egress attestation. Catalog patch source tests use injected transport/callback guards. Host egress policy remains required for shell/tools/extensions.",
+    "Herdr source rebuild is incomplete because required Codeberg translate-c source could not be downloaded. Official static runtime is included and runnable. Missing source plus any of its unknown transitive dependencies must be staged before rebuilding.",
+    "OpenCode full source build was not performed. A pinned Bun1.3.14 installed dependency overlay is supplied; Bun1.4.4 replay of that older cache failed applying an upstream photon patch, so no universally replayable cache claim is made.",
+    "OMP source native addon was not recompiled. Managed CLI source was compiled and reuses the checksum-verified original baseline addon. Complete Rust registry source graph and pinned native toolchain are included for later rebuilds.",
+    "Model weights and project-specific SDKs/packages are not included; reuse existing internal model endpoints and stage each project dependency lock separately."
+  ]
+}

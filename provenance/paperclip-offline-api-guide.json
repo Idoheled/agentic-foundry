@@ -1,0 +1,288 @@
+{
+  "paperclip_release": {
+    "tag_name": "v2026.1117.0",
+    "name": "v2026.1117.0",
+    "html_url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.1117.0",
+    "published_at": "2026-11-18T22:20:29Z",
+    "prerelease": false,
+    "draft": false
+  },
+  "base_url": "http://127.0.0.1:3100",
+  "local_trusted": {
+    "environment": {
+      "PAPERCLIP_DEPLOYMENT_MODE": "local_trusted",
+      "PAPERCLIP_BIND": "loopback",
+      "HOST": "127.0.0.1",
+      "PORT": "3100",
+      "PAPERCLIP_TELEMETRY_DISABLED": "1",
+      "DO_NOT_TRACK": "1"
+    },
+    "constraints": [
+      "Server refuses local_trusted on a nonloopback bind.",
+      "A Linux host-network container allows localhost-only host access. Remote UI can use an SSH tunnel.",
+      "No Authorization or Origin is needed for localhost API; implicit Local Board has instance administrator privileges.",
+      "Use authenticated mode with a stable BETTER_AUTH_SECRET for shared network access; the bundle does not silently turn local_trusted into a LAN service."
+    ],
+    "auth_bootstrap": "BetterAuth is not instantiated in local_trusted; the local board principal is initialized by the server."
+  },
+  "bootstrap_order": [
+    "Start pinned PostgreSQL and Paperclip runtime with persistent data and explicit loopback bind.",
+    "Wait until GET /api/health succeeds.",
+    "List existing companies with GET /api/companies and reuse the intended company id, or create once. Persist returned ids; do not use names as globally unique identities.",
+    "Register compiled offline OMP adapter by absolute container-visible local path.",
+    "Create/reuse projects using container-visible workspace paths.",
+    "Create agents with explicit runner legacy and inert heartbeat settings.",
+    "Review adapter config/provisioned provider model identity and run environment tests before activation.",
+    "Activate only the chosen agents and execute the disposable acceptance tasks before importing real work."
+  ],
+  "contracts": {
+    "create_company": {
+      "method": "POST",
+      "path": "/api/companies",
+      "body": {
+        "name": "Offline Engineering",
+        "description": "Private multi-project workspace"
+      }
+    },
+    "create_project": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/projects",
+      "body": {
+        "name": "Project A",
+        "workspace": {
+          "sourceType": "local_path",
+          "cwd": "/workspaces/project-a",
+          "isPrimary": true
+        }
+      }
+    },
+    "create_legacy_opencode_agent": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/agents",
+      "body": {
+        "name": "OpenCode Engineer",
+        "role": "engineer",
+        "adapterType": "opencode_local",
+        "runner": "legacy",
+        "adapterConfig": {
+          "command": "/opt/offline/bin/opencode",
+          "model": "internal/model-id",
+          "cwd": "/workspaces/project-a",
+          "timeoutSec": 1800
+        },
+        "runtimeConfig": {
+          "heartbeat": {
+            "enabled": false,
+            "intervalSec": 0,
+            "wakeOnDemand": false,
+            "maxConcurrentRuns": 1
+          }
+        }
+      }
+    },
+    "install_compiled_omp_adapter": {
+      "method": "POST",
+      "path": "/api/adapters/install",
+      "body": {
+        "packageName": "/opt/offline/adapters/paperclip-omp-adapter-0.7.0",
+        "isLocalPath": true
+      }
+    },
+    "create_legacy_omp_agent": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/agents",
+      "body": {
+        "name": "OMP Engineer",
+        "role": "engineer",
+        "adapterType": "omp_local",
+        "runner": "legacy",
+        "adapterConfig": {
+          "command": "/opt/offline/bin/omp",
+          "model": "internal/model-id",
+          "agentDir": "/paperclip/omp-agent",
+          "cwd": "/workspaces/project-a",
+          "approvalMode": "yolo",
+          "timeoutSec": 1800
+        },
+        "runtimeConfig": {
+          "heartbeat": {
+            "enabled": false,
+            "intervalSec": 0,
+            "wakeOnDemand": false,
+            "maxConcurrentRuns": 1
+          }
+        }
+      }
+    },
+    "notes": [
+      "Paths and model IDs in examples are templates and must match mounted artifacts and configured internal model provider.",
+      "Company requireBoardApprovalForNewAgents defaults false in this release; if an existing company enables it, direct agent creation409 requires its approval flow, not silent governance changes.",
+      "OMP installation requires the compiled dist tree and bundled production node_modules accessible to Paperclip. isLocalPath:true skips npm.",
+      "Agent configuration supports runner auto, paperclip, legacy. The legacy CLI route is deliberate here; it does not claim native Runner child-worker introspection.",
+      "Heartbeat defaults are intentionally inert until provider and sandbox acceptance checks pass; wakeOnDemand is the non-timer execution gate."
+    ],
+    "health": {
+      "method": "GET",
+      "path": "/api/health"
+    },
+    "list_companies": {
+      "method": "GET",
+      "path": "/api/companies"
+    },
+    "list_agents": {
+      "method": "GET",
+      "path": "/api/companies/{companyId}/agents"
+    },
+    "list_projects": {
+      "method": "GET",
+      "path": "/api/companies/{companyId}/projects"
+    },
+    "list_issues": {
+      "method": "GET",
+      "path": "/api/companies/{companyId}/issues"
+    },
+    "list_adapters": {
+      "method": "GET",
+      "path": "/api/adapters"
+    },
+    "adapter_config_schema": {
+      "method": "GET",
+      "path": "/api/adapters/omp_local/config-schema"
+    },
+    "create_task": {
+      "method": "POST",
+      "path": "/api/companies/{companyId}/issues",
+      "body": {
+        "title": "Disposable offline acceptance task",
+        "description": "Use the provisioned internal model and disposable workspace; write evidence to the task.",
+        "projectId": "REPLACE_PROJECT_UUID",
+        "assigneeAgentId": "REPLACE_AGENT_UUID",
+        "status": "todo",
+        "priority": "medium"
+      }
+    },
+    "activate_on_demand": {
+      "method": "PATCH",
+      "path": "/api/agents/{agentId}",
+      "body": {
+        "runtimeConfig": {
+          "heartbeat": {
+            "enabled": false,
+            "intervalSec": 0,
+            "wakeOnDemand": true,
+            "maxConcurrentRuns": 1
+          }
+        }
+      },
+      "note": "Fetch existing runtimeConfig first and merge heartbeat into it to preserve unrelated existing config. Timer remains off; assignments/manual wake can now execute. Creating/assigning a todo issue can trigger execution, so do this only after qualification."
+    },
+    "invoke": {
+      "method": "POST",
+      "path": "/api/agents/{agentId}/heartbeat/invoke",
+      "body": {},
+      "note": "Legacy supported empty-body manual invocation, still subject to wakeOnDemand gate and status/governance. Prefer task-scoped work; manual wake can consume model capacity."
+    },
+    "pause": {
+      "method": "POST",
+      "path": "/api/agents/{agentId}/pause",
+      "body": {},
+      "note": "Board operation pauses the agent and requests cancellation of active runs; verify terminal run states before reusing any worktree."
+    },
+    "resume": {
+      "method": "POST",
+      "path": "/api/agents/{agentId}/resume",
+      "body": {},
+      "note": "Resumes eligible agent; invalid org reporting chain remains409."
+    },
+    "cancel_run": {
+      "method": "POST",
+      "path": "/api/heartbeat-runs/{runId}/cancel",
+      "body": {}
+    }
+  },
+  "heartbeat": {
+    "location": "runtimeConfig.heartbeat",
+    "initial_inert": {
+      "enabled": false,
+      "intervalSec": 0,
+      "wakeOnDemand": false,
+      "maxConcurrentRuns": 1
+    },
+    "on_demand_after_acceptance": {
+      "enabled": false,
+      "intervalSec": 0,
+      "wakeOnDemand": true,
+      "maxConcurrentRuns": 1
+    },
+    "source_defaults": {
+      "enabled": false,
+      "intervalSec": 0,
+      "wakeOnDemand": true,
+      "maxConcurrentRuns": 20
+    },
+    "bounds": {
+      "maxConcurrentRuns": {
+        "min": 1,
+        "max": 50
+      }
+    },
+    "notes": [
+      "enabled and intervalSec govern timer scheduling; setting enabled:false alone does not disable assignment/manual/non-timer wakeups.",
+      "wakeOnDemand:false gates non-timer wakes as well as automatic assignment wakeups.",
+      "maxConcurrentRuns is per agent, not a global host/inference concurrency limit.",
+      "Dollars reported as zero for internal inference do not constrain GPU capacity; enforce model gateway and host resource concurrency separately."
+    ],
+    "evidence": [
+      "sources/paperclip/server/src/services/heartbeat-policy.ts",
+      "sources/paperclip/server/src/services/heartbeat/timer-policy.ts",
+      "sources/paperclip/server/src/services/heartbeat/queue.ts",
+      "sources/paperclip/packages/shared/src/constants.ts"
+    ]
+  },
+  "omp_offline_configuration": {
+    "adapterType": "omp_local",
+    "runner": "legacy",
+    "registration_path": "/opt/agentic/adapters/omp",
+    "adapterConfig_example": {
+      "command": "/opt/agentic/bin/omp",
+      "model": "internal/REPLACE_MODEL_ID",
+      "agentDir": "/paperclip/agentic-config/omp",
+      "approvalMode": "yolo",
+      "timeoutSec": 1800
+    },
+    "environment_example": {
+      "PAPERCLIP_OMP_OFFLINE_MODELS": "[\"internal/REPLACE_MODEL_ID\"]",
+      "PAPERCLIP_OMP_AGENT_DIR": "/paperclip/agentic-config/omp"
+    },
+    "notes": [
+      "Place actual models.yml at /paperclip/agentic-config/omp/models.yml. modelsYaml is inline YAML text, not a filename; omit it when using the mounted directory.",
+      "Avoid setting profile when using agentDir: a profile takes precedence. Clear inherited OMP_PROFILE/PI_PROFILE or provision an explicit matching profile.",
+      "Set PAPERCLIP_OMP_OFFLINE_MODELS on the server so adapter startup/summary/picker all use the static local catalog.",
+      "The downstream 0.7.0-offline.1 adapter disables model discovery and quota probes unless an operator explicitly opts back in; do not enable those opt-ins in the offline environment.",
+      "Model API keys referenced by name must actually exist. OMP can treat an unresolved bare key name as a literal, so fail closed in the launcher when an authenticated gateway key is absent.",
+      "The root-provided runner wrapper should reference the provisioned binary. Do not auto-install a missing runtime from npm."
+    ]
+  },
+  "evidence_files": [
+    "sources/paperclip/.github/workflows/docker.yml",
+    "sources/paperclip/Dockerfile",
+    "sources/paperclip/scripts/docker-entrypoint.sh",
+    "sources/paperclip/packages/paperclip-runner/package.json",
+    "sources/paperclip/server/src/config.ts",
+    "sources/paperclip/server/src/config-file.ts",
+    "sources/paperclip/server/src/index.ts",
+    "sources/paperclip/server/src/middleware/auth.ts",
+    "sources/paperclip/server/src/middleware/board-mutation-guard.ts",
+    "sources/paperclip/server/src/routes/adapters.ts",
+    "sources/paperclip/server/src/routes/companies.ts",
+    "sources/paperclip/server/src/routes/agents.ts",
+    "sources/paperclip/server/src/routes/projects.ts",
+    "sources/paperclip/packages/shared/src/validators/agent.ts",
+    "sources/paperclip/packages/shared/src/validators/company.ts",
+    "sources/paperclip/packages/shared/src/validators/project.ts",
+    "sources/paperclip/packages/adapters/opencode-local/src/server/runtime-config.ts",
+    "sources/paperclip-docs/docs/reference/deploy/docker.md",
+    "sources/paperclip-docs/docs/reference/adapters/external-adapters.md",
+    "sources/paperclip-omp-adapter/src/metadata.ts"
+  ]
+}

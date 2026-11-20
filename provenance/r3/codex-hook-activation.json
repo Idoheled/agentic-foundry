@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "trusted",
+  "method": "hooks/list + config/batchWrite",
+  "managedPolicyModified": false,
+  "unrelatedHooksApproved": false,
+  "codexVersion": "codex-cli 0.171.0",
+  "reviewedDefinitionSha256": "64dff557222f820fd4129f3adc6ca826ae805d68cc3a4d1d6b569f3c4d37524d",
+  "before": [
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:post_tool_use:0:0",
+      "event": "postToolUse",
+      "trustStatus": "untrusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:session_start:0:0",
+      "event": "sessionStart",
+      "trustStatus": "untrusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:session_end:0:0",
+      "event": "sessionEnd",
+      "trustStatus": "untrusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:stop:0:0",
+      "event": "stop",
+      "trustStatus": "untrusted"
+    }
+  ],
+  "after": [
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:post_tool_use:0:0",
+      "event": "postToolUse",
+      "trustStatus": "trusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:session_start:0:0",
+      "event": "sessionStart",
+      "trustStatus": "trusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:session_end:0:0",
+      "event": "sessionEnd",
+      "trustStatus": "trusted"
+    },
+    {
+      "key": "/workspace/scratch/e174c70ed48b/agentic-offline-build/research/r3-host/actual-install-v2/native-profiles/codex/hooks.json:stop:0:0",
+      "event": "stop",
+      "trustStatus": "trusted"
+    }
+  ],
+  "newlyApprovedCount": 4,
+  "trustedCount": 4
+}

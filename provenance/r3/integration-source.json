@@ -1,0 +1,8 @@
+{
+  "gitCommit": "fa0c1e4c98928d77a05ded92962dddae4090f198",
+  "bundle": "payload/sources/agentic-integration-r3.bundle",
+  "bundleSha256": "e5cc5fe7353f495e386844927e4bfd031fbc20e832bda14b015e22a1366c3a50",
+  "bundleBytes": 209989,
+  "gitBundleVerified": true,
+  "scope": "Original integration code/docs/config/tests and r3 builder/update sources. Complete tracked snapshot; upstream payloads have separate source distributions."
+}

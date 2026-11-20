@@ -1,0 +1,23 @@
+test_add_payload_change_control_idempotence_and_rollback (__main__.AdditiveUpdateTest.test_add_payload_change_control_idempotence_and_rollback) ... ok
+test_any_baseline_file_removal_refused_by_builder (__main__.AdditiveUpdateTest.test_any_baseline_file_removal_refused_by_builder) ... ok
+test_backup_standalone_rollback_without_original_update_directory (__main__.AdditiveUpdateTest.test_backup_standalone_rollback_without_original_update_directory) ... ok
+test_builder_refuses_symlink_output_parent_and_existing_output (__main__.AdditiveUpdateTest.test_builder_refuses_symlink_output_parent_and_existing_output) ... ok
+test_existing_payload_bytes_or_mode_changes_refused_by_builder (__main__.AdditiveUpdateTest.test_existing_payload_bytes_or_mode_changes_refused_by_builder) ... ok
+test_full_preflight_detects_retained_payload_corruption (__main__.AdditiveUpdateTest.test_full_preflight_detects_retained_payload_corruption) ... ok
+test_manifest_and_incoming_payload_tampering_refused (__main__.AdditiveUpdateTest.test_manifest_and_incoming_payload_tampering_refused) ... ok
+test_mutation_failure_after_added_payload_rolls_back (__main__.AdditiveUpdateTest.test_mutation_failure_after_added_payload_rolls_back) ... ok
+test_new_destination_conflict_is_preserved_even_when_identical (__main__.AdditiveUpdateTest.test_new_destination_conflict_is_preserved_even_when_identical) ... ok
+test_new_parent_symlink_and_root_alias_refused (__main__.AdditiveUpdateTest.test_new_parent_symlink_and_root_alias_refused) ... ok
+test_power_loss_after_payload_publication_recovers (__main__.AdditiveUpdateTest.test_power_loss_after_payload_publication_recovers) ... ok
+test_preparation_failure_leaves_targets_intact_and_is_recoverable (__main__.AdditiveUpdateTest.test_preparation_failure_leaves_targets_intact_and_is_recoverable) ... ok
+test_prepared_journal_failure_rolls_back_created_directories (__main__.AdditiveUpdateTest.test_prepared_journal_failure_rolls_back_created_directories) ... ok
+test_rollback_refuses_later_control_or_payload_edit_before_any_mutation (__main__.AdditiveUpdateTest.test_rollback_refuses_later_control_or_payload_edit_before_any_mutation) ... ok
+test_shell_entrypoint_paths_with_spaces_and_reproducible_streaming_build (__main__.AdditiveUpdateTest.test_shell_entrypoint_paths_with_spaces_and_reproducible_streaming_build) ... ok
+test_stale_final_manifest_refused (__main__.AdditiveUpdateTest.test_stale_final_manifest_refused) ... ok
+test_target_leaf_symlink_refused_without_touching_external_file (__main__.AdditiveUpdateTest.test_target_leaf_symlink_refused_without_touching_external_file) ... ok
+test_unrelated_files_survive_apply_and_rollback (__main__.AdditiveUpdateTest.test_unrelated_files_survive_apply_and_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.707s
+
+OK

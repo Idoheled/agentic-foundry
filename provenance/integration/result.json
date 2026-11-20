@@ -1,0 +1,312 @@
+{
+  "scope": "Actual shipped image files in user/mount/network-namespace chroots; rootfs copies have ownership/passwd/symlink adaptations. Unmodified startup is blocked by builder netlink restrictions; this continuation uses an explicitly test-only known-loopback os.networkInterfaces fixture. Not a Docker-daemon test or unmodified-runtime startup pass.",
+  "checks": [
+    {
+      "test": "network_namespace_has_no_external_route",
+      "ok": true,
+      "error_type": "OSError"
+    },
+    {
+      "test": "postgres_official_image_binary_boot",
+      "ok": true,
+      "port": 55491
+    },
+    {
+      "test": "paperclip_official_runtime_health",
+      "ok": true,
+      "health": {
+        "status": "ok",
+        "version": "0.3.1+0.git.c0f1328",
+        "serverVersion": "0.3.1+0.git.c0f1328",
+        "commit": "c0f132898d2a2677312d8c72096187b27a3d9a38",
+        "deploymentMode": "local_trusted",
+        "deploymentExposure": "private",
+        "localAiLoginSupported": true,
+        "authReady": true,
+        "bootstrapStatus": "ready",
+        "bootstrapInviteActive": false,
+        "features": {
+          "companyDeletionEnabled": true
+        },
+        "serverInfo": {
+          "processStartedAt": "2026-11-20T10:13:34.144Z",
+          "git": {
+            "available": true,
+            "fullSha": "c0f132898d2a2677312d8c72096187b27a3d9a38",
+            "shortSha": "c0f1328",
+            "branchName": null,
+            "subject": "Source build",
+            "committedAt": null,
+            "localChanges": {
+              "available": false,
+              "unavailableReason": "git_status_unavailable"
+            }
+          }
+        },
+        "startupRecovery": {
+          "phase": "ready",
+          "updatedAt": "2026-11-20T10:13:41.889Z"
+        },
+        "nativeRecovery": {},
+        "databaseBackup": {
+          "enabled": true,
+          "status": "warning",
+          "backupDir": "/paperclip/instances/default/data/backups",
+          "maxAgeHours": 26,
+          "latestBackup": null,
+          "lastFailure": null,
+          "warnings": [
+            {
+              "code": "database_backup_missing",
+              "message": "No .sql.gz database backups found in /paperclip/instances/default/data/backups."
+            }
+          ]
+        },
+        "warnings": [
+          {
+            "code": "database_backup_missing",
+            "message": "No .sql.gz database backups found in /paperclip/instances/default/data/backups."
+          }
+        ]
+      }
+    },
+    {
+      "test": "company_create_api",
+      "ok": true,
+      "company_id": "0f5c9846-6c66-46ba-a4c0-8a65eb61f136"
+    },
+    {
+      "test": "project_create_api",
+      "ok": true,
+      "project_id": "f54a3b03-5ba5-4a67-a387-774455a3b4d1"
+    },
+    {
+      "test": "compiled_omp_adapter_registration",
+      "ok": true,
+      "response_keys": [
+        "type",
+        "packageName",
+        "version",
+        "installedAt",
+        "requiresRestart"
+      ]
+    },
+    {
+      "test": "legacy_opencode_agent_create",
+      "ok": true,
+      "agent_id": "62285346-69a4-4844-a7c7-8f068c8e0919",
+      "adapter_type": "opencode_local"
+    },
+    {
+      "test": "seed_task_scheduling_disabled",
+      "ok": true
+    },
+    {
+      "test": "agent_lifecycle_verification",
+      "ok": true,
+      "state": "ready",
+      "operation": null
+    },
+    {
+      "test": "heartbeat_dispatch",
+      "ok": true,
+      "response": {
+        "id": "a36496aa-3803-4d22-aed3-ea1e97fb2e24",
+        "status": "queued",
+        "error": null
+      }
+    },
+    {
+      "test": "opencode_integrated_mock_completion",
+      "ok": true,
+      "run": {
+        "id": "a36496aa-3803-4d22-aed3-ea1e97fb2e24",
+        "status": "succeeded",
+        "error": null,
+        "errorCode": null,
+        "exitCode": 0
+      },
+      "summary": "hello offline-integrated-model-ok",
+      "model_requests": [
+        {
+          "path": "/v1/chat/completions",
+          "model": "smoke",
+          "stream": true,
+          "message_count": 3,
+          "tool_names": [],
+          "tool_result_seen": false,
+          "synthetic_tool_call": false
+        },
+        {
+          "path": "/v1/chat/completions",
+          "model": "smoke",
+          "stream": true,
+          "message_count": 2,
+          "tool_names": [
+            "bash",
+            "edit",
+            "glob",
+            "grep",
+            "read",
+            "skill",
+            "task",
+            "todowrite",
+            "webfetch",
+            "write"
+          ],
+          "tool_result_seen": false,
+          "synthetic_tool_call": false
+        },
+        {
+          "path": "/v1/chat/completions",
+          "model": "smoke",
+          "stream": true,
+          "message_count": 3,
+          "tool_names": [],
+          "tool_result_seen": false,
+          "synthetic_tool_call": false
+        },
+        {
+          "path": "/v1/chat/completions",
+          "model": "smoke",
+          "stream": true,
+          "message_count": 2,
+          "tool_names": [
+            "bash",
+            "edit",
+            "glob",
+            "grep",
+            "read",
+            "skill",
+            "task",
+            "todowrite",
+            "webfetch",
+            "write"
+          ],
+          "tool_result_seen": false,
+          "synthetic_tool_call": true
+        },
+        {
+          "path": "/v1/chat/completions",
+          "model": "smoke",
+          "stream": true,
+          "message_count": 4,
+          "tool_names": [
+            "bash",
+            "edit",
+            "glob",
+            "grep",
+            "read",
+            "skill",
+            "task",
+            "todowrite",
+            "webfetch",
+            "write"
+          ],
+          "tool_result_seen": true,
+          "synthetic_tool_call": false
+        }
+      ]
+    },
+    {
+      "test": "opencode_real_bash_tool_roundtrip",
+      "ok": true,
+      "artifact": "research/integration/workspaces/smoke/tool-proof.txt",
+      "artifact_exists": true,
+      "model_received_tool_result": true
+    },
+    {
+      "test": "control_plane_restart_persistence",
+      "ok": true,
+      "health_status": "ok",
+      "recovery_phase": "ready",
+      "persisted_run_status": "succeeded",
+      "persisted_agent": true
+    },
+    {
+      "test": "scope_limit",
+      "ok": true,
+      "note": "Synthetic model drove hello, dispatch, real local bash tool/result continuation and quiescent control-plane restart. No claim of reasoning/code quality, onsite model support, Docker daemon, active-run recovery, cancellation or production qualification."
+    }
+  ],
+  "model_requests": [
+    {
+      "path": "/v1/chat/completions",
+      "model": "smoke",
+      "stream": true,
+      "message_count": 3,
+      "tool_names": [],
+      "tool_result_seen": false,
+      "synthetic_tool_call": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "smoke",
+      "stream": true,
+      "message_count": 2,
+      "tool_names": [
+        "bash",
+        "edit",
+        "glob",
+        "grep",
+        "read",
+        "skill",
+        "task",
+        "todowrite",
+        "webfetch",
+        "write"
+      ],
+      "tool_result_seen": false,
+      "synthetic_tool_call": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "smoke",
+      "stream": true,
+      "message_count": 3,
+      "tool_names": [],
+      "tool_result_seen": false,
+      "synthetic_tool_call": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "smoke",
+      "stream": true,
+      "message_count": 2,
+      "tool_names": [
+        "bash",
+        "edit",
+        "glob",
+        "grep",
+        "read",
+        "skill",
+        "task",
+        "todowrite",
+        "webfetch",
+        "write"
+      ],
+      "tool_result_seen": false,
+      "synthetic_tool_call": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "model": "smoke",
+      "stream": true,
+      "message_count": 4,
+      "tool_names": [
+        "bash",
+        "edit",
+        "glob",
+        "grep",
+        "read",
+        "skill",
+        "task",
+        "todowrite",
+        "webfetch",
+        "write"
+      ],
+      "tool_result_seen": true,
+      "synthetic_tool_call": false
+    }
+  ]
+}

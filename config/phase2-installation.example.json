@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "evidence": "REPLACE_WITH_COMPLETED_REMAINING_STACK_INSPECTION_AND_PHASE1_RECEIPT",
+  "coordinatorState": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/installation",
+  "native": {
+    "enabled": true,
+    "plan": "/private/REPLACE_WITH_NATIVE_PACKAGE_PLAN.json",
+    "state": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/native-packages"
+  },
+  "host": {
+    "plan": "/private/REPLACE_PHASE2_HOST_PLAN.json",
+    "state": "/home/REPLACE_OPERATOR/.local/state/agentic-stack/hostctl",
+    "mode": "system"
+  },
+  "core": {
+    "enabled": true,
+    "config": "/private/REPLACE_WITH_CORE_SITE_CONFIG.json",
+    "state": "/home/REPLACE_OPERATOR/.local/share/agentic-stack"
+  },
+  "clients": {
+    "enabled": true,
+    "names": [
+      "codex",
+      "claude",
+      "python",
+      "native-profiles"
+    ]
+  },
+  "profiles": {
+    "enabled": true,
+    "plan": "/private/REPLACE_WITH_NATIVE_PROFILE_PLAN.json",
+    "assetTool": "native-profiles",
+    "pythonTool": "python",
+    "pythonCommand": "python3"
+  },
+  "modelSmoke": true,
+  "retireOldTools": false,
+  "stepTimeoutSeconds": 7200
+}

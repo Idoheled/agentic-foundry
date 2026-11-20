@@ -1,0 +1,6 @@
+{
+  "version": "19.0.1-offline.1",
+  "sha256": "4a651590d92923c5f29831bfa9288006254764103c737f92886bef001762fb5f",
+  "bytes": 135677557,
+  "scope": "Host OMP launcher preserves the existing PI_CODING_AGENT_DIR or native default. Complete managed executable plus required offline/native-variant launch controls. Original sources, original executable and patch are separately included."
+}

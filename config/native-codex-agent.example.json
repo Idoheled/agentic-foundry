@@ -1,0 +1,46 @@
+{
+  "name": "REPLACE_WITH_UNIQUE_CODEX_WORKER_NAME",
+  "role": "engineer",
+  "adapterType": "codex_local",
+  "runner": "legacy",
+  "adapterConfig": {
+    "engine": "cli",
+    "command": "/REPLACE_WITH_CLIENT_RUNTIME_REPORT_CODEX_COMMAND",
+    "cwd": "/workspaces/REPLACE_WITH_SELECTED_PROJECT",
+    "instructionsFilePath": "/opt/agentic/playbooks/implementer.md",
+    "model": "REPLACE_WITH_QUALIFIED_INTERNAL_RESPONSES_MODEL_ID",
+    "search": false,
+    "fastMode": false,
+    "dangerouslyBypassApprovalsAndSandbox": false,
+    "extraArgs": [
+      "-c",
+      "approval_policy=\"never\"",
+      "--sandbox",
+      "workspace-write",
+      "-c",
+      "sandbox_workspace_write.network_access=true"
+    ],
+    "env": {
+      "CODEX_HOME": "/paperclip/agentic-config/native/codex/REPLACE_WITH_UNIQUE_PROFILE",
+      "OPENAI_API_KEY": {
+        "type": "secret_ref",
+        "secretId": "REPLACE_WITH_REAL_INTERNAL_PROVIDER_SECRET_UUID",
+        "version": "latest"
+      },
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "timeoutSec": 1800,
+    "graceSec": 30
+  },
+  "runtimeConfig": {
+    "heartbeat": {
+      "enabled": false,
+      "intervalSec": 0,
+      "wakeOnDemand": false,
+      "maxConcurrentRuns": 1
+    }
+  },
+  "permissions": {
+    "canCreateAgents": false
+  }
+}

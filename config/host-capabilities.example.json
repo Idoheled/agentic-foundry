@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "templateOnly": true,
+  "controllerInput": false,
+  "purpose": "Receiving-agent checklist and installation record; populate from this host and selected projects, then perform the work. This is not an automatically executed controller schema.",
+  "provisioningStatus": "not_started",
+  "sourceOrder": ["suitable_existing", "approved_internal_repositories_or_caches", "verified_kit_with_recorded_fallback_reason"],
+  "publicFallbackAllowed": false,
+  "requiredReports": [
+    "reports/host-tool-inventory.json",
+    "reports/artifact-decisions.json",
+    "reports/host-installation-report.md",
+    "reports/rollback.md"
+  ],
+  "pathPolicy": {
+    "nativePackages": "Use the internal distro package manager and its package-owned paths, including /usr/bin where declared.",
+    "standaloneTools": "/opt/<tool>/<version> with inspected /usr/local/bin entry points",
+    "pythonLibraries": "Distro Python packages through the distro package manager, or a dedicated virtual environment's site-packages; never copy libraries to /usr/bin.",
+    "osPython": "Inspect ownership, consumers and supported distro mechanisms before any necessary update; no blind /usr/bin/python3 replacement.",
+    "symlinks": "Inspect and record the prior destination; validate the new target; use a recoverable atomic update only for locally managed links.",
+    "containerDependencies": "Qualify separately from host dependencies in the actual worker image/service context."
+  },
+  "capabilities": [
+    {"name": "git", "required": true, "commands": ["git"], "acceptance": "Resolve the real executable and access an authorized internal smoke repository without exposing credentials.", "status": "not_assessed"},
+    {"name": "transfer_archive_checksums", "required": true, "commands": ["curl", "tar", "sha256sum"], "acceptance": "Verify the kit and a staged internal artifact using approved CA/authentication; exercise required archive formats.", "status": "not_assessed"},
+    {"name": "source_search_json", "required": true, "commands": ["rg", "jq"], "acceptance": "Search and parse a small local fixture from a fresh shell and the relevant worker context.", "status": "not_assessed"},
+    {"name": "python", "required": true, "commands": ["python3"], "acceptance": "Record the chosen interpreter; run controller prerequisites and representative project imports from their actual environments.", "status": "not_assessed"},
+    {"name": "node", "required": true, "commands": ["node"], "acceptance": "Use a version compatible with the selected source/project requirements and prove native/runtime dependencies; preserve any adequate existing Node installation.", "status": "not_assessed"},
+    {"name": "container_runtime", "required": true, "commands": ["docker", "docker compose or an explicit selected Compose executable"], "acceptance": "Use the selected local socket and immutable images; qualify required Docker/Compose capabilities without disturbing other workloads.", "status": "not_assessed"},
+    {"name": "existing_internal_agent", "required": true, "commands": ["omp or claude, according to the existing working installation"], "acceptance": "Preserve or deliberately migrate the working configuration; complete a bounded internal-model invocation from the real host launcher.", "status": "not_assessed"},
+    {"name": "project_build_tools", "required": "derive_from_selected_projects", "commands": [], "acceptance": "Populate from project lockfiles/build instructions; install required package managers, compilers, test tools and native libraries from internal sources first, then execute representative builds/tests.", "status": "not_assessed"}
+  ],
+  "decisionRecordTemplate": {
+    "capability": "REPLACE_WITH_CAPABILITY",
+    "existing": {"path": null, "resolvedPath": null, "version": null, "sha256": null, "packageOwner": null, "consumers": [], "adequacyEvidence": null},
+    "internalSearches": [],
+    "selection": {"source": null, "version": null, "artifactIdentity": null, "fallbackReason": null, "evidence": null},
+    "installation": {"method": null, "destination": null, "entryPoint": null, "previousLinkTarget": null, "newLinkTarget": null, "dependencyClosure": [], "serviceOrContainerContext": null},
+    "replacement": {"needed": null, "reason": null, "backupPath": null, "rollbackSteps": [], "recoveryValidation": null},
+    "verification": {"freshShell": null, "actualServiceOrContainer": null, "representativeOperation": null, "evidencePaths": []},
+    "outcome": "not_assessed",
+    "blocker": null
+  }
+}

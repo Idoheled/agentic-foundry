@@ -1,0 +1,8 @@
+{
+  "commit": "f670b004a4bacda4ce9a7ea85cbb1b75fb869c91",
+  "bundle": "payload/sources/agentic-integration-r4.bundle",
+  "sha256": "1fe5a02e6807647273cbe11ad420945cb8b6e0a4e20db0b58a8761a2874608cf",
+  "bytes": 306809,
+  "completeHistory": true,
+  "scope": "Custom integration source, documentation, schemas, tests and packaging code; upstream payload sources remain separately indexed."
+}

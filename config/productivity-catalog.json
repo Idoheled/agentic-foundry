@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "2026-11-20-r5",
+  "tools": {
+    "worktrunk": {
+      "version": "0.82.0",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "wt": {
+          "path": "bin/wt",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "git-wt": {
+          "path": "bin/git-wt",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [],
+      "artifact": {
+        "path": "payload/productivity/native/artifacts/worktrunk-0.82.0-linux-amd64-runtime.tar.gz",
+        "sha256": "4c20bc2bb4d61f43f1d0e168218085fb20d1c1db45601b041f87cd6a3acefb16",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "MIT OR Apache-2.0",
+      "runtimeDependencies": [
+        "git >=2.43",
+        "POSIX shell for hooks (existing hooks are preserved; kit never runs wt config shell install automatically)"
+      ]
+    },
+    "rtk": {
+      "version": "1.2.1-oss",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "rtk": {
+          "path": "bin/rtk",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [],
+      "artifact": {
+        "path": "payload/productivity/native/artifacts/rtk-oss-1.2.1-linux-amd64-runtime.tar.gz",
+        "sha256": "31ec1e7088b5a8659402ba42802864439b1758cf4e19576b442180ebfe8ac568",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "Apache-2.0 (OSS runtime); full source snapshot contains separately licensed BUSL-1.1 engine/proxy directories",
+      "runtimeDependencies": [
+        "Native commands being filtered, such as git; RTK does not supply arbitrary underlying compilers/test frameworks"
+      ],
+      "environment": {
+        "RTK_TELEMETRY_DISABLED": "1"
+      }
+    },
+    "zoekt": {
+      "version": "7b032f67ffad",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "zoekt": {
+          "path": "bin/zoekt",
+          "verifyArgs": [
+            "-help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "zoekt-index": {
+          "path": "bin/zoekt-index",
+          "verifyArgs": [
+            "-help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "zoekt-git-index": {
+          "path": "bin/zoekt-git-index",
+          "verifyArgs": [
+            "-help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "zoekt-webserver": {
+          "path": "bin/zoekt-webserver",
+          "verifyArgs": [
+            "-help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "zoekt-local-sync": {
+          "path": "bin/zoekt-local-sync",
+          "verifyArgs": [
+            "-help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "universal-ctags": {
+          "path": "bin/universal-ctags",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [],
+      "artifact": {
+        "path": "payload/productivity/native/artifacts/zoekt-7b032f67ffad-linux-amd64-runtime.tar.gz",
+        "sha256": "d68acb0116c7b793d198ea097b291e45ac1e8f31b75cfebf5ba32190cd23bdc1",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "Apache-2.0 for Zoekt; GPL-2.0-or-later Universal Ctags with separately licensed static dependencies",
+      "runtimeDependencies": [
+        "git for Git-index/local-sync functions",
+        "POSIX shell/readlink for bundled Ctags-aware index wrappers"
+      ]
+    },
+    "language-servers": {
+      "version": "2026.11.20",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "glibcMin": "2.28"
+      },
+      "commands": {
+        "pyright": {
+          "path": "bin/pyright",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "pyright-langserver": {
+          "path": "bin/pyright-langserver",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "tsc": {
+          "path": "bin/tsc",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "typescript-language-server": {
+          "path": "bin/typescript-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "bash-language-server": {
+          "path": "bin/bash-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "yaml-language-server": {
+          "path": "bin/yaml-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "vscode-json-language-server": {
+          "path": "bin/vscode-json-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "vscode-html-language-server": {
+          "path": "bin/vscode-html-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "vscode-css-language-server": {
+          "path": "bin/vscode-css-language-server",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "node_modules/typescript/lib/tsserver.js",
+        "node_modules/pyright/dist/pyright-langserver.js",
+        "package-lock.json"
+      ],
+      "artifact": {
+        "path": "payload/productivity/native/artifacts/language-servers-2026.11.20-runtime.tar.gz",
+        "sha256": "cafb7b3b1df0221c323ae2fcb6130dfc5d43c6d8bc042fb2118c11689f03908f",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "MIT and Apache-2.0; transitive licenses preserved in node_modules",
+      "runtimeDependencies": [
+        "Node >=22.22.2; qualified with bundled Node24.22.3",
+        "readlink/coreutils and POSIX shell",
+        "Optional project-provided Python interpreters/stubs, ESLint, ShellCheck, shfmt and private schemas are workload dependencies"
+      ]
+    },
+    "trivy": {
+      "version": "0.76.2",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "trivy": {
+          "path": "bin/trivy",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "libexec/trivy",
+        "share/trivy-cache/db/trivy.db",
+        "share/trivy-cache/db/metadata.json",
+        "share/trivy-cache/policy"
+      ],
+      "artifact": {
+        "path": "payload/productivity/native/artifacts/trivy-0.76.2-linux-amd64-offline.tar.gz",
+        "sha256": "0216040d279058cb90d6c6972259cb437959e3da8fd4070115de126128f9a5f2",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "Apache-2.0",
+      "runtimeDependencies": [
+        "POSIX shell, readlink, cp with --reflink=auto, mv, mktemp and flock for first-use private cache materialization",
+        "Writable XDG_CACHE_HOME/agentic/trivy or explicit TRIVY_CACHE_DIR",
+        "~1.7GiB additional first-user cache disk unless filesystem reflinks work"
+      ],
+      "environment": {
+        "TRIVY_SKIP_DB_UPDATE": "true",
+        "TRIVY_SKIP_JAVA_DB_UPDATE": "true",
+        "TRIVY_SKIP_CHECK_UPDATE": "true",
+        "TRIVY_SKIP_VERSION_CHECK": "true",
+        "TRIVY_OFFLINE_SCAN": "true",
+        "TRIVY_DISABLE_TELEMETRY": "true",
+        "TRIVY_IMAGE_SRC": "docker,podman"
+      }
+    },
+    "go": {
+      "version": "1.27.4",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ]
+      },
+      "commands": {
+        "go": {
+          "path": "bin/go",
+          "verifyArgs": [
+            "version"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "gofmt": {
+          "path": "bin/gofmt",
+          "verifyArgs": [
+            "-h"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "requiredPaths": [
+        "src",
+        "pkg/tool/linux_amd64",
+        "go.env"
+      ],
+      "artifact": {
+        "path": "payload/productivity/native/downloads/go1.27.4.linux-amd64.tar.gz",
+        "sha256": "7226736c2339719cda28fbf3a54d71aa63bcefe376e98cef00034268dab24840",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "license": "BSD-3-Clause with third-party notices",
+      "runtimeDependencies": [
+        "Host C compiler only for optional CGO workloads"
+      ],
+      "environmentDefaults": {
+        "GOTOOLCHAIN": "local",
+        "GOPROXY": "off",
+        "GOSUMDB": "off"
+      }
+    },
+    "inspect": {
+      "version": "0.3.291",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "osIds": [
+          "debian"
+        ],
+        "osVersionMajor": [
+          "13"
+        ],
+        "glibcMin": "2.34"
+      },
+      "commands": {
+        "inspect": {
+          "path": "bin/agentic-inspect",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60,
+          "verifyPattern": "0.3.291"
+        },
+        "inspect-smoke": {
+          "path": "bin/agentic-inspect-smoke",
+          "verifyArgs": [
+            "--help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "bench": {
+          "path": "bin/agentic-bench",
+          "verifyArgs": [
+            "--help"
+          ],
+          "verifyTimeoutSeconds": 60
+        },
+        "bench-selftest": {
+          "path": "bin/agentic-bench-selftest",
+          "verifyArgs": [
+            "--help"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "artifact": {
+        "path": "payload/productivity/eval-browser/payload/runtime/inspect-ai-0.3.291-linux-x86_64.tar.gz",
+        "sha256": "ff139adc32637c6a8ec68f5e6acb20e90c016a098ff54e76e1cb781242528078",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "nativeRequiredPackages": [
+        "git"
+      ],
+      "requiredPaths": [
+        "python/bin/python3.12",
+        "python/lib/python3.12/site-packages/inspect_ai"
+      ]
+    },
+    "playwright": {
+      "version": "1.65.1-chromium156",
+      "platform": {
+        "architectures": [
+          "x86_64",
+          "amd64"
+        ],
+        "osIds": [
+          "debian"
+        ],
+        "osVersionMajor": [
+          "13"
+        ]
+      },
+      "commands": {
+        "playwright": {
+          "path": "bin/agentic-playwright",
+          "verifyArgs": [
+            "--version"
+          ],
+          "verifyTimeoutSeconds": 60,
+          "verifyPattern": "1.65.1"
+        },
+        "browser-smoke": {
+          "path": "bin/agentic-browser-smoke",
+          "verifyArgs": [
+            "--help"
+          ],
+          "verifyTimeoutSeconds": 60
+        }
+      },
+      "pathEntries": [
+        "bin"
+      ],
+      "artifact": {
+        "path": "payload/productivity/eval-browser/payload/runtime/playwright-1.65.1-chromium156-debian13-amd64.tar.gz",
+        "sha256": "3e6ccd09224a8b6a770d45ca616935d70c9df48f74bf19d49de674bf62e4874f",
+        "format": "tar",
+        "stripComponents": 1
+      },
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "nativeRequiredPackages": [
+        "chromium",
+        "chromium-common",
+        "chromium-sandbox",
+        "fonts-liberation",
+        "fonts-noto-color-emoji"
+      ],
+      "requiredPaths": [
+        "browser/usr/lib/chromium/chromium",
+        "node_modules/playwright-core/package.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-11-20",
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "release": "v7.0.1",
+      "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "runtime": "node24",
+      "source": "https://api.github.com/repos/actions/checkout/git/ref/tags/v7.0.1"
+    }
+  ]
+}

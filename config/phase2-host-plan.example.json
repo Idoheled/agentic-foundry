@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "privateRepositoriesChecked": [
+    "REPLACE_WITH_ACTUAL_INTERNAL_REPOSITORY_AND_CACHE_INSPECTION_FINDINGS"
+  ],
+  "tools": {
+    "python": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_PYTHON",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/python3",
+          "command": "python3",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/pip3",
+          "command": "pip3",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/pytest",
+          "command": "pytest",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/mypy",
+          "command": "mypy",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/coverage",
+          "command": "coverage",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/pyproject-build",
+          "command": "pyproject-build",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "node": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_NODE",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/node",
+          "command": "node",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/npm",
+          "command": "npm",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/npx",
+          "command": "npx",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/pnpm",
+          "command": "pnpm",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "bun": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_BUN",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/bun",
+          "command": "bun",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "rust": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RUST",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/rustc",
+          "command": "rustc",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/cargo",
+          "command": "cargo",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/rustfmt",
+          "command": "rustfmt",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/cargo-fmt",
+          "command": "cargo-fmt",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/cargo-clippy",
+          "command": "cargo-clippy",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/clippy-driver",
+          "command": "clippy-driver",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "zig": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_ZIG",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/zig",
+          "command": "zig",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "codex": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_CODEX",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/codex",
+          "command": "codex",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "claude": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_CLAUDE",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/claude",
+          "command": "claude",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "opencode": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_OPENCODE",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/opencode",
+          "command": "opencode",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "herdr": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_HERDR",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/herdr",
+          "command": "herdr",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "docker": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_DOCKER",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/docker",
+          "command": "docker",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "compose": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_COMPOSE",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/docker-compose",
+          "command": "docker-compose",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "uv": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_UV",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/uv",
+          "command": "uv",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        },
+        {
+          "path": "/usr/local/bin/uvx",
+          "command": "uvx",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "ruff": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RUFF",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/ruff",
+          "command": "ruff",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "ripgrep": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_RIPGREP",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/rg",
+          "command": "rg",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "fd": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_FD",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/fd",
+          "command": "fd",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "jq": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_JQ",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/jq",
+          "command": "jq",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "yq": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_YQ",
+      "canonicalLinks": [
+        {
+          "path": "/usr/local/bin/yq",
+          "command": "yq",
+          "expected": {
+            "kind": "REPLACE_WITH_ACTUAL_HOSTCTL_SNAPSHOT"
+          },
+          "replaceReason": "REPLACE_WITH_OWNERSHIP_COMPATIBILITY_AND_CONSUMER_EVIDENCE"
+        }
+      ]
+    },
+    "native-profiles": {
+      "source": "kit",
+      "fallbackReason": "unavailable",
+      "evidence": "REPLACE_WITH_FACTUAL_PRIVATE_SUPPLY_AND_COMPATIBILITY_FINDINGS_FOR_NATIVE-PROFILES",
+      "canonicalLinks": []
+    }
+  }
+}

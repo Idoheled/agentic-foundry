@@ -1,0 +1,22 @@
+{
+  "name": "paperclip",
+  "source_url": "https://github.com/paperclipai/paperclip.git",
+  "commit": "c0f132898d2a2677312d8c72096187b27a3d9a38",
+  "commit_time": "2026-11-18T19:19:03Z",
+  "git_shallow": false,
+  "source_checkout": "/workspace/scratch/e174c70ed48b/agentic-offline-build/sources/paperclip",
+  "bundle_verified": true,
+  "git_fsck_passed": true,
+  "artifacts": [
+    {
+      "path": "artifacts/sources/paperclip-c0f132898d2a.tar.gz",
+      "bytes": 61880776,
+      "sha256": "832176c6c7934a61a44abbfe026722200492d8a231da61458e34036f4faaa39b"
+    },
+    {
+      "path": "artifacts/sources/paperclip-c0f132898d2a.bundle",
+      "bytes": 306975634,
+      "sha256": "30bbcf7978ebee9dc5008ef5b4790cebac429d1850fe9eabe6b43fe590c7c94a"
+    }
+  ]
+}

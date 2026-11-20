@@ -1,0 +1,40 @@
+{
+  "scope": "Actual payload extraction/executable versions, generated Compose schema, second preparation; no Docker daemon was launched",
+  "passed": true,
+  "checks": [
+    {
+      "name": "docker",
+      "exitCode": 0,
+      "stdout": "Docker version 29.10.0, build fdd4b8e",
+      "stderr": ""
+    },
+    {
+      "name": "docker-compose",
+      "exitCode": 0,
+      "stdout": "Docker Compose version v5.8.0",
+      "stderr": ""
+    },
+    {
+      "name": "omp-real",
+      "exitCode": 0,
+      "stdout": "omp/19.0.1",
+      "stderr": ""
+    },
+    {
+      "name": "herdr",
+      "exitCode": 0,
+      "stdout": "herdr 0.9.5",
+      "stderr": ""
+    },
+    {
+      "name": "opencode",
+      "exitCode": 0,
+      "stdout": "1.18.34",
+      "stderr": ""
+    },
+    {
+      "name": "generated-compose-config",
+      "exitCode": 0
+    }
+  ]
+}
