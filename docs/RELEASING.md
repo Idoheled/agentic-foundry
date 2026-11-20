@@ -4,7 +4,7 @@
 
 `VERSION` contains the repository version without `v`. An immutable annotated tag named `v<version>` identifies the corresponding committed source. The committed notes live at `releases/v<version>.md`.
 
-The repository version and payload lineage are separate. Agentic Foundry `v0.1.0` begins with the qualified `2026-11-20-r5` payload. The payload lock and offline manifest record that identity; changing a repository document does not silently rename an upstream binary.
+The repository version and payload lineage are separate. Agentic Foundry `v0.1.1` corrects source-release packaging while retaining the same pinned `2026-11-20-r5` payload introduced by the `v0.1.0` repository baseline. The payload lock and offline manifest record that identity; changing a repository document does not silently rename an upstream binary. The original tag and historical evidence remain unchanged.
 
 Before 1.0, compatibility changes may occur between minor versions and must be called out in the notes. Use a patch version for compatible fixes. Published tags and assets are not moved or replaced; corrections get a new version.
 
@@ -27,9 +27,9 @@ The official checkout action is pinned to its full verified commit. `ci/action-p
 Example after the release commit is complete:
 
 ```bash
-git tag -a v0.1.0 -m "Agentic Foundry v0.1.0"
+git tag -a v0.1.1 -m "Agentic Foundry v0.1.1"
 git push origin main
-git push origin v0.1.0
+git push origin v0.1.1
 ```
 
 Use the next unused version for later releases. Do not force-push a published tag. Keep release mutations sequential so a failed LFS upload cannot be mistaken for a complete publication.
@@ -51,13 +51,15 @@ Publication then:
 5. Creates a draft and attaches the source archive, offline manifest, payload lock, integrity evidence and asset checksums.
 6. Confirms the uploaded asset set, sizes and available server digests, then publishes and reads back the release state.
 
+The source archive is assembled from the selected commit's tree and raw Git blob bytes, not through `git archive` or a working-tree export. Git LFS paths must contain canonical pointers matching the committed offline manifest. Git filters, lazy object fetching, and network protocols are excluded from this archive construction path. These checks prevent the source asset from silently expanding into runtime payload data; full byte verification remains a separate earlier gate.
+
 Remote mode uses at most four concurrent file verifications by default (configurable from one to eight). It streams large chunks in bounded blocks, coalesces identical full-file reconstructions and retains only a bounded small-object memory cache. Repository credentials are sent only to the exact repository's GitHub LFS batch endpoint. Download actions must use HTTPS on the reviewed GitHub download hostname; redirects, unexpected hosts and forwarded repository credentials are rejected. Signed download URLs and authorization values are not logged. An upstream hostname change requires review of `ci/remote_lfs.py`.
 
 The standalone publisher supports the same mode after the source commit, annotated tag and LFS upload have been verified:
 
 ```bash
 python3 ci/release.py publish \
-  --tag v0.1.0 \
+  --tag v0.1.1 \
   --expected-sha EXACT_COMMIT_SHA \
   --repository Idoheled/agentic-foundry \
   --payload-source remote \
@@ -72,9 +74,13 @@ Only the publishing job has `contents: write`. Pull-request checks and tag valid
 
 A failure after draft creation leaves the draft and any uploaded assets for inspection. The workflow does not overwrite, delete or automatically retry a release with an uncertain outcome. Inspect the tag, draft and assets before choosing a recovery action.
 
+### v0.1.0 publication history
+
+The `v0.1.0` attempt verified all remote payload files before source packaging failed. Its `git archive` path expanded LFS data into the intended source-only archive, which exceeded 2 GiB. The publication did not complete. The correction is versioned as `v0.1.1`; the original `v0.1.0` tag and historical notes are retained rather than overwritten. This is a release-packaging change with the same pinned runtime payload, not new receiving-host qualification.
+
 ## Release downloads and offline deployment
 
-The source release archive and GitHub's generated ZIP/tar source downloads are not substitutes for verified LFS payload bytes. The explicit source asset contains LFS pointers. Obtain the full payload by cloning the exact tag with Git LFS, or use an approved private mirror of the same manifest and objects. Follow [payload management](PAYLOADS.md) to verify and assemble the offline deployment bundle. From a hydrated, clean checkout at the exact release tag, `build-tools/export-release.py --ref v0.1.0 --output ABSOLUTE_OUTPUT_PATH` creates a standalone tar with source and one payload copy, excluding Git metadata and duplicate LFS object storage. It verifies every archived member. Keep generated archives outside the tracked source tree. The earlier r5 `build-tools/release.py` is retained for historical builder provenance and is not the Git-checkout export path.
+The source release archive and GitHub's generated ZIP/tar source downloads are not substitutes for verified LFS payload bytes. The explicit source asset contains LFS pointers. Obtain the full payload by cloning the exact tag with Git LFS, or use an approved private mirror of the same manifest and objects. Follow [payload management](PAYLOADS.md) to verify and assemble the offline deployment bundle. From a hydrated, clean checkout at the exact release tag, `build-tools/export-release.py --ref v0.1.1 --output ABSOLUTE_OUTPUT_PATH` creates a standalone tar with source and one payload copy, excluding Git metadata and duplicate LFS object storage. It verifies every archived member. Keep generated archives outside the tracked source tree. The earlier r5 `build-tools/release.py` is retained for historical builder provenance and is not the Git-checkout export path.
 
 Release integrity verifies the supplied files; it does not install them. Native package installation, private model routing, real worker probes, configuration preservation and browser interaction remain target-machine acceptance checks. Never describe a source-only CI pass as a completed machine upgrade.
 

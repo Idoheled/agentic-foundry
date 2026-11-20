@@ -2,9 +2,25 @@
 
 Notable changes to Agentic Foundry are recorded here. Repository releases use semantic version tags. The underlying offline payload retains its own revision and immutable artifact identities.
 
+## [0.1.1] - 2026-11-20
+
+Corrects source-release packaging while retaining the same pinned `2026-11-20-r5` runtime payload and deployment behavior.
+
+### Fixed
+
+- Prevent the source release archive from expanding Git LFS pointers into large runtime objects during archive creation. The source asset retains the committed pointers; complete offline payload retrieval remains the explicit Git LFS or private-mirror step.
+- Verify the source archive's content boundary before publication so an accidentally hydrated payload cannot be presented as the source-only asset.
+- Update recommended checkout, deployment-state, tag, and standalone-export examples to `v0.1.1`.
+
+### Publication history
+
+The `v0.1.0` publication attempt verified every remote payload file before source-archive creation failed: `git archive` expanded LFS objects and the intended source asset exceeded 2 GiB. That attempt did not complete GitHub release publication. The original `v0.1.0` tag and historical evidence are preserved; the packaging correction uses a new patch version instead of moving the tag.
+
+This correction does not change the locked tool/image/package bytes, supported platforms, or existing-machine Claude → OMP boundary. Remote payload integrity is not additional native-host, browser, private-model, or project-task qualification; those acceptance gates remain explicit.
+
 ## [0.1.0] - 2026-11-20
 
-Initial Agentic Foundry repository release, based on the `2026-11-20-r5` offline workspace kit.
+Initial Agentic Foundry repository/tag baseline, based on the `2026-11-20-r5` offline workspace kit. Its later GitHub release publication attempt did not complete; see the `0.1.1` packaging correction above. The original tag and committed release notes remain unchanged.
 
 ### Added
 

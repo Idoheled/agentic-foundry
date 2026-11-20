@@ -4,9 +4,12 @@ import hashlib
 import importlib.util
 import io
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
+import sys
+import tarfile
 import tempfile
 import unittest
 from unittest import mock
@@ -59,6 +62,8 @@ class ReleaseTests(unittest.TestCase):
             "VERSION": "0.1.0\n",
             "releases/v0.1.0.md": "# Release\n\nFixture release notes.\n",
             "offline/manifest.json": json.dumps({"objects": {"a" * 64: {"bytes": 100}}}),
+            "offline/objects/sha256/" + "a" * 64 + ".chunk": (
+                "version https://git-lfs.github.com/spec/v1\noid sha256:" + "a" * 64 + "\nsize 100\n"),
             "payload.lock.json": "{}\n",
             "scripts/offline_payload.py": (
                 "import json, pathlib, sys\n"
@@ -157,6 +162,95 @@ class ReleaseTests(unittest.TestCase):
         with mock.patch.object(release.shutil, "disk_usage", return_value=shutil._ntuple_diskusage(10**12, 1, 10**12-1)):
             report = release.capacity(self.root)
         self.assertEqual(report["requiredFreeBytes"], 200 + 2 * 1024**3)
+
+    def test_source_archive_uses_committed_pointers_without_running_filters(self):
+        pointer_path = "offline/objects/sha256/" + "a" * 64 + ".chunk"
+        pointer = (self.root / pointer_path).read_bytes()
+        (self.root / ".gitattributes").write_text("*.chunk filter=lfs -text\n")
+        self.git("add", ".gitattributes")
+        self.git("update-index", "--chmod=+x", "scripts/offline_payload.py")
+        self.git("commit", "-qm", "Source archive fixture")
+        commit = self.git("rev-parse", "HEAD")
+        trap = self.root / "filter-trap.py"
+        marker = self.root / "filter-invoked"
+        trap.write_text("from pathlib import Path\nimport sys\nPath(__file__).with_name('filter-invoked').write_text('invoked')\nsys.exit(89)\n")
+        command = sys.executable + " " + str(trap)
+        for key in ("filter.lfs.process", "filter.lfs.smudge", "filter.lfs.clean", "tar.tar.gz.command"):
+            self.git("config", key, command)
+        self.git("config", "filter.lfs.required", "true")
+        # Dirty hydrated bytes must never be used as source-archive content.
+        (self.root / pointer_path).write_bytes(b"uncommitted hydrated bytes")
+        archive = self.root / "source.tar.gz"
+        with mock.patch.dict(os.environ, {"GIT_LFS_SKIP_SMUDGE": "0", "GIT_ALLOW_PROTOCOL": "https", "GIT_NO_LAZY_FETCH": "0"}):
+            result = release.source_archive(self.root, commit, "v0.1.0", archive)
+        self.assertFalse(marker.exists(), "A source archive must never invoke a Git content filter")
+        self.assertEqual(result["lfsPointers"], 1)
+        with tarfile.open(archive, "r:gz") as packed:
+            prefix = "agentic-foundry-v0.1.0/"
+            self.assertEqual(packed.extractfile(prefix + pointer_path).read(), pointer)
+            self.assertEqual(packed.getmember(prefix + "scripts/offline_payload.py").mode, 0o755)
+            self.assertFalse(any("filter-trap" in member.name for member in packed))
+
+    def test_source_archive_rejects_symlinks(self):
+        (self.root / "source-link").symlink_to("scripts/offline_payload.py")
+        self.git("add", "source-link")
+        self.git("commit", "-qm", "Unsupported symlink fixture")
+        archive = self.root / "source.tar.gz"
+        with self.assertRaisesRegex(release.Blocked, "requires regular files"):
+            release.source_archive(self.root, self.git("rev-parse", "HEAD"), "v0.1.0", archive)
+        self.assertFalse(archive.exists())
+
+    def test_source_archive_rejects_committed_hydrated_objects(self):
+        pointer_path = "offline/objects/sha256/" + "a" * 64 + ".chunk"
+        (self.root / pointer_path).write_bytes(b"actual runtime data instead of a pointer")
+        self.git("add", pointer_path)
+        self.git("commit", "-qm", "Invalid expanded source object")
+        archive = self.root / "source.tar.gz"
+        with self.assertRaisesRegex(release.Blocked, "pointer differs"):
+            release.source_archive(self.root, self.git("rev-parse", "HEAD"), "v0.1.0", archive)
+        self.assertFalse(archive.exists())
+
+    def test_missing_git_blob_blocks_without_promisor_fetch(self):
+        oid = self.git("rev-parse", "HEAD:VERSION")
+        (self.root / ".git/objects" / oid[:2] / oid[2:]).unlink()
+        trap = self.root / "fetch-trap.py"
+        marker = self.root / "fetch-invoked"
+        trap.write_text("from pathlib import Path\nimport sys\nPath(__file__).with_name('fetch-invoked').write_text('invoked')\nsys.exit(89)\n")
+        self.git("config", "core.repositoryformatversion", "1")
+        self.git("config", "extensions.partialclone", "origin")
+        self.git("config", "remote.origin.promisor", "true")
+        self.git("config", "remote.origin.partialclonefilter", "blob:none")
+        self.git("config", "remote.origin.url", "ext::" + sys.executable + " " + str(trap))
+        self.git("config", "protocol.ext.allow", "always")
+        archive = self.root / "source.tar.gz"
+        with mock.patch.dict(os.environ, {"GIT_ALLOW_PROTOCOL": "ext", "GIT_NO_LAZY_FETCH": "0"}):
+            with self.assertRaisesRegex(release.Blocked, "source.*(unavailable|without fetching)"):
+                release.source_archive(self.root, self.commit, "v0.1.0", archive)
+        self.assertFalse(marker.exists(), "A source archive must not fetch a missing Git object")
+        self.assertFalse(archive.exists())
+
+    def test_source_archive_preserves_existing_output(self):
+        archive = self.root / "source.tar.gz"
+        archive.write_bytes(b"existing artifact")
+        with self.assertRaisesRegex(release.Blocked, "Preserving"):
+            release.source_archive(self.root, self.commit, "v0.1.0", archive)
+        self.assertEqual(archive.read_bytes(), b"existing artifact")
+
+    def test_hidden_worktree_asset_changes_cannot_be_published(self):
+        cases = (("offline/manifest.json", "assume-unchanged"), ("payload.lock.json", "skip-worktree"))
+        for relative, flag in cases:
+            with self.subTest(asset=relative, index_flag=flag):
+                path = self.root / relative
+                original = path.read_bytes()
+                self.git("update-index", "--" + flag, relative)
+                path.write_bytes(original + b"\n")
+                self.assertEqual(self.git("status", "--porcelain", "--untracked-files=no"), "")
+                api = ApiFixture(self.commit)
+                with self.assertRaisesRegex(release.Blocked, "Release asset differs from its committed source"):
+                    self.publish(api)
+                self.assertFalse(any(call[0] in ("POST", "PATCH", "UPLOAD") for call in api.calls))
+                path.write_bytes(original)
+                self.git("update-index", "--no-" + flag, relative)
 
 
 if __name__ == "__main__":

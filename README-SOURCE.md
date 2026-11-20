@@ -24,6 +24,12 @@ python3 scripts/offline_payload.py verify
 
 The complete offline tar already contains hydrated artifacts and uses `setup.sh` directly. A checkout can also hydrate from a qualified private extracted release or a verified full tar with the existing `scripts/payload.py` interface. See [Offline payloads](docs/PAYLOADS.md) for exact commands, disk considerations, and transport details.
 
+## Source release archives
+
+The published source asset contains committed setup files and Git LFS pointers; it does not duplicate the runtime payload. Version `v0.1.1` corrects archive creation so Git's working-tree LFS filters cannot expand those pointers while preparing this source-only asset. Source-archive checks enforce that boundary before publication.
+
+The `v0.1.0` tag remains an immutable repository baseline. Its publication attempt verified the remote payload but failed when an expanded source archive exceeded 2 GiB. The patch changes release packaging, not the pinned r5 runtime bytes or receiving-host acceptance requirements. See [the changelog](CHANGELOG.md).
+
 ## Maintain identities
 
 `payload.lock.json` identifies the expected runtime and source dependency artifacts. The LFS reconstruction manifest must bind to that lock and reconstruct the exact file sizes, bytes, and executable modes. A changed artifact is an explicit release change, not a reason to regenerate identities around an unexplained mismatch.

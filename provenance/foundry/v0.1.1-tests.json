@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.1",
+  "command": "./ci/check.sh",
+  "passed": true,
+  "tests": 268,
+  "seconds": 24.351,
+  "sourceOnly": true,
+  "payloadHydrated": false,
+  "scope": "Controller behavior, payload reconstruction, deployment/source/export contracts, release boundary, raw committed source packaging and remote-streaming fixtures; no installation on a user machine",
+  "actualInternalModelsQualified": false,
+  "actualDockerDeploymentQualified": false,
+  "actualBrowserUIQualified": false,
+  "additionalChecks": [
+    "Python and Bash syntax",
+    "48 first-party Markdown files: local paths and heading anchors",
+    "15 targeted release tests, included in the full suite",
+    "Unchanged pinned payload manifest, lockfile and LFS object tree"
+  ],
+  "sourceArchiveRegression": {
+    "tag": "v0.1.0",
+    "commit": "1d82f2fef4836cb3c3f27bf48149d4f5a4fec5c5",
+    "method": "Raw committed tree/blob archive; no Git conversion filters or lazy fetching",
+    "sourceEntries": 2745,
+    "lfsPointers": 2488,
+    "compressedBytes": 1597539,
+    "seconds": 1.129,
+    "payloadDownloads": false
+  },
+  "previousPublication": {
+    "run": "https://github.com/Idoheled/agentic-foundry/actions/runs/44798124416",
+    "remotePayloadFilesVerified": 2727,
+    "failedStage": "Source archive size guard after Git archive expanded LFS pointers",
+    "published": false
+  },
+  "payloadLockSha256": "2234876454c86a0a862a882d30776b40a928ff267889f96d98abf5c1a856e7ec"
+}

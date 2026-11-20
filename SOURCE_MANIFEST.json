@@ -43,7 +43,7 @@
     ".github/workflows/release.yml": {
       "bytes": 3873,
       "mode": 420,
-      "sha256": "d099ab61c4bb588ba84701c19e6f27a17c300c97d66e7e3bb28deda2393565e5"
+      "sha256": "bd27c5deb27b1352666f37a624686083262c3e20363d588f32e41aff6eec0359"
     },
     ".gitignore": {
       "bytes": 347,
@@ -56,9 +56,9 @@
       "sha256": "605b779b0d37dfc32f1d77ad35517f97a027ede9eadac57ed3329a49a2811d87"
     },
     "CHANGELOG.md": {
-      "bytes": 3826,
+      "bytes": 5367,
       "mode": 420,
-      "sha256": "e62d5b671813003d258f8b39b410898740257cd4f75c7c671189620cad88099f"
+      "sha256": "3d0bdebe5c2e1637a5c127da7f57be9ae83398f87e2e9f8f1c03e081110b9b4c"
     },
     "CONTRIBUTING.md": {
       "bytes": 4897,
@@ -68,7 +68,7 @@
     "HANDOFF.md": {
       "bytes": 47743,
       "mode": 420,
-      "sha256": "6ca20f972c0c7da049b7f597cb5107f24ec38721ea9c20d8e4ea3d954350f321"
+      "sha256": "a2f4e346a3a6ac73cb28da0fa82a2f6a34add9e8efd6f1bc211db2dbc5feeea2"
     },
     "LICENSE": {
       "bytes": 1371,
@@ -78,17 +78,17 @@
     "MANIFEST.json": {
       "bytes": 29312,
       "mode": 420,
-      "sha256": "0838c072a3e65890c785015937ff777bbc4f8410d96fdef1d0e16326333f557c"
+      "sha256": "d9fef282c74e4cb88cc84eaef8077483f969ed51d4a3b6c6e8e4decfd1497d45"
     },
     "README-SOURCE.md": {
-      "bytes": 3634,
+      "bytes": 4314,
       "mode": 420,
-      "sha256": "074ba76752cac449b85ef54ecfbc11f53e5ea9faba192e508e11db6255bb517b"
+      "sha256": "d79e4bc167422b016d6a940479eac33634053adc48dd247afe3a89fb871d4fdf"
     },
     "README.md": {
-      "bytes": 8584,
+      "bytes": 8620,
       "mode": 420,
-      "sha256": "44452d4fe0651c1208bd16064c4a9edbba21d8152de67cbe617250472d663394"
+      "sha256": "8b8254cc46a51805779262da4a13c04f7ae87b6eab59705da14d1cde5bdab46f"
     },
     "SECURITY.md": {
       "bytes": 2516,
@@ -103,7 +103,7 @@
     "VERSION": {
       "bytes": 6,
       "mode": 420,
-      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+      "sha256": "80447316529fc62014fbaa047fb67c51ac30e32830cda370405349d8d66d196c"
     },
     "build-tools/export-release.py": {
       "bytes": 5943,
@@ -131,9 +131,9 @@
       "sha256": "c6bc4c9347df19d5658f1e7c85b7f617dfef36d1707e706eb60d62b26924387a"
     },
     "ci/release.py": {
-      "bytes": 16654,
+      "bytes": 24680,
       "mode": 420,
-      "sha256": "7d53ba940be4967f0fdd037d90f2d592d583d94c2801925b543f8abdcbd4b5f2"
+      "sha256": "e8535a3b3f88c795038ae4566317ea94023f05a22319665f7d2f741ef06214f1"
     },
     "ci/remote_lfs.py": {
       "bytes": 11597,
@@ -366,9 +366,9 @@
       "sha256": "296381eb0e2899cc44bde3688867e33f937accc1ea951f0c2f5ef2fbaadb7fb1"
     },
     "docs/PAYLOADS.md": {
-      "bytes": 11299,
+      "bytes": 11335,
       "mode": 420,
-      "sha256": "2d41557f01dedc5775e4a62eadc7fb1058ad3243ee4deb9f083057e81e6e0c37"
+      "sha256": "8eb58b3bb2002a282188c730407b5d83094688f26161ae8f25f4b366f84823d7"
     },
     "docs/PHASE1_CLAUDE.md": {
       "bytes": 16360,
@@ -393,7 +393,7 @@
     "docs/QUICKSTART.md": {
       "bytes": 7971,
       "mode": 420,
-      "sha256": "af0023e4e9638bfe3fcc49131a8ee196a26d2e6c2ad267c22ac7c1b084433230"
+      "sha256": "55800916082ef532336f80c2408abd175060d94ab478f4c808670e7e47a443fb"
     },
     "docs/R3_VALIDATION.md": {
       "bytes": 7605,
@@ -408,7 +408,7 @@
     "docs/R5_DELIVERY_WORKSPACE.md": {
       "bytes": 12986,
       "mode": 420,
-      "sha256": "043e46bd05c077816d0398026d387c209c08a1e81c6f45331848e62f599399b7"
+      "sha256": "6964461f0722baed54c203987b47f48d58e76354267fd32e008afdae26bf11bb"
     },
     "docs/REBUILD.md": {
       "bytes": 17275,
@@ -416,9 +416,9 @@
       "sha256": "e58fb6724a0d562da0bf623905f2664c2663b33ae89da04192686808d4049791"
     },
     "docs/RELEASING.md": {
-      "bytes": 7729,
+      "bytes": 8848,
       "mode": 420,
-      "sha256": "56079fb1fc95ee909f362550cfb78299bdc992eb2bc6e5e53ff24031210be6a2"
+      "sha256": "ddfe3ef6109fbcd497c7e323cb5df5606eff3ef6ca03ebd596a7aa76c89fa442"
     },
     "docs/SOFTWARE_INVENTORY.md": {
       "bytes": 6809,
@@ -446,9 +446,9 @@
       "sha256": "59eeab0779b878f3a408ace2c884d95dd4aecd5481a09bcb49a57bc4a2e4e530"
     },
     "docs/index.md": {
-      "bytes": 4887,
+      "bytes": 5043,
       "mode": 420,
-      "sha256": "136f30c3246e0226c3036458547ff209292810c103171a2509bf958f480fa64c"
+      "sha256": "f49dbe2ea906012fddfc1ed5014ccae96f30f11d39e2a3d22fde4bbc8c584e2a"
     },
     "install-all.sh": {
       "bytes": 207,
@@ -569,6 +569,11 @@
       "bytes": 714,
       "mode": 420,
       "sha256": "0583c8951924e7abc92c4367900ef9deaf3daede894b7b41290208aac0ddb057"
+    },
+    "provenance/foundry/v0.1.1-tests.json": {
+      "bytes": 1475,
+      "mode": 420,
+      "sha256": "037bc1f0d7a428d918e8ca6f9d64a79bd2f8e8b824006901769f7c52799ffd1d"
     },
     "provenance/herdr-latest-release.json": {
       "bytes": 13315,
@@ -1060,6 +1065,11 @@
       "mode": 420,
       "sha256": "b8772d1024610500a199f3574527c49f392d4a758ddef884f30ddd44e7696d6a"
     },
+    "releases/v0.1.1.md": {
+      "bytes": 3661,
+      "mode": 420,
+      "sha256": "80738924a6eff4acc9acfc17b9d87eb663fd9a893dea5570053672a195b69a71"
+    },
     "scripts/agenticctl.py": {
       "bytes": 47855,
       "mode": 493,
@@ -1241,9 +1251,9 @@
       "sha256": "2b5c165839c669ffc80fcdd3ae4240252e4b5e17b24abe46d50d5ba858540d39"
     },
     "tests/test_repository_release.py": {
-      "bytes": 7419,
+      "bytes": 13329,
       "mode": 420,
-      "sha256": "102daade9d0e35060485a557029f937779ae26046bffca2a534fcda5d52c0b6a"
+      "sha256": "76428b1ce362e52eebe92d5f58e47233323630462fa21584a8fd89d6ad96d70c"
     },
     "tests/test_setup.py": {
       "bytes": 15926,
@@ -1278,5 +1288,5 @@
   },
   "schemaVersion": 1,
   "scope": "Maintained source controls; immutable payload identities are pinned separately",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

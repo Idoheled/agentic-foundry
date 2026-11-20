@@ -12,7 +12,8 @@ Install Git LFS through your approved package source, then obtain the repository
 and its objects while GitHub or your private mirror is reachable:
 
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/Idoheled/agentic-foundry.git
+GIT_LFS_SKIP_SMUDGE=1 git clone --branch v0.1.1 --single-branch \
+  https://github.com/Idoheled/agentic-foundry.git
 cd agentic-foundry
 git lfs install --local
 git lfs pull
@@ -212,12 +213,12 @@ With sufficient disk space, a fully materialized checkout at the exact release
 tag can produce an original-style, single-file offline kit:
 
 ```bash
-git checkout v0.1.0
+git checkout v0.1.1
 git lfs pull
 python3 scripts/offline_payload.py hydrate --link-objects
 python3 build-tools/export-release.py \
-  --ref v0.1.0 \
-  --output /private/releases/agentic-foundry-0.1.0-linux-amd64.tar.gz
+  --ref v0.1.1 \
+  --output /private/releases/agentic-foundry-0.1.1-linux-amd64.tar.gz
 ```
 
 The exporter requires a clean source checkout whose `HEAD`, tag and `VERSION`

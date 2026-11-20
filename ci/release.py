@@ -2,15 +2,18 @@
 """Validate release identity and publish only after full offline-payload verification."""
 import argparse
 from datetime import datetime, timezone
+import gzip
 import hashlib
 import importlib.util
+import io
 import json
 import os
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 import shutil
 import subprocess
 import sys
+import tarfile
 import tempfile
 import urllib.error
 import urllib.parse
@@ -176,6 +179,129 @@ def remote_commit(api, repository, tag):
     raise Blocked("Remote tag has too many indirections")
 
 
+def source_archive(root, commit, tag, destination):
+    """Archive raw committed blobs; never run archive conversion or LFS filters."""
+    need(SHA.fullmatch(commit) and TAG.fullmatch(tag), "Invalid source archive identity")
+    need(not destination.exists() and not destination.is_symlink(), "Preserving an existing source archive")
+    # A partial clone must fail on a missing Git object, not fetch it. Clear Git
+    # caller overrides and prohibit every transport as a second independent gate.
+    env = {key: value for key, value in os.environ.items() if not key.startswith("GIT_")}
+    env.update(GIT_NO_LAZY_FETCH="1", GIT_NO_REPLACE_OBJECTS="1", GIT_ALLOW_PROTOCOL="",
+               GIT_TERMINAL_PROMPT="0", GIT_CONFIG_NOSYSTEM="1", GIT_CONFIG_GLOBAL=os.devnull,
+               GIT_OPTIONAL_LOCKS="0", GIT_LFS_SKIP_SMUDGE="1")
+    command = ["git", "--no-replace-objects", "-c", "protocol.allow=never", "-C", str(root)]
+    tree = subprocess.run([*command, "ls-tree", "-r", "-l", "-z", "--full-tree", commit],
+                          env=env, capture_output=True, check=False)
+    need(tree.returncode == 0, "Cannot read the committed source tree without fetching Git objects")
+    entries = {}
+    for record in tree.stdout.split(b"\0"):
+        if not record:
+            continue
+        metadata, raw_path = record.split(b"\t", 1)
+        mode, kind, oid, raw_size = metadata.split()
+        path = raw_path.decode("utf-8")
+        parts = PurePosixPath(path)
+        need(not parts.is_absolute() and ".." not in parts.parts and ".git" not in parts.parts,
+             "Unsafe committed source path")
+        need(kind == b"blob" and mode in (b"100644", b"100755"),
+             "Source archive requires regular files; symlinks and submodules are not expanded")
+        need(raw_size.isdigit(), "A required source Git object is unavailable locally")
+        entries[path] = (mode, oid.decode("ascii"), int(raw_size))
+    need(entries and sum(entry[2] for entry in entries.values()) < 2 * 1024 ** 3,
+         "Committed source blobs exceed the source-asset budget; large artifacts must be Git LFS pointers")
+    need("offline/manifest.json" in entries, "The committed source has no offline manifest")
+    need("payload.lock.json" in entries and entries["payload.lock.json"][0] == b"100644",
+         "The committed source has no regular payload lock")
+    need(entries["offline/manifest.json"][0] == b"100644" and entries["offline/manifest.json"][2] <= 16 * 1024 ** 2,
+         "Invalid committed offline manifest")
+
+    class Blob:
+        def __init__(self, pipe, oid, size):
+            self.pipe, self.oid, self.remaining = pipe, oid, size
+            self.digest = hashlib.sha1() if len(oid) == 40 else hashlib.sha256()
+            self.digest.update(b"blob " + str(size).encode() + b"\0")
+            self.content_digest = hashlib.sha256()
+
+        def read(self, size=-1):
+            data = self.pipe.read(self.remaining if size < 0 else min(size, self.remaining))
+            self.remaining -= len(data)
+            self.digest.update(data)
+            self.content_digest.update(data)
+            return data
+
+        def finish(self):
+            need(self.remaining == 0 and self.digest.hexdigest() == self.oid,
+                 "Raw source blob failed its committed Git identity check")
+            need(self.pipe.read(1) == b"\n", "Malformed raw Git object stream")
+
+    committed_assets = {}
+    with tempfile.TemporaryFile() as errors:
+        process = subprocess.Popen([*command, "cat-file", "--batch"], env=env,
+                                   stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=errors)
+
+        def blob(entry):
+            _, oid, size = entry
+            process.stdin.write(oid.encode() + b"\n")
+            process.stdin.flush()
+            header = process.stdout.readline(256).strip().split()
+            need(header == [oid.encode(), b"blob", str(size).encode()],
+                 "A required source Git object is unavailable without network access")
+            return Blob(process.stdout, oid, size)
+
+        created_archive = False
+        try:
+            manifest_blob = blob(entries["offline/manifest.json"])
+            manifest = json.loads(manifest_blob.read())
+            manifest_blob.finish()
+            objects = manifest.get("objects")
+            need(isinstance(objects, dict), "Invalid committed LFS object manifest")
+            pointer_paths = {"offline/objects/sha256/" + oid + ".chunk" for oid in objects}
+            observed = {path for path in entries if path.startswith("offline/objects/")}
+            need(observed == pointer_paths, "Committed LFS pointer paths differ from the offline manifest")
+            with destination.open("xb") as raw:
+                created_archive = True
+                with gzip.GzipFile(filename="", mode="wb", fileobj=raw, compresslevel=6, mtime=0) as compressed:
+                    with tarfile.open(mode="w|", fileobj=compressed, format=tarfile.PAX_FORMAT) as archive:
+                        for path, entry in sorted(entries.items()):
+                            mode, _, size = entry
+                            source = blob(entry)
+                            member = tarfile.TarInfo("agentic-foundry-" + tag + "/" + path)
+                            member.mode = 0o755 if mode == b"100755" else 0o644
+                            member.uid = member.gid = member.mtime = 0
+                            member.size = size
+                            if path in pointer_paths:
+                                need(mode == b"100644" and size <= 256, "An LFS source entry is not a canonical pointer")
+                                oid = PurePosixPath(path).stem
+                                declared_size = objects[oid].get("bytes")
+                                need(re.fullmatch(r"[a-f0-9]{64}", oid) and type(declared_size) is int and declared_size >= 0,
+                                     "Invalid committed LFS object identity")
+                                pointer = source.read()
+                                expected = ("version https://git-lfs.github.com/spec/v1\noid sha256:" + oid +
+                                            "\nsize " + str(declared_size) + "\n").encode()
+                                need(pointer == expected, "Committed LFS pointer differs from its manifest identity")
+                                archive.addfile(member, io.BytesIO(pointer))
+                            else:
+                                archive.addfile(member, source)
+                            source.finish()
+                            if path in ("offline/manifest.json", "payload.lock.json"):
+                                committed_assets[path] = source.content_digest.hexdigest()
+            process.stdin.close()
+            need(process.wait(timeout=30) == 0, "Raw Git object reader failed")
+        except BaseException:
+            if process.poll() is None:
+                process.kill()
+                process.wait()
+            if created_archive:
+                destination.unlink(missing_ok=True)
+            raise
+        finally:
+            process.stdout.close()
+            if not process.stdin.closed:
+                process.stdin.close()
+    return {"files": len(entries), "lfsPointers": len(pointer_paths), "bytes": destination.stat().st_size,
+            "committedAssetSha256": committed_assets}
+
+
 def publish(root, tag, expected_sha, repository, api, prerelease=False, payload_source="local", github_user=None, workers=4):
     need(REPOSITORY.fullmatch(repository) and ".." not in repository, "Use an owner/repository name")
     identity = validate(root, tag, expected_sha)
@@ -186,6 +312,8 @@ def publish(root, tag, expected_sha, repository, api, prerelease=False, payload_
                                             github_user or repository.split("/")[0].lower(), workers)
     else:
         verification = payload_check(root, "verify")
+    print("Payload verification complete: " + str(verification.get("files", "?")) + " files, " +
+          str(verification.get("objects", "?")) + " objects", file=sys.stderr, flush=True)
     need(remote_commit(api, repository, tag) == identity["commit"], "Remote tag differs from the verified commit")
     base = "/repos/" + repository
     existing = api.request("GET", base + "/releases/tags/" + urllib.parse.quote(tag, safe=""), missing_ok=True)
@@ -195,19 +323,23 @@ def publish(root, tag, expected_sha, repository, api, prerelease=False, payload_
         with tempfile.TemporaryDirectory(prefix="agentic-foundry-release-") as scratch:
             output = Path(scratch)
             archive = output / ("agentic-foundry-" + tag + "-source.tar.gz")
-            with archive.open("wb") as stream:
-                proc = subprocess.run(["git", "-C", str(root), "archive", "--format=tar.gz",
-                                       "--prefix=agentic-foundry-" + tag + "/", identity["commit"]], stdout=stream,
-                                      stderr=subprocess.PIPE, check=False)
-            need(proc.returncode == 0, "Could not create the source archive")
-            shutil.copyfile(regular(root, "offline/manifest.json"), output / "offline-manifest.json")
-            shutil.copyfile(regular(root, "payload.lock.json"), output / "payload.lock.json")
+            print("Creating source archive from committed Git blobs and LFS pointers; no hydration or network", file=sys.stderr, flush=True)
+            archive_report = source_archive(root, identity["commit"], tag, archive)
+            print("Source archive complete: " + str(archive_report["files"]) + " files, " +
+                  str(archive_report["lfsPointers"]) + " LFS pointers, " + str(archive_report["bytes"]) +
+                  " bytes", file=sys.stderr, flush=True)
+            for source_name, asset_name in (("offline/manifest.json", "offline-manifest.json"),
+                                            ("payload.lock.json", "payload.lock.json")):
+                asset = output / asset_name
+                shutil.copyfile(regular(root, source_name), asset)
+                need(sha256(asset) == archive_report["committedAssetSha256"][source_name],
+                     "Release asset differs from its committed source: " + source_name)
             report = {"schemaVersion": 1, "tag": tag, "commit": identity["commit"],
                       "verifiedAt": datetime.now(timezone.utc).isoformat(),
                       "scope": "Release identity and full LFS payload integrity; not target-machine acceptance",
                       "payloadVerification": verification,
-                      "manifestSha256": sha256(root / "offline/manifest.json"),
-                      "payloadLockSha256": sha256(root / "payload.lock.json")}
+                      "manifestSha256": archive_report["committedAssetSha256"]["offline/manifest.json"],
+                      "payloadLockSha256": archive_report["committedAssetSha256"]["payload.lock.json"]}
             (output / "RELEASE-VERIFICATION.json").write_text(json.dumps(report, indent=2) + "\n")
             assets = sorted(output.iterdir())
             sums = output / "SHA256SUMS"

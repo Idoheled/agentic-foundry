@@ -35,7 +35,8 @@ The [software inventory](docs/SOFTWARE_INVENTORY.md), [r5 delivery profile](docs
 ### 1. Obtain the source and offline payload
 
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/Idoheled/agentic-foundry.git
+GIT_LFS_SKIP_SMUDGE=1 git clone --branch v0.1.1 --single-branch \
+  https://github.com/Idoheled/agentic-foundry.git
 cd agentic-foundry
 git lfs install --local
 git lfs pull
@@ -59,14 +60,14 @@ Discovery reports the platform, commands, and candidate profile locations withou
 
 ```bash
 ./deploy.sh --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.0"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
 ```
 
 **Existing workspace**, starting in the current working Claude environment:
 
 ```bash
 ./deploy.sh agent --config /private/site.json \
-  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.0"
+  --state "$HOME/.local/state/agentic-foundry/setup-v0.1.1"
 ```
 
 The existing-machine flow deliberately stops after OMP qualification. Start the OMP continuation using the exact command in the generated handoff. OMP then completes the rest of the stack without replacing the runtime executing that continuation.
@@ -83,7 +84,7 @@ No new telemetry, monitoring, backup platform, or replacement memory service is 
 
 ## Supported targets and qualification
 
-| Target | v0.1.0 coverage |
+| Target | v0.1.1 coverage |
 | --- | --- |
 | Debian 13, x86-64, glibc | Included native fallback and the supplied evaluation/browser profile. |
 | Other Debian/Ubuntu x86-64 systems | Explicit approved internal APT plans and compatible tool profiles; Debian 13 packages are not used as a foreign-distro fallback. |
